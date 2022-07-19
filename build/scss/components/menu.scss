@@ -64,6 +64,22 @@
         }
     }
 
+    .uk-subnav {
+        margin-bottom: 0;
+
+        .icon-twitter a {
+            color: #1DA1F2;
+        }
+
+        .icon-instagram a {
+            color: #E4405F;
+        }
+
+        .icon-tiktok a {
+            color: #EE1D51;
+        }
+    }
+
     @media ( min-width: 1200px ) {
         
         .uk-logo img {
@@ -77,6 +93,24 @@
             }
         }
 
+    }
+
+    &.uk-sticky-below {
+        backdrop-filter: saturate(180%) blur(20px);
+        background-color: rgba(#FFF,.8);
+
+        .uk-navbar * {
+            height: 60px;
+        }
+
+        .uk-navbar-nav * {
+            min-height: 60px;
+        }
+
+        .uk-logo img {
+            height: 30px;
+            margin-top: calc( 100% - 42px );
+        }
     }
 
 }

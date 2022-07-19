@@ -23,10 +23,10 @@
         @include sharpText();
 
         h1 {
-            font-family: $face-bold;
-            font-size: clamp(2.5rem, 0rem + 5vw, 5rem);
+            font-family: $passion;
+            font-size: clamp(3rem, 1rem + 5vw, 10rem);
             text-transform: uppercase;
-            line-height: .9;
+            line-height: .8;
             margin-top: 1rem;
         }
 

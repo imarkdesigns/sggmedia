@@ -1,5 +1,5 @@
 <main id="main" class="main" role="main">
-    <div class="uk-container uk-container-xlarge">
+    <div class="uk-container uk-container-xlarge" id="Contents">
         <div class="uk-grid-small" uk-grid>
 
             <div class="uk-width-expand@l">
@@ -23,22 +23,7 @@
             <!-- End Content -->
             </div>
 
-            <div class="uk-width-1-1 uk-width-large@l">
-                <!-- Start Content -->
-                <?php /*
-                <div class="uk-card uk-card-default uk-card-body" data-card="Gtag">
-                    <?php (!function_exists('dynamic_sidebar')) || !dynamic_sidebar('guides_tag') ? null : null ; ?>
-                </div>
-                */ ?>
-
-                <?php 
-
-                    // get_template_part( widget.'news' );
-                    // get_template_part( widget.'instagram' );
-
-                ?>
-                <!-- End Content -->                
-            </div>
+            <div class="uk-width-1-1 uk-width-large@l"></div>
 
         </div>
     </div>
