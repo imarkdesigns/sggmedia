@@ -1,0 +1,94 @@
+[data-globals="menu"] {
+    position: relative;
+    background: #FFF;
+    height: auto;
+    box-shadow: 0 5px 15px rgba(#000, 0.08);
+    z-index: 1020;
+
+    // Sticky
+    .uk-navbar-sticky {
+        height: 60px;
+        
+        .uk-navbar-nav {
+            height: 60px;
+        }
+    }
+
+    // Logo
+    .uk-logo img {
+        width: auto;
+        height: 30px;
+    }
+
+    // Navbar Toggle Icon
+    .uk-navbar-toggle {
+        color: $sgg-green;
+        min-height: 60px;
+        // margin-right: -15px;
+
+        &:focus,
+        &:hover  {
+            color: darken($sgg-green, 5%);
+        }
+    }
+
+    // Menu
+    .uk-navbar-nav {
+        gap: 30px;
+        // margin-right: -15px; /* uncomment this if button "watch video" is removed */
+        height: 80px;
+
+        // Static Menu
+        > li > a {
+            font-family: $face-semi-b;
+            font-size: 12px;
+            color: $sgg-black;
+            height: 100%;
+            // padding-left: 15px;
+            // padding-right: 15px;
+
+            &.uk-open {
+                color: $sgg-green;
+            }
+
+            .uk-icon {
+                position: relative;
+                top: 1px;
+                margin-left: 5px;
+            }
+        }
+
+        // On-Hover
+        > li > a:focus,
+        > li > a:hover {
+            color: $sgg-black;
+            box-shadow: 0 -3px 0 0 $sgg-green inset;
+        }
+
+        > li.current-menu-ancestor > a:not(.uk-button),
+        > li.current-menu-item > a:not(.uk-button) {
+            color: $sgg-green;
+            box-shadow: 0 -3px 0 0 $sgg-green inset;
+        }
+
+        > li:hover > a.uk-button {
+            color: #FFF;
+        }
+    }
+
+    @media ( min-width: 1200px ) {
+        
+        .uk-logo img {
+            width: auto;
+            height: 60px;
+        }
+
+        .uk-navbar-nav {
+            li > a {
+                font-size: 14px;
+            }
+        }
+
+    }
+
+}

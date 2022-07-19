@@ -1,0 +1,15 @@
+<footer data-globals="footer">
+    <section class="footer">
+        <div class="uk-container uk-container-xlarge">
+            <div uk-grid class="uk-flex-between uk-flex-middle uk-light">
+
+                <div class="uk-width-1-1 uk-width-auto@s">
+                    <div class="uk-panel">
+                        <?php echo '&copy; '. date('Y') .' '. get_bloginfo() .'. All Rights Reserved.'; ?>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</footer>

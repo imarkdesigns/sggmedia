@@ -1,0 +1,17 @@
+[data-globals="footer"] {
+
+    section.footer {
+        position: relative;
+        background: #111;
+        font-family: $face-regular;
+        font-size: 12px;
+        text-align: center;
+        padding: 20px 0;
+
+        .uk-flex {
+            justify-content: center;
+        }
+
+    }
+
+} // end
