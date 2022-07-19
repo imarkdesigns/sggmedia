@@ -80,3 +80,46 @@
     }
 
 }
+
+.uk-offcanvas {
+    z-index: 1030;
+}
+
+.uk-offcanvas-bar {
+    background: rgba($sgg-black, 0.95);
+    backdrop-filter: blur(4px);
+    max-width: 370px !important;
+    width: 100%;
+    padding: 40px 25px;
+
+    img {
+        max-width: 113px !important;
+        height: 60px;
+        margin: 15px auto;
+    }
+
+    .uk-nav-mobile {
+        > li > a {
+            font-family: $face-semi-b;
+            color: #FFF;
+            text-transform: uppercase;
+            padding: 15px;
+            border-radius: 3px;
+            transition: background 300ms ease-out;
+            
+            &:focus,
+            &:hover {
+                background: rgba(#FFF, 0.25);
+            }
+        }
+
+        .uk-parent li {
+            padding-left: 15px;
+        }
+
+        .uk-parent li > a {
+            padding: 10px 0;
+        }
+    }
+
+} // end
