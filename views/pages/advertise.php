@@ -192,7 +192,7 @@
     </section>
 
     <?php $imgS8 = get_field( 'slide8_bg' ); ?>
-    <section class="uk-section uk-background-cover uk-background-center-center --slide-eight" data-src="<?php echo $imgS8['url'] ?>" uk-img>
+    <section class="uk-section uk-background-cover uk-background-center-center --slide-eight" data-src="<?php echo $imgS8['url'] ?>" uk-img hidden>
         <div class="uk-container">
 
             <div class="uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="masonry: true">
