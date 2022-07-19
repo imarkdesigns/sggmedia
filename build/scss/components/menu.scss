@@ -12,17 +12,6 @@
         height: 30px;
     }
 
-    // Navbar Toggle Icon
-    .uk-navbar-toggle {
-        color: $sgg-green;
-        min-height: 60px;
-
-        &:focus,
-        &:hover  {
-            color: darken($sgg-green, 5%);
-        }
-    }
-
     // Menu
     .uk-navbar-nav {
         gap: 30px;
@@ -100,25 +89,38 @@
 
     }
 
+    // Navbar Toggle Icon
+    .uk-navbar-toggle {
+        color: $sgg-green;
+        height: 60px;
+
+        &:focus,
+        &:hover  {
+            color: darken($sgg-green, 5%);
+        }
+    }
+
     &.uk-sticky-below {
         backdrop-filter: saturate(180%) blur(20px);
         background-color: rgba(#FFF,.8);
 
-        .uk-navbar * {
+        .uk-navbar {
             height: 60px;
         }
 
-        .uk-navbar-nav * {
-            min-height: 60px;
+        .uk-navbar-nav {
+            height: 60px;
+
+            * { min-height: 60px }
         }
 
         .uk-logo img {
             height: 30px;
-            margin-top: calc( 100% - 42px );
+            // margin-top: calc( 100% - 42px );
         }
 
-        .uk-subnav {
-            margin-top: calc( 60px - 36px );
+        .uk-navbar-toggle {
+            margin-top: -10px;
         }
     }
 
