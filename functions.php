@@ -31,7 +31,7 @@ unset($config);
 define ( '_uri', __( get_template_directory_uri() ) );
 define ( '_css', _uri.'/resources/styles/' );
 define ( '_js', _uri.'/resources/scripts/' );
-define ( '_ui', _uri.'/node_modules/uikit/dist/' );
+define ( '_ui', _uri.'/resources/uikit/' );
 
 define ( '_page', 'views/pages/' );
 define ( '_single', 'views/singles/' );

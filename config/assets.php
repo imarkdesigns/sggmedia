@@ -10,9 +10,9 @@ add_action('wp_enqueue_scripts', function() {
 
     # UIkit version
     # 3.14.3
-    wp_enqueue_style( 'uikit', _ui.'css/uikit.min.css' );
-    wp_enqueue_script( 'uikit', _ui.'js/uikit.min.js', null, null, true );
-    wp_enqueue_script( 'uikit-icon', _ui.'js/uikit-icons.min.js', null, null, true );
+    wp_enqueue_style( 'uikit', _ui.'uikit.min.css' );
+    wp_enqueue_script( 'uikit', _ui.'uikit.min.js', null, null, true );
+    wp_enqueue_script( 'uikit-icon', _ui.'uikit-icons.min.js', null, null, true );
 
     wp_enqueue_style( 'fragments', _css.'fragments.css' );
     wp_enqueue_script( 'router', _js.'router.js', ['jquery'], null, true );
