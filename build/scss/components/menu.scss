@@ -65,19 +65,25 @@
     }
 
     .uk-subnav {
+        gap: 10px;
+        margin-top: calc( 60px - 36px );
         margin-bottom: 0;
 
-        .icon-twitter a {
-            color: #1DA1F2;
+        li {
+            padding: 0;
         }
 
-        .icon-instagram a {
-            color: #E4405F;
+        li > a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $sgg-green;
+            color: #FFF;
+            width: 36px;
+            height: 36px !important;
+            border-radius: 3px;
         }
 
-        .icon-tiktok a {
-            color: #EE1D51;
-        }
     }
 
     @media ( min-width: 1200px ) {
