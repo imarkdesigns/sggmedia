@@ -2,7 +2,7 @@
     <div class="uk-container uk-container-xlarge">
         <div class="uk-grid-small" uk-grid>
 
-            <div class="uk-width-expand@l">
+            <div class="uk-width-1-1@s uk-width-2-3@m">
             <!-- Start Content -->
                 
                 <div class="uk-card uk-card-default uk-card-body" data-card="contact">
