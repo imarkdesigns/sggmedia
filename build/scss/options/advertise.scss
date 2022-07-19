@@ -108,7 +108,7 @@ $sgg-green : #28a750;
             color: $sgg-green;
             text-align: center;
             text-transform: uppercase;
-            text-shadow: 1px 1px 0 rgba(#FFF, 1);
+            // text-shadow: 1px 1px 0 rgba(#FFF, 1);
             line-height: 1;
             margin: 0;
         }
@@ -148,6 +148,7 @@ $sgg-green : #28a750;
 
         img {
             @include size(auto,100px);
+            margin-bottom: 1em;
         }
     }
 
@@ -179,6 +180,10 @@ $sgg-green : #28a750;
 
         div {
             flex: 1 0 calc( 100% / 2 - 10px );
+        }
+
+        figure {
+            margin: 0;
         }
     }
 

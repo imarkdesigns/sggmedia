@@ -1,6 +1,6 @@
 <main id="main" class="main uk-position-relative" role="main">
 
-    <section class="uk-section --slide-one" id="Contents">
+    <section class="uk-section --slide-one" id="Contents" hidden>
     <?php 
 
         $imgSlide1 = get_field( 'slide1_img' );
@@ -273,8 +273,8 @@ const data = {
         data: [
             { x: 'SGG Instagram Influencers (Impressions)', y:3.88 },
             { x: 'SGG Twitter Influencers (Impressions)', y:4.53, },
-            { x: 'SGG Instagram Influencers (Followers)', y:1.08, },
-            { x: 'SGG Twitter Influencers (Followers)', y:1.05, }
+            { x: 'SGG Instagram Influencers (Followers)', y:2.16, },
+            { x: 'SGG Twitter Influencers (Followers)', y:2.10, }
         ],
 
     }]

@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34365",
   "files" : {
+    "\/.gitignore" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/.gitignore",
+      "oF" : 0
+    },
     "\/404.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -340,6 +348,25 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/README.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/README.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
     "\/resources\/fonts\/OpenSans\/OpenSans-Bold.woff" : {
       "cB" : 0,
       "ft" : 8192,
@@ -452,6 +479,58 @@
       "oAP" : "\/resources\/fonts\/PassionOne\/PassionOne-Regular.woff2",
       "oF" : 0
     },
+    "\/resources\/images\/advertise\/full-stack-impressions.jpg" : {
+      "ft" : 16384,
+      "iS" : 79471,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/advertise\/full-stack-impressions.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/advertise\/full-stack-promotions.jpg" : {
+      "ft" : 16384,
+      "iS" : 203797,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/advertise\/full-stack-promotions.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/advertise\/img-influencers-pt1.png" : {
+      "ft" : 32768,
+      "iS" : 9450978,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/advertise\/img-influencers-pt1.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/advertise\/img-influencers-pt2.png" : {
+      "ft" : 32768,
+      "iS" : 5089616,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/advertise\/img-influencers-pt2.png",
+      "oF" : 0,
+      "oIPL" : 1,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/resources\/images\/advertise\/sgg-social-logo.png" : {
       "ft" : 32768,
       "iS" : 38079,
@@ -461,6 +540,19 @@
       "oIPL" : 0,
       "opt" : 0,
       "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/img-sggmedia-header.jpg" : {
+      "ft" : 16384,
+      "iS" : 239699,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/img-sggmedia-header.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75

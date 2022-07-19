@@ -2,17 +2,9 @@
     position: relative;
     background: #FFF;
     height: auto;
-    box-shadow: 0 5px 15px rgba(#000, 0.08);
+    padding-inline: 2em;
+    box-sizing: border-box;
     z-index: 1020;
-
-    // Sticky
-    .uk-navbar-sticky {
-        height: 60px;
-        
-        .uk-navbar-nav {
-            height: 60px;
-        }
-    }
 
     // Logo
     .uk-logo img {
@@ -24,7 +16,6 @@
     .uk-navbar-toggle {
         color: $sgg-green;
         min-height: 60px;
-        // margin-right: -15px;
 
         &:focus,
         &:hover  {
@@ -35,7 +26,6 @@
     // Menu
     .uk-navbar-nav {
         gap: 30px;
-        // margin-right: -15px; /* uncomment this if button "watch video" is removed */
         height: 80px;
 
         // Static Menu
@@ -44,8 +34,6 @@
             font-size: 12px;
             color: $sgg-black;
             height: 100%;
-            // padding-left: 15px;
-            // padding-right: 15px;
 
             &.uk-open {
                 color: $sgg-green;

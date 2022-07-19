@@ -4,8 +4,9 @@
     switch ( $post->ID ) {
 
         // Pages
-        case '56':   $pageName = 'careers'; break;
-        case '58':   $pageName = 'press'; break;
+        case '56':    $pageName = 'careers'; break;
+        case '58':    $pageName = 'press'; break;
+        case '108':   $pageName = 'contact'; break;
 
         default:
             $pageName = 'advertise';

@@ -14,8 +14,6 @@
             <!-- End Content -->
             </div>
 
-            <div class="uk-width-1-1 uk-width-large@l"></div>
-
         </div>
     </div>
 </main>

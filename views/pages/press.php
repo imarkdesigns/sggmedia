@@ -7,9 +7,6 @@
                     <?php the_content(); ?>
                 </div>
             </div>
-            <div class="uk-width-1-1 uk-width-large@l">
-                <?php // get_sidebar(); ?>
-            </div>
         </div>
     </div>
 </main>
