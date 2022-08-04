@@ -12,7 +12,7 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
                 <?php echo '<img src="'. $logo[0] .'" alt="'. get_bloginfo() .'">'; ?>
             </a>
         </div>
-        <div class="uk-navbar-center">
+        <div class="uk-navbar-center" hidden>
             <ul class="uk-subnav">
                 <li class="icon-twitter"><a href="https://twitter.com/SGG_HQ" target="_blank"> <span uk-icon="icon: twitter"></span> </a></li>
                 <li class="icon-instagram"><a href="https://www.instagram.com/sgg_hq/" target="_blank"> <span uk-icon="icon: instagram"></span> </a></li>
@@ -22,8 +22,11 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
         <div class="uk-navbar-right">
             <ul class="uk-navbar-nav uk-visible@l">
                 <li><a href="<?php echo esc_url( home_url() ); ?>">Home</a></li>
-                <li><a href="<?php echo esc_url( get_permalink( 58 ) ); ?>">SGG Press Releases</a></li>
-                <li><a href="<?php echo esc_url( get_permalink( 56 ) ); ?>">Careers</a></li>
+                <li><a uk-scroll href="<?php echo '#who-we-are'; ?>">Who We Are</a></li>
+                <li><a uk-scroll href="<?php echo '#what-we-do'; ?>">What We Do</a></li>
+                <li><a uk-scroll href="<?php echo '#partners'; ?>">Partners & Ad Samples</a></li>
+                <li><a href="<?php echo esc_url( get_permalink( 124 ) ); ?>">Our Team</a></li>
+                <li><a href="<?php echo esc_url( get_permalink( 58 ) ); ?>">Press</a></li>
                 <li><a href="<?php echo esc_url( get_permalink( 108 ) ); ?>">Contact Us</a></li>
             </ul>
             <button type="button" role="button" class="uk-navbar-toggle uk-hidden@l" uk-navbar-toggle-icon uk-toggle="target: #mobile"></button>

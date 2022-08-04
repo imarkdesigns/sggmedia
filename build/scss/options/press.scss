@@ -1,13 +1,26 @@
-[data-card="content"] {
+.press-release {
 
-    p > em,
-    p > i {
-        font-family: $face-regular-i;
-        font-style: italic;
+    .uk-card {;
+
+        .uk-card-media-top {
+            margin-top: 1.5em;
+            border-radius: 3px;
+        }
+
+        .uk-card-title {
+            font-family: $face-bold;
+            font-size: 1.125rem;
+            line-height: 1.2;
+        }
+
+        .uk-card-footer a {
+            color: #000;
+            text-decoration: none;
+        }
+
     }
 
-    p > a {
-        color: $sgg-green;
-    }
 
-} // end
+
+
+}

@@ -5,11 +5,11 @@
 
     position: relative;
     // background-image: url(#{$img}/img-sggmedia-header.jpg);
-    background-size: auto 834px;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 834px;
+    height: calc( 100vh - (80px + 85px) );
     min-height: 663px;
     padding: 2em;
     box-sizing: border-box;
@@ -20,7 +20,6 @@
 
     .hero-container {
         margin: 0;
-        @include sharpText();
 
         h1 {
             font-family: $passion;
@@ -28,31 +27,108 @@
             text-transform: uppercase;
             line-height: .8;
             margin-top: 1rem;
+            @include sharpText();
         }
 
         h2 {
             font-family: $face-bold;
-            font-size: clamp(1.125rem, 0.375rem + 1.875vw, 2rem);
+            font-size: clamp(1.313rem, 0.375rem + 1.875vw, 2rem);
             text-transform: uppercase;
             line-height: 1;
             margin-block: .5em;
+            @include sharpText();
         }
 
         p {
-            font-family: $face-semi-b;
-            font-size: clamp(1rem, 0.75rem + 0.625vw, 1.125rem);
+            font-family: $face-light;
+            font-size: clamp(1.125rem, 0.75rem + 0.625vw, 1.313rem);
             color: #FFF;
             line-height: 1.2;
-            margin: 0;
+            margin-top: 15px;
         }
     }
+
+    @media only screen and ( min-width: 640px ) {
+        height: calc( 100vh - (80px + 62px) );
+    }
+
 } // end
 
 [data-hero="page"] {
     position: relative;
-    background: #FFF;
-    height: 550px;
-    z-index: 1010;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: calc( 100vh - 80px );
+    min-height: 663px;
+    padding: 2em;
+    box-sizing: border-box;
 
+    .uk-overlay-primary {
+        background-color: rgba(#000,.35);
+    }
+
+    h1 {
+        font-family: $passion;
+        font-size: clamp(3rem, 1rem + 5vw, 10rem);
+        text-transform: uppercase;
+        line-height: .8;
+
+        small {
+            display: block;
+            font-family: $face-regular;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+    }
 
 } // end
+
+.tagline {
+    background: $sgg-green;
+
+    .uk-h3 {
+        font-family: $passion;
+        font-size: 2rem;
+        color: #FFF;
+        text-transform: uppercase;
+        text-shadow: 0 2px 2px rgba(#000, .15);
+        line-height: 1;
+        @include sharpText();
+    }
+}
+
+.ticker {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0;
+
+    max-width: 1920px;
+    margin-inline: auto;
+
+    > div {
+        flex: 0 1 100%;
+    }
+
+    .uk-card {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0;
+
+        .uk-card-title {
+            font-family: $passion;
+            font-size: clamp(0.875rem, 0.375rem + 1.875vw, 2rem);
+            text-transform: uppercase;
+        }
+    }
+
+    @media only screen and ( min-width: 640px ) {
+
+        > div {
+            flex: 1 1 auto;
+        }
+
+    }
+
+}

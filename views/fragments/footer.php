@@ -1,6 +1,6 @@
 <footer data-globals="footer">
     <section class="footer">
-        <div class="uk-container uk-container-xlarge">
+        <div class="uk-container">
             <div uk-grid class="uk-flex-between uk-flex-middle uk-light">
 
                 <div class="uk-width-1-1 uk-width-auto@s">

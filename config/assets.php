@@ -31,7 +31,7 @@ add_action('wp_enqueue_scripts', function() {
         switch ( $post->ID ) {
 
             case '2':   // Advertise
-            case '56':  // Careers Opportunity
+            case '124': // Team
             case '58':  // Press Releases
             case '108': // Contact
                 $pageName = 'main';

@@ -1,102 +1,43 @@
 <main id="main" class="main uk-position-relative" role="main">
 
-    <section class="uk-section --slide-one" id="Contents" hidden>
-    <?php 
-
-        $imgSlide1 = get_field( 'slide1_img' );
-        $contentSlide1 = get_field( 'slide1_content' );
-
-        ?>
+    <section class="uk-section | introduction">
         <div class="uk-container">
-            <div class="uk-grid-small" uk-grid>
-                <div class="uk-width-auto@m -handheld-phone">
-                    <?php echo wp_get_attachment_image( $imgSlide1['id'], [ 390, 550, true ], '', [ 'class' => 'handheld-cp' ] ); ?>
+            <div class="uk-grid-match" uk-grid>
+                <div class="uk-width-1-2@m">
+                    <div class="uk-card uk-card-small">
+                        <div class="uk-card-body">
+                            <div class="uk-card-title">What's Now</div>
+                            <p>SGG Media represents the growing $13 Billion Influencer Economy (2021) in a unique way – via "Micro Sports Influencers". Our network of Sports Content Creators is comprised of avid, engaged, sports fans that follow their specific sport, league, or team via social media. SGG Media social media posting are highly targeted to provide the sports content, and advertisements that resonate with a specific sports or sports team's demographic audience.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="uk-width-expand@m -content">
-                    <div class="uk-panel">
-                        
-                        <figure>
-                            <span>Advertise With</span>
-                            <img src="<?php echo _uri.'/resources/images/advertise/sgg-social-logo.png'; ?>" alt="Sports Gambling Guides">
-                        </figure>
-
-                        <article>
-                            <?php echo $contentSlide1; ?>
-                        </article>
-
+                <div class="uk-width-1-2@m">
+                    <div class="uk-card uk-card-small">
+                        <div class="uk-card-body">
+                            <div class="uk-card-title">What's Next</div>
+                            <p>SGG Media is rapidly growing our data base of Content Creator / Influencers and sports fans daily. If you are a sports content creator – contact SGG to join the elite team of SGG sports influencers. If you want to reach an audience of 25+ million sports fans (ages 21 to 41) at the lowest possible ad-spend rates – contact SGG Media.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-1">
+                    <div class="uk-card uk-card-small">
+                        <div class="uk-card-body">
+                            <div class="uk-card-title">What's Possible</div>
+                            <p>SGG Media is the "go to source" for all sports and sports gambling related social media. The younger generation of sports fans are "dual- screening" while watching sports on T.V. - creating their own sports eco system. Fans no longer want to be just spectators for sporting events, they wish to be part of the narrative. Today's younger fans are getting their sports information exclusively on social media platforms like TikTok, Twitter, Instagram, and podcasts, not in the newspaper or radio talk shows. If companies are to thrive in this new environment, they must adapt to these new norms or risk fading into obscurity.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="uk-section uk-section-secondary --slide-two">
-    <?php 
-
-        $imgSlide2 = get_field( 'slide2_bg' );
-        $contentSlide2 = get_field( 'slide2_content' );
-
-        ?>        
-
-            <div class="uk-child-width-1-2@m uk-grid-collapse" uk-grid>
-                <article class="uk-article">
-                    <?php echo $contentSlide2; ?>
-                </article>                
-                <figure>
-                    <?php echo wp_get_attachment_image( $imgSlide2['id'], 'full' ); ?>
-                </figure>                
-            </div>
-    </section>
-
-    <section class="uk-section --slide-three">
+    <section class="uk-section uk-section-muted | influencers-graph">
         <div class="uk-container">
-            
-            <h2><?php the_field( 'slide3_heading' ); ?></h2>
-            <div class="uk-child-width-1-3@m uk-flex-center uk-text-center" uk-grid>
-            <?php while ( have_rows( 'slide3_multi_content' ) ) : the_row(); 
-
-                $imgSlide3 = get_sub_field( 'slide_imacon' );
-
-                ?>
-                <div>
-                    <figure class="uk-panel">
-                        <?php echo wp_get_attachment_image( $imgSlide3['id'], 'full' ); ?>
-                        <h3><?php the_sub_field( 'slide_title' ); ?></h3>
-                        <p><?php the_sub_field( 'slide_content' ); ?></p>
-                    </figure>
-                </div>
-                <?php endwhile; ?>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="uk-section uk-section-secondary --slide-four">
-        <div class="uk-container">
-
-            <h2><?php the_field( 'slide4_heading' ); ?></h2>
-            <div class="grid-wrapper">
-            <?php $partners = get_field( 'slide4_customers' );
-                foreach ( $partners as $partner ) : ?>
-                <div>
-                    <figure>
-                        <?php echo wp_get_attachment_image( $partner['id'], 'full' ); ?>
-                    </figure>
-                </div>
-                <?php endforeach; ?>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="uk-section --slide-five">
-        <div class="uk-container">
-
-            <div uk-grid>
+            <div class="uk-grid-divider" uk-grid>
                 <div class="uk-width-2-3@m">
                     <div class="uk-panel">
-                        <h1><?php the_field( 'slide5_heading_pt1' ); ?></h1>
-                        <p><?php the_field( 'slide5_subheading_pt1' ); ?></p>
+                        <h2>The Most Cost Effective Sports Advertising</h2>
+                        <p>Advertising Cost Per 1000 Impressions (CPM)</p>
                         <div class="chart-container">
                             <canvas id="myChart"></canvas>
                         </div>
@@ -104,129 +45,160 @@
                 </div>
                 <div class="uk-width-1-3@m">
                     <div class="uk-panel">
-                        <h1><?php the_field( 'slide5_heading_pt2' ); ?></h1>
+                        <h2>Find Out More!</h2>
 
-                        <?php while ( have_rows( 'slide5_multi_content' ) ) : the_row(); 
-
-                            $imgMC = get_sub_field( 'slide_imacon' );
-                            $titleMC = get_sub_field( 'slide_title' );
-                            $contentMC = get_sub_field( 'slide_content' );
-
-                            switch ( get_row_index() ) {
-                                case '1':
-                                    $href = '#modal-audience';
-                                    break;
-
-                                case '2':
-                                    $href = '#modal-promotions';
-                                    break;
-                            }
-
-                        ?>
-                        <div class="uk-card uk-grid-collapse uk-flex-top" uk-grid>
-                            <div class="uk-width-auto uk-card-media-left">
-                                <?php echo wp_get_attachment_image( $imgMC['id'], 'full' ); ?>
+                        <div class="uk-flex uk-flex-column uk-margin-medium-top">
+                            <div class="uk-card uk-grid-collapse uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto uk-card-media-left">
+                                    <img src="https://staging-sggmedia.kinsta.cloud/wp-content/uploads/2022/07/img-audience.png" alt="Audience">
+                                </div>
+                                <div class="uk-width-expand">
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">Audience</h3>
+                                        See how our database will help you reach the most targeted sports fans.
+                                        <a href="#modal-audience" uk-toggle>Learn More</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="uk-width-expand">
-                                <div class="uk-card-body">
-                                    <h3 class="uk-card-title"><?php echo $titleMC; ?></h3>
-                                    <p><?php echo $contentMC; ?> <a href="<?php echo $href; ?>" uk-toggle="">Learn More</a></p>
+
+                            <div class="uk-card uk-grid-collapse uk-flex-middle" uk-grid>
+                                <div class="uk-width-auto uk-card-media-left">
+                                    <img src="https://sportsgamblingguides.com/wp-content/uploads/2022/04/img-promotions.png" alt="Audience">
+                                </div>
+                                <div class="uk-width-expand">
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title">Promotions</h3>
+                                        See examples of past promotions along with the results behind them.
+                                        <a href="#modal-promotions" uk-toggle>Learn More</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <?php endwhile; ?>
+
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <section class="uk-section --slide-six">
+    <section class="uk-section | behind-sgg">
+            
+        <article id="who-we-are" class="uk-grid-collapse uk-grid-match uk-flex-middle | who-we-are" uk-grid>
+            <div class="uk-width-1-2@m uk-width-2-3@l">
+                <div class="uk-cover-container">
+                    <img src="<?php echo _uri.'/resources/images/advertise/sgg-who-we-are.jpg' ?>" alt="" uk-cover>
+                </div>
+            </div>
+            <div class="uk-width-1-2@m uk-width-1-3@l">
+                <div class="uk-panel">
+                    <h2>Who We Are</h2>
+                    <p>SGG Media ("SGG") is a sports social media company, featuring over 1,000 sports Content Creator / Influencers with over 25 million avid sports Followers. SGG handles social media branding, advertising and customer acquisitions for the nation's largest sports and sports gaming firms including DraftKings, FanDuel, Fanatics, Prize Picks, Fliff and others.</p>
+                </div>
+            </div>
+        </article>
+
+        <article id="what-we-do" class="uk-grid-collapse uk-grid-match uk-flex-middle | what-we-do" uk-grid>
+            <div class="uk-width-1-2@m uk-width-2-3@l">
+                <div class="uk-cover-container">
+                    <img src="<?php echo _uri.'/resources/images/advertise/sgg-what-we-do.jpg' ?>" alt="" uk-cover>
+                </div>
+            </div>            
+            <div class="uk-width-1-2@m uk-width-1-3@l uk-flex-last uk-flex-first@m">
+                <div class="uk-panel">
+                    <h2>What We Do</h2>
+                    <p>SGG Media captures the niche of social media sports culture. Our 25+ million sports fans follow SGG Media's 1,000+ Sports Content Creators hourly for real time sports content on all the game action, trades, highlights, and legal sports betting information. We also provide "Highly Targeted" marketing – our advertisers can cost effectively target just one state, just one sport, or even just one team. SGG offers advertising partners the most cost-effective way to reach the new younger generation (21-41) of sports fans receiving their sports information solely from social media. SGG Media has created a community of sports lovers, just like us.</p>
+                </div>
+            </div>          
+        </article>
+
+    </section>
+
+    <section class="uk-section uk-section-secondary | partners ">
         <div class="uk-container">
             
-            <article class="uk-article uk-text-center uk-width-xlarge">
-                <?php the_field( 'slide6_content' ); ?>
-            </article>
+            <h2>Existing Advertising Partners</h2>
+            <div id="partners" class="grid-wrapper">
+            <?php $imgs = ['betmgm', 'draftkings', 'fanduel', 'fliff', 'pointsbet', 'prizepicks', 'unibet', 'fanatics'];
 
-            <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-small uk-grid-match uk-flex-center uk-flex-middle" uk-grid>
-                <?php $instagram = get_field( 'slide6_instagram' );
+                $modals = [
+                    [],
+                    [ 'dk-sample-ads01', 'dk-sample-ads02' ],
+                    [ 'fd-sample-ads01', 'fd-sample-ads02' ],
+                    [],
+                    [],
+                    [ 'pp-sample-ads01', 'pp-sample-ads02' ],
+                    [],
+                    [ 'fanatics-sample-ads01', 'fanatics-sample-ads02' ]
+                ];
 
-                foreach ( $instagram as $ig ) : ?>
-                <div>
-                    <div class="uk-panel uk-text-center">
-                        <?php echo wp_get_attachment_image( $ig['id'], 'full' ); ?>
+                for ($n=0;$n<count($imgs);$n++) : ?>
+                <figure class="uk-card uk-card-secondary">
+                <?php
+
+                    if ( !empty($modals[$n]) ) : ?>
+                    <div class="uk-card-badge uk-label uk-link-reset">
+                        <button type="button" title="View Example Advertising Examples" uk-toggle="target: #ads-<?php echo $imgs[$n]; ?>">View Ad Sample</button>
+                    </div>
+                    <?php endif; ?>
+                    <div class="uk-card-media-top">
+                        <img src="<?php echo _uri.'/resources/images/partners/'.$imgs[$n].'.jpg'; ?>" alt="<?php echo $imgs[$n]; ?>">
+                    </div>
+                </figure>
+
+                <?php if ( !empty($modals[$n]) ) : ?>
+                <div id="ads-<?php echo $imgs[$n]; ?>" class="uk-flex-top | sample-ads" uk-modal>
+                    <div class="uk-modal-dialog uk-margin-auto-vertical uk-text-center">
+                        <button class="uk-modal-close-default" type="button" uk-close aria-label="Close Modal"></button>
+
+                        <h2> <?php echo $imgs[$n]; ?> <small>Advertising Example</small> </h2>
+
+                        <div class="uk-child-width-1-2@m uk-grid-small uk-flex-top" uk-grid>
+                            <?php for ($i=0;$i<2;$i++) : ?>
+                            <div>
+                                <figure>
+                                    <img src="<?php echo _uri.'/resources/images/partners/'.$imgs[$n].'/'.$modals[$n][$i].'.jpg' ?>" alt="<?php echo $imgs[$n]; ?>">
+                                </figure>
+                            </div>
+                            <?php endfor; ?>
+                        </div>
+
                     </div>
                 </div>
-                <?php endforeach; ?>
+                <?php
+                endif; // End Modal
+
+            endfor; // End Loop ?>
             </div>
 
         </div>
     </section>
 
-    <?php $imgS7 = get_field( 'slide7_bg' ); ?>
-    <section class="uk-section uk-background-cover uk-background-center-left --slide-seven" data-src="<?php echo $imgS7['url'] ?>" uk-img>
-        <div class="uk-container">
+    <section class="uk-section uk-padding-remove-vertical | colophon">
+        
+        <div class="uk-container uk-container-expand uk-padding-remove | contact-info">
+            <article class="uk-article uk-width-xlarge uk-padding-large uk-light">
+                <img src="<?php echo _uri.'/resources/images/logo-sgg-media-white.png'; ?>" alt="SGG Logo - Alt">
+                <p class="uk-text-lead">Social Media Sports Marketing</p>
+                <p>Cost effective highly targeted exposure to millions of fans for 25% the cost</p>
+                <p>#1 Social Media advertising company in sports gambling</p>
 
-            <figure class="img-headings">
-                <?php $s7Headings = get_field( 'slide7_img_heading' ); 
-                echo wp_get_attachment_image( $s7Headings['id'], 'full' );  ?>
-            </figure>
-
-            <figure class="img-map">
-                <?php $s7Map = get_field( 'slide7_img_map' ); 
-                echo wp_get_attachment_image( $s7Map['id'], 'full' );  ?>
-
-                <ul class="uk-subnav">
-                    <?php while ( have_rows( 'slide7_maplegends' ) ) : the_row(); ?>
-                    <li><span><?php the_sub_field( 'map_color_label' ); ?></span></li>
-                    <?php endwhile; ?>
-                </ul>
-            </figure>
-
-            <article class="uk-article">
-                <?php the_field( 'slide7_content' ); ?>
+                <address>
+                    <p><strong>Contact</strong></p>
+                    <p>Troy Paul, President <span class="uk-text-meta">tpaul@sportsgamblingguides.com <br> 310.739.4185</span></p>
+                    <p>Mark Paul, CEO <span class="uk-text-meta">mpaul@sportsgamblingguides.com <br> 310.738.8330</span></p>
+                </address>
             </article>
-
         </div>
-    </section>
 
-    <?php $imgS8 = get_field( 'slide8_bg' ); ?>
-    <section class="uk-section uk-background-cover uk-background-center-center --slide-eight" data-src="<?php echo $imgS8['url'] ?>" uk-img hidden>
-        <div class="uk-container">
-
-            <div class="uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="masonry: true">
-                <?php $slideNews = get_field( 'slide8_news' );
-                foreach ( $slideNews as $news ) : ?>
-                <div>
-                    <figure class="uk-text-center"> <?php echo wp_get_attachment_image( $news['id'], 'full', '', [ 'class' => 'uk-box-shadow-large uk-border-rounded' ] ); ?> </figure>
-                </div>
-                <?php endforeach; ?>
+        <div class="uk-container uk-container-expand uk-position-relative uk-height-medium | contact-info-link">
+            <div class="uk-overlay uk-position-center uk-text-center">
+                <h2>Interested In Partnering?</h2>
+                <a href="#" class="uk-button uk-button-primary uk-button-large">Contact Us</a>
             </div>
-
         </div>
+
     </section>
 
-    <?php $imgS9 = get_field( 'slide9_bg' ); ?>
-    <section class="uk-section uk-section-secondary uk-background-cover uk-background-center-center --slide-nine" data-src="<?php echo $imgS9['url'] ?>" uk-img>
-        <div class="uk-container">
-            
-            <div class="uk-width-large">
-                <?php the_field( 'slide9_content' ); ?>
-            </div>
-
-        </div>
-    </section>
-
-    <?php $imgRouter = get_field( 'slide10_bg' ); ?>
-    <section class="uk-section uk-height-medium uk-background-cover uk-background-center-center --router" data-src="<?php echo $imgRouter['url'] ?>" uk-img>
-        <div class="uk-container uk-text-center">
-
-            <h1><?php the_field( 'slide10_heading' ); ?></h1>
-            <a href="<?php the_field( 'slide10_link' ); ?>" class="uk-button uk-button-large uk-button-primary">Contact Us</a>
-
-        </div>
-    </section>
 </main>
 
 <!-- Modals -->

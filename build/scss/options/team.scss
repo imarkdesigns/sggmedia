@@ -1,0 +1,177 @@
+.executive-team,
+.marketing-team,
+.other-team {
+
+    .uk-headings {
+        text-align: center;
+        margin: 0 auto 30px;
+
+        small {
+            font-family: $face-semi-b;
+            font-size: .875rem;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-family: $passion;
+            font-size: 3rem;
+            color: #000;
+            text-transform: uppercase;
+            line-height: .8;
+        }
+    }
+
+    .uk-card {
+        max-width: 300px;
+        margin-inline: auto;
+        border-radius: 3px;
+
+        .uk-card-media-top {
+            padding: 1.5em;
+        }
+
+        .uk-card-media-top img {
+            border: 1px solid darken($sgg-green,15%);
+            border-radius: 3px;
+        }
+
+        .uk-card-body {
+            min-height: 75px;
+            padding-block: 0;
+        }
+
+        .uk-card-body h3,
+        .uk-card-body p {
+            margin: 0;
+            @include sharpText();
+        }
+
+        .uk-card-body h3 {
+            font-family: $passion;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .uk-card-footer {
+            position: relative;
+            border-top: 0;
+
+            &::before {
+                content: '';
+                position: relative;
+                top: -10px;
+                display: block;
+                max-width: 200px;
+                width: 100%;
+                margin: auto;
+                border-top: 1px solid rgba(#EEE,.5);
+            }
+
+            button {
+                background-color: transparent;
+                font-family: $face-semi-b;
+                font-size: .875rem;
+                text-transform: uppercase;
+                padding: 0;
+                border: 0;
+            }
+        }
+    }
+
+    .uk-card-primary {
+        background-color: rgba($sgg-green,1);
+
+        * {
+            color: rgba(#FFF,.8);
+        }
+    }
+
+    .uk-card-secondary {
+        .uk-card-body {
+            padding-block: .25em 1.25em;
+        }
+    }
+
+    .uk-card-default {
+        .uk-card-body {
+            padding-block: .25em 1.25em;
+        }
+    }
+
+}
+
+.other-team {
+
+    .uk-headings {
+
+        margin-top: 30px;
+
+        &.-first {
+            margin-top: 0;
+        }
+
+    }
+
+    .uk-card {
+        max-width: 200px;
+    
+        .uk-card-body {
+            min-height: 1%;
+            padding: 0 0 1.5em;
+        }
+
+        .uk-card-body h3 {
+            font-family: $passion;
+            font-size: 1.125rem;
+            text-transform: uppercase;
+        }
+    }
+
+}
+
+.biography {
+    z-index: 100001;
+
+    .uk-modal-dialog {
+        font-size: .875rem;
+        padding: 2em;
+        border-radius: 5px;
+    }
+
+    figure {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 17px auto auto 17px;
+            display: block;
+            background-color: $sgg-green;
+            @include size(150px);
+            border-radius: 3px;
+            z-index: 0;
+        }
+
+        img {
+            position: relative;
+            box-shadow: 5px 5px 0 2px rgba(#CCC,.5);
+            border-radius: 3px;
+            z-index: 1;
+        }
+
+    }
+
+    .uk-h3 {
+        font-family: $passion;
+        font-size: 2rem;
+        color: #000;
+        text-transform: uppercase;
+        line-height: 1;
+        margin: 0;
+
+        + p {
+            margin: 0;
+        }
+    }
+
+}
