@@ -6,7 +6,7 @@ $bgContent = get_field( 'bg_content', 'option' );
 if ( is_front_page() ) : ?>
 
 <aside class="uk-margin-remove uk-text-center | tagline" uk-alert> <span class="uk-h3">SGG Media - A Division of Sports Gambling Guides, Inc.</span> </aside>
-<header class="hero" data-hero="home" data-src="<?php echo $bgHdr['url']; ?>" uk-img>
+<header class="hero" data-hero="home" data-src="<?php echo _uri.'/resources/images/img-sggmedia-header.jpg'; ?>" uk-img>
     <div class="uk-width-1-1@s uk-width-2-3@m uk-light uk-position-z-index | hero-container" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 300">
         <?php echo $bgContent; ?>
     </div>
