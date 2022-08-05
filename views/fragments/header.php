@@ -41,12 +41,14 @@ switch ( $post->ID ) {
 </header>
 
 <?php endif; ?>
-<aside class="uk-background-muted | ticker">
+<aside class="uk-background-muted uk-grid-collapse uk-grid-match uk-flex-middle | ticker" uk-grid uk-height-match="target: > div > .uk-card">
     <div>
-        <div class="uk-card uk-card-secondary">
+        <div class="uk-card uk-card-secondary | followers">
             <div class="uk-card-body">
                 <div class="uk-card-title">Social Media Followers</div>
-                24,710,369
+                <span data-smf="24710369">
+                    <div id="total-followers">24,710,369</div>
+                </span>
             </div>
         </div>
     </div>
@@ -61,7 +63,7 @@ switch ( $post->ID ) {
     <div>
         <div class="uk-card uk-card-secondary">
             <div class="uk-card-body">
-                <div class="uk-card-title">Monthly Impressions</div>
+                <div class="uk-card-title"><small>Impressions Over the</small> Last 30 Days</div>
                 10,000,000
             </div>
         </div>

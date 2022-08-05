@@ -10,20 +10,47 @@
         });
         jQuery('#skipToLink').trigger('click');
 
-        var reSmooth = /^#sgg/;
+        var reSmooth = /^#sgg-/;
         var id;
         if ( reSmooth.test(location.hash) ) {
             id = '#' + location.hash.replace(reSmooth, '');
             jQuery.smoothScroll({
                 scrollTarget: id,
-                offset: -15,
-                speed: 500
+                offset: -70,
+                speed: 1000
             });
         }
 
     });
 
+
+    // jQuery(window).on('load', function() {
+
+    //     var number = jQuery('.followers span:first').data("smf");
+    //     // var str = number.toString().split(".");
+    //     // str[0] = str[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    //     // var follower = str.join(".");
+
+
+    //     // Called the function in each second
+    //     var interval = setInterval(function() {
+    //         var counter = number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
+    //         jQuery('#total-followers').text(counter++);
+
+
+    //         if (number > 100000000) {
+    //             clearInterval(interval);
+    //         }
+    //     }, 3000);
+
+    // });
+
+
+
+
 })(jQuery);
+
 
 
 // The basic check of site fully loaded

@@ -105,6 +105,8 @@
     &.uk-sticky-below {
         backdrop-filter: saturate(180%) blur(20px);
         background-color: rgba(#FFF,.8);
+        left: 50%;
+        transform: translateX(-50%);
 
         .uk-navbar {
             height: 60px;
