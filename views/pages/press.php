@@ -37,7 +37,7 @@
                             <div class="uk-card-title"><?php echo $title[$n]; ?></div>
                         </div>
                         <div class="uk-card-footer">
-                            <a href="<?php echo $link[$n]; ?>" target="_blank">Click here to Read</a>
+                            <a href="<?php echo $links[$n]; ?>" target="_blank">Click here to Read</a>
                         </div>
                     </div>
                 </div>
