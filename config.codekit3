@@ -600,9 +600,22 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/resources\/images\/advertise\/sgg-what-we-do.jpg" : {
+    "\/resources\/images\/advertise\/sgg-what-we-do-4.jpg" : {
       "ft" : 16384,
       "iS" : 321067,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/advertise\/sgg-what-we-do-4.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/advertise\/sgg-what-we-do.jpg" : {
+      "ft" : 16384,
+      "iS" : 751808,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/resources\/images\/advertise\/sgg-what-we-do.jpg",
