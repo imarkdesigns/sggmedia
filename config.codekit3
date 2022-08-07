@@ -639,6 +639,17 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/resources\/images\/header-splash.webp" : {
+      "ft" : 8388608,
+      "iS" : 261564,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/header-splash.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
     "\/resources\/images\/img-sggmedia-header-1.jpg" : {
       "ft" : 16384,
       "iS" : 239699,

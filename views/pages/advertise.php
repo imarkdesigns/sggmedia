@@ -34,8 +34,8 @@
     <section class="uk-section uk-section-muted | influencers-graph">
         <div class="uk-container">
             <div class="uk-grid-divider" uk-grid>
-                <div class="uk-width-2-3@m">
-                    <div class="uk-panel">
+                <div class="uk-width-expand">
+                    <div class="uk-panel uk-text-center">
                         <h2>The Most Cost Effective Sports Advertising</h2>
                         <p>Advertising Cost Per 1000 Impressions (CPM)</p>
                         <div class="chart-container">
@@ -43,7 +43,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="uk-width-1-3@m">
+                <?php /*
+                <div class="uk-width-1-3@m" hidden>
                     <div class="uk-panel">
                         <h2>Find Out More!</h2>
 
@@ -77,6 +78,7 @@
 
                     </div>
                 </div>
+                */ ?>
             </div>
         </div>
     </section>
@@ -204,7 +206,7 @@
 <!-- Modals -->
 <div id="modal-audience" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
-        <button class="uk-modal-close-outside" type="button" uk-close></button>
+        <button class="uk-modal-close-outside" type="button" uk-close aria-label="Close Modal"></button>
         <img src="<?php echo _uri.'/resources/images/advertise/img-influencers-pt1.png'; ?>" alt="Influencers">
         <img src="<?php echo _uri.'/resources/images/advertise/img-influencers-pt2.png'; ?>" alt="Influencers">
     </div>
@@ -212,7 +214,7 @@
 
 <div id="modal-promotions" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical uk-text-center" style="background-color:#000;">
-        <button class="uk-modal-close-outside" type="button" uk-close></button>
+        <button class="uk-modal-close-outside" type="button" uk-close aria-label="Close Modal"></button>
         <img src="<?php echo _uri.'/resources/images/advertise/full-stack-promotions.jpg'; ?>" alt="Promotions - Full">
         <img src="<?php echo _uri.'/resources/images/advertise/full-stack-impressions.jpg'; ?>" alt="Impressions - Full">
     </div>

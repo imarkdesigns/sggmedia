@@ -14,9 +14,9 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
         </div>
         <div class="uk-navbar-center" hidden>
             <ul class="uk-subnav">
-                <li class="icon-twitter"><a href="https://twitter.com/SGG_HQ" target="_blank"> <span uk-icon="icon: twitter"></span> </a></li>
-                <li class="icon-instagram"><a href="https://www.instagram.com/sgg_hq/" target="_blank"> <span uk-icon="icon: instagram"></span> </a></li>
-                <li class="icon-tiktok"><a href="https://www.tiktok.com/@sgghq" target="_blank"> <span uk-icon="icon: tiktok"></span> </a></li>
+                <li class="icon-twitter"><a href="https://twitter.com/SGG_HQ" target="_blank" aria-label="Twitter"> <span uk-icon="icon: twitter"></span> </a></li>
+                <li class="icon-instagram"><a href="https://www.instagram.com/sgg_hq/" target="_blank" aria-label="Instagram"> <span uk-icon="icon: instagram"></span> </a></li>
+                <li class="icon-tiktok"><a href="https://www.tiktok.com/@sgghq" target="_blank" aria-label="TikTok"> <span uk-icon="icon: tiktok"></span> </a></li>
             </ul>
         </div>
         <div class="uk-navbar-right">
@@ -35,7 +35,7 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
                 <li><a href="<?php echo esc_url( get_permalink( 58 ) ); ?>">Press</a></li>
                 <li><a href="<?php echo esc_url( get_permalink( 108 ) ); ?>">Contact Us</a></li>
             </ul>
-            <button type="button" role="button" class="uk-navbar-toggle uk-hidden@l" uk-navbar-toggle-icon uk-toggle="target: #mobile"></button>
+            <button type="button" role="button" class="uk-navbar-toggle uk-hidden@l" uk-navbar-toggle-icon uk-toggle="target: #mobile" aria-label="Toggle Mobile Menu"></button>
         </div>
     </nav>
 

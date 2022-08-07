@@ -35,7 +35,7 @@ switch ( $post->ID ) {
 
 <header class="hero" data-hero="page" data-src="<?php echo $hdrImg; ?>" uk-img>
     <div class="uk-overlay-primary uk-position-cover"></div>
-    <div class="uk-overlay uk-position-center uk-light" uk-scrollspy="target: > h1; cls: uk-animation-fade; delay: 300">
+    <div class="uk-overlay uk-position-center" uk-scrollspy="target: > h1; cls: uk-animation-fade; delay: 300">
         <h1> <?php echo $hdrTitle; ?> </h1>
     </div>
 </header>
@@ -46,9 +46,7 @@ switch ( $post->ID ) {
         <div class="uk-card uk-card-secondary | followers">
             <div class="uk-card-body">
                 <div class="uk-card-title">Social Media Followers</div>
-                <span data-smf="24710369">
-                    <div id="total-followers">24,710,369</div>
-                </span>
+                <span id="total-followers"></span>
             </div>
         </div>
     </div>
@@ -64,7 +62,7 @@ switch ( $post->ID ) {
         <div class="uk-card uk-card-secondary">
             <div class="uk-card-body">
                 <div class="uk-card-title"><small>Impressions Over the</small> Last 30 Days</div>
-                10,000,000
+                <span id="total-impressions"></span>
             </div>
         </div>
     </div>

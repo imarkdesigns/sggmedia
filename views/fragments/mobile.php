@@ -1,6 +1,6 @@
 <div id="mobile" uk-offcanvas="overlay: true">
     <div class="uk-offcanvas-bar">
-        <button role="button" type="button" class="uk-offcanvas-close" uk-close></button>
+        <button role="button" type="button" class="uk-offcanvas-close" uk-close  aria-label="Close Mobile Menu"></button>
         <figure class="uk-text-center">
             <?php echo '<img src="https://staging-sggmedia.kinsta.cloud/wp-content/uploads/2022/07/logo-sgg-media-white.png' .'" alt="'. get_bloginfo() .'">'; ?>
         </figure>
