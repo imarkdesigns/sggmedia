@@ -24,7 +24,7 @@ switch ( $post->ID ) {
     
     case '58':
         $hdrImg = _uri.'/resources/images/sggmedia-header-press.jpg';
-        $hdrTitle = '<small>SGG Media</small> Press Releases';
+        $hdrTitle = '<small>SGG Media</small> National Headline News';
         break;
 
     case '108':

@@ -16,7 +16,7 @@
                 <li><a href="<?php echo esc_url( site_url('#sgg-partners') ); ?>">Partners & Ad Samples</a></li>
             <?php endif; ?>
             <li><a href="<?php echo esc_url( get_permalink( 124 ) ); ?>">Our Team</a></li>
-            <li><a href="<?php echo esc_url( get_permalink( 58 ) ); ?>"> National Headline News</a></li>
+            <li><a href="<?php echo esc_url( get_permalink( 58 ) ); ?>">Press</a></li>
             <li><a href="<?php echo esc_url( get_permalink( 108 ) ); ?>">Contact</a></li>
             <li><a href="<?php echo esc_url( get_permalink( 3 ) ); ?>">Privacy Policy</a></li>
         </ul>
