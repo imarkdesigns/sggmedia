@@ -7,7 +7,7 @@
       "uuidString" : "CAC57B17-91BE-4DDB-A093-CFFEFB891551"
     }
   ],
-  "creatorBuild" : "34365",
+  "creatorBuild" : "34408",
   "files" : {
     "\/.gitignore" : {
       "cB" : 0,
@@ -754,15 +754,15 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/resources\/images\/partners\/Fanatics.jpg" : {
+    "\/resources\/images\/partners\/fanatics.jpg" : {
       "ft" : 16384,
       "iS" : 10277,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/resources\/images\/partners\/Fanatics.jpg",
+      "oAP" : "\/resources\/images\/partners\/fanatics.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -2295,7 +2295,8 @@
         "optionString" : "'event', 'fdescribe'"
       },
       "no-restricted-imports" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : ""
       },
       "no-restricted-properties" : {
         "active" : 0,
@@ -2923,6 +2924,7 @@
       "createDeclarationFile" : 0,
       "jsxMode" : 0,
       "minifierStyle" : 0,
+      "moduleDetectionType" : 0,
       "moduleResolutionType" : 0,
       "moduleType" : 2,
       "removeComments" : 0,

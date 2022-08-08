@@ -46,7 +46,7 @@ switch ( $post->ID ) {
         <div class="uk-card uk-card-secondary | followers">
             <div class="uk-card-body">
                 <div class="uk-card-title">Social Media Followers</div>
-                <span id="total-followers"></span>
+                <span id="total-followers"> <small>loading...</small> </span>
             </div>
         </div>
     </div>
@@ -62,7 +62,7 @@ switch ( $post->ID ) {
         <div class="uk-card uk-card-secondary">
             <div class="uk-card-body">
                 <div class="uk-card-title"><small>Impressions Over the</small> Last 30 Days</div>
-                <span id="total-impressions"></span>
+                <span id="total-impressions"> <small>loading...</small> </span>
             </div>
         </div>
     </div>

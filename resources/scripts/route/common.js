@@ -28,25 +28,33 @@
     var impressions = document.getElementById('total-impressions');
 
     function updateFollowers() {
+        var currentFollowers = ( 24710369 - 16000 ); // total followers on all social media platform
         var d = new Date();
         d.setHours(0,0,0,0);
-        var count = Math.floor( ( new Date().getTime() - d.getTime() ) / 100000 );
-        followers.innerHTML = Math.floor( count + 24710369 ).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");        
+        var counter = Math.floor( ( new Date().getTime() - d.getTime() ) / 3000 );
+        followers.innerHTML = Math.floor( currentFollowers + counter ).toLocaleString();
     }
+    updateFollowers();
+    setInterval( updateFollowers, 3000 ); // Repeat for every 3 seconds
 
     function updateImpressions() {
+        var currentImpressions = ( 10000000 - 9500 ); // total impressions on all social media platform
         var d = new Date();
-        d.setMonth( 0 );
-        d.setDate( 1 );
-        count = Math.floor( ( new Date().getTime() - d.getTime() ) / 20000000 )
-        impressions.innerHTML = Math.floor( count + 10000000 ).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-
+        // d.setMonth(0);
+        // d.setDate(1);
+        d.setHours(0,0,0,0);
+        counter = Math.floor( ( new Date().getTime() - d.getTime() ) / 5000 );
+        impressions.innerHTML = Math.floor( currentImpressions + counter ).toLocaleString();
     }
-
-    updateFollowers();
-    setInterval( updateFollowers, 3000 );
     updateImpressions()
-    setInterval( updateImpressions, 5000 );
+    var resetImpressions = setInterval(() => {
+        updateImpressions;
+        var d = new Date();
+
+        if ( d.getDate < 32 ) {
+            clearInterval(resetImpressions); // clear every month
+        }
+    }, 5000 ); // Repeat for every 5 seconds
 
 })(jQuery);
 
