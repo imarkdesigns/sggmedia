@@ -14,9 +14,9 @@
                 <div class="uk-width-1-2@m uk-flex-first uk-text-center | contact-info">
 
                     <address>
-                        <h3>Contacts</h3>
-                        <p>Troy Paul, President <span class="uk-text-meta">tpaul@sportsgamblingguides.com <br> 310.739.4185</span></p>
-                        <p>Mark Paul, CEO <span class="uk-text-meta">mpaul@sportsgamblingguides.com <br> 310.738.8330</span></p>
+                        <p><strong>Contact</strong></p>
+                        <p>Troy Paul, President <span class="uk-text-meta">tpaul@sggmedia.io <br> 310.739.4185</span></p>
+                        <p>Mark Paul, CEO <span class="uk-text-meta">mpaul@sggmedia.io <br> 310.738.8330</span></p>
                     </address>
 
                 </div>

@@ -53,13 +53,12 @@
             <article class="uk-article uk-width-xlarge uk-padding-large uk-light">
                 <img src="<?php echo _uri.'/resources/images/logo-sgg-media-white.png'; ?>" alt="SGG Logo - Alt">
                 <p class="uk-text-lead">Social Media Sports Marketing</p>
-                <p>Cost effective highly targeted exposure to millions of fans for 25% the cost</p>
-                <p>#1 Social Media advertising company in sports gambling</p>
+                <p>We are the most cost-effective form of sports marketing</p>
 
                 <address>
                     <p><strong>Contact</strong></p>
-                    <p>Troy Paul, President <span class="uk-text-meta">tpaul@sportsgamblingguides.com <br> 310.739.4185</span></p>
-                    <p>Mark Paul, CEO <span class="uk-text-meta">mpaul@sportsgamblingguides.com <br> 310.738.8330</span></p>
+                    <p>Troy Paul, President <span class="uk-text-meta">tpaul@sggmedia.io <br> 310.739.4185</span></p>
+                    <p>Mark Paul, CEO <span class="uk-text-meta">mpaul@sggmedia.io <br> 310.738.8330</span></p>
                 </address>
             </article>
         </div>
@@ -67,7 +66,7 @@
         <div class="uk-container uk-container-expand uk-position-relative uk-height-medium | contact-info-link">
             <div class="uk-overlay uk-position-center uk-text-center">
                 <h2>Interested In Partnering?</h2>
-                <a href="#" class="uk-button uk-button-primary uk-button-large">Contact Us</a>
+                <a href="<?php echo esc_url( get_permalink( 108 ) ); ?>" class="uk-button uk-button-primary uk-button-large">Contact Us</a>
             </div>
         </div>
 

@@ -23,28 +23,30 @@
 
     });
 
+    // total count-up for Followers/Impressions
+    var followers = document.getElementById('total-followers');
+    var impressions = document.getElementById('total-impressions');
 
+    function updateFollowers() {
+        var d = new Date();
+        d.setHours(0,0,0,0);
+        var count = Math.floor( ( new Date().getTime() - d.getTime() ) / 100000 );
+        followers.innerHTML = Math.floor( count + 24710369 ).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");        
+    }
 
-        var div = document.getElementById('total-followers');
-        var yeardiv = document.getElementById('total-impressions');
+    function updateImpressions() {
+        var d = new Date();
+        d.setMonth( 0 );
+        d.setDate( 1 );
+        count = Math.floor( ( new Date().getTime() - d.getTime() ) / 20000000 )
+        impressions.innerHTML = Math.floor( count + 10000000 ).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
-        function updateCount() {
-            var d = new Date();
-            d.setHours(0,0,0,0);
-            var count = Math.floor( ( new Date().getTime() - d.getTime() ) / 100000 );
-            div.innerHTML = Math.floor( count + 24710369 ).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-            
-            d.setMonth( 0 );
-            d.setDate( 1 );
-            count = Math.floor( ( new Date().getTime() - d.getTime() ) / 20000000 )
-            yeardiv.innerHTML = Math.floor( count + 10000000 ).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-        }
+    }
 
-        updateCount();
-        setInterval( updateCount, 15000 );
-
-
-
+    updateFollowers();
+    setInterval( updateFollowers, 3000 );
+    updateImpressions()
+    setInterval( updateImpressions, 5000 );
 
 })(jQuery);
 
@@ -64,18 +66,17 @@ var interval = setInterval(function() {
 }, 100);
 
 
+// var number = jQuery('.followers span:first').data("smf");
+// // var str = number.toString().split(".");
+// // str[0] = str[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+// // var follower = str.join(".");
 
-        // var number = jQuery('.followers span:first').data("smf");
-        // // var str = number.toString().split(".");
-        // // str[0] = str[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-        // // var follower = str.join(".");
 
+// // Called the function in each second
+// var interval = setInterval(function() {
+//     jQuery('#total-followers').empty().text(number++);
 
-        // // Called the function in each second
-        // var interval = setInterval(function() {
-        //     jQuery('#total-followers').empty().text(number++);
-
-        //     if (number > 999) {
-        //         clearInterval(interval);
-        //     }
-        // }, 3000);
+//     if (number > 999) {
+//         clearInterval(interval);
+//     }
+// }, 3000);

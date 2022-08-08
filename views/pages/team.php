@@ -12,45 +12,6 @@
                 <div>
                     <div class="uk-card uk-card-primary uk-text-center">
                         <div class="uk-card-media-top">
-                            <a href="#"> <img src="<?php echo _uri.'/resources/images/team/sgg-team-markpaul.jpg'; ?>" alt="Mark Paul - CEO"> </a>
-                        </div>
-                        <div class="uk-card-body">
-                            <h3>Mark Paul</h3>
-                            <p>Chief Executive Officer</p>
-                        </div>
-                        <div class="uk-card-footer">
-                            <button type="button" uk-toggle="target: #mpaul">Read Bio</button>
-                        </div>
-                    </div>
-
-                    <div id="mpaul" class="uk-flex-top | biography" uk-modal>
-                        <div class="uk-modal-dialog uk-margin-auto-vertical">
-                            <button class="uk-modal-close-default" type="button" uk-close aria-label="Close Modal"></button>
-
-                            <div uk-grid>
-                                <div class="uk-width-1-3@m">
-                                    <figure> <img src="<?php echo _uri.'/resources/images/team/sgg-team-markpaul.jpg'; ?>" alt="Mark Paul - CEO"> </figure>
-                                </div>
-                                <div class="uk-width-2-3@m">
-                                    <div class="uk-h3">Mark Paul</div>
-                                    <p>Chief Executive Officer</p>
-                                    <ul class="uk-list uk-list-square">
-                                        <li>Co-Founder & CEO - Sports Gambling Guides - 2020</li>
-                                        <li>Led Sports Gambling Guides to licensure in all legal on-line gaming States 2020-2021</li>
-                                        <li>40-year history in commercial real estate investments - sponsored over $2 Billion in commercial property acquisitions</li>
-                                        <li>Former Managing Director of the REO (foreclosure) divisions of Merrill Lynch Realty and Prudential California Realty. Owner of largest RE/MAX Commercial Brokerage Franchise</li>
-                                        <li>25 years experiences in the legal gambling industry - owned interests in 46 thoroughbred racehorses as a licensed California thoroughbred owner</li>
-                                        <li>Author of <em>The Greatest Gambling Story Ever Told</em> - #1 Best Seller in Gambling, #1 Best Seller in Sports Gambling, #1 Best Seller in Horse Racing 2020-2021</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="uk-card uk-card-primary uk-text-center">
-                        <div class="uk-card-media-top">
                             <a href="#"> <img src="<?php echo _uri.'/resources/images/team/sgg-team-troypaul.jpg'; ?>" alt="Troy Paul - President"> </a>
                         </div>
                         <div class="uk-card-body">
@@ -86,6 +47,45 @@
                     </div>                    
                 </div>
 
+                <div>
+                    <div class="uk-card uk-card-primary uk-text-center">
+                        <div class="uk-card-media-top">
+                            <a href="#"> <img src="<?php echo _uri.'/resources/images/team/sgg-team-markpaul.jpg'; ?>" alt="Mark Paul - CEO"> </a>
+                        </div>
+                        <div class="uk-card-body">
+                            <h3>Mark Paul</h3>
+                            <p>Chief Executive Officer</p>
+                        </div>
+                        <div class="uk-card-footer">
+                            <button type="button" uk-toggle="target: #mpaul">Read Bio</button>
+                        </div>
+                    </div>
+
+                    <div id="mpaul" class="uk-flex-top | biography" uk-modal>
+                        <div class="uk-modal-dialog uk-margin-auto-vertical">
+                            <button class="uk-modal-close-default" type="button" uk-close aria-label="Close Modal"></button>
+
+                            <div uk-grid>
+                                <div class="uk-width-1-3@m">
+                                    <figure> <img src="<?php echo _uri.'/resources/images/team/sgg-team-markpaul.jpg'; ?>" alt="Mark Paul - CEO"> </figure>
+                                </div>
+                                <div class="uk-width-2-3@m">
+                                    <div class="uk-h3">Mark Paul</div>
+                                    <p>Chief Executive Officer</p>
+                                    <ul class="uk-list uk-list-square">
+                                        <li>Co-Founder & CEO - Sports Gambling Guides - 2020</li>
+                                        <li>Led Sports Gambling Guides to licensure in all legal on-line gaming States 2020-2021</li>
+                                        <li>40-year history in commercial real estate investments - sponsored over $2 Billion in commercial property acquisitions</li>
+                                        <li>Former Managing Director of the REO (foreclosure) divisions of Merrill Lynch Realty and Prudential California Realty. Owner of largest RE/MAX Commercial Brokerage Franchise</li>
+                                        <li>25 years experiences in the legal gambling industry - owned interests in 46 thoroughbred racehorses as a licensed California thoroughbred owner</li>
+                                        <li>Author of <em>The Greatest Gambling Story Ever Told</em> - #1 Best Seller in Gambling, #1 Best Seller in Sports Gambling, #1 Best Seller in Horse Racing 2020-2021</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
                 <div>
                     <div class="uk-card uk-card-primary uk-text-center">
                         <div class="uk-card-media-top">
@@ -288,7 +288,7 @@
         <div class="uk-container uk-container-expand uk-position-relative uk-height-medium | contact-info-link">
             <div class="uk-overlay uk-position-center uk-text-center">
                 <h2>Interested In Partnering?</h2>
-                <a href="#" class="uk-button uk-button-primary uk-button-large">Contact Us</a>
+                <a href="<?php echo esc_url( get_permalink( 108 ) ); ?>" class="uk-button uk-button-primary uk-button-large">Contact Us</a>
             </div>
         </div>
 
