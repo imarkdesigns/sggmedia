@@ -47,14 +47,15 @@
         impressions.innerHTML = Math.floor( currentImpressions + counter ).toLocaleString();
     }
     updateImpressions()
-    var resetImpressions = setInterval(() => {
-        updateImpressions;
-        var d = new Date();
+    setInterval( updateImpressions, 5000 );
+    // var resetImpressions = setInterval(function() {
+    //     updateImpressions;
+    //     // var d = new Date();
 
-        if ( d.getDate < 32 ) {
-            clearInterval(resetImpressions); // clear every month
-        }
-    }, 5000 ); // Repeat for every 5 seconds
+    //     // if ( d.getDate < 32 ) {
+    //     //     clearInterval(resetImpressions); // clear every month
+    //     // }
+    // }, 5000 ); // Repeat for every 5 seconds
 
 })(jQuery);
 
