@@ -1014,6 +1014,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/resources\/images\/press\/press-seeking-alpha.jpg" : {
+      "ft" : 16384,
+      "iS" : 12911,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/press\/press-seeking-alpha.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/resources\/images\/press\/press-yahoo-finance.jpg" : {
       "ft" : 16384,
       "iS" : 19462,
