@@ -37,6 +37,9 @@ add_action('wp_enqueue_scripts', function() {
                 $pageName = 'main';
                 break;
 
+            case '3':   // Policy
+                $pageName = 'legal';
+                break;
 
         }
         wp_enqueue_style( 'page', _css.$pageName.'.css' );

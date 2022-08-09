@@ -37,6 +37,7 @@ define ( '_page', 'views/pages/' );
 define ( '_single', 'views/singles/' );
 define ( '_terms', 'views/taxonomies/' );
 
+define ( '_frg', 'views/fragments/' );
 define ( '_nav', 'views/fragments/menu' );
 define ( '_hdr', 'views/fragments/header' );
 define ( '_ftr', 'views/fragments/footer' );

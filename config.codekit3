@@ -1016,10 +1016,23 @@
     },
     "\/resources\/images\/sggmedia-header-contact.jpg" : {
       "ft" : 16384,
-      "iS" : 993853,
+      "iS" : 260712,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/resources\/images\/sggmedia-header-contact.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/sggmedia-header-policy.jpg" : {
+      "ft" : 16384,
+      "iS" : 730081,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/sggmedia-header-policy.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -1292,6 +1305,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/views\/attributes\/noscript.php",
+      "oF" : 0
+    },
+    "\/views\/fragments\/colophon.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/views\/fragments\/colophon.php",
       "oF" : 0
     },
     "\/views\/fragments\/footer.php" : {

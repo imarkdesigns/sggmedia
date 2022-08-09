@@ -37,6 +37,19 @@
         margin: auto;
     }
 
+    .uk-position-small {
+        background-color: rgba(#000,.8);
+        color: rgba(#FFF,.9);
+        height: 34px !important;
+        padding: .4em .5em;
+        border-radius: 3px;
+
+        span {
+            position: relative;
+            top: -5px;
+        }
+    }
+
     // --
 
     .uk-flex-column {
@@ -156,7 +169,7 @@
 .colophon {
 
     .contact-info {
-        background-image: url(#{$img}/sgg-contact-info.jpg);
+        // background-image: url(#{$img}/sgg-contact-info.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
