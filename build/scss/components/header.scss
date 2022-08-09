@@ -167,7 +167,8 @@
                 content: '';
                 position: absolute;
                 inset: 0;
-                background-image: linear-gradient( 135deg, #92FFC0 10%, #6018DC 100%);
+                background-color: rgba(#000,.75);
+                // background-image: linear-gradient( 135deg, #92FFC0 10%, #6018DC 100%);
                 @include size(100%);
                 opacity: .75;
             }
@@ -183,10 +184,6 @@
 
         &.impressions {
             background-image: url(#{$img}influencers/img-influencers-bg.jpg);
-
-            &::before {
-                background-image: linear-gradient( 35deg, #6018DC 10%, #92FFC0 100%);
-            }
         }
     }
 
