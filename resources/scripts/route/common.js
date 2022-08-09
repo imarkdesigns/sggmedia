@@ -28,7 +28,7 @@
     var impressions = document.getElementById('total-impressions');
 
     function updateFollowers() {
-        var currentFollowers = ( 24710369 - 16000 ); // total followers on all social media platform
+        var currentFollowers = ( 24710369 - 0 ); // total followers on all social media platform
         var d = new Date();
         d.setHours(0,0,0,0);
         var counter = Math.floor( ( new Date().getTime() - d.getTime() ) / 3000 );
@@ -38,7 +38,7 @@
     setInterval( updateFollowers, 3000 ); // Repeat for every 3 seconds
 
     function updateImpressions() {
-        var currentImpressions = ( 10000000 - 9500 ); // total impressions on all social media platform
+        var currentImpressions = ( 10000000 - 0 ); // total impressions on all social media platform
         var d = new Date();
         // d.setMonth(0);
         // d.setDate(1);

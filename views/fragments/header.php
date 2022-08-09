@@ -33,15 +33,15 @@ $hdr_contents = get_field( 'hdr_content' ); ?>
         </div>
     </div>
     <div>
-        <div class="uk-card uk-card-primary">
+        <div class="uk-card uk-card-primary | influencers">
             <div class="uk-card-body">
                 <div class="uk-card-title">Influencers</div>
-                1,151
+                <span id="total-influencers">1,151</span>
             </div>
         </div>
     </div>
     <div>
-        <div class="uk-card uk-card-secondary">
+        <div class="uk-card uk-card-secondary | impressions">
             <div class="uk-card-body">
                 <div class="uk-card-title"><small>Impressions Over the</small> Last 30 Days</div>
                 <span id="total-impressions"> <small>loading...</small> </span>

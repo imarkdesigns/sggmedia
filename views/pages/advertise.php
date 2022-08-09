@@ -37,30 +37,32 @@
 
     if ( have_rows( 'influencers_group' ) ) : ?>
     <section class="uk-section uk-section-muted | influencers-graph">
-        <div class="uk-container uk-container-large">
-            <div class="uk-grid-divider uk-flex-middle" uk-grid>
+        <div class="uk-container">
+            <div class="uk-grid-divider uk-flex-middle uk-flex-center" uk-grid>
             <?php while( have_rows( 'influencers_group' ) ) : the_row(); 
-
                 $chart = get_sub_field( 'influencers_chart' ); ?>
-                <div class="uk-width-1-1">
-                    <div class="uk-panel uk-text-center">
+
+                <div class="uk-width-2-3@m">
+                    <div class="uk-panel">
                         <h2><?php the_sub_field( 'influencers_title' ); ?></h2>
                         <p><?php the_sub_field( 'influencers_description' ); ?></p>
                     </div>
-                </div>
-                <div class="uk-width-2-3@m">
                     <div class="chart-container">
                         <canvas id="myChart"></canvas>
                     </div>
                 </div>
                 <div class="uk-width-1-3@m">
-                    <div class="uk-panel uk-position-relative" uk-lightbox>
-                        <a href="<?php echo $chart['url']; ?>" class="uk-position-small uk-position-top-right" uk-tooltip="Enlarge Photo" data-caption="25 Million+ Sports Fan"> <span uk-icon="image"></span> </a>
+                    <div class="uk-panel uk-text-center uk-margin-small-bottom">
+                        <h2>How It Works</h2>
+                    </div>                    
+                    <div class="uk-panel uk-text-center uk-position-relative" uk-lightbox>
                         <?php if ( !empty( $chart ) ) {
-                            echo wp_get_attachment_image( $chart['id'], 'medium' );
+                            echo wp_get_attachment_image( $chart['id'], 'full' );
                         } ?>
+                        <p><a href="<?php echo $chart['url']; ?>" class="uk-button uk-button-small uk-button-secondary" data-caption="25 Million+ Sports Fan"> Click to Enlarge Photo </a></p>
                     </div>
                 </div>
+
             <?php endwhile; ?>
             </div>
         </div>
@@ -77,7 +79,7 @@
             <div class="uk-width-1-2@m uk-width-2-3@l">
                 <div class="uk-cover-container">
                     <?php if ( !empty( $imgWhoWeAre ) ) {
-                        echo wp_get_attachment_image( $imgWhoWeAre['id'], 'medium', '', [ 'uk-cover' => '' ] );
+                        echo wp_get_attachment_image( $imgWhoWeAre['id'], 'full', '', [ 'uk-cover' => '' ] );
                     } else {
                         echo '<img src="'._uri.'/resources/images/advertise/sgg-who-we-are.jpg" alt="" uk-cover>';
                     } ?>
@@ -94,7 +96,7 @@
             <div class="uk-width-1-2@m uk-width-2-3@l">
                 <div class="uk-cover-container">
                     <?php if ( !empty( $imgWhatWeDo ) ) {
-                        echo wp_get_attachment_image( $imgWhatWeDo['id'], 'medium', '', [ 'uk-cover' => '' ] );
+                        echo wp_get_attachment_image( $imgWhatWeDo['id'], 'full', '', [ 'uk-cover' => '' ] );
                     } else {
                         echo '<img src="'._uri.'/resources/images/advertise/sgg-what-we-do.jpg" alt="" uk-cover>';
                     } ?>                    

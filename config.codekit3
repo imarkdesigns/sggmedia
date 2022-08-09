@@ -676,6 +676,58 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/resources\/images\/influencers\/img-followers-bg.jpg" : {
+      "ft" : 16384,
+      "iS" : 89611,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/influencers\/img-followers-bg.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/influencers\/img-impressions-bg.jpg" : {
+      "ft" : 16384,
+      "iS" : 93813,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/influencers\/img-impressions-bg.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/influencers\/img-influencers-bg-alt.jpg" : {
+      "ft" : 16384,
+      "iS" : 88421,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/influencers\/img-influencers-bg-alt.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/influencers\/img-influencers-bg.jpg" : {
+      "ft" : 16384,
+      "iS" : 93903,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/influencers\/img-influencers-bg.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/resources\/images\/logo-sgg-media-white.png" : {
       "ft" : 32768,
       "iS" : 25670,
