@@ -122,6 +122,7 @@
     h2 {
         font-family: $passion;
         font-size: 3rem;
+        color: #000;
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 30px;
@@ -216,7 +217,7 @@
     z-index: 100001;
 
     .uk-modal-dialog {
-        background-color: #000;
+        background-color: #FFF;
         padding: 2em;
         border-radius: 5px;
     }
@@ -224,7 +225,7 @@
     h2 {
         font-family: $passion;
         font-size: 3rem;
-        color: #FFF;
+        color: #000;
         text-transform: uppercase;
         line-height: 1;
         margin-bottom: 30px;
@@ -234,6 +235,11 @@
             font-family: $face-bold;
             font-size: 1.5rem;
         }
+    }
+
+    img {
+        max-width: 640px;
+        height: auto;
     }
 
 }

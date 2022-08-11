@@ -4,7 +4,7 @@
         <div class="uk-container">
 
             <div class="uk-headings">
-                <h2>Get started by contacting one of our contacts, or fill out the form below.</h2>
+                <h2>Contact SGG Media by completing the form Below</h2>
             </div>
 
             <div class="uk-grid-divider" uk-grid>

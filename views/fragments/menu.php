@@ -4,7 +4,7 @@ $customLogoID = get_theme_mod( 'custom_logo' );
 $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
 
 <a id="skipToLink" href="#main" class="skip-to-content-link">Skip to Content</a>
-<div class="uk-position-z-index" data-globals="menu" uk-sticky="start: 800; animation: uk-animation-slide-top">
+<div class="uk-position-z-index uk-width-1-1" data-globals="menu" uk-sticky="start: 800; animation: uk-animation-slide-top">
 
     <nav uk-navbar class="uk-navbar-container uk-navbar-transparent">
         <div class="uk-navbar-left">
@@ -15,16 +15,24 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
         <div class="uk-navbar-right">
             <ul class="uk-navbar-nav uk-visible@l">
                 <li><a href="<?php echo esc_url( home_url() ); ?>">Home</a></li>
-                <?php if ( is_front_page() ) : ?>
-                    <li><a uk-scroll="offset: 70" href="<?php echo esc_url( site_url('#who-we-are') ); ?>">Who We Are</a></li>
-                    <li><a uk-scroll="offset: 70" href="<?php echo esc_url( site_url('#what-we-do') ); ?>">What We Do</a></li>
-                    <li><a uk-scroll="offset: 70" href="<?php echo esc_url( site_url('#partners') ); ?>">Partners & Ad Samples</a></li>
-                <?php else : ?>
-                    <li><a href="<?php echo esc_url( site_url('#sgg-who-we-are') ); ?>">Who We Are</a></li>
-                    <li><a href="<?php echo esc_url( site_url('#sgg-what-we-do') ); ?>">What We Do</a></li>
-                    <li><a href="<?php echo esc_url( site_url('#sgg-partners') ); ?>">Partners & Ad Samples</a></li>
-                <?php endif; ?>
+                <li class="uk-parent"><a href="#">About <span uk-icon="icon:triangle-down; ratio:.8;"></span></a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <?php if ( is_front_page() ) : ?>
+                            <li><a uk-scroll="offset: 70" href="<?php echo esc_url( site_url('#who-we-are') ); ?>">Who We Are</a></li>
+                            <li><a uk-scroll="offset: 70" href="<?php echo esc_url( site_url('#what-we-do') ); ?>">What We Do</a></li>
+                            <li><a uk-scroll="offset: 70" href="<?php echo esc_url( site_url('#partners') ); ?>">Partners & Ad Samples</a></li>
+                        <?php else : ?>
+                            <li><a href="<?php echo esc_url( site_url('#sgg-who-we-are') ); ?>">Who We Are</a></li>
+                            <li><a href="<?php echo esc_url( site_url('#sgg-what-we-do') ); ?>">What We Do</a></li>
+                            <li><a href="<?php echo esc_url( site_url('#sgg-partners') ); ?>">Partners & Ad Samples</a></li>
+                        <?php endif; ?>
+                        </ul>
+                    </div>
+                </li>
                 <li><a href="<?php echo esc_url( get_permalink( 124 ) ); ?>">Our Team</a></li>
+                <li><a href="<?php echo esc_url( '#' ); ?>">Advertising Revenue Stream</a></li>
+                <li><a href="<?php echo esc_url( '#' ); ?>">How It Works</a></li>
                 <li><a href="<?php echo esc_url( get_permalink( 58 ) ); ?>">Press</a></li>
                 <li><a href="<?php echo esc_url( get_permalink( 108 ) ); ?>">Contact Us</a></li>
             </ul>

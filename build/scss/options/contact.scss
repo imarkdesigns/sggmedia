@@ -2,7 +2,7 @@
 
     .uk-headings {
         text-align: center;
-        margin: 0 auto 60px;
+        margin: 0 auto 30px;
 
         h2 {
             font-family: $passion;
@@ -25,15 +25,6 @@
         text-transform: uppercase;
         @include sharpText();
     
-        &.uk-text-lead {
-            font-family: $face-bold;
-            color: #FFF;
-        }
-
-        strong {
-            color: #FFF;
-        }
-
         span.uk-text-meta {
             display: block;
         }

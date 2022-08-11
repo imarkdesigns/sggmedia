@@ -19,10 +19,10 @@
 
         // Static Menu
         > li > a {
-            font-family: $face-regular;
+            font-family: $face-bold;
             font-size: 12px;
             color: $sgg-black;
-            text-transform: capitalize;
+            text-transform: uppercase;
             height: 100%;
             padding: 0;
 
@@ -33,7 +33,7 @@
             .uk-icon {
                 position: relative;
                 top: 1px;
-                margin-left: 5px;
+                margin-left: -2px;
             }
         }
 
@@ -53,6 +53,41 @@
         > li:hover > a.uk-button {
             color: #FFF;
         }
+
+        // Dropdown
+        .uk-navbar-dropdown {
+            background: none;
+            // margin-top: 0;
+            padding: 0;
+
+            .uk-navbar-dropdown-nav > li {
+                background: #FFF;
+                min-height: 1%;
+                margin-top: 1px;
+
+                &:focus,
+                &:hover {
+                    background: $sgg-green;
+                    margin-top: 0;
+                    border-top: 1px solid #FFF;
+
+                    > a {
+                        color: #FFF;
+                    }
+                }
+            }
+
+            .uk-navbar-dropdown-nav > li > a {
+                display: flex;
+                align-items: center;
+                font-family: $face-semi-b;
+                font-size: .875rem;
+                color: $sgg-black;
+                text-transform: uppercase;
+                min-height: 1%;
+                padding: 1em;
+            }
+        }        
     }
 
     .uk-subnav {
@@ -105,8 +140,9 @@
     &.uk-sticky-below {
         backdrop-filter: saturate(180%) blur(20px);
         background-color: rgba(#FFF,.8);
-        left: 50%;
-        transform: translateX(-50%);
+        left: 0;
+        width: 100%;
+        // transform: translateX(-50%);
 
         .uk-navbar {
             height: 60px;
