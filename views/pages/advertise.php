@@ -79,40 +79,6 @@
     </section>
     <?php endif; ?>
 
-    <?php if ( have_rows( 'influencers_group' ) ) : ?>
-    <section class="uk-section uk-section-muted | influencers-graph" hidden>
-        <div class="uk-container">
-            <div class="uk-grid-divider uk-flex-middle uk-flex-center" uk-grid>
-            <?php while( have_rows( 'influencers_group' ) ) : the_row(); 
-                $chart = get_sub_field( 'influencers_chart' ); ?>
-
-                <div class="uk-width-2-3@m">
-                    <div class="uk-panel">
-                        <h2><?php the_sub_field( 'influencers_title' ); ?></h2>
-                        <p><?php the_sub_field( 'influencers_description' ); ?></p>
-                    </div>
-                    <div class="chart-container">
-                        <canvas id="myChart"></canvas>
-                    </div>
-                </div>
-                <div class="uk-width-1-3@m">
-                    <div class="uk-panel uk-text-center uk-margin-small-bottom">
-                        <h2>How It Works</h2>
-                    </div>                    
-                    <div class="uk-panel uk-text-center uk-position-relative" uk-lightbox>
-                        <?php if ( !empty( $chart ) ) {
-                            echo wp_get_attachment_image( $chart['id'], 'full' );
-                        } ?>
-                        <p><a href="<?php echo $chart['url']; ?>" class="uk-button uk-button-small uk-button-secondary" data-caption="25 Million+ Sports Fan"> Click to Enlarge Photo </a></p>
-                    </div>
-                </div>
-
-            <?php endwhile; ?>
-            </div>
-        </div>
-    </section>
-    <?php endif; ?>
-
     <section class="uk-section | partners ">
         <div class="uk-container">
             
@@ -124,7 +90,6 @@
                 ?>
                 <figure class="uk-card uk-card-secondary">
                 <?php
-
                     if ( !empty($imgModals) ) : ?>
                     <div class="uk-card-badge uk-label uk-link-reset">
                         <button type="button" title="View Example Advertising Examples" uk-toggle="target: #ads-<?php echo $imgPartners['id']; ?>">View Ad Sample</button>
@@ -165,72 +130,3 @@
     <?php include( locate_template( _frg.'colophon.php', false, true ) ); ?>
 
 </main>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-const data = {
-    datasets: [{
-        label: 'Traditional Advertising CPM',
-        maxBarThickness: 50,
-        // barThickness: 45,
-        barPercentage: 1.0,
-        categoryPercentage: 1.0,
-        backgroundColor: [ 'rgb(248,117,19)' ],
-        data: [
-            { x: 'National TV Ads', y:25 },
-            { x: 'Sports Radio Ads', y:20, },
-            { x: 'Google Display Ads', y:7.14, },
-            { x: 'Instagram Ads', y:15.82, },
-            { x: 'Twitter Ads', y:12.82, }
-        ],
-    }, {
-        label: 'SGG Advertising CPM',
-        maxBarThickness: 50,
-        // barThickness: 45,
-        barPercentage: 1.0,
-        categoryPercentage: 1.0,        
-        backgroundColor: [ 'rgb(40,167,80)' ],
-        data: [
-            { x: 'SGG Instagram Influencers (Impressions)', y:3.88 },
-            { x: 'SGG Twitter Influencers (Impressions)', y:4.53, },
-            { x: 'SGG Instagram Influencers (Followers)', y:2.16, },
-            { x: 'SGG Twitter Influencers (Followers)', y:2.10, }
-        ],
-
-    }]
-};
-
-const config = {
-    type: 'bar',
-    data: data,
-    options: {
-        maintainAspectRatio: false,
-        scales: {
-            y: {
-              stacked: false,
-              grid: {
-                display: true,
-                color: "rgba(255,99,132,0.2)"
-              }
-            },
-            x: {
-                grid: {
-                  display: false
-                }
-            }
-        },
-        plugins: {
-            title: {
-                display: true,
-                text: 'Dollar Rate ($)',
-                position: 'left'
-            }
-        }
-    }
-};
-
-const myChart = new Chart(
-    document.getElementById('myChart'),
-    config
-);
-</script>

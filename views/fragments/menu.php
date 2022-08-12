@@ -9,7 +9,11 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
     <nav uk-navbar class="uk-navbar-container uk-navbar-transparent">
         <div class="uk-navbar-left">
             <a href="<?php echo esc_url( home_url() ); ?>" class="uk-logo">
-                <?php echo '<img src="'. $logo[0] .'" alt="'. get_bloginfo() .'">'; ?>
+                <?php if ( is_front_page() ) {
+                    echo '<img src="'. $logo[0] .'" alt="'. get_bloginfo() .'">';
+                } else {
+                    echo '<img src="'._uri.'/resources/images/logo-sgg-media-black.png" alt="'.get_bloginfo().'">';
+                } ?>
             </a>
         </div>
         <div class="uk-navbar-right">
@@ -31,8 +35,8 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
                     </div>
                 </li>
                 <li><a href="<?php echo esc_url( get_permalink( 124 ) ); ?>">Our Team</a></li>
-                <li><a href="<?php echo esc_url( '#' ); ?>">Advertising Revenue Stream</a></li>
-                <li><a href="<?php echo esc_url( '#' ); ?>">How It Works</a></li>
+                <li><a href="<?php echo esc_url( get_permalink( 259 ) ); ?>">Advertising Revenue Stream</a></li>
+                <li><a href="<?php echo esc_url( get_permalink( 261 ) ); ?>">How It Works</a></li>
                 <li><a href="<?php echo esc_url( get_permalink( 58 ) ); ?>">Press</a></li>
                 <li><a href="<?php echo esc_url( get_permalink( 108 ) ); ?>">Contact Us</a></li>
             </ul>

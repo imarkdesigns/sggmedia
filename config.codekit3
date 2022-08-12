@@ -639,6 +639,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/resources\/images\/advertiser.png" : {
+      "ft" : 32768,
+      "iS" : 319111,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/advertiser.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/resources\/images\/header-splash.webp" : {
       "ft" : 8388608,
       "iS" : 261564,
@@ -724,6 +737,32 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/logo-sgg-media-alt.png" : {
+      "ft" : 32768,
+      "iS" : 23829,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/logo-sgg-media-alt.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/logo-sgg-media-black.png" : {
+      "ft" : 32768,
+      "iS" : 26012,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/logo-sgg-media-black.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -1434,6 +1473,22 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/views\/pages\/advertise.php",
+      "oF" : 0
+    },
+    "\/views\/pages\/advertiser.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/views\/pages\/advertiser.php",
+      "oF" : 0
+    },
+    "\/views\/pages\/advertising-chart.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/views\/pages\/advertising-chart.php",
       "oF" : 0
     },
     "\/views\/pages\/careers.php" : {

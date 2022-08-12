@@ -7,6 +7,8 @@
         case '124':   $pageName = 'team'; break;
         case '58':    $pageName = 'press'; break;
         case '108':   $pageName = 'contact'; break;
+        case '259':   $pageName = 'advertising-chart'; break;
+        case '261':   $pageName = 'advertiser'; break;
         case '3':     $pageName = 'legal'; break;
 
         default:

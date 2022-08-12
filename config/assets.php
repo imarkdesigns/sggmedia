@@ -34,6 +34,8 @@ add_action('wp_enqueue_scripts', function() {
             case '124': // Team
             case '58':  // Press Releases
             case '108': // Contact
+            case '259': // Chart
+            case '261': // Graph
                 $pageName = 'main';
                 break;
 
