@@ -27,9 +27,16 @@
 
 <?php if ( is_front_page() ) : 
 $hdr_bg = get_field( 'bg_header', 'options' );
-$hdr_content = get_field( 'bg_content', 'options' ); ?>
+$hdr_content = get_field( 'bg_content', 'options' );
 
-<header class="hero" data-hero="home" data-src="<?php echo $hdr_bg['url']; ?>" uk-img>
+if ( $_GET['alt'] == 'admin' ) {
+    $src = _uri.'/resources/images/img-sggmedia-header-alt.jpg';
+} else {
+    $src = $hdr_bg['url'];
+}
+
+?>
+<header class="hero" data-hero="home" data-src="<?php echo $src; ?>" uk-img>
     <div class="uk-width-1-1@s uk-width-2-3@m uk-light uk-position-z-index | hero-container" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 300">
         <?php echo $hdr_content; ?>
     </div>

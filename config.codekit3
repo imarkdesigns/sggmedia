@@ -691,6 +691,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/resources\/images\/img-sggmedia-header-alt.jpg" : {
+      "ft" : 16384,
+      "iS" : 320702,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/img-sggmedia-header-alt.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/resources\/images\/img-sggmedia-header.jpg" : {
       "ft" : 16384,
       "iS" : 149158,
