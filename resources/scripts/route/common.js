@@ -32,10 +32,13 @@
         var d = new Date();
         d.setHours(0,0,0,0);
         var counter = Math.floor( ( new Date().getTime() - d.getTime() ) / 3000 );
-        followers.innerHTML = Math.floor( currentFollowers + counter ).toLocaleString();
+        followers.innerHTML = Math.floor( (currentFollowers + counter) ).toLocaleString();
+
+        setInterval(() => { followers.classList.toggle("uk-animation-shake") }, 3000 ); 
     }
     updateFollowers();
-    setInterval( updateFollowers, 3000 ); // Repeat for every 3 seconds
+    setInterval( updateFollowers, 3000 );
+    // Repeat for every 3 seconds
 
     function updateImpressions() {
         var currentImpressions = ( 10000000 - 0 ); // total impressions on all social media platform
@@ -45,6 +48,8 @@
         d.setHours(0,0,0,0);
         counter = Math.floor( ( new Date().getTime() - d.getTime() ) / 5000 );
         impressions.innerHTML = Math.floor( currentImpressions + counter ).toLocaleString();
+
+        setInterval(() => { impressions.classList.toggle("uk-animation-shake") }, 5000 ); 
     }
     updateImpressions()
     setInterval( updateImpressions, 5000 );
