@@ -12,7 +12,8 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
                 <?php if ( is_front_page() ) {
                     echo '<img src="'. $logo[0] .'" alt="'. get_bloginfo() .'">';
                 } else {
-                    echo '<img src="'._uri.'/resources/images/logo-sgg-media-black.png" alt="'.get_bloginfo().'">';
+                    // echo '<img src="'._uri.'/resources/images/logo-sgg-media-black.png" alt="'.get_bloginfo().'">';
+                    echo '<img src="'. $logo[0] .'" alt="'. get_bloginfo() .'">';
                 } ?>
             </a>
         </div>
