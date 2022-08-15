@@ -15,8 +15,8 @@
                <div class="uk-width-1-3@l">
                     <div class="uk-cover-container">
                         <?php if ( !empty( $imgWhoWeAre ) ) {
-                            // echo wp_get_attachment_image( $imgWhoWeAre['id'], 'full', '', [ 'uk-cover' => '' ] );
-                            echo '<img src="'._uri.'/resources/images/istockphoto-1129607870-1024x1024.jpg" alt="" uk-cover>';
+                            echo wp_get_attachment_image( $imgWhoWeAre['id'], 'full', '', [ 'uk-cover' => '' ] );
+                            // echo '<img src="'._uri.'/resources/images/istockphoto-1129607870-1024x1024.jpg" alt="" uk-cover>';
                         } else {
                             echo '<img src="'._uri.'/resources/images/istockphoto-1132295638-1024x1024.jpg" alt="" uk-cover>';
                         } ?>

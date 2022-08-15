@@ -23,62 +23,62 @@
 
     });
 
-    // total count-up for Followers/Impressions
-    var followers = document.getElementById('total-followers');
-    var impressions = document.getElementById('total-impressions');
-
-    function updateFollowers() {
-        let currentFollowers = 24710369;
-        let currentTicker = localStorage.getItem( 'followers' );
-
-        if ( currentFollowers > currentTicker ) {
-            let tickerFollowers = setInterval(function() {
-                let tickerCounter = Math.floor(currentFollowers++);
-                followers.classList.toggle("animate__flash");
-                followers.innerHTML = tickerCounter.toLocaleString();
-
-                localStorage.setItem('followers', tickerCounter);
-            }, 5000);
-        } else {
-            let tickerFollowers = setInterval(function() {
-                followers.classList.toggle("animate__flash");
-                let tickerCounter = Math.floor(currentTicker++);
-                followers.innerHTML = tickerCounter.toLocaleString();
-
-                localStorage.removeItem( 'followers' );
-                localStorage.setItem('followers', tickerCounter);
-            }, 5000);
-        }
-    }
-    updateFollowers();
-
-    function updateImpressions() {
-        let currentImpressions = 10000000;
-        let currentTicker = localStorage.getItem( 'impressions' );
-
-        if ( currentImpressions > currentTicker ) {
-            let tickerImpressions = setInterval(function() {
-                let tickerCounter = Math.floor(currentImpressions++);
-                impressions.classList.toggle("animate__flash");
-                impressions.innerHTML = tickerCounter.toLocaleString();
-
-                localStorage.setItem('impressions', tickerCounter);
-            }, 7500);
-        } else {
-            let tickerImpressions = setInterval(function() {
-                let tickerCounter = Math.floor(currentTicker++);
-                impressions.classList.toggle("animate__flash");
-                impressions.innerHTML = tickerCounter.toLocaleString();
-
-                localStorage.removeItem( 'impressions' );
-                localStorage.setItem('impressions', tickerCounter);
-            }, 7500);
-        }
-    }
-    updateImpressions();
-
-
 })(jQuery);
+
+// total count-up for Followers/Impressions
+var followers = document.getElementById('total-followers');
+var impressions = document.getElementById('total-impressions');
+
+function updateFollowers() {
+    let currentFollowers = 24710369;
+    let currentTicker = localStorage.getItem( 'followers' );
+
+    if ( currentFollowers > currentTicker ) {
+        let tickerFollowers = setInterval(function() {
+            let tickerCounter = Math.floor(currentFollowers++);
+            followers.classList.toggle("animate__flash");
+            followers.innerHTML = tickerCounter.toLocaleString();
+
+            localStorage.setItem('followers', tickerCounter);
+        }, 5000);
+    } else {
+        let tickerFollowers = setInterval(function() {
+            followers.classList.toggle("animate__flash");
+            let tickerCounter = Math.floor(currentTicker++);
+            followers.innerHTML = tickerCounter.toLocaleString();
+
+            localStorage.removeItem( 'followers' );
+            localStorage.setItem('followers', tickerCounter);
+        }, 5000);
+    }
+}
+updateFollowers();
+
+function updateImpressions() {
+    let currentImpressions = 10000000;
+    let currentTicker = localStorage.getItem( 'impressions' );
+
+    if ( currentImpressions > currentTicker ) {
+        let tickerImpressions = setInterval(function() {
+            let tickerCounter = Math.floor(currentImpressions++);
+            impressions.classList.toggle("animate__flash");
+            impressions.innerHTML = tickerCounter.toLocaleString();
+
+            localStorage.setItem('impressions', tickerCounter);
+        }, 7500);
+    } else {
+        let tickerImpressions = setInterval(function() {
+            let tickerCounter = Math.floor(currentTicker++);
+            impressions.classList.toggle("animate__flash");
+            impressions.innerHTML = tickerCounter.toLocaleString();
+
+            localStorage.removeItem( 'impressions' );
+            localStorage.setItem('impressions', tickerCounter);
+        }, 7500);
+    }
+}
+updateImpressions();
+
 
 // The basic check of site fully loaded
 if(document.readyState === 'complete') {
