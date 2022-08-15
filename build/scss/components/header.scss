@@ -7,7 +7,7 @@
     // background-image: url(#{$img}/img-sggmedia-header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 75% center;
     width: 100%;
     height: calc( 100vh - (80px + 85px) );
     min-height: 663px;
@@ -52,6 +52,7 @@
     }
 
     @media only screen and ( min-width: 640px ) {
+        background-position: center;
         height: calc( 100vh - (80px + 62px) );
     }
 
