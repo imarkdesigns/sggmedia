@@ -75,7 +75,7 @@
                     $class = 'class="uk-width-1-3@m"';
                 } ?>
                 <div <?=$class?>>
-                    <div class="uk-card uk-text-center">
+                    <div class="uk-card uk-card-secondary uk-text-center">
                         <div class="uk-card-body">
                             <h3><?php the_sub_field( 'profile_full_name' ); ?></h3>
                             <p><?php the_sub_field( 'profile_designation' ); ?></p>
@@ -89,7 +89,7 @@
             <div class="uk-flex-center" uk-grid uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-medium; delay: 300">
                 <?php while ( have_rows( 'pm_team' ) ) : the_row(); ?>
                 <div class="uk-width-1-2@m">
-                    <div class="uk-card uk-text-center">
+                    <div class="uk-card uk-card-secondary uk-text-center">
                         <div class="uk-card-body">
                             <h3><?php the_sub_field( 'profile_full_name' ); ?></h3>
                             <p><?php the_sub_field( 'profile_designation' ); ?></p>
@@ -106,7 +106,7 @@
             <div class="uk-flex-center" uk-grid uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-medium; delay: 300">
                 <?php while ( have_rows( 'pa_team' ) ) : the_row(); ?>
                 <div class="uk-width-1-4@m">
-                    <div class="uk-card uk-text-center">
+                    <div class="uk-card uk-card-secondary uk-text-center">
                         <div class="uk-card-body">
                             <h3><?php the_sub_field( 'profile_full_name' ); ?></h3>
                             <p><?php the_sub_field( 'profile_designation' ); ?></p>
@@ -119,7 +119,7 @@
             <div class="uk-flex-center" uk-grid uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-medium; delay: 300">
                 <?php while ( have_rows( 'graphic_team' ) ) : the_row(); ?>
                 <div class="uk-width-1-2@m">
-                    <div class="uk-card uk-text-center">
+                    <div class="uk-card uk-card-secondary uk-text-center">
                         <div class="uk-card-body">
                             <h3><?php the_sub_field( 'profile_full_name' ); ?></h3>
                             <p><?php the_sub_field( 'profile_designation' ); ?></p>

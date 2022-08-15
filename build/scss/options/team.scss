@@ -1,6 +1,5 @@
 .executive-team,
-.marketing-team,
-.other-team {
+.marketing-team {
 
     .uk-headings {
         text-align: center;
@@ -44,7 +43,7 @@
         }
 
         .uk-card-body {
-            min-height: 75px;
+            // min-height: 75px;
             padding-block: 0;
         }
 
@@ -95,43 +94,20 @@
     }
 
     .uk-card-secondary {
+        background-color: transparent;
+
         .uk-card-body {
-            padding-block: .25em 1.25em;
-        }
-    }
+            color: #444;
+            min-height: auto;
+            padding-block: 1em; 
 
-    .uk-card-default {
-        .uk-card-body {
-            padding-block: .25em 1.25em;
-        }
-    }
-
-}
-
-.other-team {
-
-    .uk-headings {
-
-        margin-top: 30px;
-
-        &.-first {
-            margin-top: 0;
-        }
-
-    }
-
-    .uk-card {
-        max-width: 200px;
-    
-        .uk-card-body {
-            min-height: 1%;
-            padding: 0 0 1.5em;
-        }
-
-        .uk-card-body h3 {
-            font-family: $passion;
-            font-size: 1.125rem;
-            text-transform: uppercase;
+            h3 { 
+                background-color: rgba($sgg-green,1);
+                line-height: normal;
+                margin: 0 0 5px;
+                padding: .25em .25em .15em;
+                border-radius: 3px;
+            }
         }
     }
 
