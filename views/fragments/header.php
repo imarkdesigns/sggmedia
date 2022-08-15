@@ -3,7 +3,7 @@
         <div class="uk-card uk-card-secondary | followers">
             <div class="uk-card-body">
                 <div class="uk-card-title">Social Media Followers</div>
-                <span id="total-followers" class="animate__animated"> <small>loading...</small> </span>
+                <span id="total-followers" class="animate__animated"> <small>fetching data...</small> </span>
             </div>
         </div>
     </div>
@@ -19,7 +19,7 @@
         <div class="uk-card uk-card-secondary | impressions">
             <div class="uk-card-body">
                 <div class="uk-card-title">30 Days' Impressions</div>
-                <span id="total-impressions"> <small>loading...</small> </span>
+                <span id="total-impressions" class="animate__animated"> <small>fetching data...</small> </span>
             </div>
         </div>
     </div>

@@ -34,39 +34,51 @@
         if ( currentFollowers > currentTicker ) {
             let tickerFollowers = setInterval(function() {
                 let tickerCounter = Math.floor(currentFollowers++);
-                followers.classList.toggle("animate__wobble");
+                followers.classList.toggle("animate__flash");
                 followers.innerHTML = tickerCounter.toLocaleString();
 
                 localStorage.setItem('followers', tickerCounter);
             }, 5000);
         } else {
             let tickerFollowers = setInterval(function() {
-                let tickerCounter = Math.floor(currentTicker++);
                 followers.classList.toggle("animate__flash");
+                let tickerCounter = Math.floor(currentTicker++);
                 followers.innerHTML = tickerCounter.toLocaleString();
 
-                localStorage.clear();
+                localStorage.removeItem( 'followers' );
                 localStorage.setItem('followers', tickerCounter);
             }, 5000);
         }
     }
     updateFollowers();
 
+    function updateImpressions() {
+        let currentImpressions = 10000000;
+        let currentTicker = localStorage.getItem( 'impressions' );
 
+        if ( currentImpressions > currentTicker ) {
+            let tickerImpressions = setInterval(function() {
+                let tickerCounter = Math.floor(currentImpressions++);
+                impressions.classList.toggle("animate__flash");
+                impressions.innerHTML = tickerCounter.toLocaleString();
 
-// function randomRangeWithIncrements(min, max, inc) {
-//     min = min || 0;
-//     inc = inc || 1;
-//     if(!max) { return new Error('need to define a max');}
+                localStorage.setItem('impressions', tickerCounter);
+            }, 7500);
+        } else {
+            let tickerImpressions = setInterval(function() {
+                let tickerCounter = Math.floor(currentTicker++);
+                impressions.classList.toggle("animate__flash");
+                impressions.innerHTML = tickerCounter.toLocaleString();
 
-//     return Math.floor(Math.random() * (max - min) / inc) * inc + min;
-// }
+                localStorage.removeItem( 'impressions' );
+                localStorage.setItem('impressions', tickerCounter);
+            }, 7500);
+        }
+    }
+    updateImpressions();
 
-// randomRangeWithIncrements();
 
 })(jQuery);
-
-
 
 // The basic check of site fully loaded
 if(document.readyState === 'complete') {
@@ -80,19 +92,3 @@ var interval = setInterval(function() {
         // done();
     }    
 }, 100);
-
-
-// var number = jQuery('.followers span:first').data("smf");
-// // var str = number.toString().split(".");
-// // str[0] = str[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-// // var follower = str.join(".");
-
-
-// // Called the function in each second
-// var interval = setInterval(function() {
-//     jQuery('#total-followers').empty().text(number++);
-
-//     if (number > 999) {
-//         clearInterval(interval);
-//     }
-// }, 3000);

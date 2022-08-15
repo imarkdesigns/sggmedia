@@ -202,8 +202,14 @@
         }
 
         .uk-parent li > a {
+            color: #FFF;
             padding: 10px 0;
         }
+
+        .uk-nav-sub li > a {
+            text-transform: uppercase;
+        }
+
     }
 
 } // end

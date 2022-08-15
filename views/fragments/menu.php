@@ -33,8 +33,14 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
                     </div>
                 </li>
                 <li><a href="<?php echo esc_url( get_permalink( 124 ) ); ?>">Our Team</a></li>
-                <li><a href="<?php echo esc_url( get_permalink( 259 ) ); ?>">Advertising Revenue Stream</a></li>
-                <li><a href="<?php echo esc_url( get_permalink( 261 ) ); ?>">How It Works</a></li>
+                <li class="uk-parent"><a href="#">Advertise <span uk-icon="icon:triangle-down; ratio:.8;"></span></a>
+                    <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a href="<?php echo esc_url( get_permalink( 259 ) ); ?>">Cost Effectiveness</a></li>
+                            <li><a href="<?php echo esc_url( get_permalink( 261 ) ); ?>">How It Works</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a href="<?php echo esc_url( get_permalink( 58 ) ); ?>">Press</a></li>
                 <li><a href="<?php echo esc_url( get_permalink( 108 ) ); ?>">Contact Us</a></li>
             </ul>
