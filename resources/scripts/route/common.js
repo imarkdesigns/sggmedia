@@ -28,39 +28,41 @@
     var impressions = document.getElementById('total-impressions');
 
     function updateFollowers() {
-        var currentFollowers = ( 24710369 - 0 ); // total followers on all social media platform
-        var d = new Date();
-        d.setHours(0,0,0,0);
-        var counter = Math.floor( ( new Date().getTime() - d.getTime() ) / 3000 );
-        followers.innerHTML = Math.floor( (currentFollowers + counter) ).toLocaleString();
+        let currentFollowers = 24710369;
+        let currentTicker = localStorage.getItem( 'followers' );
 
-        setInterval(() => { followers.classList.toggle("uk-animation-shake") }, 3000 ); 
+        if ( currentFollowers > currentTicker ) {
+            let tickerFollowers = setInterval(function() {
+                let tickerCounter = Math.floor(currentFollowers++);
+                followers.classList.toggle("animate__wobble");
+                followers.innerHTML = tickerCounter.toLocaleString();
+
+                localStorage.setItem('followers', tickerCounter);
+            }, 5000);
+        } else {
+            let tickerFollowers = setInterval(function() {
+                let tickerCounter = Math.floor(currentTicker++);
+                followers.classList.toggle("animate__flash");
+                followers.innerHTML = tickerCounter.toLocaleString();
+
+                localStorage.clear();
+                localStorage.setItem('followers', tickerCounter);
+            }, 5000);
+        }
     }
     updateFollowers();
-    setInterval( updateFollowers, 3000 );
-    // Repeat for every 3 seconds
 
-    function updateImpressions() {
-        var currentImpressions = ( 10000000 - 0 ); // total impressions on all social media platform
-        var d = new Date();
-        // d.setMonth(0);
-        // d.setDate(1);
-        d.setHours(0,0,0,0);
-        counter = Math.floor( ( new Date().getTime() - d.getTime() ) / 5000 );
-        impressions.innerHTML = Math.floor( currentImpressions + counter ).toLocaleString();
 
-        setInterval(() => { impressions.classList.toggle("uk-animation-shake") }, 5000 ); 
-    }
-    updateImpressions()
-    setInterval( updateImpressions, 5000 );
-    // var resetImpressions = setInterval(function() {
-    //     updateImpressions;
-    //     // var d = new Date();
 
-    //     // if ( d.getDate < 32 ) {
-    //     //     clearInterval(resetImpressions); // clear every month
-    //     // }
-    // }, 5000 ); // Repeat for every 5 seconds
+// function randomRangeWithIncrements(min, max, inc) {
+//     min = min || 0;
+//     inc = inc || 1;
+//     if(!max) { return new Error('need to define a max');}
+
+//     return Math.floor(Math.random() * (max - min) / inc) * inc + min;
+// }
+
+// randomRangeWithIncrements();
 
 })(jQuery);
 

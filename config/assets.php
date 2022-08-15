@@ -16,6 +16,8 @@ add_action('wp_enqueue_scripts', function() {
 
     wp_enqueue_style( 'fragments', _css.'fragments.css' );
     wp_enqueue_script( 'router', _js.'router.js', ['jquery'], null, true );
+
+    wp_enqueue_style( 'animate-css', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' );
         
     # Localize Scripts
     $dirPath = [ 'dirPath' => get_template_directory_uri() ];

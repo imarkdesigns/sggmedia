@@ -3,7 +3,7 @@
         <div class="uk-card uk-card-secondary | followers">
             <div class="uk-card-body">
                 <div class="uk-card-title">Social Media Followers</div>
-                <span id="total-followers"> <small>loading...</small> </span>
+                <span id="total-followers" class="animate__animated"> <small>loading...</small> </span>
             </div>
         </div>
     </div>
