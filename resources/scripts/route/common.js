@@ -40,7 +40,7 @@ function updateFollowers() {
             followers.innerHTML = tickerCounter.toLocaleString();
 
             localStorage.setItem('followers', tickerCounter);
-        }, 5000);
+        }, 1000);
     } else {
         let tickerFollowers = setInterval(function() {
             followers.classList.toggle("animate__flash");
@@ -49,7 +49,7 @@ function updateFollowers() {
 
             localStorage.removeItem( 'followers' );
             localStorage.setItem('followers', tickerCounter);
-        }, 5000);
+        }, 3000);
     }
 }
 updateFollowers();
@@ -65,7 +65,7 @@ function updateImpressions() {
             impressions.innerHTML = tickerCounter.toLocaleString();
 
             localStorage.setItem('impressions', tickerCounter);
-        }, 7500);
+        }, 1000);
     } else {
         let tickerImpressions = setInterval(function() {
             let tickerCounter = Math.floor(currentTicker++);
@@ -74,7 +74,7 @@ function updateImpressions() {
 
             localStorage.removeItem( 'impressions' );
             localStorage.setItem('impressions', tickerCounter);
-        }, 7500);
+        }, 5000);
     }
 }
 updateImpressions();
