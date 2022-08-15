@@ -1,46 +1,34 @@
 <main id="main" class="main uk-position-relative" role="main">
 
     <?php if ( have_rows( 'behind_group' ) ) : ?>
-    <section class="uk-section | behind-sgg">
+    <section id="about-us" class="uk-section | behind-sgg">
+        <div class="uk-container uk-container-expand">
         <?php while ( have_rows( 'behind_group' ) ) : the_row(); 
 
         $imgWhoWeAre = get_sub_field( 'bg_whoweare_background' );
         $imgWhatWeDo = get_sub_field( 'bg_whatwedo_background' ); ?>
-        <article id="who-we-are" class="uk-grid-collapse uk-grid-match uk-flex-middle | who-we-are" uk-grid>
-            <div class="uk-width-1-2@m uk-width-2-3@l">
-                <div class="uk-cover-container">
-                    <?php if ( !empty( $imgWhoWeAre ) ) {
-                        echo wp_get_attachment_image( $imgWhoWeAre['id'], 'full', '', [ 'uk-cover' => '' ] );
-                    } else {
-                        echo '<img src="'._uri.'/resources/images/advertise/sgg-who-we-are.jpg" alt="" uk-cover>';
-                    } ?>
-                </div>
-            </div>
-            <div class="uk-width-1-2@m uk-width-1-3@l">
-                <div class="uk-panel">
-                    <?php the_sub_field( 'bg_whoweare_content' ); ?>
-                </div>
-            </div>
-        </article>
 
-        <article id="what-we-do" class="uk-grid-collapse uk-grid-match uk-flex-middle | what-we-do" uk-grid>
-            <div class="uk-width-1-2@m uk-width-2-3@l">
-                <div class="uk-cover-container">
-                    <?php if ( !empty( $imgWhatWeDo ) ) {
-                        echo wp_get_attachment_image( $imgWhatWeDo['id'], 'full', '', [ 'uk-cover' => '' ] );
-                    } else {
-                        echo '<img src="'._uri.'/resources/images/advertise/sgg-what-we-do.jpg" alt="" uk-cover>';
-                    } ?>                    
-                </div>
-            </div>            
-            <div class="uk-width-1-2@m uk-width-1-3@l uk-flex-last uk-flex-first@m">
-                <div class="uk-panel">
-                    <?php the_sub_field( 'bg_whatwedo_content' ); ?>
-                </div>
-            </div>          
-        </article>        
+           <article class="uk-grid-match uk-flex-middle" uk-grid>
+               <div class="uk-width-1-3@l">
+                   <?php the_sub_field( 'bg_whoweare_content' ); ?>
+               </div>
+               <div class="uk-width-1-3@l">
+                    <div class="uk-cover-container">
+                        <?php if ( !empty( $imgWhoWeAre ) ) {
+                            // echo wp_get_attachment_image( $imgWhoWeAre['id'], 'full', '', [ 'uk-cover' => '' ] );
+                            echo '<img src="'._uri.'/resources/images/istockphoto-1129607870-1024x1024.jpg" alt="" uk-cover>';
+                        } else {
+                            echo '<img src="'._uri.'/resources/images/istockphoto-1132295638-1024x1024.jpg" alt="" uk-cover>';
+                        } ?>
+                    </div>
+               </div>
+               <div class="uk-width-1-3@l">
+                   <?php the_sub_field( 'bg_whatwedo_content' ); ?>
+               </div>
+           </article>
 
         <?php endwhile; ?>
+        </div>
     </section>
     <?php endif; ?>
 

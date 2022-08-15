@@ -23,12 +23,10 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
                         <?php if ( is_front_page() ) : ?>
-                            <li><a uk-scroll="offset: 70" href="<?php echo esc_url( site_url('#who-we-are') ); ?>">Who We Are</a></li>
-                            <li><a uk-scroll="offset: 70" href="<?php echo esc_url( site_url('#what-we-do') ); ?>">What We Do</a></li>
+                            <li><a uk-scroll="offset: 70" href="<?php echo esc_url( site_url('#about-us') ); ?>">About Us</a></li>
                             <li><a uk-scroll="offset: 70" href="<?php echo esc_url( site_url('#partners') ); ?>">Partners & Ad Samples</a></li>
                         <?php else : ?>
-                            <li><a href="<?php echo esc_url( site_url('#sgg-who-we-are') ); ?>">Who We Are</a></li>
-                            <li><a href="<?php echo esc_url( site_url('#sgg-what-we-do') ); ?>">What We Do</a></li>
+                            <li><a href="<?php echo esc_url( site_url('#sgg-about-us') ); ?>">About Us</a></li>
                             <li><a href="<?php echo esc_url( site_url('#sgg-partners') ); ?>">Partners & Ad Samples</a></li>
                         <?php endif; ?>
                         </ul>

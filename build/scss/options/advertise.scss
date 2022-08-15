@@ -73,11 +73,7 @@
 }
 
 .behind-sgg {
-    padding: 0;
-
-    .uk-grid {
-        margin: 0;
-    }
+    padding: 40px 0;
 
     article {
         // font-size: clamp(1rem, 0.75rem + 0.625vw, 1.313rem);
@@ -110,6 +106,10 @@
 
         }
 
+    }
+
+    @media only screen and  ( min-width: 1200px ) {
+        padding: 0;
     }
 }
 
