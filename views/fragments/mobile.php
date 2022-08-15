@@ -7,12 +7,10 @@
         <ul class="uk-nav-default uk-nav-parent-icon uk-nav-mobile uk-nav" uk-nav="">
             <li><a href="<?php echo esc_url( home_url() ); ?>">Home</a></li>
             <?php if ( is_front_page() ) : ?>
-                <li><a uk-scroll="offset: 70" href="<?php echo esc_url( site_url('#who-we-are') ); ?>">Who We Are</a></li>
-                <li><a uk-scroll="offset: 70" href="<?php echo esc_url( site_url('#what-we-do') ); ?>">What We Do</a></li>
+                <li><a uk-scroll="offset: 70" href="<?php echo esc_url( site_url('#about-us') ); ?>">About Us</a></li>
                 <li><a uk-scroll="offset: 70" href="<?php echo esc_url( site_url('#partners') ); ?>">Partners & Ad Samples</a></li>
             <?php else : ?>
-                <li><a href="<?php echo esc_url( site_url('#sgg-who-we-are') ); ?>">Who We Are</a></li>
-                <li><a href="<?php echo esc_url( site_url('#sgg-what-we-do') ); ?>">What We Do</a></li>
+                <li><a href="<?php echo esc_url( site_url('#sgg-about-us') ); ?>">About Us</a></li>
                 <li><a href="<?php echo esc_url( site_url('#sgg-partners') ); ?>">Partners & Ad Samples</a></li>
             <?php endif; ?>
             <li><a href="<?php echo esc_url( get_permalink( 124 ) ); ?>">Our Team</a></li>
