@@ -25,23 +25,27 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
                         <ul class="uk-nav uk-navbar-dropdown-nav">
                         <?php if ( is_front_page() ) : ?>
                             <li><a uk-scroll="offset: 70" href="<?php echo esc_url( site_url('#about-us') ); ?>">About Us</a></li>
-                            <li><a uk-scroll="offset: 70" href="<?php echo esc_url( site_url('#partners') ); ?>">Partners & Ad Samples</a></li>
                         <?php else : ?>
                             <li><a href="<?php echo esc_url( site_url('#sgg-about-us') ); ?>">About Us</a></li>
-                            <li><a href="<?php echo esc_url( site_url('#sgg-partners') ); ?>">Partners & Ad Samples</a></li>
                         <?php endif; ?>
                         </ul>
                     </div>
                 </li>
-                <li><a href="<?php echo esc_url( get_permalink( 124 ) ); ?>">Our Team</a></li>
+                <?php if ( is_front_page() ) : ?>
+                <li><a uk-scroll="offset: 70" href="<?php echo esc_url( site_url('#partners') ); ?>">Partners & Ad Samples</a></li>
+                <?php else : ?>
+                    <li><a href="<?php echo esc_url( site_url('#sgg-partners') ); ?>">Partners & Ad Samples</a></li>
+                <?php endif; ?>                
                 <li class="uk-parent"><a href="#">Advertise <span uk-icon="icon:triangle-down; ratio:.8;"></span></a>
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
                             <li><a href="<?php echo esc_url( get_permalink( 259 ) ); ?>">Cost Effectiveness</a></li>
                             <li><a href="<?php echo esc_url( get_permalink( 261 ) ); ?>">How It Works</a></li>
+                            <li><a href="<?php echo esc_url( get_permalink( 288 ) ); ?>">Revenue Streams</a></li>
                         </ul>
                     </div>
                 </li>
+                <li><a href="<?php echo esc_url( get_permalink( 124 ) ); ?>">Our Team</a></li>
                 <li><a href="<?php echo esc_url( get_permalink( 58 ) ); ?>">Press</a></li>
                 <li><a href="<?php echo esc_url( get_permalink( 108 ) ); ?>">Contact Us</a></li>
             </ul>

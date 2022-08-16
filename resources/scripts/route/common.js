@@ -54,6 +54,7 @@ function updateFollowers() {
 }
 updateFollowers();
 
+
 function updateImpressions() {
     let currentImpressions = 10000000;
     let currentTicker = localStorage.getItem( 'impressions' );
@@ -78,7 +79,6 @@ function updateImpressions() {
     }
 }
 updateImpressions();
-
 
 // The basic check of site fully loaded
 if(document.readyState === 'complete') {
