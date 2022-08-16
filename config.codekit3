@@ -1376,6 +1376,17 @@
       "sC" : 0,
       "tS" : 0
     },
+    "\/resources\/scripts\/ticker.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/resources\/scripts\/ticker.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
     "\/resources\/styles\/fragments.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -1558,30 +1569,6 @@
       "oAP" : "\/views\/options\/widget-panel.php",
       "oF" : 0
     },
-    "\/views\/pages\/advertise.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/views\/pages\/advertise.php",
-      "oF" : 0
-    },
-    "\/views\/pages\/advertiser.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/views\/pages\/advertiser.php",
-      "oF" : 0
-    },
-    "\/views\/pages\/advertising-chart.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/views\/pages\/advertising-chart.php",
-      "oF" : 0
-    },
     "\/views\/pages\/careers.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1598,6 +1585,30 @@
       "oAP" : "\/views\/pages\/contact.php",
       "oF" : 0
     },
+    "\/views\/pages\/cost-effectiveness.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/views\/pages\/cost-effectiveness.php",
+      "oF" : 0
+    },
+    "\/views\/pages\/home.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/views\/pages\/home.php",
+      "oF" : 0
+    },
+    "\/views\/pages\/how-it-works.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/views\/pages\/how-it-works.php",
+      "oF" : 0
+    },
     "\/views\/pages\/legal.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1612,6 +1623,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/views\/pages\/press.php",
+      "oF" : 0
+    },
+    "\/views\/pages\/revenue-streams.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/views\/pages\/revenue-streams.php",
       "oF" : 0
     },
     "\/views\/pages\/sitemap.php" : {

@@ -32,12 +32,13 @@ add_action('wp_enqueue_scripts', function() {
         # Enqueue Styles for Page
         switch ( $post->ID ) {
 
-            case '2':   // Advertise
+            case '2':   // Home
             case '124': // Team
             case '58':  // Press Releases
             case '108': // Contact
-            case '259': // Chart
-            case '261': // Graph
+            case '259': // Cost Effectiveness
+            case '261': // How It Works
+            case '295': // Revenue Streams
                 $pageName = 'main';
                 break;
 

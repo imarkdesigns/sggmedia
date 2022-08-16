@@ -7,12 +7,13 @@
         case '124':   $pageName = 'team'; break;
         case '58':    $pageName = 'press'; break;
         case '108':   $pageName = 'contact'; break;
-        case '259':   $pageName = 'advertising-chart'; break;
-        case '261':   $pageName = 'advertiser'; break;
+        case '259':   $pageName = 'cost-effectiveness'; break;
+        case '261':   $pageName = 'how-it-works'; break;
+        case '295':   $pageName = 'revenue-streams'; break;
         case '3':     $pageName = 'legal'; break;
 
         default:
-            $pageName = 'advertise';
+            $pageName = 'home';
             break;
 
     }

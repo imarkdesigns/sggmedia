@@ -14,11 +14,6 @@
                 </div>
                 <div class="uk-width-1-2@m">
                     <div class="uk-panel">
-                        <img src="<?php echo _uri.'/resources/images/sgg-media-graph-02.jpg' ?>" class="uk-box-shadow-medium" alt="Advertising - How It Works">
-                    </div>
-                </div>
-                <div class="uk-width-1-1">
-                    <div class="uk-panel uk-text-center">
                         <iframe src="https://www.youtube.com/embed/rQEvy83ZSCA?autoplay=1&loop=1&rel=0&playlist=rQEvy83ZSCA" width="526" height="480" frameborder="0" allowfullscreen uk-video="automute: true"></iframe>
                     </div>
                 </div>
