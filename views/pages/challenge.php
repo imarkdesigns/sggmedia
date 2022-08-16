@@ -1,6 +1,6 @@
 <main id="main" class="main" role="main">
 
-    <section id="Contents" class="uk-section | challege">
+    <section id="Contents" class="uk-section | challenge">
         <div class="uk-container uk-container-small">
 
             <div class="uk-headings">
