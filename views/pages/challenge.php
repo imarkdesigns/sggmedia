@@ -1,7 +1,7 @@
 <main id="main" class="main" role="main">
 
-    <section id="Contents" class="uk-section | contact">
-        <div class="uk-container">
+    <section id="Contents" class="uk-section | challege">
+        <div class="uk-container uk-container-small">
 
             <div class="uk-headings">
                 <h2>The Sports Gambling Guides, Inc., and SGG Media (“SGG”) $100,000 Content Creator Challenge ("Challenge")</h2>
