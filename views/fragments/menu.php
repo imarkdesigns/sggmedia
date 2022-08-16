@@ -32,7 +32,7 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
                         <ul class="uk-nav uk-navbar-dropdown-nav">
                             <li><a href="<?php echo esc_url( get_permalink( 259 ) ); ?>">Cost Effectiveness</a></li>
                             <li><a href="<?php echo esc_url( get_permalink( 261 ) ); ?>">How It Works</a></li>
-                            <li><a href="<?php echo esc_url( get_permalink( 288 ) ); ?>">Revenue Streams</a></li>
+                            <li><a href="<?php echo esc_url( get_permalink( 295 ) ); ?>">Revenue Streams</a></li>
                         </ul>
                     </div>
                 </li>
