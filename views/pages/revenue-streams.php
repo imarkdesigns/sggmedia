@@ -9,7 +9,7 @@
             <div class="uk-grid-divider uk-grid-match uk-flex-middle" uk-grid>
                 <div class="uk-width-1-1">
                     <figure class="uk-panel">
-                        <img src="<?php echo _uri.'/resources/images/sgg-media-graph-01.jpg' ?>" class="uk-box-shadow-medium" alt="Advertising - How It Works">
+                        <img src="<?php echo _uri.'/resources/images/sgg-media-graph-02.jpg' ?>" class="uk-box-shadow-medium" alt="Advertising - Revenue Streams">
                     </figure>
                 </div>
             </div>
