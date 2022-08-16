@@ -1577,6 +1577,14 @@
       "oAP" : "\/views\/pages\/careers.php",
       "oF" : 0
     },
+    "\/views\/pages\/challenge.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/views\/pages\/challenge.php",
+      "oF" : 0
+    },
     "\/views\/pages\/contact.php" : {
       "cB" : 0,
       "ft" : 8192,

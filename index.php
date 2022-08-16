@@ -10,6 +10,7 @@
         case '259':   $pageName = 'cost-effectiveness'; break;
         case '261':   $pageName = 'how-it-works'; break;
         case '295':   $pageName = 'revenue-streams'; break;
+        case '302':   $pageName = 'challenge'; break;
         case '3':     $pageName = 'legal'; break;
 
         default:

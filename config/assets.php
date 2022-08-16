@@ -39,6 +39,7 @@ add_action('wp_enqueue_scripts', function() {
             case '259': // Cost Effectiveness
             case '261': // How It Works
             case '295': // Revenue Streams
+            case '302': // Content Creator Challege
                 $pageName = 'main';
                 break;
 
