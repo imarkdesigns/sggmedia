@@ -8,7 +8,7 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
 
     <nav uk-navbar class="uk-navbar-container uk-navbar-transparent">
         <div class="uk-navbar-left">
-            <a href="<?php echo esc_url( home_url() ); ?>" class="uk-logo">
+            <a href="#" class="uk-logo">
                 <?php if ( is_front_page() ) {
                     echo '<img src="'. $logo[0] .'" alt="'. get_bloginfo() .'">';
                 } else {
