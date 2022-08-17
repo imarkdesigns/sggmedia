@@ -7,6 +7,12 @@
     z-index: 1020;
 
     // Logo
+    .uk-logo {
+        display: flex;
+        align-items: center;
+        height: 60px;
+    }
+
     .uk-logo img {
         width: auto;
         height: 30px;
@@ -115,7 +121,7 @@
         
         .uk-logo img {
             width: auto;
-            height: 60px;
+            height: 45px;
         }
 
         .uk-navbar-nav {
