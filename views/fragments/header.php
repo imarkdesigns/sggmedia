@@ -1,4 +1,4 @@
-<aside class="uk-background-muted uk-grid-collapse uk-grid-match uk-flex-middle | ticker" uk-grid uk-height-match="target: > div > .uk-card">
+<aside class="uk-background-muted uk-grid-collapse uk-grid-match uk-flex-middle | ticker" uk-grid uk-height-match="target: > div > .uk-card" hidden>
     <div>
         <div class="uk-card uk-card-secondary | followers">
             <div class="uk-card-body">
