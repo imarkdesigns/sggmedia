@@ -4,7 +4,7 @@
         <div class="uk-container uk-container-small">
 
             <div class="uk-headings">
-                <h2>The Sports Gambling Guides, Inc., and SGG Media (“SGG”) $100,000 Content Creator Challenge ("Challenge")</h2>
+                <h2>The Sports Gambling Guides, Inc., and SGG Media (“SGG”) $100,000 Content Creator Challenge</h2>
             </div>
 
             <div class="uk-panel">
