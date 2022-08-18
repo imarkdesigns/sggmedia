@@ -1,4 +1,5 @@
-<aside class="uk-background-muted uk-grid-collapse uk-grid-match uk-flex-middle | ticker" uk-grid uk-height-match="target: > div > .uk-card" hidden>
+<?php if ( !is_page( 302 ) ) : ?>
+<aside class="uk-background-muted uk-grid-collapse uk-grid-match uk-flex-middle | ticker" uk-grid uk-height-match="target: > div > .uk-card">
     <div>
         <div class="uk-card uk-card-secondary | followers">
             <div class="uk-card-body">
@@ -24,8 +25,10 @@
         </div>
     </div>
 </aside>
+<?php 
+endif;
 
-<?php if ( is_front_page() ) : 
+if ( is_front_page() ) : 
 $hdr_bg = get_field( 'bg_header', 'options' );
 $hdr_content = get_field( 'bg_content', 'options' );
 
