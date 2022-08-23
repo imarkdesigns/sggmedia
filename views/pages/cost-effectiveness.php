@@ -17,6 +17,48 @@
         </div>
     </section>
 
+
+    <section id="advertisers" class="advertisers | uk-section uk-section-muted">
+        <div class="uk-container uk-container-expand">
+            
+            <div class="uk-headings uk-text-center uk-margin-medium-bottom">
+                <h2>How SGG Advertiser Connect to Sport Fans</h2>
+            </div>
+
+            <div class="uk-grid-divider uk-grid-match uk-flex-middle" uk-grid>
+                <div class="uk-width-expand@m">
+                    <figure class="uk-panel">
+                        <img src="<?php echo _uri.'/resources/images/sgg-media-graph-01.jpg' ?>" class="uk-box-shadow-medium" alt="Advertising - How It Works">
+                    </figure>
+                </div>
+                <div class="uk-width-auto@m">
+                    <div class="uk-panel">
+                        <iframe src="https://www.youtube.com/embed/rQEvy83ZSCA?autoplay=1&loop=1&rel=0&playlist=rQEvy83ZSCA" width="526" height="480" frameborder="0" allowfullscreen uk-video="automute: true"></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="revenue" class="revenue | uk-section">
+        <div class="uk-container">
+            
+            <div class="uk-headings uk-text-center uk-margin-medium-bottom">
+                <h2>SGG Media Revenue Streams</h2>
+            </div>
+
+            <div class="uk-grid-divider uk-grid-match uk-flex-middle" uk-grid>
+                <div class="uk-width-1-1">
+                    <figure class="uk-panel">
+                        <img src="<?php echo _uri.'/resources/images/sgg-media-graph-02.jpg' ?>" class="uk-box-shadow-medium" alt="Advertising - Revenue Streams">
+                    </figure>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
 </main>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>

@@ -15,9 +15,15 @@
             <?php endif; ?>           
             <li class="uk-parent"><a href="#">Advertise <span uk-icon="icon:triangle-down; ratio:.8;"></span></a>
                 <ul class="uk-nav-sub uk-light">
-                    <li><a href="<?php echo esc_url( get_permalink( 259 ) ); ?>">Cost Effectiveness</a></li>
-                    <li><a href="<?php echo esc_url( get_permalink( 261 ) ); ?>">How It Works</a></li>
-                    <li><a href="<?php echo esc_url( get_permalink( 295 ) ); ?>">SGG Media Revenue Streams</a></li>
+                    <?php if ( is_page( 259 ) ) : ?>
+                    <li><a uk-scroll="offset: 80" href="<?php echo esc_url( site_url('#Contents') ); ?>">Cost Effectiveness</a></li>
+                    <li><a uk-scroll="offset: 80" href="<?php echo esc_url( site_url('#advertisers') ); ?>">How It Works</a></li>
+                    <li><a uk-scroll="offset: 80" href="<?php echo esc_url( site_url('#revenue') ); ?>">SGG Revenue Streams</a></li>
+                    <?php else : ?>
+                    <li><a href="<?php echo esc_url( get_permalink( 259 ).'#sgg-Contents' ); ?>">Cost Effectiveness</a></li>
+                    <li><a href="<?php echo esc_url( get_permalink( 259 ).'#sgg-advertisers' ); ?>">How It Works</a></li>
+                    <li><a href="<?php echo esc_url( get_permalink( 259 ).'#sgg-revenue' ); ?>">SGG Revenue Streams</a></li>
+                    <?php endif; ?> 
                 </ul>
             </li>            
             <li><a href="<?php echo esc_url( get_permalink( 124 ) ); ?>">Our Team</a></li>

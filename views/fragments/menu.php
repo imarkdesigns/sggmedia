@@ -18,7 +18,6 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
                 echo '</a>';
             } else {
                 echo '<a href="'.esc_url( home_url() ).'" class="uk-logo">';
-                // echo '<img src="'._uri.'/resources/images/logo-sgg-media-black.png" alt="'.get_bloginfo().'">';
                 echo '<img src="'. $logo[0] .'" alt="'. get_bloginfo() .'">';
                 echo '</a>';
             } ?>
@@ -37,9 +36,15 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
                 <li class="uk-parent"><a href="#">Advertise <span uk-icon="icon:triangle-down; ratio:.8;"></span></a>
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li><a href="<?php echo esc_url( get_permalink( 259 ) ); ?>">Cost Effectiveness</a></li>
-                            <li><a href="<?php echo esc_url( get_permalink( 261 ) ); ?>">How It Works</a></li>
-                            <li><a href="<?php echo esc_url( get_permalink( 295 ) ); ?>">Revenue Streams</a></li>
+                            <?php if ( is_page( 259 ) ) : ?>
+                            <li><a uk-scroll="offset: 80" href="<?php echo esc_url( site_url('#Contents') ); ?>">Cost Effectiveness</a></li>
+                            <li><a uk-scroll="offset: 80" href="<?php echo esc_url( site_url('#advertisers') ); ?>">How It Works</a></li>
+                            <li><a uk-scroll="offset: 80" href="<?php echo esc_url( site_url('#revenue') ); ?>">SGG Revenue Streams</a></li>
+                            <?php else : ?>
+                            <li><a href="<?php echo esc_url( get_permalink( 259 ).'#sgg-Contents' ); ?>">Cost Effectiveness</a></li>
+                            <li><a href="<?php echo esc_url( get_permalink( 259 ).'#sgg-advertisers' ); ?>">How It Works</a></li>
+                            <li><a href="<?php echo esc_url( get_permalink( 259 ).'#sgg-revenue' ); ?>">SGG Revenue Streams</a></li>
+                            <?php endif; ?> 
                         </ul>
                     </div>
                 </li>
