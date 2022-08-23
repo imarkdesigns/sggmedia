@@ -4,7 +4,7 @@
         <div class="uk-card uk-card-secondary | followers">
             <div class="uk-card-body">
                 <div class="uk-card-title">Social Media Followers</div>
-                <span id="total-followers" class="animate__animated" data-followers="<?php echo '25011251' ?>"> <small>fetching data...</small> </span>
+                <span id="total-followers" class="animate__animated" data-followers="<?php the_field( 'sm_followers', 'options' ); ?>"> <small>fetching data...</small> </span>
             </div>
         </div>
     </div>
@@ -12,7 +12,7 @@
         <div class="uk-card uk-card-secondary | influencers">
             <div class="uk-card-body">
                 <div class="uk-card-title">Influencers</div>
-                <span id="total-influencers" data-influencers="<?php echo '1151' ?>"> <small>fetching data...</small> </span>
+                <span id="total-influencers" data-influencers="<?php the_field( 'sm_influencers', 'options' ); ?>"> <small>fetching data...</small> </span>
             </div>
         </div>
     </div>
@@ -20,7 +20,7 @@
         <div class="uk-card uk-card-secondary | impressions">
             <div class="uk-card-body">
                 <div class="uk-card-title">30 Days' Impressions</div>
-                <span id="total-impressions" class="animate__animated" data-impressions="<?php echo '31063311' ?>"> <small>fetching data...</small> </span>
+                <span id="total-impressions" class="animate__animated" data-impressions="<?php the_field( 'sm_impressions', 'options' ); ?>"> <small>fetching data...</small> </span>
             </div>
         </div>
     </div>
