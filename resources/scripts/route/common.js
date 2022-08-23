@@ -31,9 +31,9 @@ var influencers = document.getElementById('total-influencers');
 var impressions = document.getElementById('total-impressions');
 
 function updateInfluencers() {
-    let currentInfluencers = followers.dataset.influencers;
-    // influencers.innerHTML = currentInfluencers;
-    console.log(currentInfluencers);
+    let currentInfluencers = influencers.dataset.influencers;
+    influencers.innerHTML = currentInfluencers;
+    // console.log(currentInfluencers);
 }
 updateInfluencers()
 
