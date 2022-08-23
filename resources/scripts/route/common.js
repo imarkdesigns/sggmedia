@@ -32,7 +32,7 @@ var impressions = document.getElementById('total-impressions');
 
 function updateInfluencers() {
     let currentInfluencers = influencers.dataset.influencers;
-    influencers.innerHTML = currentInfluencers.toLocaleString();
+    influencers.innerHTML = currentInfluencers.toLocaleString('en-US');
     // console.log(currentInfluencers);
 }
 updateInfluencers()
