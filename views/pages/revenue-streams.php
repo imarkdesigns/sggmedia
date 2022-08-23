@@ -3,7 +3,7 @@
     <section id="Contents" class="uk-section | influencers-graph">
         <div class="uk-container">
             <div class="uk-headings uk-text-center uk-margin-medium-bottom">
-                <h2>Revenue Streams</h2>
+                <h2><?php the_title(); ?></h2>
             </div>
 
             <div class="uk-grid-divider uk-grid-match uk-flex-middle" uk-grid>

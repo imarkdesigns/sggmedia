@@ -30,7 +30,7 @@ var followers = document.getElementById('total-followers');
 var impressions = document.getElementById('total-impressions');
 
 function updateFollowers() {
-    let currentFollowers = 24710369;
+    let currentFollowers = followers.dataset.followers;
     let currentTicker = localStorage.getItem( 'followers' );
 
     if ( currentFollowers > currentTicker ) {
@@ -56,7 +56,7 @@ updateFollowers();
 
 
 function updateImpressions() {
-    let currentImpressions = 10000000;
+    let currentImpressions = impressions.dataset.impressions;
     let currentTicker = localStorage.getItem( 'impressions' );
 
     if ( currentImpressions > currentTicker ) {

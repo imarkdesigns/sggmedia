@@ -7,7 +7,7 @@
       "uuidString" : "CAC57B17-91BE-4DDB-A093-CFFEFB891551"
     }
   ],
-  "creatorBuild" : "34408",
+  "creatorBuild" : "34418",
   "files" : {
     "\/.gitignore" : {
       "cB" : 0,
@@ -849,12 +849,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/resources\/images\/partners\/betmgm.jpg" : {
+    "\/resources\/images\/partners\/betmgm-black.jpg" : {
       "ft" : 16384,
       "iS" : 7539,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/resources\/images\/partners\/betmgm.jpg",
+      "oAP" : "\/resources\/images\/partners\/betmgm-black.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -862,12 +862,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/resources\/images\/partners\/betrivers.jpg" : {
+    "\/resources\/images\/partners\/betrivers-black.jpg" : {
       "ft" : 16384,
       "iS" : 8136,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/resources\/images\/partners\/betrivers.jpg",
+      "oAP" : "\/resources\/images\/partners\/betrivers-black.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -875,12 +875,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/resources\/images\/partners\/draftkings.jpg" : {
+    "\/resources\/images\/partners\/draftkings-black.jpg" : {
       "ft" : 16384,
       "iS" : 13562,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/resources\/images\/partners\/draftkings.jpg",
+      "oAP" : "\/resources\/images\/partners\/draftkings-black.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -914,12 +914,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/resources\/images\/partners\/fanatics.jpg" : {
+    "\/resources\/images\/partners\/fanatics-black.jpg" : {
       "ft" : 16384,
       "iS" : 10277,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/resources\/images\/partners\/fanatics.jpg",
+      "oAP" : "\/resources\/images\/partners\/fanatics-black.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -953,12 +953,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/resources\/images\/partners\/fanduel.jpg" : {
+    "\/resources\/images\/partners\/fanduel-black.jpg" : {
       "ft" : 16384,
       "iS" : 10671,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/resources\/images\/partners\/fanduel.jpg",
+      "oAP" : "\/resources\/images\/partners\/fanduel-black.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -992,12 +992,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/resources\/images\/partners\/fliff.jpg" : {
+    "\/resources\/images\/partners\/fliff-black.jpg" : {
       "ft" : 16384,
       "iS" : 9931,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/resources\/images\/partners\/fliff.jpg",
+      "oAP" : "\/resources\/images\/partners\/fliff-black.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -1005,12 +1005,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/resources\/images\/partners\/pointsbet.jpg" : {
+    "\/resources\/images\/partners\/pointsbet-black.jpg" : {
       "ft" : 16384,
       "iS" : 8036,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/resources\/images\/partners\/pointsbet.jpg",
+      "oAP" : "\/resources\/images\/partners\/pointsbet-black.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -1018,12 +1018,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/resources\/images\/partners\/prizepicks.jpg" : {
+    "\/resources\/images\/partners\/prizepicks-black.jpg" : {
       "ft" : 16384,
       "iS" : 18469,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/resources\/images\/partners\/prizepicks.jpg",
+      "oAP" : "\/resources\/images\/partners\/prizepicks-black.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -1057,12 +1057,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/resources\/images\/partners\/twinspires.jpg" : {
+    "\/resources\/images\/partners\/twinspires-black.jpg" : {
       "ft" : 16384,
       "iS" : 10062,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/resources\/images\/partners\/twinspires.jpg",
+      "oAP" : "\/resources\/images\/partners\/twinspires-black.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -1070,12 +1070,12 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/resources\/images\/partners\/unibet.jpg" : {
+    "\/resources\/images\/partners\/unibet-black.jpg" : {
       "ft" : 16384,
       "iS" : 8154,
       "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/resources\/images\/partners\/unibet.jpg",
+      "oAP" : "\/resources\/images\/partners\/unibet-black.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -1263,6 +1263,16 @@
       "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/sggmedia-marketing-ads.gif" : {
+      "ft" : 4194304,
+      "iS" : 619578,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/sggmedia-marketing-ads.gif",
+      "oF" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
       "rq" : 75
     },
     "\/resources\/images\/team\/sgg-team-chrisnordling.jpg" : {

@@ -5,6 +5,7 @@
             <div class="uk-grid-divider uk-flex-middle uk-flex-center" uk-grid>
                 <div class="uk-width-expand">
                     <div class="uk-panel uk-text-center uk-margin-medium-bottom">
+                        <img src="<?php echo _uri.'/resources/images/logo-sgg-media-black.png'; ?>" class="uk-margin-medium-bottom" alt="SGG Media Logo">
                         <h2>The Most Cost Effective Sports Advertising</h2>
                         <p>Advertising Cost Per 1000 Impressions (CPM)</p>
                     </div>

@@ -1,10 +1,10 @@
 <?php if ( !is_page( 302 ) ) : ?>
-<aside class="uk-background-muted uk-grid-collapse uk-grid-match uk-flex-middle | ticker" uk-grid uk-height-match="target: > div > .uk-card">
+<aside class="uk-background-muted uk-grid-collapse uk-grid-match uk-flex-middle | ticker" uk-grid uk-height-match="target: > div > .uk-card" uk-sticky="start: 800; offset: 60; animation: uk-animation-slide-top">
     <div>
         <div class="uk-card uk-card-secondary | followers">
             <div class="uk-card-body">
                 <div class="uk-card-title">Social Media Followers</div>
-                <span id="total-followers" class="animate__animated"> <small>fetching data...</small> </span>
+                <span id="total-followers" class="animate__animated" data-followers="<?php echo '25011251' ?>"> <small>fetching data...</small> </span>
             </div>
         </div>
     </div>
@@ -12,7 +12,7 @@
         <div class="uk-card uk-card-secondary | influencers">
             <div class="uk-card-body">
                 <div class="uk-card-title">Influencers</div>
-                <span id="total-influencers">1,151</span>
+                <span id="total-influencers" data-influencers="<?php echo '1151' ?>"> <small>fetching data...</small> </span>
             </div>
         </div>
     </div>
@@ -20,7 +20,7 @@
         <div class="uk-card uk-card-secondary | impressions">
             <div class="uk-card-body">
                 <div class="uk-card-title">30 Days' Impressions</div>
-                <span id="total-impressions" class="animate__animated"> <small>fetching data...</small> </span>
+                <span id="total-impressions" class="animate__animated" data-impressions="<?php echo '31063311' ?>"> <small>fetching data...</small> </span>
             </div>
         </div>
     </div>
@@ -32,14 +32,8 @@ if ( is_front_page() ) :
 $hdr_bg = get_field( 'bg_header', 'options' );
 $hdr_content = get_field( 'bg_content', 'options' );
 
-if ( $_GET['alt'] == 'admin' ) {
-    $src = _uri.'/resources/images/img-sggmedia-header-alt.jpg';
-} else {
-    $src = $hdr_bg['url'];
-}
-
 ?>
-<header class="hero" data-hero="home" data-src="<?php echo $src; ?>" uk-img>
+<header class="hero" data-hero="home" data-src="<?php echo $hdr_bg['sizes']['2048x2048']; ?>" uk-img>
     <div class="uk-width-1-1@s uk-width-2-3@m uk-light uk-position-z-index | hero-container" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 300">
         <?php echo $hdr_content; ?>
     </div>

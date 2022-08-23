@@ -2,32 +2,41 @@
 
     <?php if ( have_rows( 'behind_group' ) ) : ?>
     <section id="about-us" class="uk-section | behind-sgg">
-        <div class="uk-container uk-container-expand">
-        <?php while ( have_rows( 'behind_group' ) ) : the_row(); 
+        <div class="uk-container uk-container-large">
+            <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider="autoplay: true; finite: false">
+                <ul class="uk-slider-items uk-grid-collapse uk-flex-middle uk-grid">
+                    <?php while ( have_rows( 'behind_group' ) ) : the_row(); 
 
-        $imgWhoWeAre = get_sub_field( 'bg_whoweare_background' );
-        $imgWhatWeDo = get_sub_field( 'bg_whatwedo_background' ); ?>
-
-           <article class="uk-grid-match uk-flex-middle" uk-grid>
-               <div class="uk-width-1-3@l">
-                   <?php the_sub_field( 'bg_whoweare_content' ); ?>
-               </div>
-               <div class="uk-width-1-3@l">
-                    <div class="uk-cover-container">
-                        <?php if ( !empty( $imgWhoWeAre ) ) {
-                            echo wp_get_attachment_image( $imgWhoWeAre['id'], 'full', '', [ 'uk-cover' => '' ] );
-                            // echo '<img src="'._uri.'/resources/images/istockphoto-1129607870-1024x1024.jpg" alt="" uk-cover>';
-                        } else {
-                            echo '<img src="'._uri.'/resources/images/istockphoto-1132295638-1024x1024.jpg" alt="" uk-cover>';
-                        } ?>
-                    </div>
-               </div>
-               <div class="uk-width-1-3@l">
-                   <?php the_sub_field( 'bg_whatwedo_content' ); ?>
-               </div>
-           </article>
-
-        <?php endwhile; ?>
+                    $imgWhoWeAre = get_sub_field( 'bg_whoweare_background' );
+                    $imgWhatWeDo = get_sub_field( 'bg_whatwedo_background' ); ?>
+                    <li>
+                        <figure class="uk-grid-match uk-grid-collapse uk-flex-middle" uk-grid>
+                            <figcaption class="uk-width-1-3@m" uk-slider-parallax="x: 100,-100">
+                                <?php the_sub_field( 'bg_whoweare_content' ); ?>
+                            </figcaption>
+                            <div class="media | uk-width-2-3@m">
+                            <?php if ( !empty( $imgWhoWeAre ) ) {
+                                echo wp_get_attachment_image( $imgWhoWeAre['id'], 'full' );
+                            } else {
+                                echo '<img src="'._uri.'/resources/images/sggmedia-marketing-ads.gif" width="1280" height="720" alt="Marketing Ads">';
+                            } ?>
+                            </div>                           
+                        </figure>
+                    </li>
+                    <li>
+                        <figure class="uk-child-width-1-2@m uk-grid-large uk-flex-middle" uk-grid>
+                            <figcaption uk-slider-parallax="x: 100,-100">
+                                <?php the_sub_field( 'bg_whatwedo_content' ); ?>
+                            </figcaption>
+                            <?php if ( !empty($imgWhatWeDo) ) {
+                                echo wp_get_attachment_image( $imgWhatWeDo['id'], 'full' );
+                            } ?>
+                        </figure>
+                    </li>
+                    <?php endwhile; ?>
+                </ul>
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+            </div>
         </div>
     </section>
     <?php endif; ?>
@@ -35,6 +44,9 @@
     <?php if ( have_rows( 'introduction_group' ) ) : ?>
     <section class="uk-section uk-section-muted | introduction">
         <div class="uk-container">
+            <div class="uk-headings">
+                <h2>U.S. SPORTS BETTING OPERATORS SPENT <br> $300,000,000 ON ADVERTISING PAST 12- MONTHS</h2>
+            </div>
             <div class="uk-grid-match" uk-grid>
             <?php while ( have_rows( 'introduction_group' ) ): the_row(); ?>
                 <div class="uk-width-1-2@m">
