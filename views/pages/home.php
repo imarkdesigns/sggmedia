@@ -10,7 +10,7 @@
                     $imgWhoWeAre = get_sub_field( 'bg_whoweare_background' );
                     $imgWhatWeDo = get_sub_field( 'bg_whatwedo_background' ); ?>
                     <li>
-                        <figure class="uk-grid-match uk-grid-collapse uk-flex-middle" uk-grid>
+                        <figure class="uk-grid-match uk-grid-collapse uk-flex-middle" uk-grid uk-margin>
                             <figcaption class="uk-width-1-3@m" uk-slider-parallax="x: 100,-100">
                                 <?php the_sub_field( 'bg_whoweare_content' ); ?>
                             </figcaption>

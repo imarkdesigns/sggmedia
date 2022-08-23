@@ -99,7 +99,7 @@
 }
 
 .behind-sgg {
-    padding: 0;
+    padding: 40px 0;
 
     .uk-slider {
         min-height: 568px;
@@ -131,6 +131,11 @@
         }
     }
 
+    @media ( min-width: 640px ) {
+
+        padding: 0;
+
+    }
   
 }
 
