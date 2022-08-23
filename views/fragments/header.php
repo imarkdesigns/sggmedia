@@ -1,7 +1,7 @@
 <?php if ( !is_page( 302 ) ) : 
 
 $followers   = str_replace( ',', '', get_field( 'sm_followers', 'options' ) );
-$influencers = str_replace( ',', '', get_field( 'sm_influencers', 'options' ) );
+// $influencers = str_replace( ',', '', get_field( 'sm_influencers', 'options' ) );
 $impressions = str_replace( ',', '', get_field( 'sm_impressions', 'options' ) );
 
 ?>
