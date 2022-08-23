@@ -45,7 +45,7 @@
     <section class="uk-section uk-section-muted | introduction">
         <div class="uk-container">
             <div class="uk-headings">
-                <h2>U.S. SPORTS BETTING OPERATORS SPENT <br> $300,000,000 ON ADVERTISING PAST 12- MONTHS</h2>
+                <h2><?php the_field( 'ig_headings' ); ?></h2>
             </div>
             <div class="uk-grid-match" uk-grid>
             <?php while ( have_rows( 'introduction_group' ) ): the_row(); ?>
