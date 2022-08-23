@@ -32,7 +32,8 @@ var impressions = document.getElementById('total-impressions');
 
 function updateInfluencers() {
     let currentInfluencers = followers.dataset.influencers;
-    influencers.innerHTML = currentInfluencers;
+    // influencers.innerHTML = currentInfluencers;
+    console.log(currentInfluencers);
 }
 updateInfluencers()
 
