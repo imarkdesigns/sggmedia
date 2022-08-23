@@ -1,10 +1,16 @@
-<?php if ( !is_page( 302 ) ) : ?>
+<?php if ( !is_page( 302 ) ) : 
+
+$followers   = str_replace( ',', '', get_field( 'sm_followers', 'options' ) );
+$influencers = str_replace( ',', '', get_field( 'sm_influencers', 'options' ) );
+$impressions = str_replace( ',', '', get_field( 'sm_impressions', 'options' ) );
+
+?>
 <aside class="uk-background-muted uk-grid-collapse uk-grid-match uk-flex-middle | ticker" uk-grid uk-height-match="target: > div > .uk-card" uk-sticky="start: 800; offset: 60; animation: uk-animation-slide-top">
     <div>
         <div class="uk-card uk-card-secondary | followers">
             <div class="uk-card-body">
                 <div class="uk-card-title">Social Media Followers</div>
-                <span id="total-followers" class="animate__animated" data-followers="<?php the_field( 'sm_followers', 'options' ); ?>"> <small>fetching data...</small> </span>
+                <span id="total-followers" class="animate__animated" data-followers="<?=$followers?>"> <small>fetching data...</small> </span>
             </div>
         </div>
     </div>
@@ -12,7 +18,7 @@
         <div class="uk-card uk-card-secondary | influencers">
             <div class="uk-card-body">
                 <div class="uk-card-title">Influencers</div>
-                <span id="total-influencers" data-influencers="<?php the_field( 'sm_influencers', 'options' ); ?>"> <small>fetching data...</small> </span>
+                <span id="total-influencers" data-influencers="<?=$influencers?>"> <small>fetching data...</small> </span>
             </div>
         </div>
     </div>
@@ -20,7 +26,7 @@
         <div class="uk-card uk-card-secondary | impressions">
             <div class="uk-card-body">
                 <div class="uk-card-title">30 Days' Impressions</div>
-                <span id="total-impressions" class="animate__animated" data-impressions="<?php the_field( 'sm_impressions', 'options' ); ?>"> <small>fetching data...</small> </span>
+                <span id="total-impressions" class="animate__animated" data-impressions="<?=$impressions?>"> <small>fetching data...</small> </span>
             </div>
         </div>
     </div>

@@ -27,7 +27,14 @@
 
 // total count-up for Followers/Impressions
 var followers = document.getElementById('total-followers');
+var influencers = document.getElementById('total-influencers');
 var impressions = document.getElementById('total-impressions');
+
+function updateInfluencers() {
+    let currentInfluencers = followers.dataset.influencers;
+    influencers.innerHTML = currentInfluencers.toLocaleString();
+}
+updateInfluencers()
 
 function updateFollowers() {
     let currentFollowers = followers.dataset.followers;
