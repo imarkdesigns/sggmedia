@@ -232,7 +232,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/resources\/styles\/advertise.css",
       "oF" : 0,
       "oS" : 3,
@@ -247,7 +247,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/resources\/styles\/careers.css",
       "oF" : 0,
       "oS" : 3,
@@ -277,7 +277,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/resources\/styles\/how-it-works.css",
       "oF" : 0,
       "oS" : 3,
@@ -307,7 +307,7 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/resources\/styles\/team.css",
       "oF" : 0,
       "oS" : 3,
@@ -691,6 +691,19 @@
       "oIPL" : 0,
       "opt" : 0,
       "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/resources\/images\/img-sgg-what-we-do.jpg" : {
+      "ft" : 16384,
+      "iS" : 549775,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/img-sgg-what-we-do.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
       "rq" : 75
     },
     "\/resources\/images\/img-sggmedia-header-1.jpg" : {
@@ -1275,6 +1288,16 @@
       "ou" : "lpckwebp-none",
       "rq" : 75
     },
+    "\/resources\/images\/SGGMedia-Mobile.gif" : {
+      "ft" : 4194304,
+      "iS" : 908316,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/SGGMedia-Mobile.gif",
+      "oF" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "rq" : 75
+    },
     "\/resources\/images\/team\/sgg-team-chrisnordling.jpg" : {
       "ft" : 16384,
       "iS" : 64100,
@@ -1624,6 +1647,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/views\/pages\/cost-effectiveness.php",
+      "oF" : 0
+    },
+    "\/views\/pages\/home-bak.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/views\/pages\/home-bak.php",
       "oF" : 0
     },
     "\/views\/pages\/home.php" : {

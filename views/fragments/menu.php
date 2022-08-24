@@ -27,28 +27,32 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
             <ul class="uk-navbar-nav uk-visible@l">
                 <li><a href="<?php echo esc_url( home_url() ); ?>">Home</a></li>
                 <?php if ( is_front_page() ) : ?>
-                <li><a uk-scroll="offset: 70" href="<?php echo esc_url( site_url('#about-us') ); ?>">About Us</a></li>
-                <li><a uk-scroll="offset: 70" href="<?php echo esc_url( site_url('#partners') ); ?>">Partners & Ad Samples</a></li>
+                <li><a uk-scroll="offset: 125" href="<?php echo esc_url( site_url('#about') ); ?>">About Us</a></li>
+                <li><a uk-scroll="offset: 125" href="<?php echo esc_url( site_url('#partners') ); ?>">Partners & Ad Samples</a></li>
                 <?php else : ?>
-                <li><a href="<?php echo esc_url( site_url('#sgg-about-us') ); ?>">About Us</a></li>
+                <li><a href="<?php echo esc_url( site_url('#sgg-about') ); ?>">About Us</a></li>
                 <li><a href="<?php echo esc_url( site_url('#sgg-partners') ); ?>">Partners & Ad Samples</a></li>
                 <?php endif; ?>                
                 <li class="uk-parent"><a href="#">Advertise <span uk-icon="icon:triangle-down; ratio:.8;"></span></a>
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <?php if ( is_page( 259 ) ) : ?>
-                            <li><a uk-scroll="offset: 80" href="<?php echo esc_url( site_url('#Contents') ); ?>">Cost Effectiveness</a></li>
-                            <li><a uk-scroll="offset: 80" href="<?php echo esc_url( site_url('#advertisers') ); ?>">How It Works</a></li>
-                            <li><a uk-scroll="offset: 80" href="<?php echo esc_url( site_url('#revenue') ); ?>">SGG Revenue Streams</a></li>
+                            <?php if ( is_front_page() ) : ?>
+                            <li><a uk-scroll="offset: 125" href="<?php echo esc_url( site_url('#chart') ); ?>">Cost Effectiveness</a></li>
+                            <li><a uk-scroll="offset: 125" href="<?php echo esc_url( site_url('#connection') ); ?>">How It Works</a></li>
+                            <li><a uk-scroll="offset: 125" href="<?php echo esc_url( site_url('#revenue') ); ?>">SGG Revenue Streams</a></li>
                             <?php else : ?>
-                            <li><a href="<?php echo esc_url( get_permalink( 259 ).'#sgg-Contents' ); ?>">Cost Effectiveness</a></li>
-                            <li><a href="<?php echo esc_url( get_permalink( 259 ).'#sgg-advertisers' ); ?>">How It Works</a></li>
-                            <li><a href="<?php echo esc_url( get_permalink( 259 ).'#sgg-revenue' ); ?>">SGG Revenue Streams</a></li>
+                            <li><a href="<?php echo esc_url( get_permalink( 2 ).'#sgg-chart' ); ?>">Cost Effectiveness</a></li>
+                            <li><a href="<?php echo esc_url( get_permalink( 2 ).'#sgg-connection' ); ?>">How It Works</a></li>
+                            <li><a href="<?php echo esc_url( get_permalink( 2 ).'#sgg-revenue' ); ?>">SGG Revenue Streams</a></li>
                             <?php endif; ?> 
                         </ul>
                     </div>
                 </li>
-                <li><a href="<?php echo esc_url( get_permalink( 124 ) ); ?>">Our Team</a></li>
+                <?php if ( is_front_page() ) : ?>
+                <li><a uk-scroll="offset: 90" href="<?php echo esc_url( site_url('#team') ); ?>">Our Team</a></li>
+                <?php else : ?>
+                <li><a href="<?php echo esc_url( site_url('#sgg-team') ); ?>">Our Team</a></li>
+                <?php endif; ?> 
                 <li><a href="<?php echo esc_url( get_permalink( 58 ) ); ?>">Press</a></li>
                 <li><a href="<?php echo esc_url( get_permalink( 108 ) ); ?>">Contact Us</a></li>
             </ul>
