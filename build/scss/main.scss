@@ -39,6 +39,52 @@
     }
 }
 
+.colophon {
+
+    .contact-info {
+        // background-image: url(#{$img}/sgg-contact-info.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        p {
+            font-family: $face-semi-b;
+            text-transform: uppercase;
+            @include sharpText();
+        
+            &.uk-text-lead {
+                font-family: $face-bold;
+                color: #FFF;
+            }
+
+            strong {
+                color: #FFF;
+            }
+
+            span.uk-text-meta {
+                display: block;
+            }
+        }
+    }
+
+    .contact-info-link {
+        background-image: url(#{$img}/sgg-contact-info-link.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        h2 {
+            font-family: $passion;
+            font-size: 3rem;
+            color: rgba(#FFF,.8);
+            text-transform: uppercase;
+            
+        }
+
+    }
+
+}
+
 .about {
     .uk-slider {
         min-height: 568px;
