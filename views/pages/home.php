@@ -137,7 +137,7 @@
         <div class="uk-container">
 
             <div class="uk-headings uk-text-center uk-margin-medium-bottom">
-                <h2>How SGG Advertiser Connect to Sport Fans</h2>
+                <h2>How SGG Media Advertisers <br> Connect to Sports Fans</h2>
             </div>
             <figure class="uk-panel">
                 <img src="<?php echo _uri.'/resources/images/sgg-media-graph-01.jpg' ?>" class="uk-box-shadow-medium uk-border-rounded" alt="How It Works">
