@@ -97,7 +97,7 @@
             color: #FFF;
             @include size(40px,80px);
             border-radius: 5px;
-            transition: 300ms ease-out;
+            // transition: 300ms ease-out;
 
             &:hover {
                 background-color: rgba($sgg-green,1);

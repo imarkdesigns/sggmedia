@@ -3,7 +3,7 @@
     <section id="about" class="about | uk-section">
         <div class="uk-container">
             
-            <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider="autoplay: true; autoplay-interval: 15000; pause-on-hover: false;">
+            <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider="autoplay: true; autoplay-interval: 6500; pause-on-hover: false;">
                 <ul class="uk-slider-items uk-grid-collapse uk-grid-match uk-flex-middle uk-grid">
 
                     <li>
@@ -29,6 +29,10 @@
                     </li>
 
                 </ul>
+
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
                 <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
             </div>
 
