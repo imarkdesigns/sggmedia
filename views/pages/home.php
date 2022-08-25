@@ -75,7 +75,7 @@
 
     <section id="partners" class="partners | uk-section">
         <div class="uk-container">
-            <div class="uk-headings">
+            <div class="uk-headings uk-margin-medium-bottom">
                 <h2><?php the_field( 'partners_title' ); ?></h2>
             </div>
             <div class="uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-grid-small" uk-grid>
