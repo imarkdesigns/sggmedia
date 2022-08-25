@@ -2,37 +2,45 @@
 
     <section id="about" class="about | uk-section">
         <div class="uk-container">
-            
-            <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slider="autoplay: true; autoplay-interval: 6500; pause-on-hover: false;">
-                <ul class="uk-slider-items uk-grid-collapse uk-grid-match uk-flex-middle uk-grid">
 
-                    <li>
-                        <div class="uk-flex-middle" uk-grid uk-margin>
-                            <figure class="media | uk-width-1-2@m"> <img src="<?php echo _uri.'/resources/images/SGGMedia-Mobile.gif'; ?>" height="720" alt=""> </figure>
-                            <figcaption class="uk-width-1-2@m uk-flex-last uk-flex-first@m">
-                                <h2>Who We Are</h2>
-                                <p>SGG Media (“SGG”) is a social media sports marketing company, featuring over 1,000 sports Content Creator / Influencers with over 25 million avid sports Followers. SGG delivers social media branding, advertising and customer acquisitions for the nation’s largest sports and sports gaming firms including DraftKings, FanDuel, Fanatics, Prize Picks, Fliff and others.</p>
-                            </figcaption>
-                        </div>
-                    </li>
+            <div uk-slider="autoplay: true; autoplay-interval: 6500; pause-on-hover: false;">
+                <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
 
-                    <li>
-                        <div class="uk-flex-middle" uk-grid uk-margin>
-                            <figure  class="media | uk-width-2-3@m"> <img src="<?php echo _uri.'/resources/images/img-sgg-what-we-do.jpg'; ?>" alt=""> </figure>
-                            <figcaption class="uk-width-1-3@m uk-flex-last uk-flex-first@m">
-                                <h2>What We Do</h2>
-                                <p>SGG Media captures the niche of social media sports culture. Our 25+ million sports fans follow SGG Media’s 1,000+ Sports Content Creators hourly for real time sports content on all the game action, trades, highlights, and legal sports betting information.</p>
-                                <p>We also provide “Highly Targeted” marketing – our advertisers can cost effectively target just one state, just one sport, or even just one team.</p>
-                                <p>SGG offers advertising partners the most cost-effective way to reach the new younger generation (21-41) of sports fans receiving their sports information solely from social media. SGG Media has created a community of sports lovers, just like us.</p>
-                            </figcaption>
-                        </div>
-                    </li>
+                    <div class="uk-slider-container">
+                        <ul class="uk-slider-items uk-grid-collapse uk-grid-match uk-flex-middle uk-grid">
+                            <?php while ( have_rows( 'behind_group' ) ) : the_row(); ?>
+                            <li>
+                                <div class="uk-flex-middle" uk-grid uk-margin>
+                                    <figure class="media | uk-width-1-2@m"> <img src="<?php echo _uri.'/resources/images/SGGMedia-Mobile.gif'; ?>" height="720" alt=""> </figure>
+                                    <figcaption class="uk-width-1-2@m uk-flex-last uk-flex-first@m">
+                                        <?php the_sub_field( 'bg_whoweare_content' );
+                                        /* <h2>Who We Are</h2>
+                                        <p>SGG Media (“SGG”) is a social media sports marketing company, featuring over 1,000 sports Content Creator / Influencers with over 25 million avid sports Followers. SGG delivers social media branding, advertising and customer acquisitions for the nation’s largest sports and sports gaming firms including DraftKings, FanDuel, Fanatics, Prize Picks, Fliff and others.</p>
+                                        */ ?>
+                                    </figcaption>
+                                </div>
+                            </li>
 
-                </ul>
-
-                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
+                            <li>
+                                <div class="uk-flex-middle" uk-grid uk-margin>
+                                    <figure  class="media | uk-width-2-3@m"> <img src="<?php echo _uri.'/resources/images/img-sgg-what-we-do.jpg'; ?>" alt=""> </figure>
+                                    <figcaption class="uk-width-1-3@m uk-flex-last uk-flex-first@m">
+                                        <?php the_sub_field( 'bg_whatwedo_content' );
+                                        /* <h2>What We Do</h2>
+                                        <p>SGG Media captures the niche of social media sports culture. Our 25+ million sports fans follow SGG Media’s 1,000+ Sports Content Creators hourly for real time sports content on all the game action, trades, highlights, and legal sports betting information.</p>
+                                        <p>We also provide “Highly Targeted” marketing – our advertisers can cost effectively target just one state, just one sport, or even just one team.</p>
+                                        <p>SGG offers advertising partners the most cost-effective way to reach the new younger generation (21-41) of sports fans receiving their sports information solely from social media. SGG Media has created a community of sports lovers, just like us.</p>
+                                        */ ?>
+                                    </figcaption>
+                                </div>
+                            </li>
+                            <?php endwhile; ?>
+                        </ul>
+                    </div>
+                    <a class="uk-position-center-left-out uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right-out uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    
+                </div>
                 <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
             </div>
 
