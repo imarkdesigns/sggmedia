@@ -1,4 +1,4 @@
-<?php if ( !is_page( 302 ) ) : 
+<?php if ( !is_page([ 302, 358 ]) ) : 
 
 $followers   = str_replace( ',', '', get_field( 'sm_followers', 'options' ) );
 $influencers = get_field( 'sm_influencers', 'options' );
