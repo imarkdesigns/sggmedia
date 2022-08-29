@@ -1,4 +1,5 @@
-.challenge {
+.challenge,
+.sggmi-agreement {
 
     .uk-headings {
         text-align: center;
@@ -46,12 +47,18 @@
     }
 
     .forminator-input,
-    .forminator-checkbox-box,
+    .forminator-checkbox-box {
+        background: transparent !important;
+        border: 1px solid #DDD !important;
+        border-radius: 3px !important;
+    }
+
     .forminator-textarea {
         background: transparent !important;
         border: 1px solid #DDD !important;
         border-radius: 3px !important;
     }
+
 
     .forminator-button {
         background-color: $sgg-green !important;

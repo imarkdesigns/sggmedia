@@ -12,6 +12,7 @@
         case '295':   $pageName = 'revenue-streams'; break;
         case '302':   $pageName = 'challenge'; break;
         case '3':     $pageName = 'legal'; break;
+        case '358':   $pageName = 'sggmi-agreement'; break;
 
         default:
             $pageName = 'home';

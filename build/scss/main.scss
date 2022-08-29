@@ -149,7 +149,9 @@
            text-transform: capitalize;
            padding: .5em;
            border: 0;
-           border-radius: 3px; 
+           border-radius: 3px;
+           appearance: none;
+           cursor: pointer;
         }
     }
 }

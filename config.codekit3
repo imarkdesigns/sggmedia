@@ -1697,6 +1697,14 @@
       "oAP" : "\/views\/pages\/revenue-streams.php",
       "oF" : 0
     },
+    "\/views\/pages\/sggmi-agreement.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/views\/pages\/sggmi-agreement.php",
+      "oF" : 0
+    },
     "\/views\/pages\/sitemap.php" : {
       "cB" : 0,
       "ft" : 8192,

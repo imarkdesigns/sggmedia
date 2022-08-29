@@ -40,6 +40,7 @@ add_action('wp_enqueue_scripts', function() {
             case '261': // How It Works
             case '295': // Revenue Streams
             case '302': // Content Creator Challege
+            case '358': // Influencer Agreement
                 $pageName = 'main';
                 break;
 
