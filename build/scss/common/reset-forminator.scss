@@ -79,7 +79,12 @@
 
     .help-text .forminator-merge-tags p {
         font-size: 12px !important;
-        margin-top: 5px;
+        margin-top: 10px;
+        margin-bottom: 0;
+
+        &:first-child {
+            margin-top: 0;
+        }
     }
 
     .forminator-checkbox {
