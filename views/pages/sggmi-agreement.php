@@ -1,5 +1,5 @@
 <main id="main" class="main uk-position-relative" role="main">
-    <section id="Contents" class="sggmi-agreement | uk-section">
+    <section class="sggmi-agreement | uk-section">
         <div class="uk-container uk-container-small">
 
             <div class="uk-panel">
