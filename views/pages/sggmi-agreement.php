@@ -7,8 +7,12 @@
             </div>
 
             <div class="uk-panel">
-                <?php echo do_shortcode( '[forminator_form id="361"]' ); ?>
-                
+                <?php 
+
+                $_GET['download'] = do_shortcode( '[e2pdf-download id="1"]' );
+
+                echo do_shortcode( '[forminator_form id="361"]' ); ?>
+
             </div>
 
         </div>
