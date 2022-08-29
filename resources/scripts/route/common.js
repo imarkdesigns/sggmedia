@@ -23,6 +23,24 @@
 
     });
 
+    // SGG Media Influencer Agreement Checkbox Control
+    jQuery('.sggmi-agreement .forminator-checkbox__wrapper').find('input').prop('disabled', true);
+    // Add 'class' to wrapper to styling
+    if ( jQuery('.forminator-checkbox__wrapper input').is(':checked') ) {
+        jQuery('.forminator-checkbox__wrapper').removeClass('| read-terms');
+    } else {
+        jQuery('.forminator-checkbox__wrapper').addClass('| read-terms');
+    }
+
+    // scroll
+    jQuery('.sggmi-terms .uk-article').scroll(function (e) {
+        if (jQuery(this).scrollTop() + jQuery(this).innerHeight() >= jQuery(this)[0].scrollHeight) {
+            jQuery('.forminator-checkbox__wrapper').removeClass('| read-terms');
+            jQuery('.sggmi-agreement .forminator-checkbox__wrapper').find('input').prop('disabled', false);
+        }
+    });
+
+
 
 
 })(jQuery);

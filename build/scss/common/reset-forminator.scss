@@ -25,7 +25,7 @@
 
         > a {
             color: $sgg-green;
-            border-bottom: 1px dotted rgba($sgg-green, 0.25);
+            border-bottom: 1px dotted rgba($sgg-green, 0.5);
         }
     }
 
@@ -37,17 +37,29 @@
         .forminator-checkbox__label p {
             position: relative;
             top: 0;
-            font-size: 12px !important;
+            font-size: 14px !important;
+            color: #000 !important;
             margin: 0;
 
             @media ( min-width: 960px ) {
                 top: 3px;
             }
         }
+
+        &.read-terms {
+            .forminator-checkbox__label p {
+                color: #888 !important;
+            }
+
+            .forminator-checkbox-box {
+                background-color: #DDD !important;
+                border-color: #AAA !important;
+                cursor: not-allowed !important;
+            }
+        }
     }
 
-    .forminator-input,
-    .forminator-checkbox-box {
+    .forminator-input {
         background: transparent !important;
         border: 1px solid #DDD !important;
         border-radius: 3px !important;
@@ -60,6 +72,11 @@
         box-sizing: border-box;
     }
 
+    .forminator-checkbox-box {
+        background: transparent !important;
+        border: 1px solid #888 !important;
+        border-radius: 3px !important;
+    }
 
     .forminator-button {
         background-color: $sgg-green !important;
