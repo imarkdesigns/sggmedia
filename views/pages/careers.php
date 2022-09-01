@@ -3,7 +3,7 @@
     <section id="Contents" class="uk-section | careers">
         <div class="uk-container uk-container-small">
 
-            <div class="uk-headings">
+            <div class="uk-headings uk-margin-bottom">
                 <h2><?php the_title(); ?></h2>
             </div>
 

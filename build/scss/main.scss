@@ -410,6 +410,9 @@
 }
 
 .careers {
+
+
+
     .uk-accordion {
         > li {
             margin-top: 15px;
@@ -423,8 +426,9 @@
         }
 
         .uk-accordion-title {
-            font-family: $face-semi-b;
-            font-size: 24px;
+            font-family: $passion;
+            font-size: 2rem;
+            text-transform: uppercase;
             overflow: visible;
             @include sharpText();
 
@@ -443,9 +447,9 @@
         .uk-accordion-content {
             padding-left: 55px;
 
-            h4 {
-                font-family: $face-semi-b;
-                font-size: 18px;
+            h3 {
+                font-family: $passion;
+                font-size: 1.75rem;
             }
 
             a {
