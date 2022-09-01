@@ -408,3 +408,50 @@
         }
     }
 }
+
+.careers {
+    .uk-accordion {
+        > li {
+            margin-top: 15px;
+            padding-top: 29px;
+            padding-bottom: 15px;
+            border-top: 1px solid #F5F5F5;
+        
+            &:first-child {
+                border-top: 0;
+            }
+        }
+
+        .uk-accordion-title {
+            font-family: $face-semi-b;
+            font-size: 24px;
+            overflow: visible;
+            @include sharpText();
+
+            &::before {
+                float: left;
+                position: relative;
+                top: -2px;
+                background-color: rgba(#CCC, .25);
+                margin-left: 0;
+                margin-right: 20px;
+                border-radius: 50px;
+            }
+
+        }
+
+        .uk-accordion-content {
+            padding-left: 55px;
+
+            h4 {
+                font-family: $face-semi-b;
+                font-size: 18px;
+            }
+
+            a {
+                color: $sgg-green;
+                border-bottom: 1px dotted rgba($sgg-green, .75);
+            }
+        }
+    }
+}

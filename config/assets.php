@@ -32,15 +32,16 @@ add_action('wp_enqueue_scripts', function() {
         # Enqueue Styles for Page
         switch ( $post->ID ) {
 
+            // case '259': // Cost Effectiveness
+            // case '261': // How It Works
+            // case '295': // Revenue Streams
             case '2':   // Home
-            case '124': // Team
             case '58':  // Press Releases
             case '108': // Contact
-            case '259': // Cost Effectiveness
-            case '261': // How It Works
-            case '295': // Revenue Streams
+            case '124': // Team
             case '302': // Content Creator Challege
             case '358': // Influencer Agreement
+            case '362': // Careers
                 $pageName = 'main';
                 break;
 

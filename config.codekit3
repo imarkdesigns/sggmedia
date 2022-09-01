@@ -1617,6 +1617,46 @@
       "oAP" : "\/views\/options\/widget-panel.php",
       "oF" : 0
     },
+    "\/views\/pages\/.cost-effectiveness.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/views\/pages\/.cost-effectiveness.php",
+      "oF" : 0
+    },
+    "\/views\/pages\/.home-bak.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/views\/pages\/.home-bak.php",
+      "oF" : 0
+    },
+    "\/views\/pages\/.how-it-works.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/views\/pages\/.how-it-works.php",
+      "oF" : 0
+    },
+    "\/views\/pages\/.revenue-streams.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/views\/pages\/.revenue-streams.php",
+      "oF" : 0
+    },
+    "\/views\/pages\/.team.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/views\/pages\/.team.php",
+      "oF" : 0
+    },
     "\/views\/pages\/careers.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1641,36 +1681,12 @@
       "oAP" : "\/views\/pages\/contact.php",
       "oF" : 0
     },
-    "\/views\/pages\/cost-effectiveness.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/views\/pages\/cost-effectiveness.php",
-      "oF" : 0
-    },
-    "\/views\/pages\/home-bak.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/views\/pages\/home-bak.php",
-      "oF" : 0
-    },
     "\/views\/pages\/home.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/views\/pages\/home.php",
-      "oF" : 0
-    },
-    "\/views\/pages\/how-it-works.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/views\/pages\/how-it-works.php",
       "oF" : 0
     },
     "\/views\/pages\/legal.php" : {
@@ -1689,36 +1705,12 @@
       "oAP" : "\/views\/pages\/press.php",
       "oF" : 0
     },
-    "\/views\/pages\/revenue-streams.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/views\/pages\/revenue-streams.php",
-      "oF" : 0
-    },
     "\/views\/pages\/sggmi-agreement.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/views\/pages\/sggmi-agreement.php",
-      "oF" : 0
-    },
-    "\/views\/pages\/sitemap.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/views\/pages\/sitemap.php",
-      "oF" : 0
-    },
-    "\/views\/pages\/team.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/views\/pages\/team.php",
       "oF" : 0
     },
     "\/views\/singles\/single.php" : {

@@ -4,15 +4,16 @@
     switch ( $post->ID ) {
 
         // Pages
-        case '124':   $pageName = 'team'; break;
+        // case '259':   $pageName = 'cost-effectiveness'; break;
+        // case '261':   $pageName = 'how-it-works'; break;
+        // case '295':   $pageName = 'revenue-streams'; break;
+        case '3':     $pageName = 'legal'; break;
         case '58':    $pageName = 'press'; break;
         case '108':   $pageName = 'contact'; break;
-        case '259':   $pageName = 'cost-effectiveness'; break;
-        case '261':   $pageName = 'how-it-works'; break;
-        case '295':   $pageName = 'revenue-streams'; break;
+        case '124':   $pageName = 'team'; break;
         case '302':   $pageName = 'challenge'; break;
-        case '3':     $pageName = 'legal'; break;
         case '358':   $pageName = 'sggmi-agreement'; break;
+        case '362':   $pageName = 'careers'; break;
 
         default:
             $pageName = 'home';
