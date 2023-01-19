@@ -49,12 +49,13 @@
 
     <?php if ( have_rows( 'introduction_group' ) ) : ?>
     <section class="goal | uk-section uk-section-muted">
+        <?php while ( have_rows( 'introduction_group' ) ): the_row(); ?>
         <div class="uk-container">
             <div class="uk-headings uk-margin-medium-bottom">
-                <h2><?php echo ( get_field( 'ig_headings' ) ) ? get_field( 'ig_headings' ) : 'U.S. Sports Betting Operators Spent <br> $300,000,000 on Advertising Past 12-Months'; ?></h2>
+                <h2><?php echo ( get_sub_field( 'ig_headings' ) ) ? get_sub_field( 'ig_headings' ) : 'U.S. Sports Betting Operators Spent <br> $300,000,000 on Advertising Past 12-Months'; ?></h2>
             </div>
             <div class="uk-grid-match" uk-grid>
-                <?php while ( have_rows( 'introduction_group' ) ): the_row(); ?>
+                
                 <div class="uk-width-1-2@m">
                     <div class="uk-panel">
                         <h3>What's Now</h3>
@@ -79,9 +80,9 @@
                         ?>
                     </div>                    
                 </div>
-                <?php endwhile; ?>
             </div>
         </div>
+        <?php endwhile; ?>
     </section>
     <?php endif; ?>
 
