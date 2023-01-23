@@ -204,10 +204,10 @@
 
     </section>
 
-    <section class="micro-influencer | uk-section uk-section-secondary">
+    <section id="micro-influencer" class="micro-influencer | uk-section uk-section-secondary">
         <div class="uk-container uk-container-small">
             <article class="uk-article">
-                <h2 class="uk-text-center">What Is A "Micro- Influencer"?</h2>
+                <h2 class="uk-text-center">What Is A "Micro-Influencer"?</h2>
                 <figure class="uk-text-center"><img src="<?php echo _uri.'/resources/images/Beige-Pyramid-Chart-Social-Media-Influencer-Tier-Infographic-Instagram-Post.jpg.webp'; ?>" width="640" alt=""></figure>
                 <p>SGG Micro Influencers or "Content Creators" typically have 30,000 to 100,000 avid sports fan followers, as opposed to "Macro or Mega" Influencers (think Tom Brady or Kim Kardashian).</p> 
                 <p>These Micro Content Creators post daily - everything about their specific sport's team, or league. For instance, the Cleveland Browns NFL Team, or the L.A. Lakers NBA team have several top Micro Influencers that will post on their blog, web site, and social media sites all the in-depth information their avid Followers want. When these fans receive a post from their team's Influencer- they are highly engaged! And when they receive an advertisement (from SGG and our Ad partners) they are far more likely to interact with that advertisement than from any other ad source.</p> 

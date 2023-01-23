@@ -37,10 +37,12 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
                     <div class="uk-navbar-dropdown">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
                             <?php if ( is_front_page() ) : ?>
+                            <li><a uk-scroll="offset: 125" href="<?php echo esc_url( site_url('#micro-influencer') ); ?>">What is a Micro-Influencer</a></li>
                             <li><a uk-scroll="offset: 125" href="<?php echo esc_url( site_url('#chart') ); ?>">Cost Effectiveness</a></li>
                             <li><a uk-scroll="offset: 125" href="<?php echo esc_url( site_url('#connection') ); ?>">How It Works</a></li>
                             <li><a uk-scroll="offset: 125" href="<?php echo esc_url( site_url('#revenue') ); ?>">SGG Revenue Streams</a></li>
                             <?php else : ?>
+                            <li><a href="<?php echo esc_url( get_permalink( 2 ).'#micro-influencer' ); ?>">What is a Micro-Influencer</a></li>
                             <li><a href="<?php echo esc_url( get_permalink( 2 ).'#sgg-chart' ); ?>">Cost Effectiveness</a></li>
                             <li><a href="<?php echo esc_url( get_permalink( 2 ).'#sgg-connection' ); ?>">How It Works</a></li>
                             <li><a href="<?php echo esc_url( get_permalink( 2 ).'#sgg-revenue' ); ?>">SGG Revenue Streams</a></li>
