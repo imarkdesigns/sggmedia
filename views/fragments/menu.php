@@ -54,7 +54,11 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
                 <li><a href="<?php echo esc_url( site_url('#sgg-team') ); ?>">Our Team</a></li>
                 <?php endif; ?> 
                 <li><a href="#">Videos & Podcasts</a></li>
+                <?php if ( is_front_page() ) : ?>
+                <li><a uk-scroll="offset: 120" href="<?php echo esc_url( site_url('#seen-in-press') ); ?>">Press</a></li>
+                <?php else : ?>
                 <li><a href="<?php echo esc_url( get_permalink( 58 ) ); ?>">Press</a></li>
+                <?php endif; ?> 
                 <li><a href="<?php echo esc_url( get_permalink( 362 ) ); ?>">Careers</a></li>
                 <li><a href="<?php echo esc_url( get_permalink( 108 ) ); ?>">Contact Us</a></li>
             </ul>
