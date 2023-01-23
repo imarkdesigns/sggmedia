@@ -3,7 +3,7 @@
     <section id="about" class="about | uk-section">
         <div class="uk-container">
 
-            <div class="uk-margin-large-bottom" uk-slider="autoplay: true; autoplay-interval: 6500; pause-on-hover: false;">
+            <div class="featured-activities | uk-margin-large-bottom" uk-slider="autoplay: true; autoplay-interval: 6500; pause-on-hover: false;">
                 <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
 
                     <div class="uk-slider-container">
@@ -45,18 +45,25 @@
             </div>
         </div>
 
-        <div class="uk-container uk-container-small">
-            <h2 id="seen-in-press" class="uk-text-center">As Seen In Press</h2>
-            <ul class="uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-flex-center uk-grid-margin" uk-grid>
-                <?php $pressImgs = get_field('seen_in_press');
-                foreach ( $pressImgs as $pressImg ) : ?>
-                <li>
-                    <a href="<?php echo get_permalink( 58 ); ?>">
-                        <?php echo wp_get_attachment_image( $pressImg['id'], 'full' ); ?>
-                    </a>
-                </li>
-                <?php endforeach; ?>
-            </ul>
+        <div class="uk-container">
+            <h2 id="seen-in-press" class="uk-text-center">As Seen In The Press</h2>
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: true; autoplay-interval: 1500; pause-on-hover: false;">
+                <ul class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-4@m uk-grid uk-grid-small">
+                    <?php $pressImgs = get_field('seen_in_press');
+                    foreach ( $pressImgs as $pressImg ) : ?>
+                    <li>
+                        <figure class="uk-panel">
+                            <a href="<?php echo get_permalink( 58 ); ?>">
+                                <?php echo wp_get_attachment_image( $pressImg['id'], 'full' ); ?>
+                            </a>
+                        </figure>
+                    </li>
+                    <?php endforeach; ?>
+                </ul>
+
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            </div>
         </div>
     </section>
 

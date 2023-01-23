@@ -87,23 +87,23 @@
 
 .about {
 
-    .uk-slider {
+    .featured-activities {
         min-height: 568px;
         padding-inline: 60px;
+    }
 
-        .uk-slidenav {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: rgba($sgg-green,.5);
-            color: #FFF;
-            @include size(40px,80px);
-            border-radius: 5px;
-            // transition: 300ms ease-out;
+    .uk-slidenav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba($sgg-green,.5);
+        color: #FFF;
+        @include size(40px,80px);
+        border-radius: 5px;
+        // transition: 300ms ease-out;
 
-            &:hover {
-                background-color: rgba($sgg-green,1);
-            }
+        &:hover {
+            background-color: rgba($sgg-green,1);
         }
     }
 
@@ -130,20 +130,41 @@
         }
 
     blockquote {
-        font-family: 'OpenSans-Light';
+        position: relative;
+        // font-family: 'OpenSans-Light';
         font-style: normal;
-        font-size: .875rem;
+        font-size: 1rem;
         color: #666;
         margin: 30px 0;
-        padding-left: 15px;
-        border-left: 2px solid #666;
+        padding-inline: 30px;
+        padding-block: 30px;
+        // border-left: 2px solid #666;
+        border: solid rgba($sgg-green,.95);
+        border-width: 1px 0 0;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            background-image: url(#{$img}/quote.svg);
+            background-size: 64px;
+            background-position: center;
+            @include size(64px);
+            opacity: .05;
+            transform: scaleX(-1);
+        }
+
 
         p {
             margin-bottom: 0;
         }
 
         p:last-child {
-            margin-top: 5px !important;
+            font-size: .875rem;
+            color: rgba(#000,.5);
+            margin-top: 10px !important;
         }
     }
 
@@ -163,20 +184,41 @@
     }
 
     blockquote {
-        font-family: 'OpenSans-Light';
+        position: relative;
+        // font-family: 'OpenSans-Light';
         font-style: normal;
-        font-size: .875rem;
+        font-size: 1rem;
         color: #666;
         margin: 30px 0;
-        padding-left: 15px;
-        border-left: 2px solid #666;
+        padding-inline: 30px;
+        padding-block: 30px;
+        // border-left: 2px solid #666;
+        border: solid rgba($sgg-green,.95);
+        border-width: 1px 0 0;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            background-image: url(#{$img}/quote.svg);
+            background-size: 64px;
+            background-position: center;
+            @include size(64px);
+            opacity: .05;
+            transform: scaleX(-1);
+        }
+
 
         p {
             margin-bottom: 0;
         }
 
         p:last-child {
-            margin-top: 5px !important;
+            font-size: .875rem;
+            color: rgba(#000,.5);
+            margin-top: 10px !important;
         }
     }
 }
@@ -377,10 +419,10 @@
 
         .uk-card-body {
             padding: 0;
-            border: 1px solid #EEE;
+            border: 1px solid #000;
 
             .uk-card-title {
-                background-color: $sgg-green;
+                background-color: #000;
                 font-family: $passion;
                 font-size: 1.5rem;
                 color: rgba(#FFF,.9);

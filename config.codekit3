@@ -1198,6 +1198,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/resources\/images\/quote.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/resources\/images\/quote.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/resources\/images\/SBC-Awards-NA-trophy-logo-neg@4x-8-1.png" : {
       "ft" : 32768,
       "iS" : 35310,
