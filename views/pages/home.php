@@ -3,7 +3,7 @@
     <section id="about" class="about | uk-section">
         <div class="uk-container">
 
-            <div uk-slider="autoplay: true; autoplay-interval: 6500; pause-on-hover: false;">
+            <div class="uk-margin-large-bottom" uk-slider="autoplay: true; autoplay-interval: 6500; pause-on-hover: false;">
                 <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
 
                     <div class="uk-slider-container">
@@ -43,7 +43,20 @@
                 </div>
                 <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
             </div>
+        </div>
 
+        <div class="uk-container uk-container-small">
+            <h2 id="seen-in-press" class="uk-text-center">As Seen In Press</h2>
+            <ul class="uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-flex-center uk-grid-margin" uk-grid>
+                <?php $pressImgs = get_field('seen_in_press');
+                foreach ( $pressImgs as $pressImg ) : ?>
+                <li>
+                    <a href="<?php echo get_permalink( 58 ); ?>">
+                        <?php echo wp_get_attachment_image( $pressImg['id'], 'full' ); ?>
+                    </a>
+                </li>
+                <?php endforeach; ?>
+            </ul>
         </div>
     </section>
 
@@ -146,6 +159,17 @@
         </div>
     </section>
 
+    <aside class="sbc-awards | uk-section uk-section-secondary">
+        <div class="uk-container uk-text-center">
+            
+            <h2>SGG Media Voted Finalists for "Sports Affiliate Of The Year" - 2022 SBC Global Awards</h2>
+            <div class="uk-display-block uk-text-center uk-width-expand">
+                <img src="<?php echo _uri.'/resources/images/SBC-Awards-NA-trophy-logo-neg@4x-8-1.png'; ?>" width="240" alt="SBC Awards 2022">
+            </div>
+
+        </div>
+    </aside>
+
     <section id="connection" class="advertising connection | uk-section">
         <div class="uk-container">
 
@@ -172,6 +196,23 @@
         </div>
 
     </section>
+
+    <section class="micro-influencer | uk-section uk-section-secondary">
+        <div class="uk-container uk-container-small">
+            <article class="uk-article">
+                <h2 class="uk-text-center">What Is A "Micro- Influencer"?</h2>
+                <figure class="uk-text-center"><img src="<?php echo _uri.'/resources/images/Beige-Pyramid-Chart-Social-Media-Influencer-Tier-Infographic-Instagram-Post.jpg.webp'; ?>" width="640" alt=""></figure>
+                <p>SGG Micro Influencers or "Content Creators" typically have 30,000 to 100,000 avid sports fan followers, as opposed to "Macro or Mega" Influencers (think Tom Brady or Kim Kardashian).</p> 
+                <p>These Micro Content Creators post daily - everything about their specific sport's team, or league. For instance, the Cleveland Browns NFL Team, or the L.A. Lakers NBA team have several top Micro Influencers that will post on their blog, web site, and social media sites all the in-depth information their avid Followers want. When these fans receive a post from their team's Influencer- they are highly engaged! And when they receive an advertisement (from SGG and our Ad partners) they are far more likely to interact with that advertisement than from any other ad source.</p> 
+                <p>These Influencers are singularly too small to sign major advertisers – but SGG has aggregated over 1,300 of them and combined with our in-house team of SGG graphic artists creating custom social media advertisements and postings, provides a "Turn- Key" social media advertising solution for national advertisers.</p>
+                <blockquote>
+                    <p>"About 90% of the marketers consider ROI from influencer marketing comparable to or better than other marketing channels. The influencers are seen as trustworthy experts in their relative field by their followers, leading them to hold the power to influence their audience’s purchase decisions."</p>
+                    <footer>Backspace 2022</footer>
+                </blockquote>
+            </article>
+        </div>
+    </section>
+
 
     <?php $team = [ 'post_type' => 'page', 'page_id' => 124 ];
     query_posts( $team ); 

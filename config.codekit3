@@ -682,6 +682,17 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/resources\/images\/Beige-Pyramid-Chart-Social-Media-Influencer-Tier-Infographic-Instagram-Post.jpg.webp" : {
+      "ft" : 8388608,
+      "iS" : 19896,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/Beige-Pyramid-Chart-Social-Media-Influencer-Tier-Infographic-Instagram-Post.jpg.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
     "\/resources\/images\/header-splash.webp" : {
       "ft" : 8388608,
       "iS" : 261564,
@@ -1174,6 +1185,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/resources\/images\/SBC-Awards-NA-trophy-logo-neg@4x-8-1.png" : {
+      "ft" : 32768,
+      "iS" : 35310,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/SBC-Awards-NA-trophy-logo-neg@4x-8-1.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/resources\/images\/sgg-contact-info-link.jpg" : {
       "ft" : 16384,
       "iS" : 554166,
@@ -1202,7 +1226,7 @@
     },
     "\/resources\/images\/sgg-media-graph-01.jpg" : {
       "ft" : 16384,
-      "iS" : 204808,
+      "iS" : 86237,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/resources\/images\/sgg-media-graph-01.jpg",

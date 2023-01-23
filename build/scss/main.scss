@@ -121,6 +121,32 @@
             text-transform: uppercase;
         }
     }
+
+    h2#seen-in-press {
+            font-family: $passion;
+            font-size: clamp(2rem, 1rem + 2vw, 3.5rem);
+            color: #000;
+            text-transform: uppercase;
+        }
+
+    blockquote {
+        font-family: 'OpenSans-Light';
+        font-style: normal;
+        font-size: .875rem;
+        color: #666;
+        margin: 30px 0;
+        padding-left: 15px;
+        border-left: 2px solid #666;
+
+        p {
+            margin-bottom: 0;
+        }
+
+        p:last-child {
+            margin-top: 5px !important;
+        }
+    }
+
 }
 
 .goal {
@@ -134,6 +160,24 @@
         font-family: $passion;
         font-size: clamp(2rem, 1rem + 2vw, 3.5rem);
         text-transform: uppercase;
+    }
+
+    blockquote {
+        font-family: 'OpenSans-Light';
+        font-style: normal;
+        font-size: .875rem;
+        color: #666;
+        margin: 30px 0;
+        padding-left: 15px;
+        border-left: 2px solid #666;
+
+        p {
+            margin-bottom: 0;
+        }
+
+        p:last-child {
+            margin-top: 5px !important;
+        }
     }
 }
 
@@ -219,6 +263,43 @@
 }
 
 
+// SBC Awarads
+// Micro Influencers
+.sbc-awards,
+.micro-influencer {
+
+    h2 {
+        font-family: $passion;
+        font-size: clamp(2rem, 1rem + 2vw, 3.5rem);
+        text-transform: uppercase;
+        line-height: .8;
+        margin: 0 0 30px;
+    }
+
+}
+
+.micro-influencer {
+
+    blockquote {
+        font-family: 'OpenSans-Light';
+        font-style: normal;
+        font-size: .875rem;
+        color: #CCC !important;
+        margin: 30px 0;
+        padding-left: 15px;
+        border-left: 2px solid #666;
+
+        p {
+            margin-bottom: 0;
+        }
+
+        p:last-child {
+            margin-top: 5px !important;
+        }
+    }
+
+}
+
 
 .team {
 
@@ -296,7 +377,7 @@
 
         .uk-card-body {
             padding: 0;
-            border: 1px solid $sgg-green;
+            border: 1px solid #EEE;
 
             .uk-card-title {
                 background-color: $sgg-green;
@@ -410,8 +491,6 @@
 }
 
 .careers {
-
-
 
     .uk-accordion {
         > li {
