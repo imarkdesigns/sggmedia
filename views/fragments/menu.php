@@ -53,6 +53,7 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
                 <?php else : ?>
                 <li><a href="<?php echo esc_url( site_url('#sgg-team') ); ?>">Our Team</a></li>
                 <?php endif; ?> 
+                <li><a href="#">Videos & Podcasts</a></li>
                 <li><a href="<?php echo esc_url( get_permalink( 58 ) ); ?>">Press</a></li>
                 <li><a href="<?php echo esc_url( get_permalink( 362 ) ); ?>">Careers</a></li>
                 <li><a href="<?php echo esc_url( get_permalink( 108 ) ); ?>">Contact Us</a></li>
