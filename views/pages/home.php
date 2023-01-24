@@ -46,7 +46,7 @@
         </div>
 
         <div class="uk-container">
-            <h2 id="seen-in-press" class="uk-text-center">National Press Coverage</h2>
+            <h2 id="seen-in-press" class="uk-text-center"><?php the_field( 'slider_heading' ); ?></h2>
             <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: true; autoplay-interval: 1500; pause-on-hover: false;">
                 <ul class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-4@m uk-grid uk-grid-small">
                     <?php $pressImgs = get_field('seen_in_press');
