@@ -45,25 +45,11 @@
             </div>
         </div>
 
-        <div class="uk-container">
-            <h2 id="seen-in-press" class="uk-text-center"><?php the_field( 'slider_heading' ); ?></h2>
-            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: true; autoplay-interval: 1500; pause-on-hover: false;">
-                <ul class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-4@m uk-grid uk-grid-small">
-                    <?php $pressImgs = get_field('seen_in_press');
-                    foreach ( $pressImgs as $pressImg ) : ?>
-                    <li>
-                        <figure class="uk-panel">
-                            <a href="<?php echo get_permalink( 58 ); ?>">
-                                <?php echo wp_get_attachment_image( $pressImg['id'], 'full' ); ?>
-                            </a>
-                        </figure>
-                    </li>
-                    <?php endforeach; ?>
-                </ul>
-
-                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-            </div>
+        <div class="social-media-rank | uk-container">
+            <figure class="uk-text-center">
+                <h3>#3 In Sports Social Media Followers</h3>
+                <img src="<?php echo _uri.'/resources/images/img-social_media_table.jpg'; ?>" alt="">
+            </figure>
         </div>
     </section>
 
@@ -147,6 +133,10 @@
                 <?php 
             endwhile; ?>
             </div>
+
+            <aside class="help-text | uk-alert uk-text-small">
+                <p>*According to Hubspot's survey of more than 1,200 global marketers, 89% of marketers currently using influencer marketing will maintain or increase their investment in 2023." - Digiday 2022</p>
+            </aside>
 
         </div>
     </section>
@@ -232,7 +222,7 @@
                 $fName    = strtolower(substr($fullName[0], 0, 1));
                 $lName    = strtolower($fullName[1]); ?>
                 <div class="team-item">
-                    <div class="uk-card uk-card-primary">
+                    <div class="uk-card">
                         <div class="uk-card-media-top">
                             <a href="#<?=$fName.$lName?>" uk-toggle>
                                 <?php $avatar = get_sub_field( 'profile_photo' );
@@ -338,6 +328,39 @@
         </div>
     </section>
     <?php endwhile; wp_reset_query(); ?>
+
+    <section class="about | uk-section uk-section-muted">
+        <div class="uk-container">
+            <h2 id="seen-in-press" class="uk-text-center"><?php the_field( 'slider_heading' ); ?></h2>
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: true; autoplay-interval: 1500; pause-on-hover: false;">
+                <ul class="uk-slider-items uk-child-width-1-3@s uk-child-width-1-4@m uk-grid uk-grid-small">
+                    <?php $pressImgs = get_field('seen_in_press');
+                    foreach ( $pressImgs as $pressImg ) : ?>
+                    <li>
+                        <figure class="uk-panel">
+                            <a href="<?php echo get_permalink( 58 ); ?>">
+                                <?php echo wp_get_attachment_image( $pressImg['id'], 'full' ); ?>
+                            </a>
+                        </figure>
+                    </li>
+                    <?php endforeach; ?>
+                </ul>
+
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="advertise-with-sgg | uk-section uk-padding-remove-vertical">
+        <div class="uk-container">
+            
+            <figure class="uk-inline">
+                <img src="<?php echo _uri.'/resources/images/img-advertise-with-sgg.jpg'; ?>" alt="">
+            </figure>
+
+        </div>
+    </section>
 
     <?php 
     // Contact Us

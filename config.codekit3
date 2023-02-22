@@ -7,7 +7,7 @@
       "uuidString" : "CAC57B17-91BE-4DDB-A093-CFFEFB891551"
     }
   ],
-  "creatorBuild" : "34434",
+  "creatorBuild" : "34448",
   "files" : {
     "\/.gitignore" : {
       "cB" : 0,
@@ -704,6 +704,19 @@
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
+    "\/resources\/images\/img-advertise-with-sgg.jpg" : {
+      "ft" : 16384,
+      "iS" : 222482,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/img-advertise-with-sgg.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/resources\/images\/img-sgg-what-we-do.jpg" : {
       "ft" : 16384,
       "iS" : 549775,
@@ -749,6 +762,19 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/resources\/images\/img-sggmedia-header.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/img-social_media_table.jpg" : {
+      "ft" : 16384,
+      "iS" : 779810,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/img-social_media_table.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -1343,6 +1369,19 @@
       "oF" : 0,
       "opt" : 0,
       "ou" : "lpckwebp-none",
+      "rq" : 75
+    },
+    "\/resources\/images\/Social Media Table.png" : {
+      "ft" : 32768,
+      "iS" : 2590941,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/Social Media Table.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
       "rq" : 75
     },
     "\/resources\/images\/team\/sgg-team-chrisnordling.jpg" : {
@@ -2304,6 +2343,10 @@
         "active" : 0,
         "optionString" : "'always', {exceptAfterSingleLine: false}"
       },
+      "logical-assignment-operators" : {
+        "active" : 0,
+        "optionString" : "'always',  {'enforceForIfStatements': false}"
+      },
       "max-classes-per-file" : {
         "active" : 0,
         "optionString" : "{'ignoreExpressions': false, 'max': 1}"
@@ -2464,6 +2507,9 @@
       "no-empty-pattern" : {
         "active" : 1
       },
+      "no-empty-static-block" : {
+        "active" : 0
+      },
       "no-eq-null" : {
         "active" : 0
       },
@@ -2602,6 +2648,9 @@
         "active" : 0
       },
       "no-new-func" : {
+        "active" : 0
+      },
+      "no-new-native-nonconstructor" : {
         "active" : 0
       },
       "no-new-object" : {
@@ -3418,7 +3467,7 @@
       },
       "comments" : {
         "active" : 0,
-        "flagValue" : -1
+        "flagValue" : 1
       },
       "comparisons" : {
         "active" : 1,

@@ -168,6 +168,22 @@
         }
     }
 
+    .social-media-rank {
+
+        h3 {
+            font-family: $passion;
+            font-size: clamp(1.5rem, 0.2143rem + 3.2143vw, 2.625rem);
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        img {
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(#000,.25);
+        }
+
+    }
+
 }
 
 .goal {
@@ -239,6 +255,12 @@
            appearance: none;
            cursor: pointer;
         }
+    }
+
+    .help-text {
+        font-size: .75rem;
+        color: rgba(#000,.8);
+        text-align: center;
     }
 }
 
@@ -351,27 +373,33 @@
         flex-flow: column nowrap;
         gap: 15px;
 
+        width: 100%;
+
         .team-item {
-            flex: 0 1 100%;
+            // flex: 1 1 100%;
         }
 
         .uk-card {
             display: flex;
-            flex-flow: row nowrap;
-            align-items: center;
-            margin-bottom: 0;
-        }
+            gap: 15px;
 
-        .uk-card-media-top {
-            flex: 1 0 40%;
-            padding: .5em;
+            width: 100%;
+            margin: 0;
 
-            img { border-radius: 3px }
-        }
+            .uk-card-media-top,
+            .uk-card-body {
+                padding: 0;
+            }
 
-        .uk-card-body {
-            flex: 1 1 60%;
-            padding: 1em;
+            .uk-card-media-top {
+                flex: 0 1 150px;
+            }
+
+            .uk-card-body {
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+            }
 
             .uk-card-title {
                 font-family: $passion;
@@ -382,8 +410,8 @@
             }
 
             p {
-                font-size: .875rem;
-                margin: 0 0 20px;            
+                font-size: .75rem;
+                margin: 0 0 20px;
             }
 
             .uk-text-meta {
@@ -401,6 +429,70 @@
                 }
             }
         }
+
+        // Troy portion
+        .team-item:last-child .uk-card {
+            .uk-card-media-top {
+                flex: 0 1 150px;
+            }
+        }
+
+        // display: flex;
+        // flex-flow: column nowrap;
+        // gap: 15px;
+
+        // .team-item {
+        //     flex: 1 0 auto;
+        //     display: flex;
+        //     justify-content: center;
+        // }
+
+        // .uk-card {
+        //     display: flex;
+        //     flex-flow: row nowrap;
+        //     align-items: center;
+        //     margin-bottom: 0;
+        // }
+
+        // .uk-card-media-top {
+        //     flex: 1 0 50%;
+        //     padding: 0;
+
+        //     img { border-radius: 0 }
+        // }
+
+        // .uk-card-body {
+        //     flex: 1 1 auto;
+        //     padding: 1em;
+
+        //     .uk-card-title {
+        //         font-family: $passion;
+        //         font-size: 1.5rem;
+        //         text-transform: uppercase;
+        //         line-height: 1;
+        //         margin: 0;
+        //     }
+
+        //     p {
+        //         font-size: .875rem;
+        //         margin: 0 0 20px;            
+        //     }
+
+        //     .uk-text-meta {
+        //         position: relative;
+        //         font-size: .75rem;
+        //         text-transform: uppercase;
+
+        //         &::before {
+        //             content: '';
+        //             display: block;
+        //             width: 75px;
+        //             margin-inline: 0;
+        //             padding-top: 5px;
+        //             border-top: 1px solid rgba(#FFF,.8);
+        //         }
+        //     }
+        // }
     }
 
     &.marketing .team-wrapper {
@@ -444,23 +536,61 @@
 
     }
 
+    @media ( min-width: 600px ) {
+        &.executive .team-wrapper {
+            flex-flow: row nowrap;
+            gap: 30px;
+
+            .team-item {
+                flex: 0 1 50%;
+            }
+        }
+    }
 
     @media ( min-width: 640px ) {
 
         &.executive .team-wrapper {
             flex-flow: row nowrap;
+            justify-content: center;
+
+            .team-item {
+                flex: 0 1 auto;
+            }
 
             .uk-card {
                 flex-flow: column wrap;
-            }
+            
+                .uk-card-media-top {
+                    flex: 1 0 200px;
+                    width: 250px;
+                }
 
-            .uk-card-body {
-                text-align: center;
-
-                .uk-text-meta::before {
-                    margin-inline: auto
+                p {
+                    font-size: .875rem;
                 }
             }
+
+            // Troy portion
+            .team-item:last-child .uk-card {
+                .uk-card-media-top {
+                    flex: 1 0 300px;
+                    width: 300px;
+                }
+            }
+
+            // flex-flow: row nowrap;
+
+            // .uk-card {
+            //     flex-flow: column wrap;
+            // }
+
+            // .uk-card-body {
+            //     text-align: center;
+
+            //     .uk-text-meta::before {
+            //         margin-inline: auto
+            //     }
+            // }
         }
 
 
