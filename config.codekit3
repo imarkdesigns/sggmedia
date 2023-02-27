@@ -693,6 +693,19 @@
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
+    "\/resources\/images\/bg-capture-games-via-cellphones.jpg" : {
+      "ft" : 16384,
+      "iS" : 140903,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/bg-capture-games-via-cellphones.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/resources\/images\/header-splash.webp" : {
       "ft" : 8388608,
       "iS" : 261564,

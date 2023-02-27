@@ -92,6 +92,16 @@
     </section>
     <?php endif; ?>
 
+    <section class="capture-via-cellphones | uk-section">
+        <div class="uk-container">
+    
+            <figure>
+                <img src="<?php echo _uri.'/resources/images/bg-capture-games-via-cellphones.jpg'; ?>" alt="Have you seen the younger generation watching sports?">
+            </figure>
+    
+        </div>
+    </section>
+
     <section id="partners" class="partners | uk-section">
         <div class="uk-container">
             <div class="uk-headings uk-margin-medium-bottom">
