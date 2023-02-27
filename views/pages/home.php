@@ -134,10 +134,61 @@
             endwhile; ?>
             </div>
 
+            <!-- TODO: Needs to create custom field -->
             <aside class="help-text | uk-alert uk-text-small">
                 <p>*According to Hubspot's survey of more than 1,200 global marketers, 89% of marketers currently using influencer marketing will maintain or increase their investment in 2023." - Digiday 2022</p>
             </aside>
 
+        </div>
+    </section>
+
+    <section id="podcast" class="podcast | uk-section uk-section-secondary">
+        <div class="uk-container">
+            
+            <div class="uk-headings uk-margin-medium-bottom">
+                <h2>SGG Podcast</h2>
+            </div>
+
+            <div uk-grid class="uk-grid-match uk-grid-collapse">
+                <div class="uk-width-1-2 uk-width-1-4@s">
+                    <figure>
+                        <img src="<?php echo _uri.'/resources/images/podcast/ss-twitter-01.jpg'; ?>" alt="">
+                    </figure>
+                </div>
+                <div class="uk-width-1-2 uk-width-1-4@s">
+                    <figure>
+                        <img src="<?php echo _uri.'/resources/images/podcast/ss-twitter-02.jpg'; ?>" alt="">
+                    </figure>
+                </div>
+                <div class="uk-width-1-2 uk-width-1-4@s">
+                    <figure>
+                        <img src="<?php echo _uri.'/resources/images/podcast/ss-twitter-03.jpg'; ?>" alt="">
+                    </figure>
+                </div>                
+                <div class="uk-width-1-2 uk-width-1-4@s">
+                    <figure>
+                        <img src="<?php echo _uri.'/resources/images/podcast/ss-logo.jpg'; ?>" alt="">
+                    </figure>
+                </div>
+                <!-- Break -->
+                <div class="uk-width-1-3@m">
+                    <div class="details | uk-card uk-card-secondary uk-card-body">
+                        <h3>Launched February 2023</h3>
+                        <p><strong>4.4 Million Views First 48 Hours</strong> <br> <strong>30 Million Views First 14 Days</strong> <br> <span class="uk-text-small">(Twitter - YouTube - Instagram - Snapchat)</span></p>
+                    </div>
+                </div>
+                <div class="uk-width-2-3@m">
+                    <div class="details | uk-card uk-card-secondary uk-card-body">
+                        <p>New Jersey Sisters Go from Pizza Shop to the Top of Sports Social Media. 21-year-Old Twin Sisters Create a Viral Hit Show Mixing Sports with Lifestyle Content</p>
+                        <p><em>Featured in Barstool Sports, NFLMemes, among others</em> <br> <strong>One of the most viewed sports video launcheds ever!</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uk-text-center uk-margin-large-top">
+                <a href="<?php echo esc_url( get_permalink( 481 ) ); ?>" class="uk-button uk-button-secondary uk-button-large uk-border-rounded">View All Videos & Podcasts</a>
+            </div>
+    
         </div>
     </section>
 

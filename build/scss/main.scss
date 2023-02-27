@@ -264,6 +264,29 @@
     }
 }
 
+.podcast {
+    background: url(#{$img}/podcast/bg-podcast.jpg) no-repeat center left / cover;
+
+    .details {
+        // padding-block: 40px 0;
+    
+        h3 {
+            font-family: $face-bold;
+            color: rgb(248,117,19);
+        }
+
+        p > strong {
+            color: $sgg-green;
+        }
+
+        p > em {
+            color: rgb(248,117,19);
+        }
+    }
+
+}
+
+
 // Partners Modal
 .sample-ads {
     z-index: 100001;

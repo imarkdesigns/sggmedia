@@ -1133,6 +1133,71 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/resources\/images\/podcast\/bg-podcast.jpg" : {
+      "ft" : 16384,
+      "iS" : 150588,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/podcast\/bg-podcast.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/podcast\/ss-logo.jpg" : {
+      "ft" : 16384,
+      "iS" : 85128,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/podcast\/ss-logo.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/podcast\/ss-twitter-01.jpg" : {
+      "ft" : 16384,
+      "iS" : 98582,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/podcast\/ss-twitter-01.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/podcast\/ss-twitter-02.jpg" : {
+      "ft" : 16384,
+      "iS" : 114352,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/podcast\/ss-twitter-02.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/podcast\/ss-twitter-03.jpg" : {
+      "ft" : 16384,
+      "iS" : 111398,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/podcast\/ss-twitter-03.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/resources\/images\/press\/press-gambling-insider.jpg" : {
       "ft" : 16384,
       "iS" : 26939,
@@ -1781,6 +1846,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/views\/pages\/legal.php",
+      "oF" : 0
+    },
+    "\/views\/pages\/podcast.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/views\/pages\/podcast.php",
       "oF" : 0
     },
     "\/views\/pages\/press.php" : {

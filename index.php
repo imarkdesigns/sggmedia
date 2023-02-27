@@ -14,6 +14,7 @@
         case '302':   $pageName = 'challenge'; break;
         case '358':   $pageName = 'sggmi-agreement'; break;
         case '362':   $pageName = 'careers'; break;
+        case '481':   $pageName = 'podcast'; break;
 
         default:
             $pageName = 'home';
