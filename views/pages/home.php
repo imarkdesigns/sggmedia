@@ -156,7 +156,7 @@
         <div class="uk-container">
             
             <div class="uk-headings uk-margin-medium-bottom">
-                <h2>SGG Podcast</h2>
+                <h2>Splash Sisters Podcast <br> <small>Presented by SGG Media</small></h2>
             </div>
 
             <div uk-grid class="uk-grid-match uk-grid-collapse">
@@ -190,7 +190,7 @@
                 <div class="uk-width-2-3@m">
                     <div class="details | uk-card uk-card-secondary uk-card-body">
                         <p>New Jersey Sisters Go from Pizza Shop to the Top of Sports Social Media. 21-year-Old Twin Sisters Create a Viral Hit Show Mixing Sports with Lifestyle Content</p>
-                        <p><em>Featured in Barstool Sports, NFLMemes, among others</em> <br> <strong>One of the most viewed sports video launcheds ever!</strong></p>
+                        <p><em>Featured in Barstool Sports, NFLMemes, among others</em> <br> <strong>One of the most viewed sports video launches ever!</strong></p>
                     </div>
                 </div>
             </div>

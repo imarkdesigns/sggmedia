@@ -10,6 +10,8 @@ $fn_config = [
     'config/actions.php',
     'config/assets.php',
     'config/theme.php',
+    
+    'config/fn-podcast.php',
 
 ];
 foreach ( $fn_config as $config ) {

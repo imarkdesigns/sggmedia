@@ -741,3 +741,37 @@
         }
     }
 }
+
+// Podcast Page
+.source--video-list,
+.source--podcast-list {
+
+    .uk-headings {
+        text-align: left;
+    }
+
+}
+
+.source--video-list {
+
+    .video-item {
+        border-radius: 10px;
+        overflow: hidden;
+
+        figcaption.uk-overlay {
+            background-color: rgba(#FFF,.75);
+            -webkit-backdrop-filter: saturate(180%) blur(5px);
+            backdrop-filter: saturate(180%) blur(5px);
+            padding: 1em;
+        }
+
+        figcaption.uk-overlay h3 {
+            font-family: $passion;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+
+
+    }
+
+}
