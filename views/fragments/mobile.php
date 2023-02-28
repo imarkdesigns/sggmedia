@@ -32,7 +32,7 @@
             <li><a href="<?php echo esc_url( site_url('#sgg-team') ); ?>">Our Team</a></li>
             <?php endif; ?> 
             <li><a href="<?php echo esc_url( get_permalink( 58 ) ); ?>">Press</a></li>
-            <li><a href="<?php echo esc_url( get_permalink( 481 ) ); ?>">Videos & Podcasts</a></li>
+            <li><a href="<?php echo esc_url( get_permalink( 496 ) ); ?>">Videos & Podcasts</a></li>
             <li><a href="<?php echo esc_url( get_permalink( 362 ) ); ?>">Careers</a></li>
             <li><a href="<?php echo esc_url( get_permalink( 108 ) ); ?>">Contact</a></li>
             <li><a href="<?php echo esc_url( get_permalink( 3 ) ); ?>">Privacy Policy</a></li>

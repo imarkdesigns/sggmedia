@@ -42,7 +42,7 @@ add_action('wp_enqueue_scripts', function() {
             case '302': // Content Creator Challege
             case '358': // Influencer Agreement
             case '362': // Careers
-            case '481': // Podcast
+            case '496': // Podcast
                 $pageName = 'main';
                 break;
 
