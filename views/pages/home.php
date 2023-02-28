@@ -196,7 +196,7 @@
             </div>
 
             <div class="uk-text-center uk-margin-large-top">
-                <a href="<?php echo esc_url( get_permalink( 481 ) ); ?>" class="uk-button uk-button-secondary uk-button-large uk-border-rounded">View All Videos & Podcasts</a>
+                <a href="<?php echo esc_url( get_permalink( 496 ) ); ?>" class="uk-button uk-button-secondary uk-button-large uk-border-rounded">View All Videos & Podcasts</a>
             </div>
     
         </div>
