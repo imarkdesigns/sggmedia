@@ -4,12 +4,14 @@
         <div class="uk-container">
 
             <div class="uk-headings | uk-child-width-1-2@m uk-margin-large-bottom" uk-grid>
+                <?php while ( have_rows( 'video_section' ) ) : the_row(); ?>
                 <div>
-                    <h2>Best Video of this Week</h2>
+                    <h2><?php the_sub_field( 'video_section_title' ); ?></h2>
                 </div>
                 <div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Officiis eligendi sapiente tenetur quas minus cum iure perspiciatis unde.</p>
+                    <p><?php the_sub_field( 'video_section_description' ); ?></p>
                 </div>
+                <?php endwhile; ?>
             </div>
 
             <div class="uk-grid-small uk-child-width-1-2 uk-child-width-1-3@s" uk-grid>
@@ -27,12 +29,14 @@
         <div class="uk-container">
 
             <div class="uk-headings | uk-child-width-1-2@m uk-margin-large-bottom" uk-grid>
+                <?php while ( have_rows( 'podcast_section' ) ) : the_row(); ?>
                 <div>
-                    <h2>Top Podcast of the Week</h2>
+                    <h2><?php the_sub_field( 'podcast_section_title' ); ?></h2>
                 </div>
                 <div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Officiis eligendi sapiente tenetur quas minus cum iure perspiciatis unde.</p>
+                    <p><?php the_sub_field( 'podcast_section_description' ); ?></p>
                 </div>
+                <?php endwhile; ?>
             </div>
 
             <div class="uk-grid-small uk-grid-divider uk-child-width-1-1 uk-child-width-1-2@s" uk-grid>
