@@ -28,7 +28,7 @@ function podVideo() {
                 <figcaption class="uk-overlay uk-overlay-default uk-position-bottom">
                     <h3><?php echo $post_title ?></h3>
                 </figcaption>
-                <a href="https://www.youtube-nocookie.com/watch?v=<?=$src_id[4]?>" class="uk-position-cover" aria-label="Watch the Video" title="Watch Video" data-caption="<?=$caption?>" data-attrs="width: 1280; height: 720;"></a>
+                <a href="https://www.youtube-nocookie.com/watch?v=<?=$src_id[4]?>&rel=0" class="uk-position-cover" aria-label="Watch the Video" title="Watch Video" data-caption="<?=$caption?>" data-attrs="width: 1280; height: 720;"></a>
             </figure>
         </div>
     <?php endforeach;
