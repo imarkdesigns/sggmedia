@@ -284,7 +284,7 @@
                 $lName    = strtolower($fullName[1]); ?>
                 <div class="team-item">
                     <div class="uk-card">
-                        <div class="uk-card-media-top">
+                        <div class="uk-card-media-top --<?=$fName.$lName?>">
                             <a href="#<?=$fName.$lName?>" uk-toggle>
                                 <?php $avatar = get_sub_field( 'profile_photo' );
                                 echo wp_get_attachment_image( $avatar['id'], [ 300, 300, true ] ); ?>

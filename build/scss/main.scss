@@ -412,13 +412,9 @@
     &.executive .team-wrapper {
         display: flex;
         flex-flow: column nowrap;
-        gap: 15px;
+        gap: 30px;
 
         width: 100%;
-
-        .team-item {
-            // flex: 1 1 100%;
-        }
 
         .uk-card {
             display: flex;
@@ -433,6 +429,7 @@
             }
 
             .uk-card-media-top {
+                position: relative;
                 flex: 0 1 150px;
             }
 
@@ -592,7 +589,7 @@
 
         &.executive .team-wrapper {
             flex-flow: row nowrap;
-            justify-content: center;
+            justify-content: space-around;
 
             .team-item {
                 flex: 0 1 auto;
@@ -604,6 +601,40 @@
                 .uk-card-media-top {
                     flex: 1 0 200px;
                     width: 250px;
+                }
+
+                .--tpaul {
+                    img {
+                        position: relative;
+                        z-index: 1;
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        left: -75px;
+                        display: block;
+                        @include size(325px);
+                        border-radius: 50%;
+                        border: 5px solid rgba($sgg-green,.15);
+                        transform: translateY(-50%);
+                        z-index: 0;
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        display: block;
+                        background-color: rgba($sgg-green,.55);
+                        @include size(100px);
+                        border-radius: 50%;
+                        translate: 50px -50%;
+                        z-index: 1;
+                    }
+
                 }
 
                 p {
