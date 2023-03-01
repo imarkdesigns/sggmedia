@@ -18,7 +18,7 @@
                 <?php do_action( 'podVideo' ); ?>
             </div>
 
-            <div class="uk-text-center uk-margin-large-top" hidden>
+            <div class="uk-text-center uk-margin-large-top">
                 <a href="#" class="uk-button uk-button-primary uk-button-large">View All</a>
             </div>
     
