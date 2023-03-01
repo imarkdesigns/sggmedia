@@ -449,12 +449,13 @@
 
             p {
                 font-size: .75rem;
-                margin: 0 0 20px;
+                margin: 0;
             }
 
             .uk-text-meta {
                 position: relative;
                 font-size: .75rem;
+                color: rgba($sgg-green,.75) !important;
                 text-transform: uppercase;
 
                 &::before {
