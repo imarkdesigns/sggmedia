@@ -50,7 +50,7 @@
                 <h3>#3 In Sports Social Media Followers</h3>
                 <img src="<?php echo _uri.'/resources/images/img-social_media_table.jpg'; ?>" alt="">
             </figure>
-        </div>
+        </div> 
     </section>
 
     <?php if ( have_rows( 'introduction_group' ) ) : ?>

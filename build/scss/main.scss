@@ -470,7 +470,7 @@
         }
 
         // Troy portion
-        .team-item:last-child .uk-card {
+        .team-item:first-child .uk-card {
             .uk-card-media-top {
                 flex: 0 1 150px;
             }
@@ -644,7 +644,7 @@
             }
 
             // Troy portion
-            .team-item:last-child .uk-card {
+            .team-item:first-child .uk-card {
                 .uk-card-media-top {
                     flex: 1 0 300px;
                     width: 300px;
