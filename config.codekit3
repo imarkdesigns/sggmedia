@@ -7,7 +7,7 @@
       "uuidString" : "CAC57B17-91BE-4DDB-A093-CFFEFB891551"
     }
   ],
-  "creatorBuild" : "34448",
+  "creatorBuild" : "34472",
   "files" : {
     "\/.gitignore" : {
       "cB" : 0,
@@ -697,6 +697,19 @@
       "iS" : 319111,
       "oA" : 0,
       "oAP" : "\/resources\/images\/advertiser.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/articles\/iGB-logo.png" : {
+      "ft" : 32768,
+      "iS" : 17023,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/articles\/iGB-logo.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -3514,6 +3527,7 @@
       "ENVIRONMENT:::$NODE_ENV"
     ],
     "rollupTreeshakingEnabled" : 1,
+    "rollupTreeshakingModuleSideEffects" : 1,
     "skippedFoldersString" : "log, _logs, logs, _cache, cache, .idea, \/storage\/framework\/sessions, node_modules",
     "sourceFolderName" : "source",
     "susyVersion" : 3,

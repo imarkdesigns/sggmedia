@@ -85,6 +85,35 @@
 
 }
 
+#promo-banner {
+    background-color: rgba(#000,.9);
+    padding: 30px 15px;
+
+    img {
+        max-width: 100px;
+        height: auto;
+        filter: invert(100%);
+    }
+
+    h2 {
+        font-family: $passion;
+        font-size: clamp(1.125rem, 0.8793rem + 0.8276vw, 1.5rem);
+        color: rgba(#FFF,.9);
+        line-height: 1;
+        margin: 0;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: 300ms ease-out;
+
+            &:hover {
+                color: rgba($sgg-green,.9);
+            }
+        }
+    }
+}
+
 .about {
 
     .featured-activities {
