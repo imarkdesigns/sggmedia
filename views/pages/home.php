@@ -5,7 +5,7 @@
             
             <div uk-grid class="uk-grid-small uk-grid-divider uk-grid-match uk-flex-middle">
                 <div class="uk-width-auto">
-                    <img src="<?php echo _uri.'/resources/images/articles/iGB-logo.png' ?>" width="150" alt="iGB Logo">
+                    <img src="<?php echo _uri.'/resources/images/articles/iGB-logo.png' ?>" width="100" alt="iGB Logo">
                 </div>
                 <div class="uk-width-expand">
                     <h2><a href="https://igamingbusiness.com/marketing-affiliates/social-media-marketing/are-us-sportsbooks-ready-for-the-age-of-the-influencer/" target="_blank">I Gaming Business' Interview with Troy Paul: Are US Sportsbooks Ready For The Age of the Influencer?</a></h2>
