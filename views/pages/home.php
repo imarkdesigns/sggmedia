@@ -235,9 +235,9 @@
     <aside class="sbc-awards | uk-section uk-section-secondary">
         <div class="uk-container uk-text-center">
             
-            <h2>SGG Media Voted Finalists for "Sports Affiliate Of The Year" - 2022 SBC Global Awards</h2>
+            <h2>SGG Media Voted Finalists for "Sports Media Company of the Year" - 2023 SBC Global Awards</h2>
             <div class="uk-display-block uk-text-center uk-width-expand">
-                <img src="<?php echo _uri.'/resources/images/SBC-Awards-NA-trophy-logo-neg@4x-8-1.png'; ?>" width="240" alt="SBC Awards 2022">
+                <img src="<?php echo _uri.'/resources/images/north-america-awards-logo.png'; ?>" width="240" alt="SBC Awards 2023">
             </div>
 
         </div>
