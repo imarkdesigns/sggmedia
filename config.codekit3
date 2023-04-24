@@ -7,7 +7,7 @@
       "uuidString" : "CAC57B17-91BE-4DDB-A093-CFFEFB891551"
     }
   ],
-  "creatorBuild" : "34472",
+  "creatorBuild" : "34484",
   "files" : {
     "\/.gitignore" : {
       "cB" : 0,
@@ -742,6 +742,32 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/resources\/images\/EGR B2B Awards 2023_WinnerLogos_Shortlisted_s.png" : {
+      "ft" : 32768,
+      "iS" : 259299,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/EGR B2B Awards 2023_WinnerLogos_Shortlisted_s.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/EGR-B2B-Awards-2023_WinnerLogos_Shortlisted_l.png" : {
+      "ft" : 32768,
+      "iS" : 183951,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/EGR-B2B-Awards-2023_WinnerLogos_Shortlisted_l.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/resources\/images\/header-splash.webp" : {
       "ft" : 8388608,
       "iS" : 261564,
@@ -940,6 +966,19 @@
       "iS" : 25670,
       "oA" : 0,
       "oAP" : "\/resources\/images\/logo-sgg-media-white.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/north-america-awards-logo.png" : {
+      "ft" : 32768,
+      "iS" : 358451,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/north-america-awards-logo.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -3475,7 +3514,7 @@
       "moduleType" : 2,
       "removeComments" : 0,
       "sourceMapStyle" : 0,
-      "targetECMAVersion" : 0
+      "targetECMAVersion" : 2018
     },
     "languageDefaultsUserDefined" : [
 
@@ -3531,7 +3570,10 @@
     "skippedFoldersString" : "log, _logs, logs, _cache, cache, .idea, \/storage\/framework\/sessions, node_modules",
     "sourceFolderName" : "source",
     "susyVersion" : 3,
+    "tsAllowArbitraryExtensions" : 0,
+    "tsAllowImportingTSExtensions" : 0,
     "tsAllowSyntheticDefaultImports" : 0,
+    "tsAllowUMDGlobalAccess" : 0,
     "tsAllowUnreachableCode" : 0,
     "tsAllowUnusedLabels" : 0,
     "tsAlwaysStrict" : 0,
@@ -3540,36 +3582,36 @@
     "tsEmitDecoratorMetadata" : 0,
     "tsESModuleInterop" : 0,
     "tsExactOptionalPropertyTypes" : 0,
+    "tsExperimentalDecorators" : 0,
     "tsForceConsistentCasingInFileNames" : 0,
     "tsImportHelpers" : 0,
     "tsIsolatedModules" : 0,
     "tsJSXFactory" : "React.createElement",
-    "tsKeyofStringsOnly" : 0,
     "tsNoEmitHelpers" : 0,
     "tsNoFallthroughCasesInSwitch" : 0,
     "tsNoImplicitAny" : 0,
     "tsNoImplicitOverride" : 0,
     "tsNoImplicitReturns" : 0,
     "tsNoImplicitThis" : 0,
-    "tsNoImplicitUseStrict" : 0,
     "tsNoLib" : 0,
     "tsNoPropertyAccessFromIndexSignature" : 0,
     "tsNoResolve" : 0,
-    "tsNoStrictGenericChecks" : 0,
     "tsNoUncheckedIndexAccess" : 0,
     "tsNoUnusedLocals" : 0,
     "tsNoUnusedParameters" : 0,
     "tsPreserveConstEnums" : 0,
     "tsPreserveSymlinks" : 0,
     "tsResolveJsonModule" : 0,
+    "tsSkipDefaultLibCheck" : 0,
     "tsSkipLibCheck" : 0,
+    "tsStrictBindCallApply" : 0,
     "tsStrictFunctionTypes" : 0,
     "tsStrictNullChecks" : 0,
     "tsStrictPropertyInitialization" : 0,
     "tsStripInternal" : 0,
-    "tsSuppressExcessPropertyErrors" : 0,
-    "tsSuppressImplicitAnyIndexErrors" : 0,
+    "tsUseDefineForClassFields" : 0,
     "tsUseUnknownInCatchVariables" : 0,
+    "tsVerbatimModuleSyntax" : 0,
     "uglifyDefinesString" : "",
     "uglifyFlags2" : {
       "arguments" : {

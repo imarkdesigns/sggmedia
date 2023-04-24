@@ -232,16 +232,35 @@
         </div>
     </section>
 
-    <aside class="sbc-awards | uk-section uk-section-secondary">
-        <div class="uk-container uk-text-center">
+    <div class="sbc-awards | uk-section uk-section-secondary">
+        <div class="uk-container uk-container-expand uk-text-center">
             
+            <?php /*
             <h2>SGG Media Voted Finalists for "Sports Media Company of the Year" - 2023 SBC Global Awards</h2>
             <div class="uk-display-block uk-text-center uk-width-expand">
-                <img src="<?php echo _uri.'/resources/images/north-america-awards-logo.png'; ?>" width="240" alt="SBC Awards 2023">
+                <img src="echo _uri.'/resources/images/north-america-awards-logo.png';" width="240" alt="SBC Awards 2023">
+            </div>
+            */ ?>
+
+            <h2>SGG Media – The Only Sports Social Media Co. Nominated for National Advertising Awards</h2>
+            <div class="uk-grid-large uk-grid-divider" uk-grid>
+                <div class="uk-width-1-2@l">
+                    <div class="uk-display-block uk-text-center uk-width-expand uk-margin-bottom">
+                        <img src="<?php echo _uri.'/resources/images/north-america-awards-logo.png'; ?>" width="270" alt="SBC Awards 2023">
+                    </div>                    
+                    <h3>SGG Media Voted Finalists for "Sports Media Company of the Year" - 2023 SBC Global Awards</h3>
+                </div>
+                <div class="uk-width-1-2@l">
+                    <div class="uk-display-block uk-text-center uk-width-expand uk-margin-bottom">
+                        <img src="<?php echo _uri.'/resources/images/EGR-B2B-Awards-2023_WinnerLogos_Shortlisted_l.png'; ?>" width="480" alt="EGR B2B Awards 2023">
+                    </div>                    
+                    <h3>SGG Media - Acquisition Partner of the Year Finalist</h3>
+                </div>
             </div>
 
+
         </div>
-    </aside>
+    </div>
 
     <section id="connection" class="advertising connection | uk-section">
         <div class="uk-container">
