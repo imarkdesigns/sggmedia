@@ -174,25 +174,32 @@
                 <h2>Splash Sisters Podcast <br> <small>Presented by SGG Media</small></h2>
             </div>
 
+            <figure class="uk-flex uk-flex-center">
+                <a href="<?php echo esc_url( get_permalink( 496 ) ); ?>" title="Splash Sisters - presented by SGG Media">
+                    <img src="<?php echo _uri.'/resources/images/podcast/img-splash-sisters-banner.jpg' ?>" alt="Splash Sisters">
+                </a>
+            </figure>
+
+            <?php /*
             <div uk-grid class="uk-grid-match uk-grid-collapse">
                 <div class="uk-width-1-2 uk-width-1-4@s">
                     <figure>
-                        <img src="<?php echo _uri.'/resources/images/podcast/ss-twitter-01.jpg'; ?>" alt="">
+                        <img src="echo _uri.'/resources/images/podcast/ss-twitter-01.jpg';" alt="">
                     </figure>
                 </div>
                 <div class="uk-width-1-2 uk-width-1-4@s">
                     <figure>
-                        <img src="<?php echo _uri.'/resources/images/podcast/ss-twitter-02.jpg'; ?>" alt="">
+                        <img src="echo _uri.'/resources/images/podcast/ss-twitter-02.jpg';" alt="">
                     </figure>
                 </div>
                 <div class="uk-width-1-2 uk-width-1-4@s">
                     <figure>
-                        <img src="<?php echo _uri.'/resources/images/podcast/ss-twitter-03.jpg'; ?>" alt="">
+                        <img src="echo _uri.'/resources/images/podcast/ss-twitter-03.jpg';" alt="">
                     </figure>
                 </div>                
                 <div class="uk-width-1-2 uk-width-1-4@s">
                     <figure>
-                        <img src="<?php echo _uri.'/resources/images/podcast/ss-logo.jpg'; ?>" alt="">
+                        <img src="echo _uri.'/resources/images/podcast/ss-logo.jpg';" alt="">
                     </figure>
                 </div>
                 <!-- Break -->
@@ -209,6 +216,7 @@
                     </div>
                 </div>
             </div>
+            */ ?>
 
             <div class="uk-text-center uk-margin-large-top">
                 <a href="<?php echo esc_url( get_permalink( 496 ) ); ?>" class="uk-button uk-button-secondary uk-button-large uk-border-rounded">View All Videos & Podcasts</a>
