@@ -18,7 +18,7 @@
     <section id="about" class="about | uk-section">
         <div class="uk-container">
 
-            <div class="featured-activities | uk-margin-large-bottom" uk-slider="autoplay: true; autoplay-interval: 6500; pause-on-hover: false;">
+            <div class="featured-activities" uk-slider="autoplay: true; autoplay-interval: 6500; pause-on-hover: false;">
                 <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
 
                     <div class="uk-slider-container">
@@ -58,14 +58,7 @@
                 </div>
                 <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
             </div>
-        </div>
-
-        <div class="social-media-rank | uk-container">
-            <figure class="uk-text-center">
-                <h3>#3 In Sports Social Media Followers</h3>
-                <img src="<?php echo _uri.'/resources/images/img-social_media_table.jpg'; ?>" alt="">
-            </figure>
-        </div> 
+        </div>         
     </section>
 
     <?php if ( have_rows( 'introduction_group' ) ) : ?>
@@ -116,6 +109,16 @@
     
         </div>
     </section>
+    
+    <section class="about | uk-margin-large-top">
+        <div class="social-media-rank | uk-container">
+            <figure class="uk-text-center">
+                <h3>#3 In Sports Social Media Followers</h3>
+                <img src="<?php echo _uri.'/resources/images/img-social_media_table.jpg'; ?>" alt="">
+            </figure>
+        </div>        
+    </section>
+    
 
     <section id="partners" class="partners | uk-section">
         <div class="uk-container">
@@ -175,7 +178,7 @@
             </div>
 
             <figure class="uk-flex uk-flex-center">
-                <a href="<?php echo esc_url( get_permalink( 496 ) ); ?>" title="Splash Sisters - presented by SGG Media">
+                <a href="<?php echo esc_url( get_permalink( 469 ) ); ?>" title="Splash Sisters - presented by SGG Media">
                     <img src="<?php echo _uri.'/resources/images/podcast/img-splash-sisters-banner.jpg' ?>" alt="Splash Sisters">
                 </a>
             </figure>
@@ -219,7 +222,7 @@
             */ ?>
 
             <div class="uk-text-center uk-margin-large-top">
-                <a href="<?php echo esc_url( get_permalink( 496 ) ); ?>" class="uk-button uk-button-secondary uk-button-large uk-border-rounded">View All Videos & Podcasts</a>
+                <a href="<?php echo esc_url( get_permalink( 469 ) ); ?>" class="uk-button uk-button-secondary uk-button-large uk-border-rounded">View All Videos & Podcasts</a>
             </div>
     
         </div>

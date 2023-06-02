@@ -4,6 +4,8 @@
     height: auto;
     padding-inline: 2em;
     box-sizing: border-box;
+    border-bottom: 2px solid $sgg-green;
+    box-shadow: 0 1px 5px 0 rgba(#000,.15);
     z-index: 1020;
 
     // Logo
@@ -55,9 +57,8 @@
         }
 
         // Dropdown
-        .uk-navbar-dropdown {
+        .uk-dropdown {
             background: none;
-            // margin-top: 0;
             padding: 0;
 
             .uk-navbar-dropdown-nav > li {
@@ -81,7 +82,7 @@
                 display: flex;
                 align-items: center;
                 font-family: $face-semi-b;
-                font-size: .875rem;
+                font-size: 12px;
                 color: $sgg-black;
                 text-transform: uppercase;
                 min-height: 1%;
@@ -91,7 +92,8 @@
     }
 
     .uk-subnav {
-        gap: 10px;
+        display: none;
+        gap: 5px;
         margin-bottom: 0;
 
         li {
@@ -103,6 +105,7 @@
             align-items: center;
             justify-content: center;
             background-color: $sgg-green;
+            font-size: 12px;
             color: #FFF;
             width: 36px;
             height: 36px !important;
@@ -118,12 +121,10 @@
             height: 60px;
         }
 
-        .uk-navbar-nav {
-            li > a {
-                font-size: 13px;
-            }
-        }
+    }
 
+    @media ( min-width: 1440px ) {
+        .uk-subnav { display: flex }
     }
 
     // Navbar Toggle Icon

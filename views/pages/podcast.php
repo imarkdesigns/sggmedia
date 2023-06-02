@@ -14,7 +14,7 @@
                 <?php endwhile; ?>
             </div>
 
-            <div class="uk-grid-small uk-child-width-1-2 uk-child-width-1-3@s" uk-grid>
+            <div class="uk-grid-small uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid>
                 <?php do_action( 'podVideo' ); ?>
             </div>
 

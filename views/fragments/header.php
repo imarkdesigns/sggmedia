@@ -1,4 +1,4 @@
-<?php if ( !is_page([ 302, 358 ]) ) : 
+<?php if ( !is_page([ 302, 358, 650, 700 ]) ) : 
 
 $followers   = str_replace( ',', '', get_field( 'sm_followers', 'options' ) );
 $influencers = get_field( 'sm_influencers', 'options' );
@@ -48,6 +48,7 @@ $hdr_content = get_field( 'bg_content', 'options' );
 
 <?php else : 
 
+if ( !is_page([ 650, 700 ]) ) :
 $hdr_contents = get_field( 'hdr_content' ); ?>
 <header class="hero" data-hero="page" data-src="<?php echo $hdr_contents['hdr_bg']['url']; ?>" uk-img>
     <div class="uk-overlay-primary uk-position-cover"></div>
@@ -56,4 +57,6 @@ $hdr_contents = get_field( 'hdr_content' ); ?>
     </div>  
 </header>
 
-<?php endif; ?>
+<?php endif;
+
+endif; ?>

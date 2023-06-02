@@ -1735,6 +1735,18 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/resources\/styles\/presentation.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/styles\/presentation-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/resources\/styles\/press.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -1969,12 +1981,28 @@
       "oAP" : "\/views\/pages\/podcast.php",
       "oF" : 0
     },
+    "\/views\/pages\/presentation.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/views\/pages\/presentation.php",
+      "oF" : 0
+    },
     "\/views\/pages\/press.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/views\/pages\/press.php",
+      "oF" : 0
+    },
+    "\/views\/pages\/sbc-interview.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/views\/pages\/sbc-interview.php",
       "oF" : 0
     },
     "\/views\/pages\/sggmi-agreement.php" : {
