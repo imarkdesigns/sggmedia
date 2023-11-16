@@ -1,14 +1,39 @@
 <main id="main" class="main" role="main">
 
-    <section id="Contents" class="source--video-list | uk-section">
+    <section id="Contents" class="source--video-list | uk-section uk-section-muted">
         <div class="uk-container">
 
-            <div class="uk-headings | uk-child-width-1-2@m uk-margin-large-bottom" uk-grid>
+            <div class="uk-headings | uk-flex-middle uk-margin-large-bottom" uk-grid>
                 <?php while ( have_rows( 'video_section' ) ) : the_row(); ?>
-                <div>
-                    <h2><?php the_sub_field( 'video_section_title' ); ?></h2>
+                <div class="uk-width-expand@m">
+                    <h2>Media Interviews</h2>
+                    <p><strong>Social Media Success is Half Science and Half Art</strong></p>
+                    <p>During this year’s edition of SBC Summit North America, the team had the chance to sit down and talk about the latest trends in sports marketing with some of the biggest players in the space. </p>
                 </div>
-                <div>
+                <div class="uk-width-auto@m">
+                    <?php // do_action( 'intVideo' ); ?>
+                    <div uk-lightbox>
+                        <figure class="video-item | uk-inline">
+                            <img src="https://img.youtube.com/vi/uEyykxqAPMY/0.jpg" alt="">
+                            <a href="https://www.youtube-nocookie.com/watch?v=uEyykxqAPMY&rel=0&start=23s" class="uk-position-cover" aria-label="Watch the Video" title="Watch Video" data-caption="<?=$caption?>" data-attrs="width: 1280; height: 720;"></a>
+                        </figure>
+                    </div>
+                </div>
+                <?php endwhile; ?>
+            </div>
+        </div>
+    </section>
+
+    <section id="SS" class="source--video-list | uk-section">
+        <div class="uk-container">
+
+            <div class="uk-headings | uk-flex-middle uk-margin-large-bottom" uk-grid>
+                <?php while ( have_rows( 'video_section' ) ) : the_row(); ?>
+                <div class="uk-width-auto@m">
+                    <img src="<?php echo _uri.'/resources/images/podcast/ss-logo2.jpg' ?>" class="uk-border-rounded uk-box-shadow-small" alt="Splash Sisters">
+                </div>
+                <div class="uk-width-expand@m">
+                    <h2><?php the_sub_field( 'video_section_title' ); ?></h2>
                     <p><?php the_sub_field( 'video_section_description' ); ?></p>
                 </div>
                 <?php endwhile; ?>
@@ -24,6 +49,7 @@
     
         </div>
     </section>
+
 
 
     <?php /* Temporary Disabled

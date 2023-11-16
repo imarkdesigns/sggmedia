@@ -18,6 +18,10 @@ add_action('wp_enqueue_scripts', function() {
     wp_enqueue_script( 'router', _js.'router.js', ['jquery'], null, true );
 
     wp_enqueue_style( 'animate-css', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' );
+    // wp_enqueue_style( 'eocticker-css', _uri.'/resources/eocnewsticker/eoc-newsticker.css' );
+    // wp_enqueue_script( 'eocticker-js', _uri.'/resources/eocnewsticker/eoc-newsticker.js', null, null, true );
+
+    
         
     # Localize Scripts
     $dirPath = [ 'dirPath' => get_template_directory_uri() ];
@@ -43,6 +47,8 @@ add_action('wp_enqueue_scripts', function() {
             case '358': // Influencer Agreement
             case '362': // Careers
             case '469': // Podcast
+            case '879': // Request Quote
+            case '977': // Cloud Campaign
                 $pageName = 'main';
                 break;
                 

@@ -1,5 +1,7 @@
 $PassionOne : "../fonts/PassionOne/";
 $OpenSans   : "../fonts/OpenSans/";
+$ChangaOne  : "../fonts/ChangaOne/";
+$Poppins    : "../fonts/Poppins/";
 
 @font-face {
     font-family: 'PassionOne-Regular';
@@ -10,6 +12,47 @@ $OpenSans   : "../fonts/OpenSans/";
     font-style: normal;
     text-rendering: optimizeLegibility;
 }
+
+@font-face {
+    font-family: 'ChangaOne-Regular';
+    src: local('Changa One'), local('ChangaOne-Regular'),
+        url('#{$ChangaOne}ChangaOne-Regular.woff2') format('woff2'),
+        url('#{$ChangaOne}ChangaOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Poppins-ExtraLight';
+    src: local('Poppins ExtraLight Regular'), local('Poppins ExtraLight'),
+        url('#{$Poppins}Poppins-ExtraLight.woff2') format('woff2'),
+        url('#{$Poppins}Poppins-ExtraLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Poppins-Light';
+    src: local('Poppins Light Regular'), local('Poppins Light'),
+        url('#{$Poppins}Poppins-Light.woff2') format('woff2'),
+        url('#{$Poppins}Poppins-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: local('Poppins Regular'), local('Poppins Regular'),
+        url('#{$Poppins}Poppins-Regular.woff2') format('woff2'),
+        url('#{$Poppins}Poppins-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
+
 
 @font-face {
     font-family: 'OpenSans-Light';

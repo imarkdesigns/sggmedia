@@ -85,36 +85,675 @@
 
 }
 
-#promo-banner {
-    background-color: rgba(#000,.9);
-    padding: 30px 15px;
-
-    img {
-        max-width: 60px;
-        height: auto;
-        filter: invert(100%);
-    }
+#client-ticker {
+    padding-block: 15px;
+    box-shadow: 0 1px 15px 0 rgba(#000,.05);
 
     h2 {
-        font-family: $passion;
-        font-size: clamp(1.125rem, 0.8793rem + 0.8276vw, 1.5rem);
-        color: rgba(#FFF,.9);
-        line-height: 1;
-        margin: 0;
+        font-family: $changa;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 15px;
+    }
 
-        a {
-            color: inherit;
-            text-decoration: none;
-            transition: 300ms ease-out;
+    .uk-slider-items li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
-            &:hover {
-                color: rgba($sgg-green,.9);
-            }
+        img {
+            max-height: 65px;
+            border-radius: 5px;
         }
     }
 }
 
-.about {
+section.about {
+
+    .section-content .section-who-we-are,
+    .section-content .section-what-we-do {
+
+        h2 {
+            position: relative;
+            display: inline-block;
+            font-family: $changa;
+            font-size: clamp(1.5rem, 0.5rem + 2.5vw, 2rem);
+            color: rgba(#52A55A,.9);
+
+            &::after {
+                content: '';
+                display: block;
+                background: url(#{$img}img-brush-after.png) no-repeat center / contain;
+                width: 150px;
+                height: 30px;
+                margin: auto;
+            }
+        }
+
+        ul {
+            font-family: $poppins-lt;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                position: relative;
+                margin-top: 15px;
+                padding-left: 30px;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                    background: url(#{$img}/bullet-check.png) no-repeat center / contain;
+                    @include size(18px);
+                }
+            }
+        }
+
+    }
+}
+
+section.ads {
+    padding-top: 0;
+
+    .uk-grid header {
+        &.uk-background-primary {
+            background-color: #52A55A;
+        }
+
+        h2 {
+            font-family: $changa;
+            font-size: 2rem;
+            text-transform: uppercase;
+            line-height: 1;
+            margin: 0;
+        }
+    }
+
+}
+
+section.micro-influencers {
+    background: transparent;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .section-content-column {
+        font-family: $poppins-lt;
+        text-align: center;
+    
+        h2 {
+            position: relative;
+            font-family: $changa;
+            font-size: 2rem;
+            color: rgba(#52A55A,.9);
+            text-transform: uppercase;
+            line-height: 1;
+            margin: 0 0 60px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 50%;
+                display: block;
+                background: url(#{$img}img-brush-alt-after.png) no-repeat center / 100% auto;
+                width: 180px;
+                height: 30px;
+                transform: translateX(-50%);
+            }
+        }
+
+        figure img {
+            max-width: 720px;
+            width: 100%;
+            height: auto;
+        }
+
+        .section-media-container {
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -30%;
+                left: -25%;
+                display: block;
+                background: url(#{$img}img-bg-dots.png) no-repeat center / 70%;
+                width: 70%;
+                height: 450px;
+                z-index: 0;
+            }
+
+            video {
+                position: relative;
+                z-index: 1;
+            }
+        }
+    }
+
+    @media screen and ( min-width: 1200px ) {
+        background: url(#{$img}img-handball-vertical.jpg) no-repeat right bottom / auto 100%;
+        
+        .section-content-column {
+            text-align: left;
+
+            h2::after {
+                left: 0;
+                transform: translateX(0);
+            }
+        }
+
+    }
+
+}
+
+section.livedrive {
+    overflow: hidden;
+
+    .stripes-wrapper {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -30%; 
+            left: 50%;
+            display: block;
+            width: 25px;
+            height: 100%;
+            padding-inline: 40px;
+            border: 1px solid #F1F2F2;
+            border-width: 0 50px;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+
+         &::after {
+            content: '';
+            position: absolute;
+            top: -30%; 
+            left: 50%;
+            display: block;
+            background: #F1F2F2;
+            width: 50px;
+            height: 100%;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+
+    }
+
+    .uk-card {
+        background: #FFF;
+        max-width: 640px;
+        margin-top: 40px;
+        margin-inline: auto;
+
+        .uk-card-body {
+            font-family: $poppins-lt;
+            padding-top: 0;
+            border: 4px solid #969495;
+
+            h2 {
+                position: relative;
+                background: #FFF;
+                font-family: $changa;
+                font-size: 2rem;
+                color: #52A559;
+                text-transform: uppercase;
+                text-align: center;
+                line-height: 1;
+                margin: -30px 0 30px;
+                padding-block: 30px;
+            }
+        }
+
+        .uk-card-footer {
+            padding: 15px 0 0;
+
+            h3 {
+                font-family: $poppins-rg;
+                font-weight: 600;
+                font-size: 1.125rem;
+            }
+
+            a.uk-link-reset {
+                font-family: $poppins-lt;
+                color: rgba(#01E1B5,.9) !important;
+            }
+
+
+        }
+    }
+
+}
+
+section.franchise {
+    .uk-article {
+        font-family: $poppins-lt;
+
+        h2 {
+            font-family: $changa;
+            font-size: 3rem;
+            color: #52A559;
+            text-transform: uppercase;
+            line-height: 1;
+            margin: 0;
+
+            + p {
+                margin-top: 0;
+            }
+        }
+
+        h3 {
+            font-family: $poppins-rg;
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+
+            li:not(:first-child) {
+                margin-top: 25px;
+            }
+
+            li {
+                position: relative;
+                padding-left: 60px;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                    @include size(44px);
+                }
+
+                &:nth-child(1)::before {
+                    background: url(#{$img}icon-niche-expertise.png) no-repeat center / contain;
+                }
+
+                &:nth-child(2)::before {
+                    background: url(#{$img}icon-cost-effectiveness.png) no-repeat center / contain;
+                }
+
+                &:nth-child(3)::before {
+                    background: url(#{$img}icon-geographic-relevance.png) no-repeat center / contain;
+                }
+
+                &:nth-child(4)::before {
+                    background: url(#{$img}icon-engagement-reach.png) no-repeat center / contain;
+                }
+
+                strong {
+                    font-family: $changa;
+                    font-weight: 400;
+                    color: #52A559;
+                    @include sharpText;
+                }
+            }
+        }
+
+    }
+
+}
+
+
+section.followers-chart {
+    padding-block: 0;
+
+    .uk-grid div:nth-child(2) {
+        background: rgba(#000,.75) url(#{$img}img-handball-vertical.jpg) no-repeat right bottom / cover;
+        background-blend-mode: multiply;
+    }
+
+    .four-stripes {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        min-height: 360px;
+
+        &::before { 
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            background: #FFF;
+            width: 25px;
+            height: 100%;
+            border: 1px solid #F1F2F2;
+            border-width: 0 50px;
+            transform: translateX(-50%);
+            z-index: 0;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            background: transparent;
+            width: 175px;
+            height: 100%;
+            border: 1px solid #F1F2F2;
+            border-width: 0 50px;
+            transform: translateX(-50%);
+            z-index: 0;
+        }
+    }
+
+    figure.headings {
+        position: relative;
+        background: #FFF;
+        max-width: 360px;
+        margin: auto;
+        padding: 30px;
+        z-index: 1;
+    }
+
+    h2 {
+        font-family: $changa;
+        font-size: 1.65rem;
+        color: #F7760D;
+        text-transform: uppercase;
+        line-height: 1;
+    }
+}
+
+section.advertising {
+
+    .uk-headings {
+        margin-bottom: 60px;
+    }
+
+    h2 {
+        background: #28A750;
+        font-family: $changa;
+        font-size: 3rem;
+        color: rgba(#FFF,.9);
+        text-transform: uppercase;
+        line-height: .8;
+        margin: 0 0 15px;
+        padding: 15px;
+
+        + p {
+            font-family: $poppins-lt;
+            font-size: 1.125rem;
+            text-transform: uppercase;
+            margin: 0;
+        }
+    }
+
+    h3 {
+        font-family: $poppins-rg;
+        font-weight: 600;
+        max-width: 800px;
+        margin: 15px auto 0;
+    }
+
+    .chart-container {
+        position: relative;
+        max-width: 800px;
+        width: 100%;
+        height: 400px;
+        margin: auto;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            background: url(#{$img}img-bg-dots.png) no-repeat center / 50%;
+            width: 50%;
+            height: 450px;
+            z-index: 0;
+        }
+
+        &::before {
+            top: -37%;
+            left: -17%;
+        }
+
+        &::after {
+            bottom: -37%;
+            right: -17%;
+        }
+
+        canvas {
+            position: relative;
+            background: #FFF;
+            z-index: 1;
+        }
+    }
+
+}
+
+.team {
+    position: relative;
+    overflow: hidden;
+
+    .uk-headings {
+        position: relative;
+        z-index: 1;
+
+        h2 {
+            font-family: $changa;
+            color: #52A559;
+            line-height: 1;
+            margin: -10px 0 0;
+        }
+
+        p {
+            font-family: $poppins-rg;
+            margin: 0;
+        }
+    }
+
+    &.executive {
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #FFF;
+            width: 25px;
+            height: 300px;
+            border: 1px solid #F1F2F2;
+            border-width: 0 50px;
+            z-index: 0;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 125px;
+            width: 25px;
+            height: 300px;
+            border: 1px solid #F1F2F2;
+            border-width: 0 50px 0 0;
+            z-index: 0;
+        }
+    }
+
+    &.executive .team-wrapper {
+        position: relative;
+        z-index: 1;
+
+        .--tpaul {
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: -75px;
+                left: -75px;
+                background: url(#{$img}img-bg-dots.png) no-repeat center / cover;
+                width: 150px;
+                height: 150px;
+                z-index: 0;
+            }
+        }
+
+        .--mpaul {
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: -75px;
+                right: -115px;
+                background: url(#{$img}img-bg-dots.png) no-repeat center / cover;
+                width: 150px;
+                height: 150px;
+                z-index: 0;
+            }
+        }
+
+
+        .uk-card {
+            max-width: 300px;
+            margin: auto;
+        }
+
+        .uk-card-body {
+            padding: 0;
+
+            h3 {
+                font-family: $changa;
+                font-size: 1.75rem;
+                text-transform: uppercase;
+                margin: 0;
+            }
+
+            p {
+                font-family: $poppins-lt;
+                margin: 0;
+            }
+
+            a {
+                font-family: $poppins-rg;
+                font-weight: 600;
+                color: #52A559;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &.marketing {
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: #FFF;
+            width: 25px;
+            height: 300px;
+            border: 1px solid #F1F2F2;
+            border-width: 0 50px;
+            z-index: 0;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 150px;
+            width: 25px;
+            height: 300px;
+            border: 1px solid #F1F2F2;
+            border-width: 0 50px 0 0;
+            z-index: 0;
+        }
+    }
+
+    &.marketing .team-wrapper {
+        position: relative;
+        z-index: 1;
+
+        .uk-card {
+            display: inline-block;
+            text-align: center;
+            // max-width: 703px;
+            width: 100%;
+        }
+
+        .uk-card .uk-card-title {
+            background: #231F20;
+            font-family: $changa;
+            color: rgba(#FFF,.9);
+            margin: 0;
+        }
+
+        .uk-card p {
+            background: #52A55A;
+            font-size: .875rem;
+            color: rgba(#FFF,.9);
+            margin: 0;
+            padding: 15px;
+        }
+
+
+    }
+
+
+}
+
+// Team Modal
+.biography {
+    z-index: 100001;
+
+    .uk-modal-dialog {
+        font-size: .875rem;
+        padding: 2em;
+        border-radius: 5px;
+    }
+
+    figure {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 17px auto auto 17px;
+            display: block;
+            background-color: $sgg-green;
+            @include size(150px);
+            border-radius: 5px;
+            z-index: 0;
+        }
+
+        img {
+            position: relative;
+            @include size(150px);
+            box-shadow: 7px 7px 0 2px rgba(#CCC,.5);
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+    }
+
+    .uk-h3 {
+        font-family: $changa;
+        font-size: 2rem;
+        color: #000;
+        text-transform: uppercase;
+        line-height: 1;
+        margin: 0;
+
+        + p {
+            margin: 0;
+        }
+    }
+}
+
+section.press-coverage {
 
     .featured-activities {
         min-height: 568px;
@@ -215,195 +854,10 @@
 
 }
 
-.goal {
-    text-align: justify;
-
-    .uk-headings h2 {
-        color: $sgg-green;
-    }
-
-    h3 {
-        font-family: $passion;
-        font-size: clamp(2rem, 1rem + 2vw, 3.5rem);
-        text-transform: uppercase;
-    }
-
-    blockquote {
-        position: relative;
-        // font-family: 'OpenSans-Light';
-        font-style: normal;
-        font-size: 1rem;
-        color: #666;
-        margin: 30px 0;
-        padding-inline: 30px;
-        padding-block: 30px;
-        // border-left: 2px solid #666;
-        border: solid rgba($sgg-green,.95);
-        border-width: 1px 0 0;
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: block;
-            background-image: url(#{$img}/quote.svg);
-            background-size: 64px;
-            background-position: center;
-            @include size(64px);
-            opacity: .05;
-            transform: scaleX(-1);
-        }
-
-
-        p {
-            margin-bottom: 0;
-        }
-
-        p:last-child {
-            font-size: .875rem;
-            color: rgba(#000,.5);
-            margin-top: 10px !important;
-        }
-    }
-}
-
-.capture-via-cellphones {
-    padding-bottom: 0;
-
-    figure img {
-        border-radius: 10px;
-    }
-}
-
-.partners {
-    .uk-card-badge {
-        background-color: transparent;
-        padding: 0;
-
-        button {
-           background-color: $sgg-green;
-           font-size: 0.75rem;
-           color: #FFF;
-           text-transform: capitalize;
-           padding: .5em;
-           border: 0;
-           border-radius: 3px;
-           appearance: none;
-           cursor: pointer;
-        }
-    }
-
-    .help-text {
-        font-size: .75rem;
-        color: rgba(#000,.8);
-        text-align: center;
-    }
-}
-
-.podcast {
-    background: url(#{$img}/podcast/bg-podcast.jpg) no-repeat center left / cover;
-
-    .uk-headings h2 {
-        line-height: 1;
-
-        small {
-            display: block;
-            color: $sgg-green;
-        }
-    }
-
-    .details {
-        // padding-block: 40px 0;
-    
-        h3 {
-            font-family: $face-bold;
-            color: rgb(248,117,19);
-
-        }
-
-        p > strong {
-            color: $sgg-green;
-        }
-
-        p > em {
-            color: rgb(248,117,19);
-        }
-    }
-
-}
-
-
-// Partners Modal
-.sample-ads {
-    z-index: 100001;
-
-    .uk-modal-dialog {
-        background-color: #FFF;
-        padding: 2em;
-        border-radius: 5px;
-    }
-
-    h3 {
-        font-family: $passion;
-        font-size: 3rem;
-        color: #000;
-        text-transform: uppercase;
-        line-height: 1;
-        margin-bottom: 30px;
-
-        small {
-            display: block;
-            font-family: $face-bold;
-            font-size: 1.5rem;
-        }
-    }
-
-    img {
-        max-width: 480px;
-        width: 100%;
-        height: auto;
-    }
-}
-
-.advertising {
-
-    &.chart {
-        h2 {
-            font-family: $passion;
-            font-size: 3rem;
-            color: #000;
-            text-transform: uppercase;
-            line-height: .8;
-            margin: 0;
-
-            + p {
-                font-size: 1.125rem;
-                text-transform: uppercase;
-                margin: 15px 0 30px;
-            }
-        }
-
-        .chart-container {
-            position: relative;
-            max-width: 800px;
-            width: 100%;
-            height: 400px;
-            margin: auto;
-        }
-    }
-
-
-}
-
-
-// SBC Awarads
-// Micro Influencers
-.sbc-awards,
-.micro-influencer {
+section.sbc-awards {
 
     h2 {
-        font-family: $passion;
+        font-family: $changa;
         font-size: clamp(2rem, 1rem + 2vw, 3.5rem);
         text-transform: uppercase;
         line-height: .8;
@@ -412,437 +866,26 @@
 
 }
 
-.micro-influencer {
+.uk-alert {
 
-    blockquote {
-        font-family: 'OpenSans-Light';
-        font-style: normal;
-        font-size: .875rem;
-        color: #CCC !important;
-        margin: 30px 0;
-        padding-left: 15px;
-        border-left: 2px solid #666;
+    &.quote-introduction {
+        display: flex;
+        justify-content: center;
+        background: #EEE;
+        text-align: center;
+
+        h2 {
+            font-family: $changa;
+            font-size: 1.5rem;
+            color: #111;
+            text-transform: uppercase;
+            line-height: 1;
+        }
 
         p {
-            margin-bottom: 0;
+            font-size: .875rem;
+            color: #111;
         }
-
-        p:last-child {
-            margin-top: 5px !important;
-        }
-    }
-
-}
-
-
-.team {
-
-    // Executives
-    &.executive .team-wrapper {
-        display: flex;
-        flex-flow: column nowrap;
-        gap: 30px;
-
-        width: 100%;
-
-        .uk-card {
-            display: flex;
-            gap: 15px;
-
-            width: 100%;
-            margin: 0;
-
-            .uk-card-media-top,
-            .uk-card-body {
-                padding: 0;
-            }
-
-            .uk-card-media-top {
-                position: relative;
-                flex: 0 1 150px;
-            }
-
-            .uk-card-body {
-                display: flex;
-                flex-flow: column nowrap;
-                justify-content: center;
-            }
-
-            .uk-card-title {
-                font-family: $passion;
-                font-size: 1.5rem;
-                text-transform: uppercase;
-                line-height: 1;
-                margin: 0;
-            }
-
-            p {
-                font-size: .75rem;
-                margin: 0;
-            }
-
-            .uk-text-meta {
-                position: relative;
-                font-size: .75rem;
-                color: rgba($sgg-green,.75) !important;
-                text-transform: uppercase;
-
-                &::before {
-                    content: '';
-                    display: block;
-                    width: 75px;
-                    margin-inline: 0;
-                    padding-top: 5px;
-                    border-top: 1px solid rgba(#FFF,.8);
-                }
-            }
-        }
-
-        // Troy portion
-        .team-item:first-child .uk-card {
-            .uk-card-media-top {
-                flex: 0 1 150px;
-            }
-        }
-
-        // display: flex;
-        // flex-flow: column nowrap;
-        // gap: 15px;
-
-        // .team-item {
-        //     flex: 1 0 auto;
-        //     display: flex;
-        //     justify-content: center;
-        // }
-
-        // .uk-card {
-        //     display: flex;
-        //     flex-flow: row nowrap;
-        //     align-items: center;
-        //     margin-bottom: 0;
-        // }
-
-        // .uk-card-media-top {
-        //     flex: 1 0 50%;
-        //     padding: 0;
-
-        //     img { border-radius: 0 }
-        // }
-
-        // .uk-card-body {
-        //     flex: 1 1 auto;
-        //     padding: 1em;
-
-        //     .uk-card-title {
-        //         font-family: $passion;
-        //         font-size: 1.5rem;
-        //         text-transform: uppercase;
-        //         line-height: 1;
-        //         margin: 0;
-        //     }
-
-        //     p {
-        //         font-size: .875rem;
-        //         margin: 0 0 20px;            
-        //     }
-
-        //     .uk-text-meta {
-        //         position: relative;
-        //         font-size: .75rem;
-        //         text-transform: uppercase;
-
-        //         &::before {
-        //             content: '';
-        //             display: block;
-        //             width: 75px;
-        //             margin-inline: 0;
-        //             padding-top: 5px;
-        //             border-top: 1px solid rgba(#FFF,.8);
-        //         }
-        //     }
-        // }
-    }
-
-    &.marketing .team-wrapper {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-evenly;
-        gap: 15px;
-
-        .team-item {
-            flex: 0 1 100%;
-        }
-
-        .uk-card {
-            margin-bottom: 0;
-        }
-
-        .uk-card-body {
-            padding: 0;
-            border: 1px solid #000;
-
-            .uk-card-title {
-                background-color: #000;
-                font-family: $passion;
-                font-size: 1.5rem;
-                color: rgba(#FFF,.9);
-                text-transform: uppercase;
-                line-height: 1;
-                margin: 0;
-                padding: .5em 1em .4em;
-            }
-
-            p { 
-                font-size: .875rem;
-                margin: 10px 0;
-
-                &:empty {
-                    margin: 0;
-                }
-            }
-        }
-
-    }
-
-    @media ( min-width: 600px ) {
-        &.executive .team-wrapper {
-            flex-flow: row nowrap;
-            gap: 30px;
-
-            .team-item {
-                flex: 0 1 50%;
-            }
-        }
-    }
-
-    @media ( min-width: 640px ) {
-
-        &.executive .team-wrapper {
-            flex-flow: row nowrap;
-            justify-content: space-around;
-
-            .team-item {
-                flex: 0 1 auto;
-            }
-
-            .uk-card {
-                flex-flow: column wrap;
-            
-                .uk-card-media-top {
-                    flex: 1 0 200px;
-                    width: 250px;
-                }
-
-                .--tpaul {
-                    img {
-                        position: relative;
-                        z-index: 1;
-                    }
-
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        top: 50%;
-                        left: -75px;
-                        display: block;
-                        @include size(325px);
-                        border-radius: 50%;
-                        border: 5px solid rgba($sgg-green,.15);
-                        transform: translateY(-50%);
-                        z-index: 0;
-                    }
-
-                    &::after {
-                        content: '';
-                        position: absolute;
-                        top: 50%;
-                        right: 0;
-                        display: block;
-                        background-color: rgba($sgg-green,.55);
-                        @include size(100px);
-                        border-radius: 50%;
-                        translate: 50px -50%;
-                        z-index: 1;
-                    }
-
-                }
-
-                p {
-                    font-size: .875rem;
-                }
-            }
-
-            // Troy portion
-            .team-item:first-child .uk-card {
-                .uk-card-media-top {
-                    flex: 1 0 300px;
-                    width: 300px;
-                }
-            }
-
-            // flex-flow: row nowrap;
-
-            // .uk-card {
-            //     flex-flow: column wrap;
-            // }
-
-            // .uk-card-body {
-            //     text-align: center;
-
-            //     .uk-text-meta::before {
-            //         margin-inline: auto
-            //     }
-            // }
-        }
-
-
-        &.marketing .team-wrapper {
-            flex-flow: row wrap;
-
-            .team-item {
-                flex: 1 0 auto;
-
-                &.uk-width-1-2 {
-                    flex: 0 1 calc( 100% / 2 - 15px );
-                }
-
-                &.uk-width-1-3 {
-                    flex: 0 1 calc( 100% / 3 - 15px );
-                }
-            }            
-        }
-
-    }
-
-}
-
-// Team Modal
-.biography {
-    z-index: 100001;
-
-    .uk-modal-dialog {
-        font-size: .875rem;
-        padding: 2em;
-        border-radius: 5px;
-    }
-
-    figure {
-        position: relative;
-
-        &::before {
-            content: '';
-            position: absolute;
-            inset: 17px auto auto 17px;
-            display: block;
-            background-color: $sgg-green;
-            @include size(150px);
-            border-radius: 5px;
-            z-index: 0;
-        }
-
-        img {
-            position: relative;
-            @include size(150px);
-            box-shadow: 7px 7px 0 2px rgba(#CCC,.5);
-            border-radius: 5px;
-            z-index: 1;
-        }
-
-    }
-
-    .uk-h3 {
-        font-family: $passion;
-        font-size: 2rem;
-        color: #000;
-        text-transform: uppercase;
-        line-height: 1;
-        margin: 0;
-
-        + p {
-            margin: 0;
-        }
-    }
-}
-
-.careers {
-
-    .uk-accordion {
-        > li {
-            margin-top: 15px;
-            padding-top: 29px;
-            padding-bottom: 15px;
-            border-top: 1px solid #F5F5F5;
-        
-            &:first-child {
-                border-top: 0;
-            }
-        }
-
-        .uk-accordion-title {
-            font-family: $passion;
-            font-size: 2rem;
-            text-transform: uppercase;
-            overflow: visible;
-            @include sharpText();
-
-            &::before {
-                float: left;
-                position: relative;
-                top: -2px;
-                background-color: rgba(#CCC, .25);
-                margin-left: 0;
-                margin-right: 20px;
-                border-radius: 50px;
-            }
-
-        }
-
-        .uk-accordion-content {
-            padding-left: 55px;
-
-            h3 {
-                font-family: $passion;
-                font-size: 1.75rem;
-            }
-
-            a {
-                color: $sgg-green;
-                border-bottom: 1px dotted rgba($sgg-green, .75);
-            }
-        }
-    }
-}
-
-// Podcast Page
-.source--video-list,
-.source--podcast-list {
-
-    .uk-headings {
-        text-align: left;
-    }
-
-}
-
-.source--video-list {
-
-    .video-item {
-        border-radius: 10px;
-        overflow: hidden;
-
-        figcaption.uk-overlay {
-            background-color: rgba(#FFF,.75);
-            -webkit-backdrop-filter: saturate(180%) blur(5px);
-            backdrop-filter: saturate(180%) blur(5px);
-            padding: 1em;
-        }
-
-        figcaption.uk-overlay h3 {
-            font-family: $passion;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-        }
-
-
     }
 
 }

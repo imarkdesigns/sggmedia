@@ -17,6 +17,8 @@
         case '469':   $pageName = 'podcast'; break;
         case '650':   $pageName = 'presentation'; break;
         case '700':   $pageName = 'sbc-interview'; break;
+        case '879':   $pageName = 'request-quote'; break;
+        case '977':   $pageName = 'cloud-campaign'; break;
 
         default:
             $pageName = 'home';

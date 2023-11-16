@@ -1,0 +1,1017 @@
+// Import mixins
+@import 'common/mixins';
+
+// Import Pages
+@import 'options/press',
+        'options/contact';
+
+
+.uk-headings {
+    text-align: center;
+
+    small {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-family: $passion;
+        font-size: clamp(2.5rem, 1rem + 2.5vw, 4.5rem);
+        text-transform: uppercase;
+        line-height: .8;
+    }
+
+    br {
+        content: '';
+        display: inline;
+    }
+
+    @media ( min-width: 640px ) {
+        br {
+            display: block;
+        }
+    }
+
+    .uk-h3 {
+        font-family: $passion;
+        font-size: clamp(1.125rem, 1rem + 2vw, 2rem);
+        color: rgba(#000,.9);
+        text-transform: uppercase;
+    }
+}
+
+.colophon {
+
+    .contact-info {
+        // background-image: url(#{$img}/sgg-contact-info.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        p {
+            font-family: $face-semi-b;
+            text-transform: uppercase;
+            @include sharpText();
+        
+            &.uk-text-lead {
+                font-family: $face-bold;
+                color: #FFF;
+            }
+
+            strong {
+                color: #FFF;
+            }
+
+            span.uk-text-meta {
+                display: block;
+            }
+        }
+    }
+
+    .contact-info-link {
+        background-image: url(#{$img}/sgg-contact-info-link.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        h2 {
+            font-family: $passion;
+            font-size: 3rem;
+            color: rgba(#FFF,.8);
+            text-transform: uppercase;
+            
+        }
+
+    }
+
+}
+
+#promo-banner {
+    background-color: rgba(#000,.9);
+    padding: 30px 15px;
+
+    img {
+        max-width: 60px;
+        height: auto;
+        filter: invert(100%);
+    }
+
+    h2 {
+        font-family: $passion;
+        font-size: clamp(1.125rem, 0.8793rem + 0.8276vw, 1.5rem);
+        color: rgba(#FFF,.9);
+        line-height: 1;
+        margin: 0;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: 300ms ease-out;
+
+            &:hover {
+                color: rgba($sgg-green,.9);
+            }
+        }
+    }
+}
+
+.about {
+
+    .featured-activities {
+        min-height: 568px;
+        padding-inline: 60px;
+    }
+
+    .uk-slidenav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba($sgg-green,.5);
+        color: #FFF;
+        @include size(40px,80px);
+        border-radius: 5px;
+        // transition: 300ms ease-out;
+
+        &:hover {
+            background-color: rgba($sgg-green,1);
+        }
+    }
+
+    .uk-grid {
+        text-align: justify;
+
+        figure {
+            text-align: center;
+        }
+
+        h2 {
+            font-family: $passion;
+            font-size: clamp(2rem, 1rem + 2vw, 3.5rem);
+            color: #000;
+            text-transform: uppercase;
+        }
+    }
+
+    h2#seen-in-press {
+            font-family: $passion;
+            font-size: clamp(2rem, 1rem + 2vw, 3.5rem);
+            color: #000;
+            text-transform: uppercase;
+        }
+
+    blockquote {
+        position: relative;
+        // font-family: 'OpenSans-Light';
+        font-style: normal;
+        font-size: 1rem;
+        color: #666;
+        margin: 30px 0;
+        padding-inline: 30px;
+        padding-block: 30px;
+        // border-left: 2px solid #666;
+        border: solid rgba($sgg-green,.95);
+        border-width: 1px 0 0;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            background-image: url(#{$img}/quote.svg);
+            background-size: 64px;
+            background-position: center;
+            @include size(64px);
+            opacity: .05;
+            transform: scaleX(-1);
+        }
+
+
+        p {
+            margin-bottom: 0;
+        }
+
+        p:last-child {
+            font-size: .875rem;
+            color: rgba(#000,.5);
+            margin-top: 10px !important;
+        }
+    }
+
+    .social-media-rank {
+
+        h3 {
+            font-family: $passion;
+            font-size: clamp(1.5rem, 0.2143rem + 3.2143vw, 2.625rem);
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        img {
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(#000,.25);
+        }
+
+    }
+
+}
+
+.goal {
+    text-align: justify;
+
+    .uk-headings h2 {
+        color: $sgg-green;
+    }
+
+    h3 {
+        font-family: $passion;
+        font-size: clamp(2rem, 1rem + 2vw, 3.5rem);
+        text-transform: uppercase;
+    }
+
+    blockquote {
+        position: relative;
+        // font-family: 'OpenSans-Light';
+        font-style: normal;
+        font-size: 1rem;
+        color: #666;
+        margin: 30px 0;
+        padding-inline: 30px;
+        padding-block: 30px;
+        // border-left: 2px solid #666;
+        border: solid rgba($sgg-green,.95);
+        border-width: 1px 0 0;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            background-image: url(#{$img}/quote.svg);
+            background-size: 64px;
+            background-position: center;
+            @include size(64px);
+            opacity: .05;
+            transform: scaleX(-1);
+        }
+
+
+        p {
+            margin-bottom: 0;
+        }
+
+        p:last-child {
+            font-size: .875rem;
+            color: rgba(#000,.5);
+            margin-top: 10px !important;
+        }
+    }
+}
+
+.capture-via-cellphones {
+    padding-bottom: 0;
+
+    figure img {
+        border-radius: 10px;
+    }
+}
+
+.partners {
+    .uk-card-badge {
+        background-color: transparent;
+        padding: 0;
+
+        button {
+           background-color: $sgg-green;
+           font-size: 0.75rem;
+           color: #FFF;
+           text-transform: capitalize;
+           padding: .5em;
+           border: 0;
+           border-radius: 3px;
+           appearance: none;
+           cursor: pointer;
+        }
+    }
+
+    .help-text {
+        font-size: .75rem;
+        color: rgba(#000,.8);
+        text-align: center;
+    }
+}
+
+.podcast {
+    background: url(#{$img}/podcast/bg-podcast.jpg) no-repeat center left / cover;
+
+    .uk-headings h2 {
+        line-height: 1;
+
+        small {
+            display: block;
+            color: $sgg-green;
+        }
+    }
+
+    .details {
+        // padding-block: 40px 0;
+    
+        h3 {
+            font-family: $face-bold;
+            color: rgb(248,117,19);
+
+        }
+
+        p > strong {
+            color: $sgg-green;
+        }
+
+        p > em {
+            color: rgb(248,117,19);
+        }
+    }
+
+}
+
+
+// Partners Modal
+.sample-ads {
+    z-index: 100001;
+
+    .uk-modal-dialog {
+        background-color: #FFF;
+        padding: 2em;
+        border-radius: 5px;
+    }
+
+    h3 {
+        font-family: $passion;
+        font-size: 3rem;
+        color: #000;
+        text-transform: uppercase;
+        line-height: 1;
+        margin-bottom: 30px;
+
+        small {
+            display: block;
+            font-family: $face-bold;
+            font-size: 1.5rem;
+        }
+    }
+
+    img {
+        max-width: 480px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.advertising {
+
+    &.chart {
+        h2 {
+            font-family: $passion;
+            font-size: 3rem;
+            color: #000;
+            text-transform: uppercase;
+            line-height: .8;
+            margin: 0;
+
+            + p {
+                font-size: 1.125rem;
+                text-transform: uppercase;
+                margin: 15px 0 30px;
+            }
+        }
+
+        .chart-container {
+            position: relative;
+            max-width: 800px;
+            width: 100%;
+            height: 400px;
+            margin: auto;
+        }
+    }
+
+
+}
+
+
+// SBC Awarads
+// Micro Influencers
+.sbc-awards,
+.micro-influencer {
+
+    h2 {
+        font-family: $passion;
+        font-size: clamp(2rem, 1rem + 2vw, 3.5rem);
+        text-transform: uppercase;
+        line-height: .8;
+        margin: 0 0 30px;
+    }
+
+}
+
+.micro-influencer {
+
+    blockquote {
+        font-family: 'OpenSans-Light';
+        font-style: normal;
+        font-size: .875rem;
+        color: #CCC !important;
+        margin: 30px 0;
+        padding-left: 15px;
+        border-left: 2px solid #666;
+
+        p {
+            margin-bottom: 0;
+        }
+
+        p:last-child {
+            margin-top: 5px !important;
+        }
+    }
+
+}
+
+
+.team {
+
+    // Executives
+    &.executive .team-wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 30px;
+
+        width: 100%;
+
+        .uk-card {
+            display: flex;
+            gap: 15px;
+
+            width: 100%;
+            margin: 0;
+
+            .uk-card-media-top,
+            .uk-card-body {
+                padding: 0;
+            }
+
+            .uk-card-media-top {
+                position: relative;
+                flex: 0 1 150px;
+            }
+
+            .uk-card-body {
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+            }
+
+            .uk-card-title {
+                font-family: $passion;
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                line-height: 1;
+                margin: 0;
+            }
+
+            p {
+                font-size: .75rem;
+                margin: 0;
+            }
+
+            .uk-text-meta {
+                position: relative;
+                font-size: .75rem;
+                color: rgba($sgg-green,.75) !important;
+                text-transform: uppercase;
+
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 75px;
+                    margin-inline: 0;
+                    padding-top: 5px;
+                    border-top: 1px solid rgba(#FFF,.8);
+                }
+            }
+        }
+
+        // Troy portion
+        .team-item:first-child .uk-card {
+            .uk-card-media-top {
+                flex: 0 1 150px;
+            }
+        }
+
+        // display: flex;
+        // flex-flow: column nowrap;
+        // gap: 15px;
+
+        // .team-item {
+        //     flex: 1 0 auto;
+        //     display: flex;
+        //     justify-content: center;
+        // }
+
+        // .uk-card {
+        //     display: flex;
+        //     flex-flow: row nowrap;
+        //     align-items: center;
+        //     margin-bottom: 0;
+        // }
+
+        // .uk-card-media-top {
+        //     flex: 1 0 50%;
+        //     padding: 0;
+
+        //     img { border-radius: 0 }
+        // }
+
+        // .uk-card-body {
+        //     flex: 1 1 auto;
+        //     padding: 1em;
+
+        //     .uk-card-title {
+        //         font-family: $passion;
+        //         font-size: 1.5rem;
+        //         text-transform: uppercase;
+        //         line-height: 1;
+        //         margin: 0;
+        //     }
+
+        //     p {
+        //         font-size: .875rem;
+        //         margin: 0 0 20px;            
+        //     }
+
+        //     .uk-text-meta {
+        //         position: relative;
+        //         font-size: .75rem;
+        //         text-transform: uppercase;
+
+        //         &::before {
+        //             content: '';
+        //             display: block;
+        //             width: 75px;
+        //             margin-inline: 0;
+        //             padding-top: 5px;
+        //             border-top: 1px solid rgba(#FFF,.8);
+        //         }
+        //     }
+        // }
+    }
+
+    &.marketing .team-wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        gap: 15px;
+
+        .team-item {
+            flex: 0 1 100%;
+        }
+
+        .uk-card {
+            margin-bottom: 0;
+        }
+
+        .uk-card-body {
+            padding: 0;
+            border: 1px solid #000;
+
+            .uk-card-title {
+                background-color: #000;
+                font-family: $passion;
+                font-size: 1.5rem;
+                color: rgba(#FFF,.9);
+                text-transform: uppercase;
+                line-height: 1;
+                margin: 0;
+                padding: .5em 1em .4em;
+            }
+
+            p { 
+                font-size: .875rem;
+                margin: 10px 0;
+
+                &:empty {
+                    margin: 0;
+                }
+            }
+        }
+
+    }
+
+    @media ( min-width: 600px ) {
+        &.executive .team-wrapper {
+            flex-flow: row nowrap;
+            gap: 30px;
+
+            .team-item {
+                flex: 0 1 50%;
+            }
+        }
+    }
+
+    @media ( min-width: 640px ) {
+
+        &.executive .team-wrapper {
+            flex-flow: row nowrap;
+            justify-content: space-around;
+
+            .team-item {
+                flex: 0 1 auto;
+            }
+
+            .uk-card {
+                flex-flow: column wrap;
+            
+                .uk-card-media-top {
+                    flex: 1 0 200px;
+                    width: 250px;
+                }
+
+                .--tpaul {
+                    img {
+                        position: relative;
+                        z-index: 1;
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        left: -75px;
+                        display: block;
+                        @include size(325px);
+                        border-radius: 50%;
+                        border: 5px solid rgba($sgg-green,.15);
+                        transform: translateY(-50%);
+                        z-index: 0;
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        right: 0;
+                        display: block;
+                        background-color: rgba($sgg-green,.55);
+                        @include size(100px);
+                        border-radius: 50%;
+                        translate: 50px -50%;
+                        z-index: 1;
+                    }
+
+                }
+
+                p {
+                    font-size: .875rem;
+                }
+            }
+
+            // Troy portion
+            .team-item:first-child .uk-card {
+                .uk-card-media-top {
+                    flex: 1 0 300px;
+                    width: 300px;
+                }
+            }
+
+            // flex-flow: row nowrap;
+
+            // .uk-card {
+            //     flex-flow: column wrap;
+            // }
+
+            // .uk-card-body {
+            //     text-align: center;
+
+            //     .uk-text-meta::before {
+            //         margin-inline: auto
+            //     }
+            // }
+        }
+
+
+        &.marketing .team-wrapper {
+            flex-flow: row wrap;
+
+            .team-item {
+                flex: 1 0 auto;
+
+                &.uk-width-1-2 {
+                    flex: 0 1 calc( 100% / 2 - 15px );
+                }
+
+                &.uk-width-1-3 {
+                    flex: 0 1 calc( 100% / 3 - 15px );
+                }
+            }            
+        }
+
+    }
+
+}
+
+// Team Modal
+.biography {
+    z-index: 100001;
+
+    .uk-modal-dialog {
+        font-size: .875rem;
+        padding: 2em;
+        border-radius: 5px;
+    }
+
+    figure {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 17px auto auto 17px;
+            display: block;
+            background-color: $sgg-green;
+            @include size(150px);
+            border-radius: 5px;
+            z-index: 0;
+        }
+
+        img {
+            position: relative;
+            @include size(150px);
+            box-shadow: 7px 7px 0 2px rgba(#CCC,.5);
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+    }
+
+    .uk-h3 {
+        font-family: $passion;
+        font-size: 2rem;
+        color: #000;
+        text-transform: uppercase;
+        line-height: 1;
+        margin: 0;
+
+        + p {
+            margin: 0;
+        }
+    }
+}
+
+.careers {
+
+    .uk-accordion {
+        > li {
+            margin-top: 15px;
+            padding-top: 29px;
+            padding-bottom: 15px;
+            border-top: 1px solid #F5F5F5;
+        
+            &:first-child {
+                border-top: 0;
+            }
+        }
+
+        .uk-accordion-title {
+            font-family: $passion;
+            font-size: 2rem;
+            text-transform: uppercase;
+            overflow: visible;
+            @include sharpText();
+
+            &::before {
+                float: left;
+                position: relative;
+                top: -2px;
+                background-color: rgba(#CCC, .25);
+                margin-left: 0;
+                margin-right: 20px;
+                border-radius: 50px;
+            }
+
+        }
+
+        .uk-accordion-content {
+            padding-left: 55px;
+
+            h3 {
+                font-family: $passion;
+                font-size: 1.75rem;
+            }
+
+            a {
+                color: $sgg-green;
+                border-bottom: 1px dotted rgba($sgg-green, .75);
+            }
+        }
+    }
+}
+
+// Podcast Page
+.source--video-list,
+.source--podcast-list {
+
+    .uk-headings {
+        text-align: left;
+    }
+
+}
+
+.source--video-list {
+
+    .video-item {
+        border-radius: 10px;
+        overflow: hidden;
+
+        figcaption.uk-overlay {
+            background-color: rgba(#FFF,.75);
+            -webkit-backdrop-filter: saturate(180%) blur(5px);
+            backdrop-filter: saturate(180%) blur(5px);
+            padding: 1em;
+        }
+
+        figcaption.uk-overlay h3 {
+            font-family: $passion;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+
+
+    }
+
+}
+
+.request-quote {
+    display: flex;
+    align-items: center;
+    // min-height: calc( (100vh - 212px) - 58px );
+    min-height: 970px;
+    padding: 40px 15px;
+
+    .uk-container {
+        background-color: rgba(#FFF,.65);
+        backdrop-filter: saturate(180%) blur(10px);
+        width: 100%;
+        border-radius: 10px;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    // // Formidable Form
+    .frm_forms {
+        margin: 0;
+        padding: 30px;
+    }
+
+    // .frm_image_options .frm_image_option_container {
+    //     height: auto !important;
+    // }
+
+    // .frm_error_style {
+    //     margin-bottom: 0 !important;
+    // }
+
+    // .frm_error,
+    // .frm_form_field label {
+    //     @include sharpText;
+    // }
+
+    // .frm_form_fields fieldset {
+    //     padding: 0 !important;
+    // }
+
+    // .with_frm_style .chosen-container-multi .chosen-choices {
+    //     width: 100% !important;
+    // }
+
+    // .with_frm_style form,
+    // .with_frm_style .chosen-container {
+    //     font-family: $face-regular !important;
+    // }
+
+    // .with_frm_style .chosen-container .chosen-results li.highlighted {
+    //     background: $sgg-green !important;
+    //     color: #FFF !important;
+    // }
+
+    // .with_frm_style .frm_primary_label b {
+    //     @include sharpText;
+
+    //     b {
+    //         font-family: $passion;
+    //         font-weight: 400;
+    //     }
+    // }
+
+}
+
+#RequestQuote {
+    display: flex !important;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 15px 25px;
+
+    .uk-modal-dialog {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        background: transparent;
+        max-width: 390px !important;
+        width: 100% !important;
+        margin: 0;
+        padding: 0;
+        border-radius: 5px;
+    }
+
+    .uk-modal-close-default {
+        top: 45px;
+        right: -15px;
+        background-color: rgba(#FFF,.5);
+        color: #000;
+        padding: 10px;
+        border-radius: 50%;
+    }
+
+    .uk-cover-container {
+        height: 275px;
+        // overflow: visible;
+    }
+
+    .uk-overlay {
+        background: linear-gradient( to top, rgba(#000,.85), rgba(#000,0) );
+        text-align: center;
+        padding: 15px 30px 20px;
+
+        h2 {
+            font-family: $passion;
+            font-size: 2rem;
+            text-transform: uppercase;
+            line-height: 1.2;
+            @include sharpText;
+            margin: 0 0 5px;
+        }
+
+        p:not(.uk-margin-top) {
+            display: none;
+            font-size: .875rem;
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        .uk-margin-top {
+            font-size: .875rem;
+            line-height: 1.2;
+            margin: 0;
+        }        
+
+        .uk-button-primary {
+            background: linear-gradient( to top, darken($sgg-green,15%), rgba($sgg-green,1) );
+            color: rgba(#FFF,.9);
+            padding: .75em 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        @media screen and ( min-width: 640px ) {
+            p:not(.uk-margin-top) {
+                display: block;
+            }
+        }
+    }
+}
+
+.cloud-campaign {
+
+    h2 {
+        font-family: $passion;
+        font-size: clamp(2.5rem, 1rem + 2.5vw, 4.5rem);
+        text-transform: uppercase;
+        line-height: .8;
+    }
+
+    h3 {
+        font-family: $passion;
+        font-size: clamp(1.125rem, 1rem + 2vw, 2rem);
+        color: rgba(#000,.9);
+        text-transform: uppercase;
+    }
+
+    h4 {
+        font-family: $face-bold;
+        font-size: 1.125rem;
+        color: rgba(#000,.9);
+        text-transform: uppercase;
+    }
+
+    * a {
+        color: $sgg-green;
+        text-decoration: none;
+    }
+
+}

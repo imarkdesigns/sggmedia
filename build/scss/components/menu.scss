@@ -142,7 +142,9 @@
         backdrop-filter: saturate(180%) blur(20px);
         background-color: rgba(#FFF,.8);
         width: 100% !important;
-        max-width: 100%;
+        max-width: 1920px;
+        left: 50%;
+        transform: translateX(-50%);
 
         .uk-navbar {
             height: 60px;

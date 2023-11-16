@@ -27,26 +27,19 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
             <ul class="uk-navbar-nav uk-visible@l">
                 <li><a href="<?php echo esc_url( home_url() ); ?>">Home</a></li>
                 <?php if ( is_front_page() ) : ?>
-                <li><a uk-scroll="offset: 125" href="<?php echo esc_url( site_url('#about') ); ?>">About Us</a></li>
-                <li><a uk-scroll="offset: 125" href="<?php echo esc_url( site_url('#partners') ); ?>">Partners & Ad Samples</a></li>
+                <li><a uk-scroll="offset: 125" href="<?php echo esc_url( site_url('#client-ticker') ); ?>">About Us</a></li>
                 <?php else : ?>
-                <li><a href="<?php echo esc_url( site_url('#sgg-about') ); ?>">About Us</a></li>
-                <li><a href="<?php echo esc_url( site_url('#sgg-partners') ); ?>">Partners & Ad Samples</a></li>
+                <li><a href="<?php echo esc_url( site_url('#client-ticker') ); ?>">About Us</a></li>
                 <?php endif; ?>                
                 <li class="uk-parent"><a href="#">Advertise <span uk-icon="icon:triangle-down; ratio:.8;"></span></a>
                     <div uk-dropdown="mode: click; offset: 0">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
                             <?php if ( is_front_page() ) : ?>
                             <li><a uk-scroll="offset: 125" href="<?php echo esc_url( site_url('#micro-influencer') ); ?>">What is a Micro-Influencer</a></li>
-                            <li><a uk-scroll="offset: 125" href="<?php echo esc_url( site_url('#chart') ); ?>">Cost Effectiveness</a></li>
-                            <li><a uk-scroll="offset: 125" href="<?php echo esc_url( site_url('#connection') ); ?>">How It Works</a></li>
-                            <li><a uk-scroll="offset: 125" href="<?php echo esc_url( site_url('#revenue') ); ?>">SGG Revenue Streams</a></li>
                             <?php else : ?>
                             <li><a href="<?php echo esc_url( get_permalink( 2 ).'#micro-influencer' ); ?>">What is a Micro-Influencer</a></li>
-                            <li><a href="<?php echo esc_url( get_permalink( 2 ).'#sgg-chart' ); ?>">Cost Effectiveness</a></li>
-                            <li><a href="<?php echo esc_url( get_permalink( 2 ).'#sgg-connection' ); ?>">How It Works</a></li>
-                            <li><a href="<?php echo esc_url( get_permalink( 2 ).'#sgg-revenue' ); ?>">SGG Revenue Streams</a></li>
                             <?php endif; ?> 
+                            <li><a href="<?php echo esc_url( get_permalink( 879 ) ); ?>">On-Line Advertising Quote</a></li>
                         </ul>
                     </div>
                 </li>
@@ -55,24 +48,13 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
                 <?php else : ?>
                 <li><a href="<?php echo esc_url( site_url('#sgg-team') ); ?>">Our Team</a></li>
                 <?php endif; ?> 
-                <li><a href="<?php echo esc_url( get_permalink( 469 ) ); ?>">Videos & Podcasts</a></li>
+                <li><a href="<?php echo esc_url( get_permalink( 469 ) ); ?>">Videos & Shows</a></li>
+                <li><a href="<?php echo esc_url( get_permalink( 58 ) ); ?>">Press</a></li>
                 <?php if ( is_front_page() ) : ?>
-                <li class="uk-parent"><a uk-scroll="offset: 120" href="<?php echo esc_url( site_url('#seen-in-press') ); ?>">Press <span uk-icon="icon:triangle-down; ratio:.8;"></span></a>
-                    <div uk-dropdown="mode: click; offset: 0">
-                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li><a href="<?php echo esc_url( get_permalink( 700 ) ); ?>">Troy Paul SBC Interview</a></li>
-                        </ul>
-                    </div>
-                </li>
+                    <li><a uk-scroll="offset: 90" href="<?php echo esc_url( site_url('#franchise') ); ?>">Franchises</a></li>
                 <?php else : ?>
-                <li class="uk-parent"><a href="<?php echo esc_url( get_permalink( 58 ) ); ?>">Press <span uk-icon="icon:triangle-down; ratio:.8;"></span></a>
-                    <div uk-dropdown="mode: click; offset: 0">
-                        <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li><a href="<?php echo esc_url( get_permalink( 700 ) ); ?>">Troy Paul SBC Interview</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <?php endif; ?> 
+                    <li><a href="<?php echo esc_url( get_permalink( 2 ).'#franchise' ); ?>">Franchises</a></li>
+                <?php endif; ?>
                 <li><a href="<?php echo esc_url( get_permalink( 362 ) ); ?>">Careers</a></li>
                 <li><a href="<?php echo esc_url( get_permalink( 108 ) ); ?>">Contact Us</a></li>
             </ul>

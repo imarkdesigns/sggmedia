@@ -7,7 +7,7 @@
       "uuidString" : "CAC57B17-91BE-4DDB-A093-CFFEFB891551"
     }
   ],
-  "creatorBuild" : "34484",
+  "creatorBuild" : "34564",
   "files" : {
     "\/.gitignore" : {
       "cB" : 0,
@@ -204,6 +204,21 @@
       "ma" : 0,
       "oA" : 0,
       "oAP" : "\/resources\/styles\/legal.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/build\/scss\/main-backup.scss" : {
+      "aP" : 1,
+      "bl" : 1,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/styles\/main-backup.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
@@ -450,6 +465,45 @@
       "rFN" : 0,
       "uCM" : 0
     },
+    "\/resources\/eocnewsticker\/eoc-newsticker.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/eocnewsticker\/eoc-newsticker-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/resources\/eocnewsticker\/eoc-newsticker.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/resources\/scripts\/eoc-newsticker.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
+    "\/resources\/fonts\/ChangaOne\/ChangaOne-Regular.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/fonts\/ChangaOne\/ChangaOne-Regular.woff",
+      "oF" : 0
+    },
+    "\/resources\/fonts\/ChangaOne\/ChangaOne-Regular.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/fonts\/ChangaOne\/ChangaOne-Regular.woff2",
+      "oF" : 0
+    },
     "\/resources\/fonts\/OpenSans\/OpenSans-Bold.woff" : {
       "cB" : 0,
       "ft" : 8192,
@@ -560,6 +614,78 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/resources\/fonts\/PassionOne\/PassionOne-Regular.woff2",
+      "oF" : 0
+    },
+    "\/resources\/fonts\/Poppins\/Poppins-ExtraLight.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/fonts\/Poppins\/Poppins-ExtraLight.woff",
+      "oF" : 0
+    },
+    "\/resources\/fonts\/Poppins\/Poppins-ExtraLight.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/fonts\/Poppins\/Poppins-ExtraLight.woff2",
+      "oF" : 0
+    },
+    "\/resources\/fonts\/Poppins\/poppins-extralightitalic-webfont.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/fonts\/Poppins\/poppins-extralightitalic-webfont.woff",
+      "oF" : 0
+    },
+    "\/resources\/fonts\/Poppins\/poppins-extralightitalic-webfont.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/fonts\/Poppins\/poppins-extralightitalic-webfont.woff2",
+      "oF" : 0
+    },
+    "\/resources\/fonts\/Poppins\/Poppins-Light.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/fonts\/Poppins\/Poppins-Light.woff",
+      "oF" : 0
+    },
+    "\/resources\/fonts\/Poppins\/Poppins-Light.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/fonts\/Poppins\/Poppins-Light.woff2",
+      "oF" : 0
+    },
+    "\/resources\/fonts\/Poppins\/poppins-lightitalic.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/fonts\/Poppins\/poppins-lightitalic.woff",
+      "oF" : 0
+    },
+    "\/resources\/fonts\/Poppins\/Poppins-Regular.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/fonts\/Poppins\/Poppins-Regular.woff",
+      "oF" : 0
+    },
+    "\/resources\/fonts\/Poppins\/Poppins-Regular.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/fonts\/Poppins\/Poppins-Regular.woff2",
       "oF" : 0
     },
     "\/resources\/images\/advertise\/full-stack-impressions.jpg" : {
@@ -718,6 +844,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/resources\/images\/banner-quote.png" : {
+      "ft" : 32768,
+      "iS" : 121184,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/banner-quote.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/resources\/images\/Beige-Pyramid-Chart-Social-Media-Influencer-Tier-Infographic-Instagram-Post.jpg.webp" : {
       "ft" : 8388608,
       "iS" : 19896,
@@ -738,6 +877,45 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/bg-request-a-quote.jpg" : {
+      "ft" : 16384,
+      "iS" : 228890,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/bg-request-a-quote.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/bullet-check.png" : {
+      "ft" : 32768,
+      "iS" : 1230,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/bullet-check.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/change-the-game.png" : {
+      "ft" : 32768,
+      "iS" : 1741950,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/change-the-game.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -779,6 +957,110 @@
       "ou" : "lpckwebp-default",
       "rq" : 75
     },
+    "\/resources\/images\/icon-cost-effectiveness.png" : {
+      "ft" : 32768,
+      "iS" : 3790,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/icon-cost-effectiveness.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/icon-engagement-reach.png" : {
+      "ft" : 32768,
+      "iS" : 3941,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/icon-engagement-reach.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/icon-geographic-relevance.png" : {
+      "ft" : 32768,
+      "iS" : 5557,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/icon-geographic-relevance.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/icon-instagram.png" : {
+      "ft" : 32768,
+      "iS" : 46069,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/icon-instagram.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/icon-niche-expertise.png" : {
+      "ft" : 32768,
+      "iS" : 5244,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/icon-niche-expertise.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/icon-tiktok.png" : {
+      "ft" : 32768,
+      "iS" : 28089,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/icon-tiktok.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/icon-twitch.png" : {
+      "ft" : 32768,
+      "iS" : 7869,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/icon-twitch.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/icon-twitter.png" : {
+      "ft" : 32768,
+      "iS" : 16807,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/icon-twitter.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/resources\/images\/img-advertise-with-sgg.jpg" : {
       "ft" : 16384,
       "iS" : 222482,
@@ -788,6 +1070,110 @@
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/img-banner-callout.png" : {
+      "ft" : 32768,
+      "iS" : 108458,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/img-banner-callout.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/img-banner-livedrive.jpg" : {
+      "ft" : 16384,
+      "iS" : 3772437,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/img-banner-livedrive.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/img-bg-dots.png" : {
+      "ft" : 32768,
+      "iS" : 34484,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/img-bg-dots.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/img-brush-after.png" : {
+      "ft" : 32768,
+      "iS" : 17386,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/img-brush-after.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/img-brush-alt-after.png" : {
+      "ft" : 32768,
+      "iS" : 18888,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/img-brush-alt-after.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/img-followers-chart.png" : {
+      "ft" : 32768,
+      "iS" : 378553,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/img-followers-chart.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/img-handball-vertical.jpg" : {
+      "ft" : 16384,
+      "iS" : 755022,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/img-handball-vertical.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/img-livedrive-url.png" : {
+      "ft" : 32768,
+      "iS" : 21467,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/img-livedrive-url.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -846,10 +1232,23 @@
     },
     "\/resources\/images\/img-social_media_table.jpg" : {
       "ft" : 16384,
-      "iS" : 779810,
+      "iS" : 272601,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/resources\/images\/img-social_media_table.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/img-the-joint-chiropractic.jpg" : {
+      "ft" : 16384,
+      "iS" : 912814,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/img-the-joint-chiropractic.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -966,6 +1365,32 @@
       "iS" : 25670,
       "oA" : 0,
       "oAP" : "\/resources\/images\/logo-sgg-media-white.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/logo-sggmedia-200.png" : {
+      "ft" : 32768,
+      "iS" : 30014,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/logo-sggmedia-200.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/micro-influencer-graph.png" : {
+      "ft" : 32768,
+      "iS" : 131316,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/micro-influencer-graph.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -1195,6 +1620,149 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/resources\/images\/partners\/ticker\/img-logo-blk-water.jpg" : {
+      "ft" : 16384,
+      "iS" : 6498,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/partners\/ticker\/img-logo-blk-water.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/partners\/ticker\/img-logo-bt.jpg" : {
+      "ft" : 16384,
+      "iS" : 14874,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/partners\/ticker\/img-logo-bt.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/partners\/ticker\/img-logo-dabble.jpg" : {
+      "ft" : 16384,
+      "iS" : 24910,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/partners\/ticker\/img-logo-dabble.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/partners\/ticker\/img-logo-draftkings.jpg" : {
+      "ft" : 16384,
+      "iS" : 14271,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/partners\/ticker\/img-logo-draftkings.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/partners\/ticker\/img-logo-fanatics.jpg" : {
+      "ft" : 16384,
+      "iS" : 16959,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/partners\/ticker\/img-logo-fanatics.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/partners\/ticker\/img-logo-fanduel.jpg" : {
+      "ft" : 16384,
+      "iS" : 12303,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/partners\/ticker\/img-logo-fanduel.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/partners\/ticker\/img-logo-fliff.jpg" : {
+      "ft" : 16384,
+      "iS" : 8163,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/partners\/ticker\/img-logo-fliff.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/partners\/ticker\/img-logo-frontrunner.jpg" : {
+      "ft" : 16384,
+      "iS" : 14946,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/partners\/ticker\/img-logo-frontrunner.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/partners\/ticker\/img-logo-joint-chiropractic.jpg" : {
+      "ft" : 16384,
+      "iS" : 12949,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/partners\/ticker\/img-logo-joint-chiropractic.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/partners\/ticker\/img-logo-rithmm.jpg" : {
+      "ft" : 16384,
+      "iS" : 15213,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/partners\/ticker\/img-logo-rithmm.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/partners\/ticker\/img-logo-takes-live.jpg" : {
+      "ft" : 16384,
+      "iS" : 14028,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/partners\/ticker\/img-logo-takes-live.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/resources\/images\/partners\/twinspires-black.jpg" : {
       "ft" : 16384,
       "iS" : 10062,
@@ -1253,6 +1821,19 @@
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/resources\/images\/podcast\/ss-logo.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/podcast\/ss-logo2.jpg" : {
+      "ft" : 16384,
+      "iS" : 16119,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/podcast\/ss-logo2.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -1550,6 +2131,162 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/resources\/images\/social-media-ad-postings_03.jpg" : {
+      "ft" : 16384,
+      "iS" : 221005,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/social-media-ad-postings_03.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/social-media-ad-postings_05.jpg" : {
+      "ft" : 16384,
+      "iS" : 406021,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/social-media-ad-postings_05.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/social-media-ad-postings_07.jpg" : {
+      "ft" : 16384,
+      "iS" : 304366,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/social-media-ad-postings_07.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/social-media-ad-postings_09.jpg" : {
+      "ft" : 16384,
+      "iS" : 85213,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/social-media-ad-postings_09.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/social-media-ad-postings_11.jpg" : {
+      "ft" : 16384,
+      "iS" : 154162,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/social-media-ad-postings_11.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/social-media-ad-postings_12.jpg" : {
+      "ft" : 16384,
+      "iS" : 466515,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/social-media-ad-postings_12.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/social-media-ad-postings_13.jpg" : {
+      "ft" : 16384,
+      "iS" : 379645,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/social-media-ad-postings_13.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/social-media-ad-postings_13a.jpg" : {
+      "ft" : 16384,
+      "iS" : 193359,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/social-media-ad-postings_13a.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/social-media-ad-postings_14.jpg" : {
+      "ft" : 16384,
+      "iS" : 251654,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/social-media-ad-postings_14.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/social-media-ad-postings_16.jpg" : {
+      "ft" : 16384,
+      "iS" : 310508,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/social-media-ad-postings_16.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/social-media-ad-postings_19.jpg" : {
+      "ft" : 16384,
+      "iS" : 164107,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/social-media-ad-postings_19.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/social-media-ad-postings_20.jpg" : {
+      "ft" : 16384,
+      "iS" : 260613,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/social-media-ad-postings_20.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/resources\/images\/team\/sgg-team-chrisnordling.jpg" : {
       "ft" : 16384,
       "iS" : 64100,
@@ -1628,6 +2365,17 @@
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/resources\/scripts\/common.min.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
+    "\/resources\/scripts\/home.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/resources\/scripts\/home.js",
       "oF" : 0,
       "sC" : 0,
       "tS" : 0
@@ -1861,6 +2609,14 @@
       "oAP" : "\/views\/fragments\/header.php",
       "oF" : 0
     },
+    "\/views\/fragments\/menu-backup.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/views\/fragments\/menu-backup.php",
+      "oF" : 0
+    },
     "\/views\/fragments\/menu.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1949,12 +2705,28 @@
       "oAP" : "\/views\/pages\/challenge.php",
       "oF" : 0
     },
+    "\/views\/pages\/cloud-campaign.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/views\/pages\/cloud-campaign.php",
+      "oF" : 0
+    },
     "\/views\/pages\/contact.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/views\/pages\/contact.php",
+      "oF" : 0
+    },
+    "\/views\/pages\/home-backup.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/views\/pages\/home-backup.php",
       "oF" : 0
     },
     "\/views\/pages\/home.php" : {
@@ -1995,6 +2767,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/views\/pages\/press.php",
+      "oF" : 0
+    },
+    "\/views\/pages\/request-quote.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/views\/pages\/request-quote.php",
       "oF" : 0
     },
     "\/views\/pages\/sbc-interview.php" : {
@@ -2867,9 +3647,6 @@
       "no-new-native-nonconstructor" : {
         "active" : 0
       },
-      "no-new-object" : {
-        "active" : 0
-      },
       "no-new-symbol" : {
         "active" : 1
       },
@@ -2881,6 +3658,9 @@
       },
       "no-obj-calls" : {
         "active" : 1
+      },
+      "no-object-constructor" : {
+        "active" : 0
       },
       "no-octal" : {
         "active" : 1
@@ -2935,9 +3715,6 @@
       "no-return-assign" : {
         "active" : 0,
         "optionString" : "'except-parens'"
-      },
-      "no-return-await" : {
-        "active" : 0
       },
       "no-script-url" : {
         "active" : 0

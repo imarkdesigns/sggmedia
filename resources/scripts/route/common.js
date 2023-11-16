@@ -1,13 +1,13 @@
 (function($) {
 
     jQuery.getScript('https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js', function() {        
-        jQuery( "#skipToLink" ).on( "click", function() {
-            jQuery.smoothScroll({
-                scrollTarget: '#Contents',
-                offset: -80,
-                speed: 1000
-            });
-        });
+        // jQuery( "#skipToLink" ).on( "click", function() {
+        //     jQuery.smoothScroll({
+        //         scrollTarget: '#Contents',
+        //         offset: -80,
+        //         speed: 1000
+        //     });
+        // });
         jQuery('#skipToLink').trigger('click');
 
         var reSmooth = /^#sgg-/;
@@ -21,6 +21,10 @@
             });
         }
 
+    });
+
+    UIkit.util.on('#mobile', 'scrolled', function () {
+        UIkit.offcanvas('#mobile').toggle();
     });
 
     // SGG Media Influencer Agreement Checkbox Control
