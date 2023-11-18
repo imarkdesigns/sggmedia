@@ -190,7 +190,7 @@
 
     <section class="followers-chart | uk-section">
         <div class="uk-container uk-container-expand">
-            <div class="uk-child-width-1-2@m uk-grid-collapse uk-flex-center" uk-grid uk-grid-height-match="target: > div">
+            <div class="uk-child-width-1-2@m uk-grid-collapse uk-flex-center" uk-grid>
                 <div>
                     <div class="four-stripes section-content-column">
                         
