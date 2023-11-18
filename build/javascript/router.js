@@ -12,6 +12,7 @@ var theme = {
     home: {
         finalize: () => {
             jQuery.getScript( script + 'home.js' );
+            jQuery.getScript( script + 'ticker.js' );
         }
     },
 

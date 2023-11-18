@@ -465,7 +465,7 @@
       "rFN" : 0,
       "uCM" : 0
     },
-    "\/resources\/eocnewsticker\/eoc-newsticker.css" : {
+    "\/resources\/carousel\/carouselTicker.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -473,17 +473,17 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/resources\/eocnewsticker\/eoc-newsticker-min.css",
+      "oAP" : "\/resources\/carousel\/carouselTicker-min.css",
       "oF" : 0,
       "pg" : 0
     },
-    "\/resources\/eocnewsticker\/eoc-newsticker.js" : {
+    "\/resources\/carousel\/jquery.carouselTicker.min.js" : {
       "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/resources\/scripts\/eoc-newsticker.js",
+      "oAP" : "\/resources\/scripts\/jquery.carouselTicker.min.js",
       "oF" : 0,
       "sC" : 0,
       "tS" : 0
@@ -2347,47 +2347,14 @@
       "oAP" : "\/resources\/index.php",
       "oF" : 0
     },
-    "\/resources\/scripts\/common.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/resources\/scripts\/common.js",
-      "oF" : 0,
-      "sC" : 0,
-      "tS" : 0
-    },
-    "\/resources\/scripts\/common.min.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/resources\/scripts\/common.min.js",
-      "oF" : 0,
-      "sC" : 0,
-      "tS" : 0
-    },
-    "\/resources\/scripts\/home.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/resources\/scripts\/home.js",
-      "oF" : 0,
-      "sC" : 0,
-      "tS" : 0
-    },
     "\/resources\/scripts\/route\/common.js" : {
       "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/resources\/scripts\/common.js",
-      "oF" : 0,
+      "oF" : 1,
       "sC" : 0,
       "tS" : 0
     },
@@ -2396,9 +2363,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/resources\/scripts\/home.js",
-      "oF" : 0,
+      "oF" : 1,
       "sC" : 0,
       "tS" : 0
     },
@@ -2407,9 +2374,9 @@
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/resources\/scripts\/ticker.js",
-      "oF" : 0,
+      "oF" : 1,
       "sC" : 0,
       "tS" : 0
     },
@@ -2420,17 +2387,6 @@
       "mi" : 1,
       "oA" : 0,
       "oAP" : "\/resources\/scripts\/router.js",
-      "oF" : 0,
-      "sC" : 0,
-      "tS" : 0
-    },
-    "\/resources\/scripts\/ticker.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/resources\/scripts\/ticker.js",
       "oF" : 0,
       "sC" : 0,
       "tS" : 0

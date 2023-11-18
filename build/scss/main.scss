@@ -97,13 +97,16 @@
         margin-bottom: 15px;
     }
 
-    .uk-slider-items li {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    ul.carouselTicker__list {
+        height: 75px !important;
+
+        li.carouselTicker__list {
+            display: inline;
+            padding: 15px;
+        }
 
         img {
-            max-height: 65px;
+            max-height: 75px;
             border-radius: 5px;
         }
     }

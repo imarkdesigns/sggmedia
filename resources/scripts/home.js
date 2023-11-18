@@ -1,1 +1,0 @@
-!function($){var e=setInterval((function(){"complete"===document.readyState&&clearInterval(e)}),100)}(jQuery);

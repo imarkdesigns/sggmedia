@@ -1,22 +1,17 @@
 <main id="main" class="main uk-position-relative" role="main">
     <div id="client-ticker" class="uk-container uk-container-expand">
         <h2 class="uk-heading-divider">SGG Media Clients</h2>
-        <div uk-slider="autoplay: true; autoplay-interval: 3000; finite: false">
-            <ul class="uk-slider-items uk-child-width-auto" uk-grid>
-            <?php 
-            $arr_logos = [ 'fliff', 'fanatics', 'blk-water', 'bt', 'dabble', 'draftkings', 'fanduel', 'frontrunner', 'joint-chiropractic', 'rithmm', 'takes-live' ]; 
-            for ( $n = 0; $n < count($arr_logos); $n++ ) : ?>
-                <li class="uk-text-center">
-                    <img src="<?php echo _uri.'/resources/images/partners/ticker/img-logo-'.$arr_logos[$n].'.jpg'; ?>" alt="<?=$arr_logos[$n];?>">
-                </li>
-            <?php endfor;
-            for ( $n = 0; $n < count($arr_logos); $n++ ) : ?>
-                <li class="uk-text-center">
-                    <img src="<?php echo _uri.'/resources/images/partners/ticker/img-logo-'.$arr_logos[$n].'.jpg'; ?>" alt="<?=$arr_logos[$n];?>">
-                </li>
-            <?php endfor; ?>
-            </ul>
-        </div>
+            <div class="carouselTicker">
+                <ul class="carouselTicker__list">
+                    <?php 
+                    $arr_logos = [ 'fliff', 'fanatics', 'blk-water', 'bt', 'dabble', 'draftkings', 'fanduel', 'frontrunner', 'joint-chiropractic', 'rithmm', 'takes-live' ]; 
+                    for ( $n = 0; $n < count($arr_logos); $n++ ) : ?>
+                        <li class="carouselTicker__list">
+                            <img src="<?php echo _uri.'/resources/images/partners/ticker/img-logo-'.$arr_logos[$n].'.jpg'; ?>" alt="<?=$arr_logos[$n];?>">
+                        </li>
+                    <?php endfor; ?>
+                </ul>
+            </div>
     </div>
 
     <section id="about" class="about | uk-section">
