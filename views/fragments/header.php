@@ -4,7 +4,7 @@
     $followers   = str_replace( ',', '', get_field( 'sm_followers', 'options' ) );
     $influencers = get_field( 'sm_influencers', 'options' );
     $impressions = str_replace( ',', '', get_field( 'sm_impressions', 'options' ) ); ?>
-    <aside class="uk-background-muted uk-grid-collapse uk-grid-match uk-flex-middle | ticker" uk-grid uk-height-match="target: > div > .uk-card" uk-sticky="start: 800; offset: 0; animation: uk-animation-slide-top">
+    <aside class="uk-background-muted uk-grid-collapse uk-grid-match uk-flex-middle | ticker" uk-grid uk-height-match="target: > div > .uk-card" uk-sticky="start: 800; offset: 60; animation: uk-animation-slide-top">
         <div>
             <div class="uk-card uk-card-secondary | followers">
                 <div class="uk-card-body">
@@ -71,7 +71,7 @@ if ( !is_page([ 879 ]) ) : ?>
     </div>
     <div class="uk-overlay uk-position-bottom-center uk-text-center uk-padding-remove">
         <h2>Get An Advertising <span class="uk-light">Quote In Seconds</span></h2>
-        <a href="<?php echo get_permalink( 879 ); ?>" class="uk-button uk-button-small uk-button-primary uk-margin-top">Click Here</a>
+        <a href="<?php echo get_permalink( 2 ).'#online-quote'; ?>" data-menuanchor="online-quote" class="uk-button uk-button-small uk-button-primary uk-margin-top">Click Here</a>
     </div>
 </div>
 

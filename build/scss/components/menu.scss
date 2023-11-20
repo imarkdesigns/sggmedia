@@ -1,13 +1,14 @@
 .home.page [data-globals="menu"] {
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .page [data-globals="menu"] {
     position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
     background: #FFF;
+    width: 100% !important;
     height: auto;
     padding-inline: 2em;
     box-sizing: border-box;
@@ -148,10 +149,10 @@
     &.uk-sticky-below {
         backdrop-filter: saturate(180%) blur(20px);
         background-color: rgba(#FFF,.8);
-        width: 100% !important;
-        max-width: 1920px;
-        left: 50%;
-        transform: translateX(-50%);
+        // width: 100% !important;
+        // max-width: 1920px;
+        // left: 50%;
+        // transform: translateX(-50%);
 
         .uk-navbar {
             height: 60px;

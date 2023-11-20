@@ -8,7 +8,7 @@
 
             // setTimeout(function() {
             //     UIkit.modal('#RequestQuote').show();
-            // }, 2500);
+            // }, 2500);2
 
         }    
     }, 100);
@@ -21,14 +21,36 @@ new fullpage('#sgg-section', {
     licenseKey: 'L9LU6-5S46I-W3K78-TJW8I-BWAKO',
     // scrollHorizontallyKey: '3270A37C-9B454A7E-92FCDA4B-C1B75168',
 
+    // fixedElements: [ '#global-menu' ],
+
     // Options
-    // navigation: true,
-    // slidesNavigation: true,
+    menu: '#main-menu',
+    lockAnchors: false,
+    anchors: ['home', 'aboutSGG', 'adsPosting', 'onlineQuote', 'microInfluencer', 'livedrivestream', 'franchiseAds', 'followersChart', 'adsGraph', 'managementTeam', 'contactInfo', 'footer'],
+    navigation: true,
+    navigationPosition: 'left',
+    navigationTooltips: ['Home', 'About SGG Media', 'SGG Media Ads Postings', 'Online Quote', 'What is a Micro Influencer', 'LiveDriveStream', 'Franchise Advertising', 'SGG Media Followers', 'Social Media Chart', 'Management Team', 'Contact'],
+    showActiveTooltip: false,
+    scrollingSpeed: 1000,
     autoScrolling: true,
     paddingTop: '80px',
-    credits: { enabled: false, label: 'Made with fullPage.js', position: 'right'}
+    credits: { 
+        enabled: false, 
+        label: 'Made with fullPage.js', 
+        position: 'right'
+    },
+    afterLoad: function(origin, destination, direction, trigger){
+        var origin = this;
 
+        if(destination.anchor == 'onlineQuote'){
+            jQuery('#quote-ads').hide();
+        } else {
+            jQuery('#quote-ads').show();
+        }
+    }
 });
+
+
 
 
 // ChartJS

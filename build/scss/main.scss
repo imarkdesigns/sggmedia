@@ -65,6 +65,29 @@
 
     }
 
+    .sponsor {
+        background: $sgg-green;
+        font-family: $poppins-bd;
+        line-height: 1.2;
+        padding-top: 22px;
+
+        .uk-grid {
+            gap: 10px;
+        }
+
+        p {
+            color: #FFF !important;
+            margin-top: 15px;
+        }
+
+        img {
+            max-width: 100px;
+            height: auto;
+            margin-top: -9px;
+            filter: invert(100%);
+        }
+    }
+
 }
 
 .about {
@@ -139,6 +162,31 @@
             background: url(#{$img}/bullet-check.png) no-repeat center / contain;
             @include size(18px);
         }
+    }
+}
+
+.ads {
+    .uk-grid header {
+        &.uk-background-primary {
+            background-color: #52A55A;
+        }
+
+        h2 {
+            font-family: $changa;
+            font-size: 2rem;
+            text-transform: uppercase;
+            line-height: 1;
+            margin: 0;
+        }
+    }
+}
+
+.quote {
+    .frm_forms {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
     }
 }
 

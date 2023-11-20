@@ -189,3 +189,18 @@
     // ul li a span { background: $sgg-green }
     ul li a.active span { background: #F7760D }
 }
+
+#fp-nav.fp-left {
+    left: 0;
+}
+
+#fp-nav ul li .fp-tooltip {
+    background: #000;
+    font-family: $poppins-bd;
+    font-size: .75rem;
+    color: $sgg-green;
+    text-transform: uppercase;
+    padding: 3px 5px 0;
+    border-radius: 3px;
+    box-shadow: 0 0 5px 0 rgba(#000,.1);
+}
