@@ -12,8 +12,8 @@ query_posts( $team ); ?>
                 <div class="uk-position-relative" uk-slideshow="autoplay: true; animation: fade; autoplay-interval: 5000; pause-on-hover: false">
                     <ul class="uk-slideshow-items" uk-height-viewport="min-height: 960">
                         <li>
-                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
-                                <img src="<?php echo _uri.'/resources/images/header/img-sggmedia-header-pt1.jpg'; ?>" alt="" uk-cover>
+                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-bottom-left">
+                                <img src="<?php echo _uri.'/resources/images/header/img-sggmedia-header-pt3.jpg'; ?>" alt="" uk-cover>
                             </div>
                         </li>
                         <li>
@@ -22,10 +22,10 @@ query_posts( $team ); ?>
                             </div>
                         </li>
                         <li>
-                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-bottom-left">
-                                <img src="<?php echo _uri.'/resources/images/header/img-sggmedia-header-pt3.jpg'; ?>" alt="" uk-cover>
+                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+                                <img src="<?php echo _uri.'/resources/images/header/img-sggmedia-header-pt1.jpg'; ?>" alt="" uk-cover>
                             </div>
-                        </li>
+                        </li>                        
                     </ul>
 
                     <figcaption class="uk-overlay uk-position-center-left">
@@ -37,7 +37,8 @@ query_posts( $team ); ?>
                 </div>
             </figure>
 
-            <?php if ( !is_page([ 302, 358, 650, 700 ]) ) : 
+            <?php if ( !wp_is_mobile() ) :
+            if ( !is_page([ 302, 358, 650, 700 ]) ) : 
             $followers   = str_replace( ',', '', get_field( 'sm_followers', 'options' ) );
             $influencers = get_field( 'sm_influencers', 'options' );
             $impressions = str_replace( ',', '', get_field( 'sm_impressions', 'options' ) ); ?>
@@ -68,9 +69,10 @@ query_posts( $team ); ?>
                 </div>
             </aside>
             <?php endif;
+            endif; // mobile
             // End widget stats ?>
 
-            <aside class="sponsor | uk-position-bottom uk-margin-remove uk-background-secondary uk-light uk-flex uk-flex-center" uk-alert>
+            <aside class="sponsor | uk-position-bottom uk-margin-remove uk-background-secondary uk-light uk-flex uk-flex-center uk-visible@m" uk-alert>
                 <div class="uk-container">
                     <div class="uk-child-width-auto uk-grid-collapse uk-flex-middle" uk-grid>
                         <img src="<?php echo _uri.'/resources/images/articles/iGB-logo.png'; ?>" alt="iGB - I Gaming Business">
