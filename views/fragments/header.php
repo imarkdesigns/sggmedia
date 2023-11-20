@@ -4,7 +4,7 @@
     $followers   = str_replace( ',', '', get_field( 'sm_followers', 'options' ) );
     $influencers = get_field( 'sm_influencers', 'options' );
     $impressions = str_replace( ',', '', get_field( 'sm_impressions', 'options' ) ); ?>
-    <aside class="uk-background-muted uk-grid-collapse uk-grid-match uk-flex-middle | ticker" uk-grid uk-height-match="target: > div > .uk-card" uk-sticky="start: 800; offset: 60; animation: uk-animation-slide-top">
+    <aside class="uk-background-muted uk-grid-collapse uk-grid-match uk-flex-middle | ticker" uk-grid uk-height-match="target: > div > .uk-card" uk-sticky="start: 800; offset: 0; animation: uk-animation-slide-top">
         <div>
             <div class="uk-card uk-card-secondary | followers">
                 <div class="uk-card-body">

@@ -1,6 +1,9 @@
 <?php
     
-    // get_template_part( _ftr );
+    if ( !is_page([ 2 ]) ) {
+        get_template_part( _ftr );
+    }
+    
     get_template_part( _mob );
     wp_footer();
     

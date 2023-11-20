@@ -1,5 +1,9 @@
-[data-globals="menu"] {
+.home.page [data-globals="menu"] {
     position: fixed;
+}
+
+.page [data-globals="menu"] {
+    position: relative;
     top: 0;
     left: 0;
     right: 0;

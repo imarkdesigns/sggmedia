@@ -22,8 +22,8 @@ new fullpage('#sgg-section', {
     // scrollHorizontallyKey: '3270A37C-9B454A7E-92FCDA4B-C1B75168',
 
     // Options
-    navigation: true,
-    slidesNavigation: true,
+    // navigation: true,
+    // slidesNavigation: true,
     autoScrolling: true,
     paddingTop: '80px',
     credits: { enabled: false, label: 'Made with fullPage.js', position: 'right'}

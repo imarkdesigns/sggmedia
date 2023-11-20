@@ -15,7 +15,7 @@
                     <div uk-lightbox>
                         <figure class="video-item | uk-inline">
                             <img src="https://img.youtube.com/vi/uEyykxqAPMY/0.jpg" alt="">
-                            <a href="https://www.youtube-nocookie.com/watch?v=uEyykxqAPMY&rel=0&start=23s" class="uk-position-cover" aria-label="Watch the Video" title="Watch Video" data-caption="<?=$caption?>" data-attrs="width: 1280; height: 720;"></a>
+                            <a href="https://www.youtube-nocookie.com/watch?v=uEyykxqAPMY&rel=0&start=23s" class="uk-position-cover" aria-label="Watch the Video" title="Watch Video" data-attrs="width: 1280; height: 720;"></a>
                         </figure>
                     </div>
                 </div>
@@ -97,5 +97,7 @@
         </div>
     </section>
     */ ?>
+
+    <?php include( locate_template( _frg.'colophon.php', false, true ) ); ?>
 
 </main>
