@@ -8,5 +8,7 @@
 </head>
 <body <?php body_class() . schema() ?>>
 <?php
+if ( !is_page([ 2 ]) ) {
     get_template_part( _nav );
     get_template_part( _hdr );
+}

@@ -53,6 +53,15 @@ $Poppins    : "../fonts/Poppins/";
     text-rendering: optimizeLegibility;
 }
 
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: local('Poppins Bold'), local('Poppins Bold'),
+        url('#{$Poppins}Poppins-Bold.woff2') format('woff2'),
+        url('#{$Poppins}Poppins-Bold.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+}
 
 @font-face {
     font-family: 'OpenSans-Light';

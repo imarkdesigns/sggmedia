@@ -1,22 +1,37 @@
 [data-globals="footer"] {
+    background: #111;
+    font-family: $poppins-lt;
+    font-size: .75rem;
 
-    section.footer {
-        position: relative;
-        background: #111;
-        font-family: $face-regular;
-        font-size: 12px;
-        text-align: center;
-        padding: 20px 0;
-
-        .uk-flex {
-            justify-content: center;
-        }
-
-        .uk-subnav li a {
-            font-size: 12px !important;
-            text-transform: capitalize;
-        }
-
+    .uk-grid {
+        min-height: 80px;
+        padding-inline: 30px;
+        padding-block: 15px;
+        box-sizing: border-box;
     }
 
+    .uk-width-1-1 .uk-panel,
+    .uk-width-1-1 .uk-flex {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .uk-subnav {
+        padding: 0;
+    }
+
+    .uk-subnav li a {
+        font-size: .75rem !important;
+        text-transform: capitalize;
+    }
+
+    @media screen and ( min-width: 640px ) {
+        .uk-width-1-1 .uk-panel {
+            text-align: left;
+        }
+    }
 } // end
+
+body.home .global-footer {
+    padding-top: 0 !important;
+}

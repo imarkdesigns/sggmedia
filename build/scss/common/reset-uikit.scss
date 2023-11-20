@@ -1,3 +1,7 @@
+.uk-section {
+    padding-top: 80px;
+}
+
 // Button Primary
 .uk-button-primary {
 
@@ -179,4 +183,9 @@
             }
         }
     }
+}
+
+#fp-nav {
+    // ul li a span { background: $sgg-green }
+    ul li a.active span { background: #F7760D }
 }

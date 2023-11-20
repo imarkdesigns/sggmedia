@@ -4,7 +4,8 @@ $customLogoID = get_theme_mod( 'custom_logo' );
 $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
 
 <a id="skipToLink" href="#main" class="skip-to-content-link">Skip to Content</a>
-<div class="uk-position-z-index uk-width-1-1" data-globals="menu" uk-sticky="start: 800; animation: uk-animation-slide-top">
+<?php /* <div class="uk-position-z-index uk-width-1-1" data-globals="menu" uk-sticky="start: 800; animation: uk-animation-slide-top"> */ ?>
+<div data-globals="menu">
 
     <nav uk-navbar class="uk-navbar-container uk-navbar-transparent">
         <div class="uk-navbar-left">
@@ -27,9 +28,9 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
             <ul class="uk-navbar-nav uk-visible@l">
                 <li><a href="<?php echo esc_url( home_url() ); ?>">Home</a></li>
                 <?php if ( is_front_page() ) : ?>
-                <li><a uk-scroll="offset: 125" href="<?php echo esc_url( site_url('#client-ticker') ); ?>">About Us</a></li>
+                <li><a uk-scroll="offset: 125" href="<?php echo esc_url( site_url('#about') ); ?>">About Us</a></li>
                 <?php else : ?>
-                <li><a href="<?php echo esc_url( site_url('#client-ticker') ); ?>">About Us</a></li>
+                <li><a href="<?php echo esc_url( site_url('#about') ); ?>">About Us</a></li>
                 <?php endif; ?>                
                 <li class="uk-parent"><a href="#">Advertise <span uk-icon="icon:triangle-down; ratio:.8;"></span></a>
                     <div uk-dropdown="mode: click; offset: 0">

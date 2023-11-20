@@ -9,14 +9,6 @@
   ],
   "creatorBuild" : "34564",
   "files" : {
-    "\/.gitignore" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/.gitignore",
-      "oF" : 0
-    },
     "\/404.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -424,47 +416,6 @@
       "oAP" : "\/index.php",
       "oF" : 0
     },
-    "\/node_modules" : {
-      "ft" : 65536,
-      "oA" : 2,
-      "oAP" : "\/node_modules",
-      "oF" : 0
-    },
-    "\/package-lock.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/package-lock-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/package.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/package-min.json",
-      "oF" : 0,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/README.md" : {
-      "cB" : 0,
-      "cS" : 0,
-      "eF" : 1,
-      "eL" : 1,
-      "ema" : 1,
-      "eSQ" : 1,
-      "ft" : 4096,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/README.html",
-      "oF" : 0,
-      "oFM" : 0,
-      "oS" : 0,
-      "pHT" : 0,
-      "pME" : 1,
-      "rFN" : 0,
-      "uCM" : 0
-    },
     "\/resources\/carousel\/carouselTicker.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -614,6 +565,22 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/resources\/fonts\/PassionOne\/PassionOne-Regular.woff2",
+      "oF" : 0
+    },
+    "\/resources\/fonts\/Poppins\/Poppins-Bold.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/fonts\/Poppins\/Poppins-Bold.woff",
+      "oF" : 0
+    },
+    "\/resources\/fonts\/Poppins\/Poppins-Bold.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/fonts\/Poppins\/Poppins-Bold.woff2",
       "oF" : 0
     },
     "\/resources\/fonts\/Poppins\/Poppins-ExtraLight.woff" : {
@@ -909,7 +876,7 @@
     },
     "\/resources\/images\/change-the-game.png" : {
       "ft" : 32768,
-      "iS" : 1741950,
+      "iS" : 3043616,
       "oA" : 0,
       "oAP" : "\/resources\/images\/change-the-game.png",
       "oF" : 0,
@@ -955,6 +922,45 @@
       "oIPL" : 0,
       "opt" : 0,
       "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/resources\/images\/header\/img-sggmedia-header-pt1.jpg" : {
+      "ft" : 16384,
+      "iS" : 957245,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/header\/img-sggmedia-header-pt1.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/header\/img-sggmedia-header-pt2.jpg" : {
+      "ft" : 16384,
+      "iS" : 332250,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/header\/img-sggmedia-header-pt2.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/header\/img-sggmedia-header-pt3.jpg" : {
+      "ft" : 16384,
+      "iS" : 285125,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/header\/img-sggmedia-header-pt3.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
       "rq" : 75
     },
     "\/resources\/images\/icon-cost-effectiveness.png" : {
@@ -1141,7 +1147,7 @@
     },
     "\/resources\/images\/img-followers-chart.png" : {
       "ft" : 32768,
-      "iS" : 378553,
+      "iS" : 405957,
       "oA" : 0,
       "oAP" : "\/resources\/images\/img-followers-chart.png",
       "oF" : 0,
@@ -1661,7 +1667,7 @@
     },
     "\/resources\/images\/partners\/ticker\/img-logo-draftkings.jpg" : {
       "ft" : 16384,
-      "iS" : 14271,
+      "iS" : 20775,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/resources\/images\/partners\/ticker\/img-logo-draftkings.jpg",
@@ -2347,6 +2353,59 @@
       "oAP" : "\/resources\/index.php",
       "oF" : 0
     },
+    "\/resources\/scripts\/fullpage\/fullpage.extensions.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/resources\/scripts\/fullpage.extensions.min.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
+    "\/resources\/scripts\/fullpage\/fullpage.min.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/scripts\/fullpage\/fullpage.min-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/resources\/scripts\/fullpage\/fullpage.min.css.map" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/scripts\/fullpage\/fullpage.min.css.map",
+      "oF" : 0
+    },
+    "\/resources\/scripts\/fullpage\/fullpage.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/resources\/scripts\/fullpage.min.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
+    "\/resources\/scripts\/fullpage\/fullpage.scrollHorizontally.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/resources\/scripts\/fullpage.scrollHorizontally.min.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
     "\/resources\/scripts\/route\/common.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -2391,6 +2450,98 @@
       "sC" : 0,
       "tS" : 0
     },
+    "\/resources\/scripts\/smoothState\/.jshintrc" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/scripts\/smoothState\/.jshintrc",
+      "oF" : 0
+    },
+    "\/resources\/scripts\/smoothState\/bower.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/resources\/scripts\/smoothState\/bower-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/resources\/scripts\/smoothState\/jquery.smoothState.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/resources\/scripts\/jquery.smoothState.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
+    "\/resources\/scripts\/smoothState\/LICENSE.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/scripts\/smoothState\/LICENSE.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/resources\/scripts\/smoothState\/README.md" : {
+      "cB" : 0,
+      "cS" : 0,
+      "eF" : 1,
+      "eL" : 1,
+      "ema" : 1,
+      "eSQ" : 1,
+      "ft" : 4096,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/scripts\/smoothState\/README.html",
+      "oF" : 0,
+      "oFM" : 0,
+      "oS" : 0,
+      "pHT" : 0,
+      "pME" : 1,
+      "rFN" : 0,
+      "uCM" : 0
+    },
+    "\/resources\/scripts\/smoothState\/smoothState.jquery.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/resources\/scripts\/smoothState\/smoothState.jquery-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
+    },
+    "\/resources\/scripts\/smoothState\/tests\/index.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/scripts\/smoothState\/tests\/index.html",
+      "oF" : 0
+    },
+    "\/resources\/scripts\/smoothState\/tests\/smoothStateUtilityTests.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/resources\/scripts\/smoothStateUtilityTests.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
     "\/resources\/styles\/fragments.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -2412,6 +2563,18 @@
       "ma" : 0,
       "oA" : 0,
       "oAP" : "\/resources\/styles\/legal-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
+    "\/resources\/styles\/main-backup.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/styles\/main-backup-min.css",
       "oF" : 0,
       "pg" : 0
     },
@@ -2496,6 +2659,22 @@
       "oF" : 0,
       "sC" : 0,
       "tS" : 0
+    },
+    "\/resources\/video\/Final-HD.mp4" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/video\/Final-HD.mp4",
+      "oF" : 0
+    },
+    "\/resources\/video\/Final-HD.webm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/video\/Final-HD.webm",
+      "oF" : 0
     },
     "\/single.php" : {
       "cB" : 0,
@@ -2683,6 +2862,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/views\/pages\/home-backup.php",
+      "oF" : 0
+    },
+    "\/views\/pages\/home-backup2.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/views\/pages\/home-backup2.php",
       "oF" : 0
     },
     "\/views\/pages\/home.php" : {

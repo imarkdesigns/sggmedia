@@ -1,4 +1,4 @@
-<main id="main" class="main" role="main">
+<main id="main" class="main m-scene" role="main">
     
     <section class="press-coverage | uk-section uk-section-muted">
         <div class="uk-container">
