@@ -41,7 +41,7 @@
             <?php else : ?>
                 <li><a href="<?php echo esc_url( get_permalink( 2 ).'#franchise' ); ?>" data-anchor="franchiseAds">Franchises</a></li>
             <?php endif; ?>
-            <li><a href="<?php echo esc_url( get_permalink( 362 ) ); ?>">Careers</a></li>
+            <li hidden><a href="<?php echo esc_url( get_permalink( 362 ) ); ?>">Careers</a></li>
             <li><a href="<?php echo esc_url( get_permalink( 108 ) ); ?>">Contact</a></li>
             <li><a href="<?php echo esc_url( get_permalink( 3 ) ); ?>">Privacy Policy</a></li>
         </ul>

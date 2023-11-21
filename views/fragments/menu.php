@@ -64,7 +64,7 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
                 <?php else : ?>
                     <li><a href="<?php echo esc_url( get_permalink( 2 ).'#franchiseAds' ); ?>" data-anchor="franchiseAds">Franchises</a></li>
                 <?php endif; ?>
-                <li><a href="<?php echo esc_url( get_permalink( 362 ) ); ?>">Careers</a></li>
+                <li hidden><a href="<?php echo esc_url( get_permalink( 362 ) ); ?>">Careers</a></li>
                 <li><a href="<?php echo esc_url( get_permalink( 108 ) ); ?>">Contact Us</a></li>
             </ul>
             <ul class="uk-subnav uk-margin-remove">
