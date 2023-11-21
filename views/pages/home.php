@@ -133,44 +133,48 @@ query_posts( $team ); ?>
         </section>
 
         <section id="ads-posting" class="ads | section">
-            <div class="uk-grid-small uk-child-width-1-2@l" uk-grid>
+            <div class="uk-container uk-container-large">
                 
-                <div>
-                    <header class="uk-flex uk-flex-middle uk-flex-center uk-text-center uk-background-primary uk-width-1-1 uk-height-small uk-light uk-margin-bottom">
-                        <h2>Social Media <br> Ad Postings</h2>    
-                    </header>
-                    <div class="uk-child-width-1-3@s uk-grid-small uk-grid-match" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 300; repeat: true">
-                        <div><img src="<?php echo _uri.'/resources/images/social-media-ad-postings_03.jpg'; ?>" alt=""></div>
-                        <div><img src="<?php echo _uri.'/resources/images/social-media-ad-postings_05.jpg'; ?>" alt=""></div>
-                        <div><img src="<?php echo _uri.'/resources/images/social-media-ad-postings_07.jpg'; ?>" alt=""></div>
-                        <div><img src="<?php echo _uri.'/resources/images/social-media-ad-postings_12.jpg'; ?>" alt=""></div>
-                        <div><img src="<?php echo _uri.'/resources/images/social-media-ad-postings_13.jpg'; ?>" alt=""></div>
-                        <div><img src="<?php echo _uri.'/resources/images/social-media-ad-postings_14.jpg'; ?>" alt=""></div>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-grid-small" uk-grid>
-                        <div class="uk-width-1-3@s">
-                            <header class="uk-flex uk-flex-middle uk-flex-center uk-text-center uk-background-secondary uk-width-1-1 uk-height-small uk-light uk-margin-bottom">
-                                <h2>Franchise <br> Ad Content</h2>
-                            </header>
-                            <div class="uk-child-width-1-1 uk-grid-small uk-grid-match" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 600; repeat: true">
-                                <div><img src="<?php echo _uri.'/resources/images/social-media-ad-postings_09.jpg'; ?>" alt=""></div>
-                                <div><img src="<?php echo _uri.'/resources/images/social-media-ad-postings_16.jpg'; ?>" alt=""></div>
-                            </div>
-                        </div>
-                        <div class="uk-width-2-3@s">
-                            <header class="uk-flex uk-flex-middle uk-flex-center uk-text-center uk-background-primary uk-width-1-1 uk-height-small uk-light uk-margin-bottom">
-                                <h2>Shows <br> Produced</h2>
-                            </header>
-                            <div class="uk-child-width-1-2@s uk-grid-small uk-grid-match" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 900; repeat: true">
-                                <div><img src="<?php echo _uri.'/resources/images/social-media-ad-postings_11.jpg'; ?>" alt=""></div>
-                                <div><img src="<?php echo _uri.'/resources/images/social-media-ad-postings_13a.jpg'; ?>" alt=""></div>
-                                <div><img src="<?php echo _uri.'/resources/images/social-media-ad-postings_19.jpg'; ?>" alt=""></div>
-                                <div><img src="<?php echo _uri.'/resources/images/social-media-ad-postings_20.jpg'; ?>" alt=""></div>
-                            </div>
+                <div class="uk-grid-small uk-child-width-1-2@l" uk-grid>
+                    
+                    <div>
+                        <header class="uk-flex uk-flex-middle uk-flex-center uk-text-center uk-background-primary uk-width-1-1 uk-height-small uk-light uk-margin-bottom">
+                            <h2>Social Media <br> Ad Postings</h2>    
+                        </header>
+                        <div class="uk-child-width-1-3@s uk-grid-small uk-grid-match" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 300; repeat: true">
+                            <div><img src="<?php echo _uri.'/resources/images/ads/ads-postings_01.jpg'; ?>" alt=""></div>
+                            <div><img src="<?php echo _uri.'/resources/images/ads/ads-postings_02.jpg'; ?>" alt=""></div>
+                            <div><img src="<?php echo _uri.'/resources/images/ads/ads-postings_03.jpg'; ?>" alt=""></div>
+                            <div><img src="<?php echo _uri.'/resources/images/ads/ads-postings_04.jpg'; ?>" alt=""></div>
+                            <div><img src="<?php echo _uri.'/resources/images/ads/ads-postings_05.jpg'; ?>" alt=""></div>
+                            <div><img src="<?php echo _uri.'/resources/images/ads/ads-postings_06.jpg'; ?>" alt=""></div>
                         </div>
                     </div>
+                    <div>
+                        <div class="uk-grid-small" uk-grid>
+                            <div class="uk-width-1-3@s">
+                                <header class="uk-flex uk-flex-middle uk-flex-center uk-text-center uk-background-secondary uk-width-1-1 uk-height-small uk-light uk-margin-bottom">
+                                    <h2>Franchise <br> Ad Content</h2>
+                                </header>
+                                <div class="uk-child-width-1-1 uk-grid-small uk-grid-match" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 600; repeat: true">
+                                    <div><img src="<?php echo _uri.'/resources/images/ads/ads-content_01.jpg'; ?>" alt=""></div>
+                                    <div><img src="<?php echo _uri.'/resources/images/ads/ads-content_02.jpg'; ?>" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="uk-width-2-3@s">
+                                <header class="uk-flex uk-flex-middle uk-flex-center uk-text-center uk-background-primary uk-width-1-1 uk-height-small uk-light uk-margin-bottom">
+                                    <h2>Shows <br> Produced</h2>
+                                </header>
+                                <div class="uk-child-width-1-2@s uk-grid-small uk-grid-match" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 900; repeat: true">
+                                    <div><img src="<?php echo _uri.'/resources/images/ads/ads-shows_01.jpg'; ?>" alt=""></div>
+                                    <div><img src="<?php echo _uri.'/resources/images/ads/ads-shows_02.jpg'; ?>" alt=""></div>
+                                    <div><img src="<?php echo _uri.'/resources/images/ads/ads-shows_03.jpg'; ?>" alt=""></div>
+                                    <div><img src="<?php echo _uri.'/resources/images/ads/ads-shows_04.jpg'; ?>" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
@@ -308,79 +312,116 @@ query_posts( $team ); ?>
 
         <section id="team" class="team | section">
             <?php while ( have_posts() ) : the_post(); ?>
-            <div class="uk-container">
-                <header class="uk-panel" uk-scrollspy="cls: uk-animation-fade-medium; delay: 300; repeat: true">
-                    <p>Our Professional</p>
-                    <h2 class="team-headline">Management Team</h2>
-                    <p>A Division of Sports Gambling GUides, Inc.</p>
-                </header>
 
-                <div class="executives | uk-child-width-auto@s uk-flex-center" uk-grid uk-scrollspy="target: > .column-content > .uk-card; cls: uk-animation-slide-bottom-medium; delay: 300; repeat: true">
-                    <?php while ( have_rows( 'management_team' ) ) : the_row();
-                    $fn = explode(" ", get_sub_field( 'profile_full_name' ));
-                    $fsn = strtolower(substr($fn[0], 0, 1));
-                    $lsn = strtolower($fn[1]); ?>
-                    <div class="column-content">
-                        <div class="uk-card">
-                            <div class="uk-card-media-top">
-                                <?php $avatar = get_sub_field( 'profile_photo' );
-                                echo wp_get_attachment_image( $avatar['id'], [300, 300] ); ?>
-                            </div>
-                            <div class="uk-card-body">
-                                <h3 class="uk-card-title"><?php the_sub_field( 'profile_full_name' ); ?></h3>
-                                <p><?php the_sub_field( 'profile_designation' ); ?></p>
-                                <p><a href="#<?=$fsn.$lsn?>" class="uk-text-meta" uk-toggle>Read Bio</a></p>
-                            </div>
-                        </div>
+            <div class="slide" data-anchor="slide1">
+            
+                <div class="uk-container">
+                    <header class="uk-panel" uk-scrollspy="cls: uk-animation-fade-medium; delay: 300; repeat: true">
+                        <p>Our Professional</p>
+                        <h2 class="team-headline">Management Team</h2>
+                        <p>A Division of Sports Gambling GUides, Inc.</p>
+                    </header>
 
-                        <div id="<?=$fsn.$lsn?>" class="biography | uk-flex-top" uk-modal>
-                            <div class="uk-modal-dialog uk-margin-auto-vertical">
-                                <button class="uk-modal-close-default" type="button" uk-close aria-label="Close Modal"></button>
-
-                                <div uk-grid>
-                                    <div class="uk-width-1-3@s">
-                                        <figure>
-                                            <?php $avatar = get_sub_field( 'profile_photo' );
-                                            echo wp_get_attachment_image( $avatar['id'], [ 300, 300, true ] ); ?>
-                                        </figure>
+                    <div class="executives | uk-child-width-auto@s uk-flex-center" uk-grid uk-scrollspy="target: > .column-content > .uk-card; cls: uk-animation-slide-bottom-medium; delay: 300; repeat: true">
+                        <?php $n = 1;
+                        while ( have_rows( 'management_team' ) ) : the_row();
+                            $fn = explode(" ", get_sub_field( 'profile_full_name' ));
+                            $fsn = strtolower(substr($fn[0], 0, 1));
+                            $lsn = strtolower($fn[1]); 
+                            $n++; ?>
+                            <div class="column-content">
+                                <div class="uk-card">
+                                    <div class="uk-card-media-top">
+                                        <?php $avatar = get_sub_field( 'profile_photo' );
+                                        echo wp_get_attachment_image( $avatar['id'], [300, 300] ); ?>
                                     </div>
-                                    <div class="uk-width-2-3@s">
-                                        <div class="uk-h3"><?php the_sub_field( 'profile_full_name' ); ?></div>
+                                    <div class="uk-card-body">
+                                        <h3 class="uk-card-title"><?php the_sub_field( 'profile_full_name' ); ?></h3>
                                         <p><?php the_sub_field( 'profile_designation' ); ?></p>
-                                        <?php the_sub_field( 'profile_bio' ); ?>
+                                        <p><a href="#managementTeam/slide<?=$n;?>" class="uk-text-meta">Read Bio</a></p>
+                                    </div>
+                                </div>
+
+                                <div id="<?=$fsn.$lsn?>" class="biography | uk-flex-top" uk-modal>
+                                    <div class="uk-modal-dialog uk-margin-auto-vertical">
+                                        <button class="uk-modal-close-default" type="button" uk-close aria-label="Close Modal"></button>
+
+                                        <div uk-grid>
+                                            <div class="uk-width-1-3@s">
+                                                <figure>
+                                                    <?php $avatar = get_sub_field( 'profile_photo' );
+                                                    echo wp_get_attachment_image( $avatar['id'], [ 300, 300, true ] ); ?>
+                                                </figure>
+                                            </div>
+                                            <div class="uk-width-2-3@s">
+                                                <div class="uk-h3"><?php the_sub_field( 'profile_full_name' ); ?></div>
+                                                <p><?php the_sub_field( 'profile_designation' ); ?></p>
+                                                <?php the_sub_field( 'profile_bio' ); ?>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        <?php endwhile; ?>
                     </div>
-                    <?php endwhile; ?>
                 </div>
-            </div>
 
-            <div class="uk-container uk-container-small">
-                <div class="marketing | uk-child-width-auto@s uk-grid-small uk-grid-match uk-flex-center" uk-grid uk-height-match="target: > div > .uk-card > p" uk-scrollspy="target: > div > .uk-card; cls: uk-animation-slide-bottom-medium; delay: 300; repeat: true">
-                    <?php while ( have_rows( 'sc_team' ) ) : the_row();
-                    $fn = explode(" ", get_sub_field( 'profile_full_name' )); ?>
-                    <div class="-<?=strtolower($fn[1]);?>">
-                        <div class="uk-card uk-card-body uk-card-small uk-text-center">
-                            <h3 class="uk-card-title"><?php the_sub_field( 'profile_full_name' ); ?></h3>
-                            <p><?php the_sub_field( 'profile_designation' ); ?></p>
+                <div class="uk-container uk-container-small">
+                    <div class="marketing | uk-child-width-auto@s uk-grid-small uk-grid-match uk-flex-center" uk-grid uk-height-match="target: > div > .uk-card > p" uk-scrollspy="target: > div > .uk-card; cls: uk-animation-slide-bottom-medium; delay: 300; repeat: true">
+                        <?php while ( have_rows( 'sc_team' ) ) : the_row();
+                        $fn = explode(" ", get_sub_field( 'profile_full_name' )); ?>
+                        <div class="-<?=strtolower($fn[1]);?>">
+                            <div class="uk-card uk-card-body uk-card-small uk-text-center">
+                                <h3 class="uk-card-title"><?php the_sub_field( 'profile_full_name' ); ?></h3>
+                                <p><?php the_sub_field( 'profile_designation' ); ?></p>
+                            </div>
                         </div>
-                    </div>
-                    <?php endwhile;
-                    
-                    while ( have_rows( 'pm_team' ) ) : the_row();
-                    $fn = explode(" ", get_sub_field( 'profile_full_name' )); ?>
-                    <div class="-<?=strtolower($fn[1]);?>">
-                        <div class="uk-card uk-card-body uk-card-small uk-text-center">
-                            <h3 class="uk-card-title"><?php the_sub_field( 'profile_full_name' ); ?></h3>
-                            <p><?php the_sub_field( 'profile_designation' ); ?></p>
+                        <?php endwhile;
+                        
+                        while ( have_rows( 'pm_team' ) ) : the_row();
+                        $fn = explode(" ", get_sub_field( 'profile_full_name' )); ?>
+                        <div class="-<?=strtolower($fn[1]);?>">
+                            <div class="uk-card uk-card-body uk-card-small uk-text-center">
+                                <h3 class="uk-card-title"><?php the_sub_field( 'profile_full_name' ); ?></h3>
+                                <p><?php the_sub_field( 'profile_designation' ); ?></p>
+                            </div>
                         </div>
+                        <?php endwhile; ?>
                     </div>
-                    <?php endwhile; ?>
                 </div>
+
             </div>
-            <?php endwhile; wp_reset_query(); ?>
+            <!-- Slide 1 -->
+
+            <?php $n = 1;
+            while ( have_rows( 'management_team' ) ) : the_row();
+                $n++; ?>
+                <div class="slide" data-anchor="slide<?=$n;?>">
+                    <div class="uk-container">
+                        <ul class="uk-subnav uk-subnav-pill" uk-margin>
+                            <li><a href="#managementTeam/slide1">Management Team</a></li>
+                            <li><a href="#managementTeam/slide2">Troy Paul</a></li>
+                            <li><a href="#managementTeam/slide3">Mark Paul</a></li>
+                        </ul>
+
+                        <article class="bio | uk-article uk-padding-large" uk-grid>
+
+                            <figure class="uk-width-1-1 uk-width-auto@m">
+                                <?php $avatar = get_sub_field( 'profile_photo' );
+                                echo wp_get_attachment_image( $avatar['id'], [ 300, 300, true ] ); ?>
+                                <h2><?php the_sub_field( 'profile_full_name' ); ?></h2>
+                                <p><?php the_sub_field( 'profile_designation' ); ?></p>
+                            </figure>
+                            <figcaption class="uk-width-1-1 uk-width-expand@m">
+                                <?php the_sub_field( 'profile_bio' ); ?>
+                            </figcaption>
+                        </article>
+                    </div>
+                </div>
+                <!-- Slide <?=$n;?> -->
+            <?php endwhile; // End Rows
+            
+            endwhile; wp_reset_query(); ?>
         </section>
 
         <section class="colophon | section fp-auto-height">

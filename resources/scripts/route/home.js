@@ -17,11 +17,14 @@
 
 // fullPage JS Init
 new fullpage('#sgg-section', {
+    autoScrolling: true,
+
     // License
     licenseKey: 'L9LU6-5S46I-W3K78-TJW8I-BWAKO',
+    
+    // Extension
+    // scrollHorizontally: true,
     // scrollHorizontallyKey: '3270A37C-9B454A7E-92FCDA4B-C1B75168',
-
-    // fixedElements: [ '#global-menu' ],
 
     // Options
     menu: '#main-menu',
@@ -31,8 +34,9 @@ new fullpage('#sgg-section', {
     navigationPosition: 'left',
     navigationTooltips: ['Home', 'About SGG Media', 'SGG Media Ads Postings', 'Online Quote', 'What is a Micro Influencer', 'LiveDriveStream', 'Franchise Advertising', 'SGG Media Followers', 'Social Media Chart', 'Management Team', 'Contact'],
     showActiveTooltip: false,
+    slidesNavigation: true,
+    controlArrows: false,
     scrollingSpeed: 1000,
-    autoScrolling: true,
     paddingTop: '80px',
     credits: { 
         enabled: false, 
@@ -49,9 +53,6 @@ new fullpage('#sgg-section', {
         }
     }
 });
-
-
-
 
 // ChartJS
 jQuery.getScript('https://cdn.jsdelivr.net/npm/chart.js', function() {

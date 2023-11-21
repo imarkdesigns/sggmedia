@@ -166,14 +166,23 @@
 }
 
 .ads {
+    background: rgba(#000,.55) url(#{$img}ads/dgyktyk.jpeg) no-repeat center / cover;
+    background-blend-mode: multiply;
+
     .uk-grid header {
         &.uk-background-primary {
-            background-color: #52A55A;
+            background-color: rgba(#52A55A,.4);
+            backdrop-filter: blur(10px) saturate(180%);
+        }
+
+        &.uk-background-secondary {
+            background-color: rgba(#666,.4);
+            backdrop-filter: blur(10px) saturate(180%);   
         }
 
         h2 {
             font-family: $changa;
-            font-size: 2rem;
+            font-size: 1.75rem;
             text-transform: uppercase;
             line-height: 1;
             margin: 0;
@@ -737,6 +746,81 @@
         }
     }
 
+    // Slides
+    .slide {
+        .uk-subnav-pill {
+            li a {
+                font-family: $poppins-bd !important;
+                color: $sgg-green !important;
+                padding: 8px 10px 5px;
+                border-radius: 3px;
+
+                &:hover,
+                &:focus {
+                    background: rgba(#000,.9);
+                }
+            }
+        }
+    }
+
+    .bio {
+        figure {
+            position: relative;
+
+            img {
+                min-width: 150px;
+                width: 100%;
+                max-width: 300px;
+                height: auto;
+                margin-bottom: 30px;
+                border-radius: 5px;
+                box-shadow: -15px 15px 0 0px $sgg-green;
+            }
+
+            h2 {
+                font-size: clamp(1.5rem, 0.5rem + 2.5vw, 2rem);
+                font-family: $changa;
+                text-transform: uppercase;
+                line-height: 1;
+                margin: 0;
+            }
+
+            p { 
+                font-family: $poppins-lt;
+                font-size: .875rem;
+                margin: 0;
+            }
+        }
+
+
+        figcaption {
+            font-family: $poppins-lt;
+
+            ul {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    position: relative;
+                    margin-top: 15px;
+                    padding-left: 30px;
+                }
+
+                strong {
+                    font-family: $poppins-bd;
+                }
+            }
+
+            li::before {
+                content: '';
+                position: absolute;
+                inset: 5px 0 0;
+                display: block;
+                background: url(#{$img}/bullet-check.png) no-repeat center / contain;
+                @include size(18px);
+            }
+        }
+    }
 }
 
 //
