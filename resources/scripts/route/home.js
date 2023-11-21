@@ -23,8 +23,8 @@ new fullpage('#sgg-section', {
     licenseKey: 'L9LU6-5S46I-W3K78-TJW8I-BWAKO',
     
     // Extension
-    // scrollHorizontally: true,
-    // scrollHorizontallyKey: '3270A37C-9B454A7E-92FCDA4B-C1B75168',
+    scrollHorizontally: true,
+    scrollHorizontallyKey: '3270A37C-9B454A7E-92FCDA4B-C1B75168',
 
     // Options
     menu: '#main-menu',
