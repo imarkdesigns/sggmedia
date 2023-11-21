@@ -24,7 +24,6 @@ add_action('wp_enqueue_scripts', function() {
 
     wp_enqueue_script( 'fullPageExt-js', _uri.'/resources/scripts/fullpage/fullpage.extensions.min.js', ['jquery'], null, true );
     wp_enqueue_script( 'fp-scrollHorizontally-js', _uri.'/resources/scripts/fullpage/fullpage.scrollHorizontally.min.js', ['jquery'], null, true );
-    // wp_enqueue_script( 'smoothState-js', _uri.'/resources/scripts/smoothState/jquery.smoothState.js', ['jquery'], null, true );
 
     wp_enqueue_style( 'fragments', _css.'fragments.css' );
     wp_enqueue_script( 'router', _js.'router.js', ['jquery'], null, true );    
