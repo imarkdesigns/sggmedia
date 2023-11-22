@@ -17,14 +17,13 @@
 
 // fullPage JS Init
 new fullpage('#sgg-section', {
-    autoScrolling: true,
-
     // License
     licenseKey: 'L9LU6-5S46I-W3K78-TJW8I-BWAKO',
-    
+    autoScrolling: true,
+
     // Extension
-    scrollHorizontally: true,
     scrollHorizontallyKey: 'Q0thMmx1YzNSaExtTnNiM1ZremhfZjE0YzJOeWIyeHNTRzl5YVhwdmJuUmhiR3g1MXZB',
+    scrollHorizontally: true,
 
     // Options
     menu: '#main-menu',
