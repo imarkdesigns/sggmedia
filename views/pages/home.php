@@ -22,7 +22,7 @@ query_posts( $team ); ?>
                             </div>
                         </li>
                         <li>
-                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
+                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-top">
                                 <img src="<?php echo _uri.'/resources/images/header/img-sggmedia-header-pt4.jpg'; ?>" alt="" uk-cover>
                             </div>
                         </li>
