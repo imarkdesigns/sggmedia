@@ -72,7 +72,7 @@ query_posts( $team ); ?>
             endif; // mobile
             // End widget stats ?>
 
-            <aside class="sponsor | uk-position-bottom uk-margin-remove uk-background-secondary uk-light uk-flex uk-flex-center uk-visible@m" uk-alert>
+            <aside class="sponsor | uk-position-bottom uk-margin-remove uk-background-secondary uk-light uk-flex uk-flex-center uk-visible@m" uk-alert hidden>
                 <div class="uk-container">
                     <div class="uk-child-width-auto uk-grid-collapse uk-flex-middle" uk-grid>
                         <img src="<?php echo _uri.'/resources/images/articles/iGB-logo.png'; ?>" alt="iGB - I Gaming Business">
