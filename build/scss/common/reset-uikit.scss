@@ -186,8 +186,8 @@
 }
 
 #fp-nav {
-    // ul li a span { background: $sgg-green }
-    ul li a.active span { background: #F7760D }
+    ul li a span { background: #999 }
+    ul li a.active span { background: darken(#F7760D,5%) }
 }
 
 #fp-nav.fp-left {

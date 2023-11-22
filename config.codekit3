@@ -655,6 +655,19 @@
       "oAP" : "\/resources\/fonts\/Poppins\/Poppins-Regular.woff2",
       "oF" : 0
     },
+    "\/resources\/images\/abstract-blur-white-background-design-scaled.jpg" : {
+      "ft" : 16384,
+      "iS" : 34125,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/abstract-blur-white-background-design-scaled.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/resources\/images\/ads\/ads-content_01.jpg" : {
       "ft" : 16384,
       "iS" : 17988,
@@ -1067,6 +1080,16 @@
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/change-the-game.gif" : {
+      "ft" : 4194304,
+      "iS" : 981650,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/change-the-game.gif",
+      "oF" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
       "rq" : 75
     },
     "\/resources\/images\/change-the-game.png" : {

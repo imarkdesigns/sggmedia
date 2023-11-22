@@ -101,7 +101,7 @@ query_posts( $team ); ?>
             <div class="uk-container uk-container-expand uk-margin-medium">
                 <div class="uk-child-width-1-2@m uk-flex-middle" uk-grid>
                     <div class="column-media">
-                        <img src="<?php echo _uri.'/resources/images/change-the-game.png'; ?>" alt="Social Media Marketing is Changing the Game" uk-scrollspy="cls: uk-animation-scale-up uk-transform-origin-top-center; delay: 600; repeat: true">
+                        <img src="<?php echo _uri.'/resources/images/change-the-game.gif'; ?>" alt="Social Media Marketing is Changing the Game" uk-scrollspy="cls: uk-animation-scale-up uk-transform-origin-top-center; delay: 600; repeat: true">
                     </div>
                     <div class="column-content">
                         <article class="uk-article">
@@ -180,7 +180,7 @@ query_posts( $team ); ?>
             </div>
         </section>
 
-        <section id="online-quote" class="quote | section">
+        <section id="online-quote" class="quote | uk-background-cover section" data-src="<?php echo _uri.'/resources/images/abstract-blur-white-background-design-scaled.jpg'; ?>" uk-img>
             <div class="uk-container uk-container-small">
                 <?php echo do_shortcode( '[formidable id=12]' ); ?>
             </div>
@@ -319,7 +319,7 @@ query_posts( $team ); ?>
                     <header class="uk-panel" uk-scrollspy="cls: uk-animation-fade-medium; delay: 300; repeat: true">
                         <p>Our Professional</p>
                         <h2 class="team-headline">Management Team</h2>
-                        <p>A Division of Sports Gambling GUides, Inc.</p>
+                        <p>A Division of Sports Gambling Guides, Inc.</p>
                     </header>
 
                     <div class="executives | uk-child-width-auto@s uk-flex-center" uk-grid uk-scrollspy="target: > .column-content > .uk-card; cls: uk-animation-slide-bottom-medium; delay: 300; repeat: true">

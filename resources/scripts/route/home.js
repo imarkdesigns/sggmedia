@@ -22,7 +22,8 @@ new fullpage('#sgg-section', {
     // License
     
     // Extension
-    // scrollHorizontally: true,
+    scrollHorizontally: true,
+    scrollHorizontallyKey: 'Q0thMmx1YzNSaExtTnNiM1ZremhfZjE0YzJOeWIyeHNTRzl5YVhwdmJuUmhiR3g1MXZB',
 
     // Options
     menu: '#main-menu',
@@ -30,7 +31,7 @@ new fullpage('#sgg-section', {
     anchors: ['home', 'aboutSGG', 'adsPosting', 'onlineQuote', 'microInfluencer', 'livedrivestream', 'franchiseAds', 'followersChart', 'adsGraph', 'managementTeam', 'contactInfo', 'footer'],
     navigation: true,
     navigationPosition: 'left',
-    navigationTooltips: ['Home', 'About SGG Media', 'SGG Media Ads Postings', 'Online Quote', 'What is a Micro Influencer', 'LiveDriveStream', 'Franchise Advertising', 'SGG Media Followers', 'Social Media Chart', 'Management Team', 'Contact'],
+    navigationTooltips: ['Home', 'About SGG Media', 'SGG Media Ads Postings', 'Online Quote', 'What is a Micro Influencer', 'Live Drive Stream', 'Franchise Advertising', 'SGG Media Followers', 'Social Media Chart', 'Management Team', 'Contact'],
     showActiveTooltip: false,
     slidesNavigation: true,
     controlArrows: false,

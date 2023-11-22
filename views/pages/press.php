@@ -9,7 +9,7 @@
                     foreach ( $pressImgs as $pressImg ) : ?>
                     <li>
                         <figure class="uk-panel">
-                            <a href="<?php echo get_permalink( 58 ); ?>">
+                            <a uk-scroll="offset: 90" href="#Contents">
                                 <?php echo wp_get_attachment_image( $pressImg['id'], 'full' ); ?>
                             </a>
                         </figure>
