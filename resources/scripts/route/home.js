@@ -30,6 +30,7 @@ new fullpage('#sgg-section', {
     controlArrows: false,
     scrollingSpeed: 1000,
     paddingTop: '80px',
+    scrollBar: false,
     credits: { 
         enabled: false, 
         label: 'Made with fullPage.js', 
@@ -44,16 +45,6 @@ new fullpage('#sgg-section', {
             jQuery('#quote-ads').show();
         }
     },
-
-    // License
-    // licenseKey: 'L9LU6-5S46I-W3K78-TJW8I-BWAKO',
-    
-
-    // Extension
-    // scrollHorizontallyKey: 'Q0thMmx1YzNSaExtTnNiM1ZremhfZjE0YzJOeWIyeHNTRzl5YVhwdmJuUmhiR3g1MXZB',
-    // scrollHorizontally: true,
-
-
 });
 
 // ChartJS

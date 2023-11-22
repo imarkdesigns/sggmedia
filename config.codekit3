@@ -1181,6 +1181,32 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/resources\/images\/header\/istockphoto-1245928482-1024x1024.jpg" : {
+      "ft" : 16384,
+      "iS" : 116835,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/header\/istockphoto-1245928482-1024x1024.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/header\/istockphoto-1662909779-1024x1024.jpg" : {
+      "ft" : 16384,
+      "iS" : 71910,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/header\/istockphoto-1662909779-1024x1024.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/resources\/images\/icon-cost-effectiveness.png" : {
       "ft" : 32768,
       "iS" : 3790,
