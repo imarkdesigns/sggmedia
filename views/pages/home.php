@@ -23,17 +23,7 @@ query_posts( $team ); ?>
                         </li>
                         <li>
                             <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
-                                <img src="<?php echo _uri.'/resources/images/header/img-sggmedia-header-pt1.jpg'; ?>" alt="" uk-cover>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-bottom-center">
-                                <img src="<?php echo _uri.'/resources/images/header/istockphoto-1245928482-1024x1024.jpg'; ?>" alt="" uk-cover>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-top-center">
-                                <img src="<?php echo _uri.'/resources/images/header/istockphoto-1662909779-1024x1024.jpg'; ?>" alt="" uk-cover>
+                                <img src="<?php echo _uri.'/resources/images/header/img-sggmedia-header-pt4.jpg'; ?>" alt="" uk-cover>
                             </div>
                         </li>
                     </ul>

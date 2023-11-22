@@ -70,22 +70,17 @@
 
 [data-hero="page"] {
     position: relative;
-    background-size: cover;
+    background-color: #000;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center bottom;
     width: 100%;
-    height: calc( 100vh - 80px );
-    min-height: 663px;
-    padding: 2em 2em 360px;
+    min-height: 440px;
+    padding: 40px;
     box-sizing: border-box;
 
     .uk-overlay-primary {
         background-color: rgba(#000,.35);
         // background: linear-gradient(to right, rgba(#000,0.90) 0%, rgba(#000,0) 100%);
-    }
-
-    .uk-overlay {
-        margin-top: calc( -180px + 80px );
     }
 
     // .uk-overlay {
@@ -160,7 +155,7 @@
     background-color: rgba(#333,1);
 
     > div {
-        flex: 0 1 100%;
+        flex: 1 1 auto;
     }
 
     .uk-card {
@@ -171,6 +166,7 @@
         font-size: 1.5rem;
         text-align: center;
         // height: 114px;
+        height: auto;
         margin: 0;
 
         &.uk-card-secondary {
@@ -187,13 +183,15 @@
 
         .uk-card-body {
             position: relative;
-            padding: .75em;
+            padding: .5em 0;
+            // padding: .75em;
             z-index: 1;
 
             span {
                 display: block;
                 font-family: $face-bold;
-                font-size: clamp(1.5rem, 0.375rem + 1.875vw, 2rem);
+                // font-size: clamp(1.5rem, 0.375rem + 1.875vw, 2rem);
+                font-size: 1.125rem;
                 color: rgba(#FFF,.9);
                 margin-top: -5px;
                 transition: color 300ms ease-out;
@@ -214,13 +212,13 @@
 
     @media only screen and ( min-width: 640px ) {
 
-        > div {
-            flex: 1 1 auto;
-        }
+        // > div {
+        //     flex: 1 1 auto;
+        // }
 
-        .uk-card {
-            height: 130px;
-        }
+        // .uk-card {
+        //     height: 130px;
+        // }
 
     }
 

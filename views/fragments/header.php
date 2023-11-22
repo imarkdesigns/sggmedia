@@ -47,8 +47,11 @@
     </header>
     <?php else : 
         if ( !is_page([ 650, 700, 879, 977 ]) ) :
-        $hdr_contents = get_field( 'hdr_content' ); ?>
-        <header class="hero" data-hero="page" data-src="<?php echo $hdr_contents['hdr_bg']['url']; ?>" uk-img>
+        $hdr_contents = get_field( 'hdr_content' ); 
+
+
+        ?>
+        <header class="hero <?php echo ( !is_page([ 108 ]) ? 'uk-background-cover' : 'uk-background-contain' ); ?>" data-hero="page" data-src="<?php echo $hdr_contents['hdr_bg']['url']; ?>" uk-img>
             <div class="uk-overlay-primary uk-position-cover"></div>
             <div class="uk-overlay uk-position-center" uk-scrollspy="target: > h1; cls: uk-animation-fade; delay: 300">
                 <h1> <small><?php echo $hdr_contents['text_info']; ?></small> <?php echo $hdr_contents['text_title']; ?></h1>
