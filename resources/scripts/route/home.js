@@ -50,8 +50,8 @@ new fullpage('#sgg-section', {
     
 
     // Extension
-    scrollHorizontallyKey: 'Q0thMmx1YzNSaExtTnNiM1ZremhfZjE0YzJOeWIyeHNTRzl5YVhwdmJuUmhiR3g1MXZB',
-    scrollHorizontally: true,
+    // scrollHorizontallyKey: 'Q0thMmx1YzNSaExtTnNiM1ZremhfZjE0YzJOeWIyeHNTRzl5YVhwdmJuUmhiR3g1MXZB',
+    // scrollHorizontally: true,
 
 
 });

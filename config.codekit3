@@ -2602,17 +2602,6 @@
       "oAP" : "\/resources\/scripts\/fullpage\/fullpage.min.css.map",
       "oF" : 0
     },
-    "\/resources\/scripts\/fullpage\/fullpage.min.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/resources\/scripts\/fullpage.min.js",
-      "oF" : 0,
-      "sC" : 0,
-      "tS" : 0
-    },
     "\/resources\/scripts\/fullpage\/fullpage.scrollHorizontally.min.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -2624,18 +2613,18 @@
       "sC" : 0,
       "tS" : 0
     },
-    "\/resources\/scripts\/fullpage\/fullpage4.extensions.min.js" : {
+    "\/resources\/scripts\/fullpage\/fullpage3.extensions.min.js" : {
       "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/resources\/scripts\/fullpage4.extensions.min.js",
+      "oAP" : "\/resources\/scripts\/fullpage3.extensions.min.js",
       "oF" : 0,
       "sC" : 0,
       "tS" : 0
     },
-    "\/resources\/scripts\/fullpage\/fullpage4.min.css" : {
+    "\/resources\/scripts\/fullpage\/fullpage3.min.css" : {
       "aP" : 1,
       "bl" : 0,
       "ci" : 0,
@@ -2643,9 +2632,20 @@
       "ft" : 16,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/resources\/scripts\/fullpage\/fullpage4.min-min.css",
+      "oAP" : "\/resources\/scripts\/fullpage\/fullpage3.min-min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/resources\/scripts\/fullpage\/fullpage3.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/resources\/scripts\/fullpage3.min.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
     },
     "\/resources\/scripts\/fullpage\/fullpage4.min.js" : {
       "bF" : 0,
