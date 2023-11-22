@@ -46,12 +46,12 @@ new fullpage('#sgg-section', {
     },
 
     // License
-    // licenseKey: 'L9LU6-5S46I-W3K78-TJW8I-BWAKO',
+    licenseKey: 'L9LU6-5S46I-W3K78-TJW8I-BWAKO',
     
 
     // Extension
-    // scrollHorizontallyKey: 'Q0thMmx1YzNSaExtTnNiM1ZremhfZjE0YzJOeWIyeHNTRzl5YVhwdmJuUmhiR3g1MXZB',
-    // scrollHorizontally: true,
+    scrollHorizontallyKey: 'Q0thMmx1YzNSaExtTnNiM1ZremhfZjE0YzJOeWIyeHNTRzl5YVhwdmJuUmhiR3g1MXZB',
+    scrollHorizontally: true,
 
 
 });
