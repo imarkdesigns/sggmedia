@@ -42,7 +42,7 @@ query_posts( $team ); ?>
             $followers   = str_replace( ',', '', get_field( 'sm_followers', 'options' ) );
             $influencers = get_field( 'sm_influencers', 'options' );
             $impressions = str_replace( ',', '', get_field( 'sm_impressions', 'options' ) ); ?>
-            <aside class="uk-position-top uk-background-muted uk-grid-collapse uk-grid-match uk-flex-middle uk-position-z-index | ticker" uk-grid uk-height-match="target: > div > .uk-card">
+            <aside class="uk-background-muted uk-grid-collapse uk-grid-match uk-flex-middle uk-position-z-index | ticker" uk-grid uk-height-match="target: > div > .uk-card">
                 <div>
                     <div class="uk-card uk-card-secondary | followers">
                         <div class="uk-card-body">
@@ -184,6 +184,41 @@ query_posts( $team ); ?>
             <div class="uk-container uk-container-small">
                 <?php echo do_shortcode( '[formidable id=12]' ); ?>
             </div>
+
+            <?php if ( !wp_is_mobile() ) :
+            if ( !is_page([ 302, 358, 650, 700 ]) ) : 
+            $followers   = str_replace( ',', '', get_field( 'sm_followers', 'options' ) );
+            $influencers = get_field( 'sm_influencers', 'options' );
+            $impressions = str_replace( ',', '', get_field( 'sm_impressions', 'options' ) ); ?>
+            <aside class="uk-background-muted uk-grid-collapse uk-grid-match uk-flex-middle uk-position-z-index | ticker" uk-grid uk-height-match="target: > div > .uk-card">
+                <div>
+                    <div class="uk-card uk-card-secondary | followers">
+                        <div class="uk-card-body">
+                            <div class="uk-card-title">Social Media Followers</div>
+                            <span id="total-followers" class="animate__animated" data-followers="<?=$followers?>"> <small>fetching data...</small> </span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-secondary | influencers">
+                        <div class="uk-card-body">
+                            <div class="uk-card-title">Influencers</div>
+                            <span id="total-influencers" data-influencers="<?=$influencers?>"> <small>fetching data...</small> </span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-secondary | impressions">
+                        <div class="uk-card-body">
+                            <div class="uk-card-title">30 Days' Impressions</div>
+                            <span id="total-impressions" class="animate__animated" data-impressions="<?=$impressions?>"> <small>fetching data...</small> </span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <?php endif;
+            endif; // mobile
+            // End widget stats ?>
         </section>
 
         <section id="micro-influencer" class="micro-influencer | section">
