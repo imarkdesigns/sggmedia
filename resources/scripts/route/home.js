@@ -46,7 +46,7 @@ new fullpage('#sgg-section', {
     },
 
     // License
-    licenseKey: 'L9LU6-5S46I-W3K78-TJW8I-BWAKO',
+    // licenseKey: 'L9LU6-5S46I-W3K78-TJW8I-BWAKO',
     
 
     // Extension
