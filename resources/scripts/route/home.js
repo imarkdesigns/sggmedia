@@ -20,6 +20,7 @@ new fullpage('#sgg-section', {
     autoScrolling: true,
 
     // License
+    licenseKey: 'L9LU6-5S46I-W3K78-TJW8I-BWAKO',
     
     // Extension
     scrollHorizontally: true,
