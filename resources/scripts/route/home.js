@@ -17,15 +17,8 @@
 
 // fullPage JS Init
 new fullpage('#sgg-section', {
-    // License
-    licenseKey: 'L9LU6-5S46I-W3K78-TJW8I-BWAKO',
     autoScrolling: true,
 
-    // Extension
-    scrollHorizontallyKey: 'Q0thMmx1YzNSaExtTnNiM1ZremhfZjE0YzJOeWIyeHNTRzl5YVhwdmJuUmhiR3g1MXZB',
-    scrollHorizontally: true,
-
-    // Options
     menu: '#main-menu',
     lockAnchors: false,
     anchors: ['home', 'aboutSGG', 'adsPosting', 'onlineQuote', 'microInfluencer', 'livedrivestream', 'franchiseAds', 'followersChart', 'adsGraph', 'managementTeam', 'contactInfo', 'footer'],
@@ -50,7 +43,17 @@ new fullpage('#sgg-section', {
         } else {
             jQuery('#quote-ads').show();
         }
-    }
+    },
+
+    // License
+    // licenseKey: 'L9LU6-5S46I-W3K78-TJW8I-BWAKO',
+    
+
+    // Extension
+    // scrollHorizontallyKey: 'Q0thMmx1YzNSaExtTnNiM1ZremhfZjE0YzJOeWIyeHNTRzl5YVhwdmJuUmhiR3g1MXZB',
+    // scrollHorizontally: true,
+
+
 });
 
 // ChartJS
