@@ -2690,6 +2690,17 @@
       "sC" : 0,
       "tS" : 0
     },
+    "\/resources\/scripts\/route\/home-origins.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/resources\/scripts\/home-origins.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
     "\/resources\/scripts\/route\/home.js" : {
       "bF" : 0,
       "ft" : 64,

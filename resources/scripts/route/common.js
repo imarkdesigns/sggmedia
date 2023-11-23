@@ -80,9 +80,9 @@
 
 
 // total count-up for Followers/Impressions
-var followers = document.getElementById('total-followers');
-var influencers = document.getElementById('total-influencers');
-var impressions = document.getElementById('total-impressions');
+const followers = document.querySelector('.total-followers');
+const influencers = document.querySelector('.total-influencers');
+const impressions = document.querySelector('.total-impressions');
 
 function updateInfluencers() {
     let currentInfluencers = influencers.dataset.influencers;
@@ -117,7 +117,6 @@ function updateFollowers() {
 }
 updateFollowers();
 
-
 function updateImpressions() {
     let currentImpressions = impressions.dataset.impressions;
     let currentTicker = localStorage.getItem( 'impressions' );
@@ -143,6 +142,70 @@ function updateImpressions() {
     }
 }
 updateImpressions();
+
+// total count-up for Followers/Impressions
+const followers2 = document.querySelector('.total-followers2');
+const influencers2 = document.querySelector('.total-influencers2');
+const impressions2 = document.querySelector('.total-impressions2');
+
+function updateInfluencers2() {
+    let currentInfluencers = influencers2.dataset.influencers;
+    influencers2.innerHTML = currentInfluencers.toLocaleString('en-US');
+    // console.log(currentInfluencers);
+}
+updateInfluencers2()
+
+function updateFollowers2() {
+    let currentFollowers = followers2.dataset.followers;
+    let currentTicker = localStorage.getItem( 'followers' );
+    localStorage.setItem('followers', currentFollowers);
+
+    if ( currentFollowers > currentTicker ) {
+        let tickerFollowers = setInterval(function() {
+            let tickerCounter = Math.floor(currentFollowers++);
+            followers2.classList.toggle("animate__flash");
+            followers2.innerHTML = tickerCounter.toLocaleString();
+
+            localStorage.setItem('followers', tickerCounter);
+        }, 3000);
+    } else {
+        let tickerFollowers = setInterval(function() {
+            followers2.classList.toggle("animate__flash");
+            let tickerCounter = Math.floor(currentTicker++);
+            followers2.innerHTML = tickerCounter.toLocaleString();
+
+            localStorage.removeItem( 'followers' );
+            localStorage.setItem('followers', tickerCounter);
+        }, 3000);
+    }
+}
+updateFollowers2();
+
+function updateImpressions2() {
+    let currentImpressions = impressions2.dataset.impressions;
+    let currentTicker = localStorage.getItem( 'impressions' );
+    localStorage.setItem('impressions', currentImpressions);
+
+    if ( currentImpressions > currentTicker ) {
+        let tickerImpressions = setInterval(function() {
+            let tickerCounter = Math.floor(currentImpressions++);
+            impressions2.classList.toggle("animate__flash");
+            impressions2.innerHTML = tickerCounter.toLocaleString();
+
+            localStorage.setItem('impressions', tickerCounter);
+        }, 1000);
+    } else {
+        let tickerImpressions = setInterval(function() {
+            let tickerCounter = Math.floor(currentTicker++);
+            impressions2.classList.toggle("animate__flash");
+            impressions2.innerHTML = tickerCounter.toLocaleString();
+
+            localStorage.removeItem( 'impressions' );
+            localStorage.setItem('impressions', tickerCounter);
+        }, 5000);
+    }
+}
+updateImpressions2();
 
 
 // The basic check of site fully loaded

@@ -47,7 +47,7 @@ query_posts( $team ); ?>
                     <div class="uk-card uk-card-secondary | followers">
                         <div class="uk-card-body">
                             <div class="uk-card-title">Social Media Followers</div>
-                            <span id="total-followers" class="animate__animated" data-followers="<?=$followers?>"> <small>fetching data...</small> </span>
+                            <span id="total-followers" class="total-followers | animate__animated" data-followers="<?=$followers?>"> <small>fetching data...</small> </span>
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ query_posts( $team ); ?>
                     <div class="uk-card uk-card-secondary | influencers">
                         <div class="uk-card-body">
                             <div class="uk-card-title">Influencers</div>
-                            <span id="total-influencers" data-influencers="<?=$influencers?>"> <small>fetching data...</small> </span>
+                            <span id="total-influencers" class="total-influencers" data-influencers="<?=$influencers?>"> <small>fetching data...</small> </span>
                         </div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@ query_posts( $team ); ?>
                     <div class="uk-card uk-card-secondary | impressions">
                         <div class="uk-card-body">
                             <div class="uk-card-title">30 Days' Impressions</div>
-                            <span id="total-impressions" class="animate__animated" data-impressions="<?=$impressions?>"> <small>fetching data...</small> </span>
+                            <span id="total-impressions" class="total-impressions | animate__animated" data-impressions="<?=$impressions?>"> <small>fetching data...</small> </span>
                         </div>
                     </div>
                 </div>
@@ -195,7 +195,7 @@ query_posts( $team ); ?>
                     <div class="uk-card uk-card-secondary | followers">
                         <div class="uk-card-body">
                             <div class="uk-card-title">Social Media Followers</div>
-                            <span id="total-followers" class="animate__animated" data-followers="<?=$followers?>"> <small>fetching data...</small> </span>
+                            <span id="total-followers" class="total-followers2 | animate__animated" data-followers="<?=$followers?>"> <small>fetching data...</small> </span>
                         </div>
                     </div>
                 </div>
@@ -203,7 +203,7 @@ query_posts( $team ); ?>
                     <div class="uk-card uk-card-secondary | influencers">
                         <div class="uk-card-body">
                             <div class="uk-card-title">Influencers</div>
-                            <span id="total-influencers" data-influencers="<?=$influencers?>"> <small>fetching data...</small> </span>
+                            <span id="total-influencers" class="total-influencers2" data-influencers="<?=$influencers?>"> <small>fetching data...</small> </span>
                         </div>
                     </div>
                 </div>
@@ -211,7 +211,7 @@ query_posts( $team ); ?>
                     <div class="uk-card uk-card-secondary | impressions">
                         <div class="uk-card-body">
                             <div class="uk-card-title">30 Days' Impressions</div>
-                            <span id="total-impressions" class="animate__animated" data-impressions="<?=$impressions?>"> <small>fetching data...</small> </span>
+                            <span id="total-impressions" class="total-impressions2 | animate__animated" data-impressions="<?=$impressions?>"> <small>fetching data...</small> </span>
                         </div>
                     </div>
                 </div>
