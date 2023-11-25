@@ -199,6 +199,40 @@
     }
 }
 
+.video-show {
+    background: rgba(#000,.25) url(#{$img}header/img-sggmedia-header-pt1.jpg) no-repeat center / cover;
+
+    header {
+        margin-bottom: 30px;
+
+        h2 {
+            font-family: $changa;
+            font-size: clamp(1.5rem, -1.5rem + 7.5vw, 3rem);
+            color: #FFF;
+            text-transform: uppercase;
+            line-height: 1;
+            margin: 0;
+        }
+
+        h2 .uk-text-success {
+            color: $sgg-green !important;
+            text-shadow: 0 1px 0 rgba(#FFF,.65);
+        }
+    }
+
+    .column-media figure {
+        padding: 5px 0;
+        margin: 0;
+
+        img {
+            border: 3px solid transparent;
+            border-radius: 3px;
+            box-shadow: 0 0 0 3px $sgg-green;
+        }
+    }
+
+}
+
 .micro-influencer {
     background: transparent;    
 

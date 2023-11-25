@@ -98,35 +98,50 @@ query_posts( $team ); ?>
                 </div>
             </div>
 
-            <div class="uk-container uk-container-expand uk-margin-medium">
-                <div class="uk-child-width-1-2@m uk-flex-middle" uk-grid>
-                    <div class="column-media">
-                        <img src="<?php echo _uri.'/resources/images/change-the-game.gif'; ?>" alt="Social Media Marketing is Changing the Game" uk-scrollspy="cls: uk-animation-scale-up uk-transform-origin-top-center; delay: 600; repeat: true">
+            <div class="slide" data-anchor="slide1">
+                <div class="uk-container uk-container-expand uk-margin-medium">
+                    <div class="uk-child-width-1-2@m uk-flex-middle" uk-grid>
+                        <div class="column-media">
+                            <img src="<?php echo _uri.'/resources/images/change-the-game.gif'; ?>" alt="Social Media Marketing is Changing the Game" uk-scrollspy="cls: uk-animation-scale-up uk-transform-origin-top-center; delay: 600; repeat: true">
+                        </div>
+                        <div class="column-content">
+                            <article class="uk-article">
+                                <div class="about-section-one" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 600; repeat: true">
+                                    <h2 class="about-headline">Who We Are</h2>
+                                    <ul>
+                                        <li>SGG Media is a social media sports advertising company with a network of thousands of micro-influencers connecting advertisers with our tens of millions of sports fans.</li>
+                                        <li>Provides turn-key advertising for our customers creating content, graphics and targeted postings to millions of sports fans.</li>
+                                        <li>Delivers tailored expertise and strategies that significantly enhances a company's presence and engagement.</li>
+                                        <li>SGG's "Instant Quote" online platform provides an advertising quote in seconds.</li>
+                                        <li>Produces successful video content (Splash Sisters) and live sports shows (Live Drive).</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
                     </div>
-                    <div class="column-content">
-                        <article class="uk-article">
-                            <div class="about-section-one" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 600; repeat: true">
-                                <h2 class="about-headline">Who We Are</h2>
-                                <ul>
-                                    <li>SGG Media is a social media sports advertising company with a network of thousands of micro-influencers connecting advertisers with our tens of millions of sports fans.</li>
-                                    <li>Provides turn-key advertising for our customers creating content, graphics and targeted postings to millions of sports fans.</li>
-                                    <li>Delivers tailored expertise and strategies that significantly enhances a company's presence and engagement.</li>
-                                    <li>SGG's "Instant Quote" online platform provides an advertising quote in seconds.</li>
-                                    <li>Produces successful video content (Splash Sisters) and live sports shows (Live Drive).</li>
-                                </ul>
-                            </div>
-                            <div class="about-section-two" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 900; repeat: true">
-                                <h2 class="about-headline">What We Do</h2>
-                                <ul>
-                                    <li>SGG delivers social media branding and advertising via cost-effective micro-influencers.</li>
-                                    <li>Creates personalized and unique ads tailored to the specific needs of each company.</li>
-                                    <li>Delivers advertising at a fraction of the cost of traditional advertising.</li>
-                                    <li>Provide Highly targeted marketing - Regionally or National.</li>
-                                    <li>Works with the nation's largest sports companies i.e. Draft Kings, Fan Duel and Fanatics.</li>
-                                    <li>SGG Produces exciting live streaming sports shows and sports videos</li>
-                                </ul>
-                            </div>
-                        </article>
+                </div>
+            </div>
+            <div class="slide" data-anchor="slide2">
+                <div class="uk-container uk-container-expand uk-margin-medium">
+                    <div class="uk-child-width-1-2@m uk-flex-middle" uk-grid>
+                        <div class="column-media">
+                            <img src="<?php echo _uri.'/resources/images/change-the-game.gif'; ?>" alt="Social Media Marketing is Changing the Game" uk-scrollspy="cls: uk-animation-scale-up uk-transform-origin-top-center; delay: 600; repeat: true">
+                        </div>
+                        <div class="column-content">
+                            <article class="uk-article">
+                                <div class="about-section-two" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 900; repeat: true">
+                                    <h2 class="about-headline">What We Do</h2>
+                                    <ul>
+                                        <li>SGG delivers social media branding and advertising via cost-effective micro-influencers.</li>
+                                        <li>Creates personalized and unique ads tailored to the specific needs of each company.</li>
+                                        <li>Delivers advertising at a fraction of the cost of traditional advertising.</li>
+                                        <li>Provide Highly targeted marketing - Regionally or National.</li>
+                                        <li>Works with the nation's largest sports companies i.e. Draft Kings, Fan Duel and Fanatics.</li>
+                                        <li>SGG Produces exciting live streaming sports shows and sports videos</li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -219,6 +234,27 @@ query_posts( $team ); ?>
             <?php endif;
             endif; // mobile
             // End widget stats ?>
+        </section>
+
+        <section class="video-show | section">
+            <div class="uk-container">
+                <header class="uk-text-center">
+                    <h2>SGG Media Produced Live Streaming Sports Shows and Videos <br> <span class="uk-text-success">Live Drive / Splash Sisters</span></h2>
+                </header>
+                
+                <div class="uk-child-width-1-2@m" uk-grid>
+                    <div class="column-media">
+                        <figure uk-lightbox>
+                            <a href="<?php echo _uri.'/resources/video/Live-Drive-Promo.mp4'; ?>" data-attrs="width: 1280; height: 720;" data-alt="Live Drive Video" data-type="video"><img src="<?php echo _uri.'/resources/video/img-livedrive-cover.jpg'; ?>" alt="Live Drive Stream"></a>
+                        </figure>
+                    </div>
+                    <div class="column-media">
+                        <figure>
+                            <a href="#"><img src="<?php echo _uri.'/resources/video/img-splashsisters-cover.jpg'; ?>" alt="Splash Sisters Podcast"></a>
+                        </figure>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="micro-influencer" class="micro-influencer | section">
