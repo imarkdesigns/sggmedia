@@ -8,17 +8,21 @@ function podVideo() {
         'meta_query' => [
             'relation' => 'OR',
             [
-                'key' => 'entry_url_source',
-                'value' => 'video'
+                'key' => 'streamer',
+                'value' => 'ssp'
             ],
-            [
-                'key' => 'entry_url_source',
-                'value' => 'shorts'
-            ],
-            [
-                'key' => 'entry_url_source',
-                'value' => 'podcast'
-            ],
+            // [
+            //     'key' => 'entry_url_source',
+            //     'value' => 'video'
+            // ],
+            // [
+            //     'key' => 'entry_url_source',
+            //     'value' => 'shorts'
+            // ],
+            // [
+            //     'key' => 'entry_url_source',
+            //     'value' => 'podcast'
+            // ],
         ],
         'order' => 'DESC'
 
@@ -68,16 +72,8 @@ function liveDrive() {
         'meta_query' => [
             'relation' => 'OR',
             [
-                'key' => 'entry_url_source',
-                'value' => 'video'
-            ],
-            [
-                'key' => 'entry_url_source',
-                'value' => 'shorts'
-            ],
-            [
-                'key' => 'entry_url_source',
-                'value' => 'podcast'
+                'key' => 'streamer',
+                'value' => 'lds'
             ],
         ],
         'order' => 'DESC'
