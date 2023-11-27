@@ -83,7 +83,7 @@ query_posts( $team ); ?>
 
         <section id="about" class="about | section">
             <div id="sgg-clients">
-                <h2 class="uk-heading-divider"><?php the_sub_field( 'fp_about-headings' ); ?></h2>
+                <h2 class="uk-heading-divider"><?php the_field( 'fp_about-headings' ); ?></h2>
                 <div class="carouselTicker">
                     <ul class="carouselTicker__list">
                         <?php $arr_logo = [ 'fliff', 'fanatics', 'blk-water', 'bt', 'dabble', 'draftkings', 'fanduel', 'frontrunner', 'joint-chiropractic', 'rithmm', 'takes-live' ];
@@ -132,7 +132,7 @@ query_posts( $team ); ?>
                 <div class="uk-child-width-1-2@m" uk-grid>
                     <?php while ( have_rows( 'fp_videoShows' ) ) : the_row(); ?>
                     <div class="column-media">
-                        <figure uk-lightbox>
+                        <figure uk-lightbox="video-autoplay: true">
                             <?php $cover = get_sub_field( 'videoCover' );
                             $type = get_sub_field( 'select_video_source' );
                             
@@ -160,7 +160,7 @@ query_posts( $team ); ?>
                     <div>
                     <?php while ( have_rows( 'column3' ) ) : the_row(); ?>
                         <header class="uk-flex uk-flex-middle uk-flex-center uk-text-center uk-background-primary uk-width-1-1 uk-height-small uk-light uk-margin-bottom">
-                            <h2><?php the_sub_field( 'colum3_headline' ); ?></h2>    
+                            <h2><?php do_action( 'hdr', get_sub_field( 'colum3_headline' ) ); ?></h2>
                         </header>
                         <div class="uk-child-width-1-3@s uk-grid-small uk-grid-match" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 300; repeat: true">
                             <?php $column3 = get_sub_field( 'colum3_media' );
@@ -175,7 +175,7 @@ query_posts( $team ); ?>
                             <div class="uk-width-1-3@s">
                             <?php while ( have_rows( 'column1' ) ) : the_row(); ?>
                                 <header class="uk-flex uk-flex-middle uk-flex-center uk-text-center uk-background-secondary uk-width-1-1 uk-height-small uk-light uk-margin-bottom">
-                                    <h2><?php the_sub_field( 'colum1_headline' ); ?></h2>
+                                    <h2><?php do_action( 'hdr', get_sub_field( 'colum1_headline' ) ); ?></h2>
                                 </header>
                                 <div class="uk-child-width-1-1 uk-grid-small uk-grid-match" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 600; repeat: true">
                                     <?php $column1 = get_sub_field( 'colum1_media' );
@@ -188,7 +188,7 @@ query_posts( $team ); ?>
                             <div class="uk-width-2-3@s">
                             <?php while ( have_rows( 'column2' ) ) : the_row(); ?>
                                 <header class="uk-flex uk-flex-middle uk-flex-center uk-text-center uk-background-primary uk-width-1-1 uk-height-small uk-light uk-margin-bottom">
-                                    <h2><?php the_sub_field( 'colum2_headline' ); ?></h2>
+                                    <h2><?php do_action( 'hdr', get_sub_field( 'colum2_headline' ) ); ?></h2>
                                 </header>
                                 <div class="uk-child-width-1-2@s uk-grid-small uk-grid-match" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 900; repeat: true">
                                     <?php $column2 = get_sub_field( 'colum2_media' );
@@ -254,7 +254,16 @@ query_posts( $team ); ?>
                     $tiers = get_sub_field( 'tiers_graph' );
                     $clips = get_sub_field( 'marketing_video' );
                 endwhile; ?>
-                <div class="column-content">
+                <div class="column-media | uk-flex uk-flex-middle uk-flex-center">
+                    <div class="video-container" uk-scrollspy="cls: uk-animation-fade; delay: 600; repeat: true">
+                        <video poster="https://sggmedia.com/wp-content/uploads/2023/09/screenshot.png" width="640" height="360" class="uk-position-relative uk-position-z-index" controls playsinline uk-video="autoplay: false">
+                            <?php foreach ( $clips as $clip ) : ?>
+                                <source src="<?php echo $clip['url']; ?>" type="<?php echo 'video/'.$clip['description']; ?>">
+                            <?php endforeach; ?>
+                        </video>
+                    </div>
+                </div>
+                <div class="column-content | uk-flex-first@m">
                     <article class="uk-article">
                         <div uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 300; repeat: true">
                             <?php the_field( 'fp_influencer-content' );
@@ -269,15 +278,6 @@ query_posts( $team ); ?>
                             <?php echo wp_get_attachment_image( $tiers['id'], 'full', '', [ 'class' => 'uk-box-shadow-large' ] ); ?>
                         </picture>
                     </article>
-                </div>
-                <div class="column-media | uk-flex uk-flex-middle uk-flex-center">
-                    <div class="video-container" uk-scrollspy="cls: uk-animation-fade; delay: 600; repeat: true">
-                        <video poster="https://sggmedia.com/wp-content/uploads/2023/09/screenshot.png" width="640" height="360" class="uk-position-relative uk-position-z-index" controls playsinline uk-video="autoplay: false">
-                            <?php foreach ( $clips as $clip ) : ?>
-                                <source src="<?php echo $clip['url']; ?>" type="<?php echo 'video/'.$clip['description']; ?>">
-                            <?php endforeach; ?>
-                        </video>
-                    </div>
                 </div>
             </div>
         </section>
@@ -452,7 +452,6 @@ query_posts( $team ); ?>
                         </article>
                     </div>
                 </div>
-                <!-- Slide <?=$n;?> -->
             <?php endwhile; // End Rows
             
             ?>

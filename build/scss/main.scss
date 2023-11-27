@@ -193,11 +193,23 @@
 }
 
 .quote {
+    // padding-top: 160px !important;
+
     .frm_forms {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100vh;
+    }
+
+    form.frm-show-form h3.frm_form_title {
+        line-height: 1 !important;
+    }
+
+    @media screen and ( min-width: 960px ) {
+        
+        padding-top: 80px !important;
+
     }
 }
 
@@ -571,7 +583,7 @@
         background: rgba(#000,.75) url(#{$img}img-handball-vertical.jpg) no-repeat center / cover;
         background-blend-mode: multiply;
         height: auto;
-        padding: 15px; 
+        padding: 30px 5px;
         z-index: 1;
 
         h2 {
@@ -606,8 +618,8 @@
         }
 
         .column-media-chart {
-            height: 100dvh;
-            padding: 30px;
+            // height: 100dvh;
+            padding: 60px 30px;
         }
     }
 
@@ -798,6 +810,12 @@
     // Slides
     .slide {
         .uk-subnav-pill {
+            margin: 0;
+
+            li {
+                padding: 0;
+            }
+
             li a {
                 font-family: $poppins-bd !important;
                 color: $sgg-green !important;

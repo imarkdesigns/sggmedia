@@ -360,6 +360,14 @@
       "oAP" : "\/config\/assets.php",
       "oF" : 0
     },
+    "\/config\/fn-home.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/config\/fn-home.php",
+      "oF" : 0
+    },
     "\/config\/fn-podcast.php" : {
       "cB" : 0,
       "ft" : 8192,

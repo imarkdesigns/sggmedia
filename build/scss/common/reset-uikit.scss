@@ -188,6 +188,10 @@
 #fp-nav {
     ul li a span { background: #999 }
     ul li a.active span { background: darken(#F7760D,5%) }
+
+    ul li:last-child {
+        display: none;
+    }
 }
 
 #fp-nav.fp-left {
@@ -211,4 +215,18 @@
 
 .fp-arrow.fp-next {
     border-color: transparent transparent transparent $sgg-green;
+}
+
+.fp-slidesNav ul {
+    display: flex;
+    justify-content: center;
+
+    li a span {
+        background: #999;
+    }
+
+    li a.active span {
+        background: $sgg-green;
+    }
+
 }

@@ -12,6 +12,7 @@ $fn_config = [
     'config/theme.php',
     
     'config/fn-podcast.php',
+    'config/fn-home.php',
 
 ];
 foreach ( $fn_config as $config ) {
