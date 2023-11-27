@@ -753,6 +753,8 @@
     }
 
     .marketing {
+        margin-bottom: 30px;
+
         .-brown,
         .-parelskin,
         .-hace,
@@ -779,7 +781,8 @@
         }
 
         p { 
-            background: #52A55A;
+            // background: #52A55A;
+            background: $sgg-green;
             font-size: .875rem;
             color: rgba(#FFF,.9);
             margin: 0;

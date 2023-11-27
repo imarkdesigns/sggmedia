@@ -80,9 +80,9 @@
 
 
 // total count-up for Followers/Impressions
-const followers = document.querySelector('.total-followers');
-const influencers = document.querySelector('.total-influencers');
-const impressions = document.querySelector('.total-impressions');
+var followers = document.querySelector('.total-followers');
+var influencers = document.querySelector('.total-influencers');
+var impressions = document.querySelector('.total-impressions');
 
 function updateInfluencers() {
     let currentInfluencers = influencers.dataset.influencers;
@@ -144,9 +144,9 @@ function updateImpressions() {
 updateImpressions();
 
 // total count-up for Followers/Impressions
-const followers2 = document.querySelector('.total-followers2');
-const influencers2 = document.querySelector('.total-influencers2');
-const impressions2 = document.querySelector('.total-impressions2');
+var followers2 = document.querySelector('.total-followers2');
+var influencers2 = document.querySelector('.total-influencers2');
+var impressions2 = document.querySelector('.total-impressions2');
 
 function updateInfluencers2() {
     let currentInfluencers = influencers2.dataset.influencers;
