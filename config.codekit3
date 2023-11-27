@@ -1105,6 +1105,149 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/resources\/images\/clients\/img-logo-blk-water.jpg" : {
+      "ft" : 16384,
+      "iS" : 6498,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/clients\/img-logo-blk-water.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/clients\/img-logo-bt.jpg" : {
+      "ft" : 16384,
+      "iS" : 14874,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/clients\/img-logo-bt.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/clients\/img-logo-dabble.jpg" : {
+      "ft" : 16384,
+      "iS" : 24910,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/clients\/img-logo-dabble.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/clients\/img-logo-draftkings.jpg" : {
+      "ft" : 16384,
+      "iS" : 20775,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/clients\/img-logo-draftkings.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/clients\/img-logo-fanatics.jpg" : {
+      "ft" : 16384,
+      "iS" : 16959,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/clients\/img-logo-fanatics.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/clients\/img-logo-fanduel.jpg" : {
+      "ft" : 16384,
+      "iS" : 12303,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/clients\/img-logo-fanduel.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/clients\/img-logo-fliff.jpg" : {
+      "ft" : 16384,
+      "iS" : 8163,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/clients\/img-logo-fliff.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/clients\/img-logo-frontrunner.jpg" : {
+      "ft" : 16384,
+      "iS" : 14946,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/clients\/img-logo-frontrunner.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/clients\/img-logo-joint-chiropractic.jpg" : {
+      "ft" : 16384,
+      "iS" : 12949,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/clients\/img-logo-joint-chiropractic.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/clients\/img-logo-rithmm.jpg" : {
+      "ft" : 16384,
+      "iS" : 15213,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/clients\/img-logo-rithmm.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/images\/clients\/img-logo-takes-live.jpg" : {
+      "ft" : 16384,
+      "iS" : 14028,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/clients\/img-logo-takes-live.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/resources\/images\/EGR B2B Awards 2023_WinnerLogos_Shortlisted_s.png" : {
       "ft" : 32768,
       "iS" : 259299,
@@ -1144,7 +1287,7 @@
     },
     "\/resources\/images\/header\/img-sggmedia-header-pt1.jpg" : {
       "ft" : 16384,
-      "iS" : 957245,
+      "iS" : 285125,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/resources\/images\/header\/img-sggmedia-header-pt1.jpg",
@@ -1170,7 +1313,7 @@
     },
     "\/resources\/images\/header\/img-sggmedia-header-pt3.jpg" : {
       "ft" : 16384,
-      "iS" : 285125,
+      "iS" : 566310,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/resources\/images\/header\/img-sggmedia-header-pt3.jpg",
@@ -1183,7 +1326,7 @@
     },
     "\/resources\/images\/header\/img-sggmedia-header-pt4.jpg" : {
       "ft" : 16384,
-      "iS" : 20806828,
+      "iS" : 195993,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/resources\/images\/header\/img-sggmedia-header-pt4.jpg",
@@ -1612,7 +1755,7 @@
     },
     "\/resources\/images\/logo-sggmedia-200.png" : {
       "ft" : 32768,
-      "iS" : 30014,
+      "iS" : 5336,
       "oA" : 0,
       "oAP" : "\/resources\/images\/logo-sggmedia-200.png",
       "oF" : 0,
@@ -2615,6 +2758,17 @@
       "oAP" : "\/resources\/scripts\/fullpage\/fullpage.min.css.map",
       "oF" : 0
     },
+    "\/resources\/scripts\/fullpage\/fullpage.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/resources\/scripts\/fullpage.min.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
+    },
     "\/resources\/scripts\/fullpage\/fullpage.scrollHorizontally.min.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -2626,51 +2780,6 @@
       "sC" : 0,
       "tS" : 0
     },
-    "\/resources\/scripts\/fullpage\/fullpage3.extensions.min.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/resources\/scripts\/fullpage3.extensions.min.js",
-      "oF" : 0,
-      "sC" : 0,
-      "tS" : 0
-    },
-    "\/resources\/scripts\/fullpage\/fullpage3.min.css" : {
-      "aP" : 1,
-      "bl" : 0,
-      "ci" : 0,
-      "co" : 0,
-      "ft" : 16,
-      "ma" : 0,
-      "oA" : 0,
-      "oAP" : "\/resources\/scripts\/fullpage\/fullpage3.min-min.css",
-      "oF" : 0,
-      "pg" : 0
-    },
-    "\/resources\/scripts\/fullpage\/fullpage3.min.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/resources\/scripts\/fullpage3.min.js",
-      "oF" : 0,
-      "sC" : 0,
-      "tS" : 0
-    },
-    "\/resources\/scripts\/fullpage\/fullpage4.min.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/resources\/scripts\/fullpage4.min.js",
-      "oF" : 0,
-      "sC" : 0,
-      "tS" : 0
-    },
     "\/resources\/scripts\/fullpage\/keys.txt" : {
       "cB" : 0,
       "ft" : 8192,
@@ -2678,6 +2787,17 @@
       "oA" : 0,
       "oAP" : "\/resources\/scripts\/fullpage\/keys.txt",
       "oF" : 0
+    },
+    "\/resources\/scripts\/home-origins.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/resources\/scripts\/home-origins.js",
+      "oF" : 0,
+      "sC" : 0,
+      "tS" : 0
     },
     "\/resources\/scripts\/route\/common.js" : {
       "bF" : 0,
@@ -2852,20 +2972,62 @@
       "sC" : 0,
       "tS" : 0
     },
-    "\/resources\/video\/Final-HD.mp4" : {
+    "\/resources\/video\/img-livedrive-cover.jpg" : {
+      "ft" : 16384,
+      "iS" : 161232,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/video\/img-livedrive-cover.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/video\/img-splashsisters-cover.jpg" : {
+      "ft" : 16384,
+      "iS" : 176865,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/video\/img-splashsisters-cover.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/resources\/video\/Live-Drive-Promo.mp4" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/resources\/video\/Final-HD.mp4",
+      "oAP" : "\/resources\/video\/Live-Drive-Promo.mp4",
       "oF" : 0
     },
-    "\/resources\/video\/Final-HD.webm" : {
+    "\/resources\/video\/Live-Drive-Promo.webm" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/resources\/video\/Final-HD.webm",
+      "oAP" : "\/resources\/video\/Live-Drive-Promo.webm",
+      "oF" : 0
+    },
+    "\/resources\/video\/Sports Micro-Influencer Marketing.mp4" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/video\/Sports Micro-Influencer Marketing.mp4",
+      "oF" : 0
+    },
+    "\/resources\/video\/Sports Micro-Influencer Marketing.webm" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/video\/Sports Micro-Influencer Marketing.webm",
       "oF" : 0
     },
     "\/single.php" : {

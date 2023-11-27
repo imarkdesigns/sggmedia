@@ -31,7 +31,7 @@
         // Static Menu
         > li > a {
             font-family: $face-bold;
-            font-size: 12px;
+            font-size: clamp(0.75rem, 0.625rem + 0.3125vw, 0.8125rem);
             color: $sgg-black;
             text-transform: uppercase;
             height: 100%;

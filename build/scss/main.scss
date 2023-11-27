@@ -92,6 +92,7 @@
 
 .about {
     // background-color: rgba(#000,.025);
+    padding-bottom: 170px;
 
     // Carousel
     #sgg-clients {
@@ -166,7 +167,8 @@
 }
 
 .ads {
-    background: rgba(#000,.55) url(#{$img}ads/dgyktyk.jpeg) no-repeat center / cover;
+    // background: rgba(#000,.55) url(#{$img}ads/dgyktyk.jpeg) no-repeat center / cover;
+    background-color: rgba(#000,.55);
     background-blend-mode: multiply;
 
     .uk-grid header {
@@ -200,7 +202,9 @@
 }
 
 .video-show {
-    background: rgba(#000,.25) url(#{$img}header/img-sggmedia-header-pt1.jpg) no-repeat center / cover;
+    // background: rgba(#000,.25) url(#{$img}header/img-sggmedia-header-pt1.jpg) no-repeat center / cover;
+    background-color: rgba(#000,.45);
+    background-blend-mode: multiply;
 
     header {
         margin-bottom: 30px;
@@ -249,7 +253,7 @@
         text-align: center;
         padding-inline: 20px;
 
-        h2.mi-headline {
+        h2, h2.mi-headline {
             position: relative;
             font-family: $changa;
             font-size: clamp(2rem, 1.5rem + 1.25vw, 2.625rem);
@@ -567,7 +571,17 @@
         background: rgba(#000,.75) url(#{$img}img-handball-vertical.jpg) no-repeat center / cover;
         background-blend-mode: multiply;
         height: auto;
+        padding: 15px; 
         z-index: 1;
+
+        h2 {
+            font-family: $changa;
+            font-size: clamp(1.5rem, 0.5rem + 2.5vw, 2rem);
+            color: #FFF;
+            text-transform: uppercase;
+            line-height: 1;
+            margin-bottom: 30px;
+        }
 
         picture.uk-display-block {
             padding: 30px;
@@ -581,7 +595,7 @@
         }
 
         .column-media {
-            height: calc(100vh - 80px);
+            height: 100dvh;
         }
 
         .column-media {
@@ -591,8 +605,9 @@
             }
         }
 
-        .column-media-chart picture.uk-display-block {
-            padding-inline: 30px;
+        .column-media-chart {
+            height: 100dvh;
+            padding: 30px;
         }
     }
 
