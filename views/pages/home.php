@@ -410,22 +410,12 @@ query_posts( $team ); ?>
 
                 <div class="uk-container uk-container-small">
                     <div class="marketing | uk-child-width-auto@s uk-grid-small uk-grid-match uk-flex-center" uk-grid uk-height-match="target: > div > .uk-card > p" uk-scrollspy="target: > div > .uk-card; cls: uk-animation-slide-bottom-medium; delay: 300; repeat: true">
-                        <?php while ( have_rows( 'sc_team' ) ) : the_row();
-                        $fn = explode(" ", get_sub_field( 'profile_full_name' )); ?>
+                        <?php while ( have_rows( 'fp_management' ) ) : the_row();
+                        $fn = explode(" ", get_sub_field( 'name' )); ?>
                         <div class="-<?=strtolower($fn[1]);?>">
                             <div class="uk-card uk-card-body uk-card-small uk-text-center">
-                                <h3 class="uk-card-title"><?php the_sub_field( 'profile_full_name' ); ?></h3>
-                                <p><?php the_sub_field( 'profile_designation' ); ?></p>
-                            </div>
-                        </div>
-                        <?php endwhile;
-                        
-                        while ( have_rows( 'pm_team' ) ) : the_row();
-                        $fn = explode(" ", get_sub_field( 'profile_full_name' )); ?>
-                        <div class="-<?=strtolower($fn[1]);?>">
-                            <div class="uk-card uk-card-body uk-card-small uk-text-center">
-                                <h3 class="uk-card-title"><?php the_sub_field( 'profile_full_name' ); ?></h3>
-                                <p><?php the_sub_field( 'profile_designation' ); ?></p>
+                                <h3 class="uk-card-title"><?php the_sub_field( 'name' ); ?></h3>
+                                <p><?php the_sub_field( 'designation' ); ?></p>
                             </div>
                         </div>
                         <?php endwhile; ?>
@@ -444,9 +434,9 @@ query_posts( $team ); ?>
                 <div class="slide" data-anchor="<?=$fsn.$lsn?>">
                     <div class="uk-container">
                         <ul class="uk-subnav uk-subnav-pill uk-flex-right" uk-margin>
-                            <li><a href="#managementTeam/slide1">Management Team</a></li>
-                            <li><a href="#managementTeam/slide2">Troy Paul</a></li>
-                            <li><a href="#managementTeam/slide3">Mark Paul</a></li>
+                            <li><a href="#managementTeam">Management Team</a></li>
+                            <li><a href="#managementTeam/tpaul">Troy Paul</a></li>
+                            <li><a href="#managementTeam/mpaul">Mark Paul</a></li>
                         </ul>
 
                         <article class="bio | uk-article uk-padding" uk-grid>
