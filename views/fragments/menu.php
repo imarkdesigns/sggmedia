@@ -36,7 +36,7 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
                 <?php else : ?>
                 <li><a href="<?php echo esc_url( get_permalink( 2 ).'#aboutSGG' ); ?>" data-anchor="aboutSGG">About Us</a></li>
                 <?php endif; ?>                
-                <li class="uk-parent"><a href="#">Advertise <span uk-icon="icon:triangle-down; ratio:.8;"></span></a>
+                <li class="uk-parent"><a href="#">Advertise</a>
                     <div uk-dropdown="mode: click; offset: 0">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
                             <?php if ( is_front_page() ) : ?>
@@ -57,7 +57,15 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
                 <?php else : ?>
                 <li><a href="<?php echo esc_url( get_permalink( 2 ).'#managementTeam' ); ?>" data-anchor="managementTeam">Our Team</a></li>
                 <?php endif; ?> 
-                <li><a href="<?php echo esc_url( get_permalink( 469 ) ); ?>">Videos & Shows</a></li>
+                <li class="uk-parent"><a href="<?php echo esc_url( get_permalink( 469 ) ); ?>">Videos & Shows</a>
+                    <div uk-dropdown="mode: click; offset: 0">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                            <li><a href="#videoShows" data-anchor="videoShows">Videos & Shows</a></li>
+                            <li><a href="<?php echo get_permalink( 469 ).'#sgg-LDS' ?>">Live Drive Stream</a></li>
+                            <li><a href="<?php echo get_permalink( 469 ).'#sgg-SSP' ?>">Splash Sisters Podcast</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a href="<?php echo esc_url( get_permalink( 58 ) ); ?>">Press</a></li>
                 <?php if ( is_front_page() ) : ?>
                     <li><a href="#franchiseAds" data-anchor="franchiseAds">Franchises</a></li>

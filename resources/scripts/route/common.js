@@ -1,27 +1,27 @@
 (function($) {
 
-    // jQuery.getScript('https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js', function() {        
-    //     // jQuery( "#skipToLink" ).on( "click", function() {
-    //     //     jQuery.smoothScroll({
-    //     //         scrollTarget: '#Contents',
-    //     //         offset: -80,
-    //     //         speed: 1000
-    //     //     });
-    //     // });
-    //     jQuery('#skipToLink').trigger('click');
+    jQuery.getScript('https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js', function() {        
+        // jQuery( "#skipToLink" ).on( "click", function() {
+        //     jQuery.smoothScroll({
+        //         scrollTarget: '#Contents',
+        //         offset: -80,
+        //         speed: 1000
+        //     });
+        // });
+        jQuery('#skipToLink').trigger('click');
 
-    //     var reSmooth = /^#sgg-/;
-    //     var id;
-    //     if ( reSmooth.test(location.hash) ) {
-    //         id = '#' + location.hash.replace(reSmooth, '');
-    //         jQuery.smoothScroll({
-    //             scrollTarget: id,
-    //             offset: -70,
-    //             speed: 1000
-    //         });
-    //     }
+        var reSmooth = /^#sgg-/;
+        var id;
+        if ( reSmooth.test(location.hash) ) {
+            id = '#' + location.hash.replace(reSmooth, '');
+            jQuery.smoothScroll({
+                scrollTarget: id,
+                offset: -120,
+                speed: 1000
+            });
+        }
 
-    // });
+    });
 
     UIkit.util.on('#mobile', 'scrolled', function () {
         UIkit.offcanvas('#mobile').toggle();
