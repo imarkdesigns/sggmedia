@@ -57,10 +57,10 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
                 <?php else : ?>
                 <li><a href="<?php echo esc_url( get_permalink( 2 ).'#managementTeam' ); ?>" data-anchor="managementTeam">Our Team</a></li>
                 <?php endif; ?> 
-                <li class="uk-parent"><a href="<?php echo esc_url( get_permalink( 469 ) ); ?>">Videos & Shows</a>
+                <li class="uk-parent"><a href="#">Videos & Shows</a>
                     <div uk-dropdown="mode: click; offset: 0">
                         <ul class="uk-nav uk-navbar-dropdown-nav">
-                            <li><a href="#videoShows" data-anchor="videoShows">Videos & Shows</a></li>
+                            <li><a href="<?php echo get_permalink( 2 ).'#videoShows' ?>" data-anchor="videoShows">Videos & Shows</a></li>
                             <li><a href="<?php echo get_permalink( 469 ).'#sgg-LDS' ?>">Live Drive Stream</a></li>
                             <li><a href="<?php echo get_permalink( 469 ).'#sgg-SSP' ?>">Splash Sisters Podcast</a></li>
                         </ul>
