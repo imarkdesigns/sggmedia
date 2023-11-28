@@ -263,7 +263,7 @@ query_posts( $team ); ?>
                         </video>
                     </div>
                 </div>
-                <div class="column-content | uk-flex-first@m">
+                <div class="column-content | uk-flex-first@l">
                     <article class="uk-article">
                         <div uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 300; repeat: true">
                             <?php the_field( 'fp_influencer-content' );
