@@ -28,13 +28,13 @@
         <div class="uk-container">
 
             <div class="uk-headings | uk-flex-middle uk-margin-large-bottom" uk-grid>
-                <?php while ( have_rows( 'video_section' ) ) : the_row(); ?>
+                <?php while ( have_rows( 'livedrive_section' ) ) : the_row(); ?>
                 <div class="uk-width-auto@m">
                     <img src="<?php echo _uri.'/resources/images/podcast/livedrive.jpg' ?>" class="uk-border-rounded uk-box-shadow-small" alt="Live Drive Stream">
                 </div>
                 <div class="uk-width-expand@m">
-                    <h2>Live Drive Stream</h2>
-                    <p>Do you like live watch parties? Here’s something new for your second screen; the perfect show to pair with NFL Red Zone. While you sweat out your bets, SGG Media and host, Gavin McHugh, present a new way to engage in sports gambling. Partnering with Simple Bet, this show provides viewers with live watch parties, odds and stat trackers from the biggest online sports books. The way you watch sports is about to change, we can’t wait for you to join us in Live Drive.</p>
+                    <h2><?php the_sub_field( 'livedrive_section_title' ); ?>/h2>
+                    <p><?php the_sub_field( 'livedrive_section_description' ); ?></p>
                 </div>
                 <?php endwhile; ?>
             </div>

@@ -142,9 +142,20 @@ query_posts( $team ); ?>
                             } else {
                                 $fileType = get_sub_field( 'videoLink' );
                             } ?>
-                            <a href="<?php echo $fileType; ?>" data-attrs="width: 1280; height: 720;" data-alt="Live Drive Video" <?php echo ($type == 'file') ? 'data-type="video"' : ''; ?>>
-                                <?php echo wp_get_attachment_image( $cover['id'], 'medium' ); ?>
+                            <a href="<?php echo !empty($fileType) ? $fileType : '#'; ?>" class="uk-position-relative" data-attrs="width: 1280; height: 720;" data-alt="Live Drive Video" <?php echo ($type == 'file') ? 'data-type="video"' : ''; ?>>
+                                <?php  if ( !empty($fileType) ) {
+                                    echo '<span uk-icon="icon: play-circle; ratio: 5" class="uk-position-center uk-light"></span>';
+                                }
+                                echo wp_get_attachment_image( $cover['id'], 'medium' ); ?>
                             </a>
+                            <figcaption class="uk-margin uk-text-center">
+                                <?php if ( str_contains( get_sub_field( 'button_label' ), 'Live Drive' ) ) {
+                                    $prefix = '#sgg-LDS';
+                                } else {
+                                    $prefix = '#sgg-SSP';
+                                } ?>
+                                <a href="<?php echo get_sub_field( 'button_link' ).$prefix; ?>" class="uk-button uk-button-primary uk-button-small"><?php the_sub_field( 'button_label' ); ?></a>
+                            </figcaption>
                         </figure>
                     </div>
                     <?php endwhile; ?>
