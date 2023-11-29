@@ -104,7 +104,7 @@ query_posts( $team ); ?>
                     <div class="uk-child-width-1-2@m uk-grid-match uk-flex-middle" uk-grid>
                         <div class="column-media">
                             <figure>
-                                <?php $gifBanner = get_field( 'fp_about-banner' );
+                                <?php $gifBanner = get_sub_field( 'sgg_banner' );
                                 echo wp_get_attachment_image( $gifBanner['id'], 'full', '', [ 'uk-scrollspy' => 'cls: uk-animation-scale-up uk-transform-origin-top-center; delay: 600; repeat: true' ] ); ?>
                             </figure>
                         </div>
