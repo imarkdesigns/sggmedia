@@ -142,7 +142,7 @@ query_posts( $team ); ?>
                             } else {
                                 $fileType = get_sub_field( 'videoLink' );
                             } ?>
-                            <div uk-lightbox="video-autoplay: false">
+                            <div uk-lightbox="video-autoplay: true">
                                 <a href="<?php echo !empty($fileType) ? $fileType : '#'; ?>" class="uk-position-relative" data-attrs="width: 1280; height: 720;" <?php echo ($type == 'file') ? 'data-type="video"' : ''; ?>>
                                     <?php  if ( !empty($fileType) ) {
                                         echo '<span uk-icon="icon: play-circle; ratio: 5" class="uk-position-center uk-light"></span>';
@@ -170,7 +170,7 @@ query_posts( $team ); ?>
             <div class="uk-container uk-container-large">
                 
                 <div class="uk-grid-small uk-child-width-1-2@l" uk-grid>
-                    <div>
+                    <div class="social-media-ad-postings">
                     <?php while ( have_rows( 'column3' ) ) : the_row(); ?>
                         <header class="uk-flex uk-flex-middle uk-flex-center uk-text-center uk-background-primary uk-width-1-1 uk-height-small uk-light uk-margin-bottom">
                             <h2><?php do_action( 'hdr', get_sub_field( 'colum3_headline' ) ); ?></h2>
@@ -185,7 +185,7 @@ query_posts( $team ); ?>
                     </div>
                     <div>
                         <div class="uk-grid-small" uk-grid>
-                            <div class="uk-width-1-3@s">
+                            <div class="franchise-ad-content | uk-width-1-3@s">
                             <?php while ( have_rows( 'column1' ) ) : the_row(); ?>
                                 <header class="uk-flex uk-flex-middle uk-flex-center uk-text-center uk-background-secondary uk-width-1-1 uk-height-small uk-light uk-margin-bottom">
                                     <h2><?php do_action( 'hdr', get_sub_field( 'colum1_headline' ) ); ?></h2>
@@ -198,7 +198,7 @@ query_posts( $team ); ?>
                                 </div>
                             <?php endwhile; ?>
                             </div>
-                            <div class="uk-width-2-3@s">
+                            <div class="shows-produced | uk-width-2-3@s">
                             <?php while ( have_rows( 'column2' ) ) : the_row(); ?>
                                 <header class="uk-flex uk-flex-middle uk-flex-center uk-text-center uk-background-primary uk-width-1-1 uk-height-small uk-light uk-margin-bottom">
                                     <h2><?php do_action( 'hdr', get_sub_field( 'colum2_headline' ) ); ?></h2>
@@ -206,7 +206,7 @@ query_posts( $team ); ?>
                                 <div class="uk-child-width-1-2@s uk-grid-small uk-grid-match" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 900; repeat: true">
                                     <?php $column2 = get_sub_field( 'colum2_media' );
                                     foreach ( $column2 as $ads ) {
-                                        echo wp_get_attachment_image( $ads['id'], 'full' );
+                                        echo '<figure>'.wp_get_attachment_image( $ads['id'], 'full' ).'</figure>';
                                     } ?>
                                 </div>
                             <?php endwhile; ?>
