@@ -23,7 +23,7 @@ query_posts( $team ); ?>
                         </li>
                         <?php endforeach; ?>
                     </ul>
-
+                    <div class="uk-overlay uk-overlay-primary uk-position-cover"></div>
                     <figcaption class="uk-overlay uk-position-center-left">
                         <div class="uk-width-1-1@s uk-width-2-3@m uk-light | hero-container">
                             <picture class="uk-display-block uk-margin-bottom">
@@ -132,7 +132,7 @@ query_posts( $team ); ?>
                 <div class="uk-child-width-1-2@m" uk-grid>
                     <?php while ( have_rows( 'fp_videoShows' ) ) : the_row(); ?>
                     <div class="column-media">
-                        <figure uk-lightbox="video-autoplay: true">
+                        <figure>
                             <?php $cover = get_sub_field( 'videoCover' );
                             $type = get_sub_field( 'select_video_source' );
                             
@@ -142,12 +142,14 @@ query_posts( $team ); ?>
                             } else {
                                 $fileType = get_sub_field( 'videoLink' );
                             } ?>
-                            <a href="<?php echo !empty($fileType) ? $fileType : '#'; ?>" class="uk-position-relative" data-attrs="width: 1280; height: 720;" data-alt="Live Drive Video" <?php echo ($type == 'file') ? 'data-type="video"' : ''; ?>>
-                                <?php  if ( !empty($fileType) ) {
-                                    echo '<span uk-icon="icon: play-circle; ratio: 5" class="uk-position-center uk-light"></span>';
-                                }
-                                echo wp_get_attachment_image( $cover['id'], 'medium' ); ?>
-                            </a>
+                            <div uk-lightbox="video-autoplay: false">
+                                <a href="<?php echo !empty($fileType) ? $fileType : '#'; ?>" class="uk-position-relative" data-attrs="width: 1280; height: 720;" <?php echo ($type == 'file') ? 'data-type="video"' : ''; ?>>
+                                    <?php  if ( !empty($fileType) ) {
+                                        echo '<span uk-icon="icon: play-circle; ratio: 5" class="uk-position-center uk-light"></span>';
+                                    }
+                                    echo wp_get_attachment_image( $cover['id'], 'medium' ); ?>
+                                </a>
+                            </div>
                             <figcaption class="uk-margin uk-text-center">
                                 <?php if ( str_contains( get_sub_field( 'button_label' ), 'Live Drive' ) ) {
                                     $prefix = '#sgg-LDS';

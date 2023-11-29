@@ -33,7 +33,7 @@
                     <img src="<?php echo _uri.'/resources/images/podcast/livedrive.jpg' ?>" class="uk-border-rounded uk-box-shadow-small" alt="Live Drive Stream">
                 </div>
                 <div class="uk-width-expand@m">
-                    <h2><?php the_sub_field( 'livedrive_section_title' ); ?>/h2>
+                    <h2><?php the_sub_field( 'livedrive_section_title' ); ?></h2>
                     <p><?php the_sub_field( 'livedrive_section_description' ); ?></p>
                 </div>
                 <?php endwhile; ?>
