@@ -61,6 +61,7 @@
                         <ul class="uk-nav-sub">
                             <li><a href="<?php do_action( 'menu_fallback', get_permalink( 2 ).'#aboutSGG', '#aboutSGG' ); ?>" data-anchor="aboutSGG">Who We Are</a></li>
                             <li><a href="<?php do_action( 'menu_fallback', get_permalink( 2 ).'#aboutSGG/what-we-do', '#aboutSGG/what-we-do' ); ?>" data-anchor="aboutSGG">What We Do</a></li>
+                            <li><a href="<?php do_action( 'menu_fallback', get_permalink( 2 ).'#managementTeam', '#managementTeam' ); ?>" data-anchor="managementTeam">Team</a></li>
                         </ul>
                     </li>
                     <li><a href="<?php do_action( 'menu_fallback', get_permalink( 2 ).'#microInfluencer', '#microInfluencer' ); ?>" data-anchor="microInfluencer">Micro Influencer</a></li>
