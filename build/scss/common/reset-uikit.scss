@@ -185,6 +185,17 @@
     }
 }
 
+.frm_form_title {
+    font-family: $changa !important;
+    font-size: clamp(1.5rem, 0.5rem + 2.5vw, 2rem) !important;
+    color: $sgg-green !important;
+}
+
+.frm_percent_complete,
+.frm_pages_complete {
+    margin-top: 10px !important;
+}
+
 #fp-nav {
     ul li a span { background: #999 }
     ul li a.active span { background: darken(#F7760D,5%) }

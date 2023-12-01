@@ -20,7 +20,7 @@
     // Logo
     .uk-logo img {
         width: auto;
-        height: 30px;
+        height: 45px;
     }
 
     // Menu
@@ -138,12 +138,23 @@
 
     // Navbar Toggle Icon
     .uk-navbar-toggle {
-        color: $sgg-green;
+        color: #000;
+        // color: $sgg-green;
         height: 60px;
 
         &:focus,
         &:hover  {
             color: darken($sgg-green, 5%);
+        }
+
+        &::before {
+            content: 'Menu';
+            position: relative;
+            top: 2px;
+            display: inline-block;
+            font-family: $poppins-bd;
+            text-transform: uppercase;
+            margin-right: 5px;
         }
     }
 
@@ -225,3 +236,80 @@
     }
 
 } // end
+
+#global-navigation {
+    z-index: 2010;
+
+    .uk-modal-dialog {
+        background: rgba($sgg-green,.95);
+        backdrop-filter: blur(15px) saturate(180%);
+    }
+
+    .uk-modal-close-full {
+        background: $sgg-green;
+        color: #FFF;
+        border-radius: 0 0 0 5px;
+    }
+
+    .uk-nav-default {
+        li > a {
+            font-family: $poppins-bd;
+            font-size: clamp(1.125rem, 0.375rem + 1.875vw, 1.5rem);
+            color: rgba(#FFF,.9);
+            text-transform: uppercase;
+
+            &:hover,
+            &:focus {
+                color: lighten(#F7760D,15%);
+            }
+        }
+
+        li ul {
+            padding-left: 40px;
+        }
+    }
+
+    @media screen and ( min-width: 640px ) {
+        
+        .uk-background-cover {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100dvh;
+
+            .uk-panel {
+                background: rgba(#000,.45);
+                backdrop-filter: blur(10px) saturate(180%);
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px 0 rgba(#000,.15);
+            }
+
+            img {
+                max-width: 120px;
+                height: auto;
+            }
+
+            h2 {
+                font-family: $changa;
+                font-size: clamp(1.5rem, 0.5rem + 2.5vw, 2rem);
+                color: #FFF;
+                text-transform: uppercase;
+                margin: 30px 0 0;
+            }
+
+            h3 {
+                font-family: $changa;
+                color: $sgg-green;
+                font-size: clamp(2rem, 0rem + 5vw, 3rem);
+                text-transform: uppercase;
+                margin-top: -15px;
+                margin-bottom: 30px;
+
+            }
+        }
+
+    }
+
+}

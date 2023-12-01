@@ -27,6 +27,15 @@
         UIkit.offcanvas('#mobile').toggle();
     });
 
+    jQuery('#main-menu').find('a[href]').on('click', function() {
+        UIkit.modal('#global-navigation').hide();
+    });
+
+    jQuery('#modal-online-quote').on('click', function() {
+        UIkit.modal('#global-navigation').hide();
+    });
+
+
     // SGG Media Influencer Agreement Checkbox Control
     // jQuery('.sggmi-agreement .forminator-checkbox__wrapper').find('input').prop('disabled', true);
     // Add 'class' to wrapper to styling
