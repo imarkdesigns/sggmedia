@@ -86,7 +86,7 @@ query_posts( $team ); ?>
                 <h2 class="uk-heading-divider"><?php the_field( 'fp_about-headings' ); ?></h2>
                 <div class="carouselTicker">
                     <ul class="carouselTicker__list">
-                        <?php $arr_logo = [ 'fliff', 'fanatics', 'blk-water', 'bt', 'dabble', 'draftkings', 'fanduel', 'frontrunner', 'joint-chiropractic', 'rithmm', 'takes-live' ];
+                        <?php $arr_logo = [ 'fliff', 'fanatics', 'blk-water', 'bt', 'draftkings', 'fanduel', 'joint-chiropractic', 'rithmm', 'takes-live' ];
                         for ( $n = 0; $n < count($arr_logo); $n++ ) {
                             $carousel  = '<li class="carouselTicker__list">';
                             $carousel .= '<img src="'._uri.'/resources/images/partners/ticker/img-logo-'.$arr_logo[$n].'.jpg" alt="'.$arr_logo[$n].'">';

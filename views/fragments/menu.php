@@ -47,6 +47,7 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
                         <a href="#">Videos & Shows <span uk-icon="icon:triangle-down; ratio:.8;"></span></a>
                         <div uk-dropdown="mode: click; offset: 0">
                             <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="<?php do_action( 'menu_fallback', get_permalink( 2 ).'#videoShows', '#videoShows' ); ?>" data-anchor="videoShows">Videos & Shows</a></li>
                                 <li><a href="<?php echo get_permalink( 469 ).'#sgg-LDS' ?>">Live Drive Stream</a></li>
                                 <li><a href="<?php echo get_permalink( 469 ).'#sgg-SSP' ?>">Splash Sisters Show</a></li>
                             </ul>
