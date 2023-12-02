@@ -278,6 +278,29 @@
 
 }
 
+.uk-lightbox-panel.uk-open {
+
+    video {
+        max-width: 1280px !important;
+        height: 720px !important;
+    }
+
+    .uk-lightbox-toolbar {
+        padding: 0;
+    }
+
+    .uk-lightbox-toolbar-icon.uk-close-large {
+        top: 0;
+        right: 0;
+        background: $sgg-green;
+        color: #FFF;
+        text-align: center;
+        @include size(60px);
+        border-radius: 0 0 0 5px;
+    }
+
+}
+
 .micro-influencer {
     background: transparent;    
 
@@ -491,7 +514,7 @@
             padding: 0;
 
             li:not(:first-child) {
-                margin-top: 15px;
+                margin-top: 30px;
             }
 
             li {

@@ -156,6 +156,18 @@
             text-transform: uppercase;
             margin-right: 5px;
         }
+
+        @media screen and ( min-width: 960px ) {
+            &::before {
+                content: 'Click for Site Menu';
+                position: relative;
+                top: 2px;
+                display: inline-block;
+                font-family: $poppins-bd;
+                text-transform: uppercase;
+                margin-right: 5px;
+            }
+        }
     }
 
     &.uk-sticky-below {
@@ -241,7 +253,7 @@
     z-index: 2010;
 
     .uk-modal-dialog {
-        background: rgba($sgg-green,.95);
+        background: rgba($sgg-green,.65);
         backdrop-filter: blur(15px) saturate(180%);
     }
 

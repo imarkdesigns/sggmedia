@@ -1064,6 +1064,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/resources\/images\/bg-global-navigation.jpg" : {
+      "ft" : 16384,
+      "iS" : 210630,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/resources\/images\/bg-global-navigation.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/resources\/images\/bg-request-a-quote.jpg" : {
       "ft" : 16384,
       "iS" : 228890,
@@ -3125,6 +3138,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/views\/fragments\/menu-backup.php",
+      "oF" : 0
+    },
+    "\/views\/fragments\/menu-bak.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/views\/fragments\/menu-bak.php",
       "oF" : 0
     },
     "\/views\/fragments\/menu.php" : {

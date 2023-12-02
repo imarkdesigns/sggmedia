@@ -143,7 +143,7 @@ query_posts( $team ); ?>
                                 $fileType = get_sub_field( 'videoLink' );
                             } ?>
                             <div uk-lightbox="video-autoplay: true">
-                                <a href="<?php echo !empty($fileType) ? $fileType : '#'; ?>" class="uk-position-relative" data-attrs="width: 1280; height: 720;" <?php echo ($type == 'file') ? 'data-type="video"' : ''; ?>>
+                                <a href="<?php echo !empty($fileType) ? $fileType : '#'; ?>" class="uk-position-relative" data-attrs="width: 1280; height: 720;" <?php echo ($type == 'file') ? 'data-type="iframe"' : ''; ?>>
                                     <?php  if ( !empty($fileType) ) {
                                         echo '<span uk-icon="icon: play-circle; ratio: 5" class="uk-position-center uk-light"></span>';
                                     }
@@ -392,7 +392,7 @@ query_posts( $team ); ?>
         <section id="team" class="team | section">
             
 
-            <div class="slide" data-anchor="slide1">
+            <div class="slide">
             
                 <div class="uk-container">
                     <header class="uk-panel" uk-scrollspy="cls: uk-animation-fade-medium; delay: 300; repeat: true">
@@ -444,7 +444,7 @@ query_posts( $team ); ?>
                 $fn     = explode(" ", $avatar['title']);
                 $fsn    = strtolower(substr($fn[0], 0, 1));
                 $lsn    = strtolower($fn[1]); ?>
-                <div class="slide" data-anchor="<?=$fsn.$lsn?>">
+                <div id="<?=$fsn.$lsn?>" class="slide" data-anchor="<?=$fsn.$lsn?>">
                     <div class="uk-container">
                         <ul class="uk-subnav uk-subnav-pill uk-flex-right" uk-margin>
                             <li><a href="#managementTeam">Management Team</a></li>
