@@ -499,6 +499,6 @@ query_posts( $team ); ?>
     </div>
     <div class="uk-overlay uk-position-bottom-center uk-text-center uk-padding-remove">
         <h2>Get An Advertising <span class="uk-light">Quote In Seconds</span></h2>
-        <a href="<?php echo get_permalink( 2 ).'#online-quote'; ?>" data-anchor="online-quote" class="uk-button uk-button-small uk-button-primary uk-margin-top">Click Here</a>
+        <a href="#onlineQuote" data-anchor="onlineQuote" class="uk-button uk-button-small uk-button-primary uk-margin-top">Click Here</a>
     </div>
 </div>
