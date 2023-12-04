@@ -6,7 +6,8 @@
     // z-index: 99999991;
 }
 
-.page [data-globals="menu"] {
+.page [data-globals="menu"],
+.error404 [data-globals="menu"] {
     position: relative;
     background: #FFF;
     width: 100% !important;

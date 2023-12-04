@@ -63,7 +63,7 @@
 
 endif; 
 
-if ( !is_page([ 879 ]) ) : ?>
+if ( !is_page([ 879 ]) && !is_404() ) : ?>
 
 <div id="quote-ads" class="uk-position-fixed uk-position-bottom-right uk-position-z-index" uk-alert uk-scrollspy="cls: uk-animation-slide-right; delay: 300">
     <button class="uk-alert-close" title="Close this window" uk-close></button>
@@ -78,17 +78,4 @@ if ( !is_page([ 879 ]) ) : ?>
     </div>
 </div>
 
-<?php 
-    /*
-    elseif ( is_page([ 58 ]) ) : ?>
-
-    <div id="quote-ads" class="uk-position-fixed uk-position-bottom-right uk-position-z-index" uk-alert uk-scrollspy="cls: uk-animation-slide-right; delay: 300">
-        <div class="uk-card uk-card-secondary">
-            <button class="uk-alert-close" title="Close this window" uk-close></button>
-            <h2>Get An Advertising <span class="uk-light">Quote In Seconds</span></h2>
-            <a href="<?php echo get_permalink( 879 ); ?>" class="uk-button uk-button-small uk-button-primary uk-margin-top">Click Here</a>
-        </div>
-    </div>
-
-<?php */
-endif;
+<?php endif;

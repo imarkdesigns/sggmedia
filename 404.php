@@ -3,7 +3,7 @@ get_header(); ?>
 
 <main class="main" role="main">
     
-    <section class="uk-section section-error">
+    <section class="uk-section section-error uk-flex uk-flex-middle" uk-height-viewport="offset-top: true; offset-bottom: 80px; min-height: 480">
         <div class="uk-container uk-container-small">
             <div class="uk-panel uk-padding uk-text-center">
                 

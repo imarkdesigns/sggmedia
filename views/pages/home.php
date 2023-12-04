@@ -86,10 +86,10 @@ query_posts( $team ); ?>
                 <h2 class="uk-heading-divider"><?php the_field( 'fp_about-headings' ); ?></h2>
                 <div class="carouselTicker">
                     <ul class="carouselTicker__list">
-                        <?php $arr_logo = [ 'fliff', 'fanatics', 'blk-water', 'bt', 'draftkings', 'fanduel', 'joint-chiropractic', 'rithmm', 'takes-live' ];
-                        for ( $n = 0; $n < count($arr_logo); $n++ ) {
+                        <?php $arr_logos = get_field( 'fp_sgg-clients' );
+                        foreach ( $arr_logos as $logo ) {
                             $carousel  = '<li class="carouselTicker__list">';
-                            $carousel .= '<img src="'._uri.'/resources/images/partners/ticker/img-logo-'.$arr_logo[$n].'.jpg" alt="'.$arr_logo[$n].'">';
+                            $carousel .= wp_get_attachment_image( $logo['id'], [ 9999, 75, true ] );
                             $carousel .= '</li>';
                             echo $carousel;
                         } ?>
@@ -142,7 +142,7 @@ query_posts( $team ); ?>
                             } else {
                                 $fileType = get_sub_field( 'videoLink' );
                             } ?>
-                            <div uk-lightbox="video-autoplay: true">
+                            <div uk-lightbox="video-autoplay: true; esc-close: true">
                                 <a href="<?php echo !empty($fileType) ? $fileType : '#'; ?>" class="uk-position-relative" data-attrs="width: 1280; height: 720;" <?php echo ($type == 'file') ? 'data-type="iframe"' : ''; ?>>
                                     <?php  if ( !empty($fileType) ) {
                                         echo '<span uk-icon="icon: play-circle; ratio: 5" class="uk-position-center uk-light"></span>';

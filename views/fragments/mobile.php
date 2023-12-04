@@ -55,20 +55,22 @@
         <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid uk-height-viewport>
             <div class="uk-padding-large">
 
-                <ul id="main-menu" class="uk-nav-default uk-nav-primary" uk-nav>
+                <ul id="mobile-menu" class="uk-nav-default" uk-nav>
                     <li><a href="<?php do_action( 'menu_fallback', get_permalink( 2 ).'#home', '#home' ); ?>" data-anchor="home">Home</a></li>
-                    <li class="uk-parent"><a>About <span uk-nav-parent-icon></span></a>
+                    <li class="uk-parent">
+                        <a>About <span uk-nav-parent-icon></span></a>
                         <ul class="uk-nav-sub">
                             <li><a href="<?php do_action( 'menu_fallback', get_permalink( 2 ).'#aboutSGG', '#aboutSGG' ); ?>" data-anchor="aboutSGG">Who We Are</a></li>
                             <li><a href="<?php do_action( 'menu_fallback', get_permalink( 2 ).'#aboutSGG/what-we-do', '#aboutSGG/what-we-do' ); ?>" data-anchor="aboutSGG">What We Do</a></li>
                             <li><a href="<?php do_action( 'menu_fallback', get_permalink( 2 ).'#managementTeam', '#managementTeam' ); ?>" data-anchor="managementTeam">Team</a></li>
+                            <li><a href="<?php do_action( 'menu_fallback', get_permalink( 2 ).'#microInfluencer', '#microInfluencer' ); ?>" data-anchor="microInfluencer">Micro Influencers</a></li>
                         </ul>
                     </li>
-                    <li><a href="<?php do_action( 'menu_fallback', get_permalink( 2 ).'#microInfluencer', '#microInfluencer' ); ?>" data-anchor="microInfluencer">Micro Influencer</a></li>
                     <li><a href="<?php do_action( 'menu_fallback', get_permalink( 2 ).'#adsPosting', '#adsPosting' ); ?>" data-anchor="adsPosting">Social Postings</a></li>
                     <li><a href="<?php do_action( 'menu_fallback', get_permalink( 2 ).'#franchiseAds', '#franchiseAds' ); ?>" data-anchor="franchiseAds">Franchise Advertising</a></li>
                     <li><a href="<?php do_action( 'menu_fallback', get_permalink( 2 ).'#onlineQuote', '#onlineQuote' ); ?>" data-anchor="onlineQuote">Online Quote</a></li>
-                    <li class="uk-parent"><a>Videos & Shows <span uk-nav-parent-icon></span></a>
+                    <li class="uk-parent">
+                        <a>Videos & Shows <span uk-nav-parent-icon></span></a>
                         <ul class="uk-nav-sub">
                             <li><a href="<?php do_action( 'menu_fallback', get_permalink( 2 ).'#videoShows', '#videoShows' ); ?>" data-anchor="videoShows">Videos & Shows</a></li>
                             <?php if ( is_page( 469 ) ) : ?>

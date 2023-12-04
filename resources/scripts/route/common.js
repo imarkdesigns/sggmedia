@@ -27,7 +27,7 @@
         UIkit.offcanvas('#mobile').toggle();
     });
 
-    jQuery('#main-menu').find('a[href]').on('click', function() {
+    jQuery('#mobile-menu').find('a[href]').on('click', function() {
         UIkit.modal('#global-navigation').hide();
     });
 

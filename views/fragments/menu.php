@@ -34,7 +34,7 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
                         <div uk-dropdown="mode: click; offset: 0">
                             <ul class="uk-nav uk-navbar-dropdown-nav">
                                 <li><a href="<?php do_action( 'menu_fallback', get_permalink( 2 ).'#aboutSGG', '#aboutSGG' ); ?>" data-anchor="aboutSGG">Who We Are</a></li>
-                                <li><a href="<?php do_action( 'menu_fallback', get_permalink( 2 ).'#aboutSGG/what-we-do', '#aboutSGG' ); ?>" data-anchor="aboutSGG">What We Do</a></li>
+                                <li><a href="<?php do_action( 'menu_fallback', get_permalink( 2 ).'#aboutSGG/what-we-do', '#aboutSGG/what-we-do' ); ?>" data-anchor="aboutSGG">What We Do</a></li>
                                 <li><a href="<?php do_action( 'menu_fallback', get_permalink( 2 ).'#managementTeam', '#managementTeam' ); ?>" data-anchor="managementTeam">Team</a></li>
                                 <li><a href="<?php do_action( 'menu_fallback', get_permalink( 2 ).'#microInfluencer', '#microInfluencer' ); ?>" data-anchor="microInfluencer">Micro Influencers</a></li>
                             </ul>
@@ -48,8 +48,13 @@ $logo         = wp_get_attachment_image_src( $customLogoID, 'full' ); ?>
                         <div uk-dropdown="mode: click; offset: 0">
                             <ul class="uk-nav uk-navbar-dropdown-nav">
                                 <li><a href="<?php do_action( 'menu_fallback', get_permalink( 2 ).'#videoShows', '#videoShows' ); ?>" data-anchor="videoShows">Videos & Shows</a></li>
-                                <li><a href="<?php echo get_permalink( 469 ).'#sgg-LDS' ?>">Live Drive Stream</a></li>
-                                <li><a href="<?php echo get_permalink( 469 ).'#sgg-SSP' ?>">Splash Sisters Show</a></li>
+                                <?php if ( is_page( 469 ) ) : ?>
+                                    <li><a uk-scroll="offset: 80" href="#LDS" >Live Drive Stream</a></li>
+                                    <li><a uk-scroll="offset: 80" href="#SSP">Splash Sisters Show</a></li>
+                                <?php else : ?>
+                                    <li><a href="<?php echo get_permalink( 469 ).'#sgg-LDS'; ?>" >Live Drive Stream</a></li>
+                                    <li><a  href="<?php echo get_permalink( 469 ).'#sgg-SSP'; ?>">Splash Sisters Show</a></li>
+                                <?php endif; ?>
                             </ul>
                         </div>
                     </li>
