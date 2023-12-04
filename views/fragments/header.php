@@ -74,7 +74,7 @@ if ( !is_page([ 879 ]) && !is_404() ) : ?>
     </div>
     <div class="uk-overlay uk-position-bottom-center uk-text-center uk-padding-remove">
         <h2>Get An Advertising <span class="uk-light">Quote In Seconds</span></h2>
-        <a href="<?php echo get_permalink( 2 ).'#online-quote'; ?>" data-menuanchor="online-quote" class="uk-button uk-button-small uk-button-primary uk-margin-top">Click Here</a>
+        <a href="<?php echo get_permalink( 2 ).'#online-quote'; ?>" data-anchor="online-quote" class="uk-button uk-button-small uk-button-primary uk-margin-top">Click Here</a>
     </div>
 </div>
 
