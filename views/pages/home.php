@@ -390,84 +390,71 @@ query_posts( $team ); ?>
         </section>
 
         <section id="team" class="team | section">
-            
+            <div class="uk-container">
+                <header class="uk-panel" uk-scrollspy="cls: uk-animation-fade-medium; delay: 300; repeat: true">
+                    <?php the_field( 'fp_team-headline' ); ?>
+                </header>
 
-            <div class="slide">
-            
-                <div class="uk-container">
-                    <header class="uk-panel" uk-scrollspy="cls: uk-animation-fade-medium; delay: 300; repeat: true">
-                        <?php the_field( 'fp_team-headline' ); ?>
-                    </header>
-
-                    <div class="executives | uk-child-width-auto@s uk-flex-center" uk-grid uk-scrollspy="target: > .column-content > .uk-card; cls: uk-animation-slide-bottom-medium; delay: 300; repeat: true">
-                        <?php while ( have_rows( 'fp_executives' ) ) : the_row();
-                        $avatar = get_sub_field( 'avatar' );
-                        $fn     = explode(" ", $avatar['title']);
-                        $fsn    = strtolower(substr($fn[0], 0, 1));
-                        $lsn    = strtolower($fn[1]); ?>
-                        <div class="column-content">
-                            <div class="uk-card">
-                                <div class="uk-card-media-top">
-                                    <?php echo wp_get_attachment_image( $avatar['id'], [300, 300] ); ?>
-                                </div>
-                                <div class="uk-card-body">
-                                    <h3 class="uk-card-title"><?php echo $avatar['title']; ?></h3>
-                                    <p><?php echo $avatar['caption']; ?></p>
-                                    <p><a href="#managementTeam/<?=$fsn.$lsn?>" class="uk-text-meta">Read Bio</a></p>
-                                </div>
+                <div class="executives | uk-child-width-auto@s uk-flex-center" uk-grid uk-scrollspy="target: > .column-content > .uk-card; cls: uk-animation-slide-bottom-medium; delay: 300; repeat: true">
+                    <?php while ( have_rows( 'fp_executives' ) ) : the_row();
+                    $avatar = get_sub_field( 'avatar' );
+                    $fn     = explode(" ", $avatar['title']);
+                    $fsn    = strtolower(substr($fn[0], 0, 1));
+                    $lsn    = strtolower($fn[1]); ?>
+                    <div class="column-content">
+                        <div class="uk-card">
+                            <div class="uk-card-media-top">
+                                <?php echo wp_get_attachment_image( $avatar['id'], [300, 300] ); ?>
+                            </div>
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title"><?php echo $avatar['title']; ?></h3>
+                                <p><?php echo $avatar['caption']; ?></p>
+                                <p><a href="#<?=$fsn.$lsn?>" class="uk-text-meta" uk-toggle>Read Bio</a></p>
                             </div>
                         </div>
-                        <?php endwhile; ?>
                     </div>
+                    <?php endwhile; ?>
                 </div>
-
-                <div class="uk-container uk-container-small">
-                    <div class="marketing | uk-child-width-auto@s uk-grid-small uk-grid-match uk-flex-center" uk-grid uk-height-match="target: > div > .uk-card > p" uk-scrollspy="target: > div > .uk-card; cls: uk-animation-slide-bottom-medium; delay: 300; repeat: true">
-                        <?php while ( have_rows( 'fp_management' ) ) : the_row();
-                        $fn = explode(" ", get_sub_field( 'name' )); ?>
-                        <div class="-<?=strtolower($fn[1]);?>">
-                            <div class="uk-card uk-card-body uk-card-small uk-text-center">
-                                <h3 class="uk-card-title"><?php the_sub_field( 'name' ); ?></h3>
-                                <p><?php the_sub_field( 'designation' ); ?></p>
-                            </div>
-                        </div>
-                        <?php endwhile; ?>
-                    </div>
-                </div>
-
             </div>
-            <!-- Slide 1 -->
 
-            <?php
-            while ( have_rows( 'fp_executives' ) ) : the_row();
-                $avatar = get_sub_field( 'avatar' );
-                $fn     = explode(" ", $avatar['title']);
-                $fsn    = strtolower(substr($fn[0], 0, 1));
-                $lsn    = strtolower($fn[1]); ?>
-                <div id="<?=$fsn.$lsn?>" class="slide" data-anchor="<?=$fsn.$lsn?>">
-                    <div class="uk-container">
-                        <ul class="uk-subnav uk-subnav-pill uk-flex-right" uk-margin>
-                            <li><a href="#managementTeam">Management Team</a></li>
-                            <li><a href="#managementTeam/tpaul">Troy Paul</a></li>
-                            <li><a href="#managementTeam/mpaul">Mark Paul</a></li>
-                        </ul>
-
-                        <article class="bio | uk-article uk-padding" uk-grid>
-
-                            <figure class="uk-width-1-1 uk-width-auto@m">
-                                <?php echo wp_get_attachment_image( $avatar['id'], [ 300, 300, true ] ); ?>
-                                <h2><?php echo $avatar['title'] ?></h2>
-                                <p><?php echo $avatar['caption'] ?></p>
-                            </figure>
-                            <figcaption class="uk-width-1-1 uk-width-expand@m">
-                                <?php the_sub_field( 'content' ); ?>
-                            </figcaption>
-                        </article>
+            <div class="uk-container uk-container-small">
+                <div class="marketing | uk-child-width-auto@s uk-grid-small uk-grid-match uk-flex-center" uk-grid uk-height-match="target: > div > .uk-card > p" uk-scrollspy="target: > div > .uk-card; cls: uk-animation-slide-bottom-medium; delay: 300; repeat: true">
+                    <?php while ( have_rows( 'fp_management' ) ) : the_row();
+                    $fn = explode(" ", get_sub_field( 'name' )); ?>
+                    <div class="-<?=strtolower($fn[1]);?>">
+                        <div class="uk-card uk-card-body uk-card-small uk-text-center">
+                            <h3 class="uk-card-title"><?php the_sub_field( 'name' ); ?></h3>
+                            <p><?php the_sub_field( 'designation' ); ?></p>
+                        </div>
                     </div>
+                    <?php endwhile; ?>
                 </div>
-            <?php endwhile; // End Rows
-            
-            ?>
+            </div>
+
+            <?php // Modal : Biography of Executives
+            while ( have_rows( 'fp_executives' ) ) : the_row();
+            $avatar = get_sub_field( 'avatar' );
+            $fn     = explode(" ", $avatar['title']);
+            $fsn    = strtolower(substr($fn[0], 0, 1));
+            $lsn    = strtolower($fn[1]); ?>
+            <div id="<?=$fsn.$lsn?>" class="bio-modal | uk-modal-full" uk-modal>
+                <div class="uk-modal-dialog uk-flex uk-flex-middle" uk-height-viewport>
+                    <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+
+                    <article class="bio | uk-article uk-padding-large" uk-grid>
+                        <figure class="uk-width-1-1 uk-width-auto@m">
+                            <?php echo wp_get_attachment_image( $avatar['id'], [ 300, 300, true ] ); ?>
+                            <h2><?php echo $avatar['title'] ?></h2>
+                            <p><?php echo $avatar['caption'] ?></p>
+                        </figure>
+                        <figcaption class="uk-width-1-1 uk-width-expand@m">
+                            <?php the_sub_field( 'content' ); ?>
+                        </figcaption>
+                    </article>
+
+                </div>
+            </div>
+            <?php endwhile; ?>
         </section>
 
         <section class="colophon | section fp-auto-height">

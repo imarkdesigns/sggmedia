@@ -863,137 +863,146 @@
     }
 
     // Slides
-    .slide {
-        .uk-subnav-pill {
-            margin: 0;
+    // .slide {
+    //     .uk-subnav-pill {
+    //         margin: 0;
 
-            li {
-                padding: 0;
-            }
+    //         li {
+    //             padding: 0;
+    //         }
 
-            li a {
-                font-family: $poppins-bd !important;
-                color: $sgg-green !important;
-                padding: 8px 10px 5px;
-                border-radius: 3px;
+    //         li a {
+    //             font-family: $poppins-bd !important;
+    //             color: $sgg-green !important;
+    //             padding: 8px 10px 5px;
+    //             border-radius: 3px;
 
-                &:hover,
-                &:focus {
-                    background: rgba(#000,.9);
-                }
-            }
-        }
-    }
-
-    .bio {
-        figure {
-            position: relative;
-
-            img {
-                min-width: 150px;
-                width: 100%;
-                max-width: 300px;
-                height: auto;
-                margin-bottom: 30px;
-                border-radius: 5px;
-                box-shadow: -15px 15px 0 0px $sgg-green;
-            }
-
-            h2 {
-                font-size: clamp(1.5rem, 0.5rem + 2.5vw, 2rem);
-                font-family: $changa;
-                text-transform: uppercase;
-                line-height: 1;
-                margin: 0;
-            }
-
-            p { 
-                font-family: $poppins-lt;
-                font-size: .875rem;
-                margin: 0;
-            }
-        }
-
-
-        figcaption {
-            font-family: $poppins-lt;
-
-            ul {
-                list-style: none;
-                padding: 0;
-
-                li {
-                    position: relative;
-                    margin-top: 15px;
-                    padding-left: 30px;
-                }
-
-                strong {
-                    font-family: $poppins-bd;
-                }
-            }
-
-            li::before {
-                content: '';
-                position: absolute;
-                inset: 5px 0 0;
-                display: block;
-                background: url(#{$img}/bullet-check.png) no-repeat center / contain;
-                @include size(18px);
-            }
-        }
-    }
+    //             &:hover,
+    //             &:focus {
+    //                 background: rgba(#000,.9);
+    //             }
+    //         }
+    //     }
+    // }
 }
 
-//
-//
+.bio-modal {
+    z-index: 2010;
 
-.biography {
-    z-index: 100001;
-
-    .uk-modal-dialog {
-        font-size: .875rem;
-        padding: 2em;
-        border-radius: 5px;
+    .uk-modal-close-full {
+        background: $sgg-green;
+        color: #FFF;
+        border-radius: 0 0 0 5px;
+        z-index: 200;
     }
 
     figure {
         position: relative;
 
-        &::before {
-            content: '';
-            position: absolute;
-            inset: 17px auto auto 17px;
-            display: block;
-            background-color: $sgg-green;
-            @include size(150px);
-            border-radius: 5px;
-            z-index: 0;
-        }
-
         img {
-            position: relative;
-            @include size(150px);
-            box-shadow: 7px 7px 0 2px rgba(#CCC,.5);
+            min-width: 150px;
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 30px;
             border-radius: 5px;
-            z-index: 1;
+            box-shadow: -15px 15px 0 0px $sgg-green;
         }
 
-    }
+        h2 {
+            font-size: clamp(1.5rem, 0.5rem + 2.5vw, 2rem);
+            font-family: $changa;
+            text-transform: uppercase;
+            line-height: 1;
+            margin: 0;
+        }
 
-    .uk-h3 {
-        font-family: $changa;
-        font-size: 2rem;
-        color: #000;
-        text-transform: uppercase;
-        line-height: 1;
-        margin: 0;
-
-        + p {
+        p { 
+            font-family: $poppins-lt;
+            font-size: .875rem;
             margin: 0;
         }
     }
+
+
+    figcaption {
+        font-family: $poppins-lt;
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                position: relative;
+                margin-top: 15px;
+                padding-left: 30px;
+            }
+
+            strong {
+                font-family: $poppins-bd;
+            }
+        }
+
+        li::before {
+            content: '';
+            position: absolute;
+            inset: 5px 0 0;
+            display: block;
+            background: url(#{$img}/bullet-check.png) no-repeat center / contain;
+            @include size(18px);
+        }
+    }
 }
+
+//
+//
+
+// .biography {
+//     z-index: 100001;
+
+//     .uk-modal-dialog {
+//         font-size: .875rem;
+//         padding: 2em;
+//         border-radius: 5px;
+//     }
+
+//     figure {
+//         position: relative;
+
+//         &::before {
+//             content: '';
+//             position: absolute;
+//             inset: 17px auto auto 17px;
+//             display: block;
+//             background-color: $sgg-green;
+//             @include size(150px);
+//             border-radius: 5px;
+//             z-index: 0;
+//         }
+
+//         img {
+//             position: relative;
+//             @include size(150px);
+//             box-shadow: 7px 7px 0 2px rgba(#CCC,.5);
+//             border-radius: 5px;
+//             z-index: 1;
+//         }
+
+//     }
+
+//     .uk-h3 {
+//         font-family: $changa;
+//         font-size: 2rem;
+//         color: #000;
+//         text-transform: uppercase;
+//         line-height: 1;
+//         margin: 0;
+
+//         + p {
+//             margin: 0;
+//         }
+//     }
+// }
 
 .press-coverage {
 
